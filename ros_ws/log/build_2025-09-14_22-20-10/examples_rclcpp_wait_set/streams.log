@@ -1,0 +1,75 @@
+[0.099s] Invoking command in '/home/ishaan/Stevens-Electric-Boatworks/ros_ws/build/examples_rclcpp_wait_set': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/launch_testing_examples:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_pointcloud_publisher:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_subscriber:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_service:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_publisher:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_client:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_action_server:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_action_client:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_guard_conditions:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_executors:/opt/ros/kilted /usr/bin/cmake /home/ishaan/Stevens-Electric-Boatworks/ros_ws/src/examples/rclcpp/wait_set -DCMAKE_INSTALL_PREFIX=/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set
+[1.881s] -- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+[1.883s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.883s] -- Found example_interfaces: 0.13.0 (/opt/ros/kilted/share/example_interfaces/cmake)
+[1.883s] -- Found rosidl_generator_c: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_c/cmake)
+[1.884s] -- Found rosidl_generator_cpp: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_cpp/cmake)
+[1.884s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.884s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.884s] -- Found rclcpp: 29.5.2 (/opt/ros/kilted/share/rclcpp/cmake)
+[1.885s] -- Found rmw_implementation_cmake: 7.8.2 (/opt/ros/kilted/share/rmw_implementation_cmake/cmake)
+[1.885s] -- Found rmw_fastrtps_cpp: 9.3.2 (/opt/ros/kilted/share/rmw_fastrtps_cpp/cmake)
+[1.885s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.886s] -- Found rclcpp_components: 29.5.2 (/opt/ros/kilted/share/rclcpp_components/cmake)
+[1.886s] -- Found std_msgs: 5.5.0 (/opt/ros/kilted/share/std_msgs/cmake)
+[1.886s] -- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)
+[1.886s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.887s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.887s] -- Configured cppcheck include dirs: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/src/examples/rclcpp/wait_set/include
+[1.887s] -- Configured cppcheck exclude dirs and/or files: 
+[1.888s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.888s] -- Configured cpplint exclude dirs and/or files: 
+[1.889s] -- Added test 'lint_cmake' to check CMake code style
+[1.889s] -- Added test 'uncrustify' to check C / C++ code style
+[1.889s] -- Configured uncrustify additional arguments: 
+[1.890s] -- Added test 'xmllint' to check XML markup files
+[1.890s] -- Configuring done (1.7s)
+[1.990s] -- Generating done (0.1s)
+[2.036s] -- Build files have been written to: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/build/examples_rclcpp_wait_set
+[2.131s] Invoked command in '/home/ishaan/Stevens-Electric-Boatworks/ros_ws/build/examples_rclcpp_wait_set' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/launch_testing_examples:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_pointcloud_publisher:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_subscriber:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_service:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_publisher:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_client:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_action_server:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_action_client:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_guard_conditions:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_executors:/opt/ros/kilted /usr/bin/cmake /home/ishaan/Stevens-Electric-Boatworks/ros_ws/src/examples/rclcpp/wait_set -DCMAKE_INSTALL_PREFIX=/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set
+[2.131s] Invoking command in '/home/ishaan/Stevens-Electric-Boatworks/ros_ws/build/examples_rclcpp_wait_set': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/launch_testing_examples:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_pointcloud_publisher:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_subscriber:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_service:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_publisher:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_client:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_action_server:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_action_client:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_guard_conditions:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_executors:/opt/ros/kilted /usr/bin/cmake --build /home/ishaan/Stevens-Electric-Boatworks/ros_ws/build/examples_rclcpp_wait_set -- -j16 -l16
+[2.209s] [  8%] Built target wait_set
+[2.210s] [ 16%] Built target static_wait_set
+[2.210s] [ 25%] Built target talker
+[2.212s] [ 33%] Built target wait_set_talker
+[2.212s] [ 41%] Built target wait_set_listener
+[2.213s] [ 50%] Built target wait_set_topics_with_different_rates
+[2.213s] [ 58%] Built target executor_random_order
+[2.215s] [ 75%] Built target thread_safe_wait_set
+[2.215s] [ 75%] Built target wait_set_random_order
+[2.216s] [ 83%] Built target listener
+[2.221s] [ 91%] Built target wait_set_topics_and_timer
+[2.246s] [100%] Built target wait_set_composed
+[2.511s] Invoked command in '/home/ishaan/Stevens-Electric-Boatworks/ros_ws/build/examples_rclcpp_wait_set' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/launch_testing_examples:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_pointcloud_publisher:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_subscriber:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_service:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_publisher:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_client:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_action_server:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_action_client:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_guard_conditions:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_executors:/opt/ros/kilted /usr/bin/cmake --build /home/ishaan/Stevens-Electric-Boatworks/ros_ws/build/examples_rclcpp_wait_set -- -j16 -l16
+[2.512s] Invoking command in '/home/ishaan/Stevens-Electric-Boatworks/ros_ws/build/examples_rclcpp_wait_set': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/launch_testing_examples:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_pointcloud_publisher:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_subscriber:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_service:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_publisher:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_client:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_action_server:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_action_client:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_guard_conditions:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_executors:/opt/ros/kilted /usr/bin/cmake --install /home/ishaan/Stevens-Electric-Boatworks/ros_ws/build/examples_rclcpp_wait_set
+[2.806s] -- Install configuration: ""
+[2.807s] -- Execute custom install script
+[2.807s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set_talker
+[2.807s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set_listener
+[2.807s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/lib/libtalker.so
+[2.808s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/lib/liblistener.so
+[2.808s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set
+[2.808s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/static_wait_set
+[2.808s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/thread_safe_wait_set
+[2.808s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set_topics_and_timer
+[2.808s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set_random_order
+[2.809s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/executor_random_order
+[2.809s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set_topics_with_different_rates
+[2.809s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set_composed
+[2.809s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_wait_set
+[2.809s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_wait_set
+[2.810s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/environment/ament_prefix_path.sh
+[2.810s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/environment/ament_prefix_path.dsv
+[2.810s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/environment/path.sh
+[2.810s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/environment/path.dsv
+[2.810s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/local_setup.bash
+[2.811s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/local_setup.sh
+[2.811s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/local_setup.zsh
+[2.811s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/local_setup.dsv
+[2.811s] -- Symlinking: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/package.dsv
+[2.811s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/share/ament_index/resource_index/packages/examples_rclcpp_wait_set
+[2.812s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/share/ament_index/resource_index/rclcpp_components/examples_rclcpp_wait_set
+[2.812s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/cmake/examples_rclcpp_wait_setConfig.cmake
+[2.812s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/cmake/examples_rclcpp_wait_setConfig-version.cmake
+[2.812s] -- Up-to-date symlink: /home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/package.xml
+[3.279s] Invoked command in '/home/ishaan/Stevens-Electric-Boatworks/ros_ws/build/examples_rclcpp_wait_set' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/launch_testing_examples:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_pointcloud_publisher:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_subscriber:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_service:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_publisher:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_client:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_action_server:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_minimal_action_client:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_guard_conditions:/home/ishaan/Stevens-Electric-Boatworks/ros_ws/install/examples_rclpy_executors:/opt/ros/kilted /usr/bin/cmake --install /home/ishaan/Stevens-Electric-Boatworks/ros_ws/build/examples_rclcpp_wait_set

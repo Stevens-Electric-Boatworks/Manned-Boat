@@ -4,7 +4,7 @@ README_IF_ON_TEAMS.md
 
 
 ros_ws/devel/
-ros_ws/logs/
+ros_ws/log/
 ros_ws/build/
 ros_ws/bin/
 ros_ws/lib/

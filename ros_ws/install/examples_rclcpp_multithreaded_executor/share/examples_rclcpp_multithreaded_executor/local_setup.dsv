@@ -1,1 +1,2 @@
-/home/ishaan/Stevens-Electric-Boatworks/ros_ws/build/examples_rclcpp_multithreaded_executor/ament_cmake_environment_hooks/local_setup.dsv
+source;share/examples_rclcpp_multithreaded_executor/environment/ament_prefix_path.sh
+source;share/examples_rclcpp_multithreaded_executor/environment/path.sh

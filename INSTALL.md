@@ -49,6 +49,15 @@ The ROS version used is [Kilted Kaiju](https://docs.ros.org/en/kilted/Installati
 * Then, rename the folder with `mv Stevens-Electric-Boatworks/ eboat-sc/`
 
 
+### ROS2 Canopen Setup
+
+* This codebase uses `ros2_canopen` with instructions to install [here](https://ros-industrial.github.io/ros2_canopen/manual/rolling/quickstart/installation.html)
+
+* Run the following commands to build the package
+  
+  * `rosdep install --from-paths src/ros2_canopen --ignore-src -r -y`
+  * `colcon build` (this will take a while!!!)
+
 **End of steps as of 9/16/2025
 
 

@@ -1,0 +1,19 @@
+{
+  "package_name": "gpio_interfaces",
+  "output_dir": "/home/ishaan/eboat_src/build/gpio_interfaces/rosidl_typesupport_introspection_c/gpio_interfaces",
+  "template_dir": "/opt/ros/kilted/share/rosidl_typesupport_introspection_c/resource",
+  "idl_tuples": [
+    "/home/ishaan/eboat_src/build/gpio_interfaces/rosidl_adapter/gpio_interfaces:msg/GPIOResult.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/kilted/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c",
+    "/opt/ros/kilted/lib/python3.12/site-packages/rosidl_typesupport_introspection_c/__init__.py",
+    "/opt/ros/kilted/share/rosidl_typesupport_introspection_c/resource/idl__rosidl_typesupport_introspection_c.h.em",
+    "/opt/ros/kilted/share/rosidl_typesupport_introspection_c/resource/idl__type_support.c.em",
+    "/opt/ros/kilted/share/rosidl_typesupport_introspection_c/resource/msg__rosidl_typesupport_introspection_c.h.em",
+    "/opt/ros/kilted/share/rosidl_typesupport_introspection_c/resource/msg__type_support.c.em",
+    "/opt/ros/kilted/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em",
+    "/opt/ros/kilted/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em",
+    "/home/ishaan/eboat_src/build/gpio_interfaces/rosidl_adapter/gpio_interfaces/msg/GPIOResult.idl"
+  ]
+}

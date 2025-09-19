@@ -1,0 +1,32 @@
+[1.072s] Invoking command in '/home/ishaan/eboat_src/ros_ws/src/shore_comms': PYTHONPATH=/home/ishaan/eboat_src/build/shore_comms/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ishaan/eboat_src/install/shore_comms/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/shore_comms build --build-base /home/ishaan/eboat_src/build/shore_comms/build install --record /home/ishaan/eboat_src/build/shore_comms/install.log --single-version-externally-managed install_data
+[1.239s] running egg_info
+[1.249s] writing ../../../build/shore_comms/shore_comms.egg-info/PKG-INFO
+[1.249s] writing dependency_links to ../../../build/shore_comms/shore_comms.egg-info/dependency_links.txt
+[1.249s] writing entry points to ../../../build/shore_comms/shore_comms.egg-info/entry_points.txt
+[1.250s] writing requirements to ../../../build/shore_comms/shore_comms.egg-info/requires.txt
+[1.250s] writing top-level names to ../../../build/shore_comms/shore_comms.egg-info/top_level.txt
+[1.270s] reading manifest file '../../../build/shore_comms/shore_comms.egg-info/SOURCES.txt'
+[1.271s] adding license file 'LICENSE'
+[1.271s] writing manifest file '../../../build/shore_comms/shore_comms.egg-info/SOURCES.txt'
+[1.272s] running build
+[1.272s] running build_py
+[1.272s] copying shore_comms/shore_data.py -> /home/ishaan/eboat_src/build/shore_comms/build/lib/shore_comms
+[1.273s] copying shore_comms/main.py -> /home/ishaan/eboat_src/build/shore_comms/build/lib/shore_comms
+[1.273s] copying shore_comms/main2.py -> /home/ishaan/eboat_src/build/shore_comms/build/lib/shore_comms
+[1.274s] running install
+[1.278s] running install_lib
+[1.288s] copying /home/ishaan/eboat_src/build/shore_comms/build/lib/shore_comms/shore_data.py -> /home/ishaan/eboat_src/install/shore_comms/lib/python3.12/site-packages/shore_comms
+[1.288s] copying /home/ishaan/eboat_src/build/shore_comms/build/lib/shore_comms/main.py -> /home/ishaan/eboat_src/install/shore_comms/lib/python3.12/site-packages/shore_comms
+[1.288s] copying /home/ishaan/eboat_src/build/shore_comms/build/lib/shore_comms/main2.py -> /home/ishaan/eboat_src/install/shore_comms/lib/python3.12/site-packages/shore_comms
+[1.289s] byte-compiling /home/ishaan/eboat_src/install/shore_comms/lib/python3.12/site-packages/shore_comms/shore_data.py to shore_data.cpython-312.pyc
+[1.289s] byte-compiling /home/ishaan/eboat_src/install/shore_comms/lib/python3.12/site-packages/shore_comms/main.py to main.cpython-312.pyc
+[1.290s] byte-compiling /home/ishaan/eboat_src/install/shore_comms/lib/python3.12/site-packages/shore_comms/main2.py to main2.cpython-312.pyc
+[1.290s] running install_data
+[1.291s] copying package.xml -> /home/ishaan/eboat_src/install/shore_comms/share/shore_comms
+[1.291s] running install_egg_info
+[1.301s] removing '/home/ishaan/eboat_src/install/shore_comms/lib/python3.12/site-packages/shore_comms-0.0.0-py3.12.egg-info' (and everything under it)
+[1.302s] Copying ../../../build/shore_comms/shore_comms.egg-info to /home/ishaan/eboat_src/install/shore_comms/lib/python3.12/site-packages/shore_comms-0.0.0-py3.12.egg-info
+[1.303s] running install_scripts
+[1.379s] Installing shore script to /home/ishaan/eboat_src/install/shore_comms/lib/shore_comms
+[1.379s] writing list of installed files to '/home/ishaan/eboat_src/build/shore_comms/install.log'
+[1.414s] Invoked command in '/home/ishaan/eboat_src/ros_ws/src/shore_comms' returned '0': PYTHONPATH=/home/ishaan/eboat_src/build/shore_comms/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ishaan/eboat_src/install/shore_comms/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/shore_comms build --build-base /home/ishaan/eboat_src/build/shore_comms/build install --record /home/ishaan/eboat_src/build/shore_comms/install.log --single-version-externally-managed install_data

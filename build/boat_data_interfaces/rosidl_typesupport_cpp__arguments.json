@@ -1,0 +1,23 @@
+{
+  "package_name": "boat_data_interfaces",
+  "output_dir": "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_typesupport_cpp/boat_data_interfaces",
+  "template_dir": "/opt/ros/kilted/share/rosidl_typesupport_cpp/resource",
+  "idl_tuples": [
+    "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces:msg/ElectricalData.idl",
+    "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces:msg/GPIOData.idl",
+    "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces:msg/MotionData.idl",
+    "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces:msg/MotorData.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/kilted/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp",
+    "/opt/ros/kilted/lib/python3.12/site-packages/rosidl_typesupport_cpp/__init__.py",
+    "/opt/ros/kilted/share/rosidl_typesupport_cpp/resource/action__type_support.cpp.em",
+    "/opt/ros/kilted/share/rosidl_typesupport_cpp/resource/idl__type_support.cpp.em",
+    "/opt/ros/kilted/share/rosidl_typesupport_cpp/resource/msg__type_support.cpp.em",
+    "/opt/ros/kilted/share/rosidl_typesupport_cpp/resource/srv__type_support.cpp.em",
+    "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces/msg/ElectricalData.idl",
+    "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces/msg/GPIOData.idl",
+    "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces/msg/MotionData.idl",
+    "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces/msg/MotorData.idl"
+  ]
+}

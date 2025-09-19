@@ -2,60 +2,61 @@ import rclpy
 from rclpy.executors import ExternalShutdownException
 from rclpy.node import Node
 
-from gpio_interfaces.msg import GPIOResult
+from gpio_interfaces.msg import GPIOResult # type: ignore
 
 #Websockets
 import asyncio
 from websockets.client import connect
 import json
+from datetime import datetime
 
 
-class MinimalSubscriber(Node):
+
+SHORE_URI = "wss://eboat.thiagoja.com/api"
+
+class ShoreDataCollector(Node):
     
     def __init__(self):
         super().__init__('shore_subscriber')
-        self.subscription = self.create_subscription(
-            GPIOResult,
-            '/gpio_result',
-            self.listener_callback,
-            10)
-        self.subscription  # prevent unused variable warning
-        self.runWebSocket()
+        self.data = {};
+        self.create_subscription(GPIOResult, '/gpio_result', self.gpioCollector, 10)
     
-    def runWebSocket(self):
-        asyncio.run(self.connect_to_websocket_server())
-    
+    def addData(self, dataName, data):
+        """
+        Adds data to be sent to the shore server.
+        :param dataName - The name of the data as required by the ShoreAPI
+        :param data - The actual data to send
+        """
+        self.data[dataName] = data
 
-    def listener_callback(self, msg: GPIOResult):
-        self.get_logger().info('I heard: "%s"' % msg.temp)
-        
     
-    async def connect_to_websocket_server(self):
-        uri = "wss://eboat.thiagoja.com/api" 
-        async with connect(uri) as websocket:
+    async def startBackgroundShoreSender(self):
+        """
+        Starts the background task to send the data to the shore server. Is automatically called every 100ms
+        """
+ 
+        async with connect(SHORE_URI) as websocket:
             while True:
-                data = {"type": "data",
-                "payload": {
-                    "speed": 28
-                    }
+                outputData = {
+                    "type": "data",
+                    "payload" : self.data
                 }
-                print("sent + " + str(data))
-                await websocket.send(json.dumps(data))
-                
-            # You can continue sending and receiving messages as needed
-            # For example, to keep the connection alive and handle continuous messages:
-            # while True:
-            #     received_message = await websocket.recv()
-            #     print(f"Received: {received_message}")
-            
-            pass
+                self.data.clear()
+                await websocket.send(json.dumps(outputData))
+                await asyncio.sleep(0.1)
+
         
+    def gpioCollector(self, data:GPIOResult):
+        self.addData("coolant_temp", data.temp)
+        # self.addData
+        pass
+
 
 
 def main(args=None):
     try:
         with rclpy.init(args=args):
-            minimal_subscriber = MinimalSubscriber()
+            minimal_subscriber = ShoreDataCollector()
 
             rclpy.spin(minimal_subscriber)
     except (KeyboardInterrupt, ExternalShutdownException):

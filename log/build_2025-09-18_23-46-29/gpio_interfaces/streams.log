@@ -1,0 +1,66 @@
+[0.151s] Invoking command in '/home/ishaan/eboat_src/build/gpio_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ishaan/eboat_src/install/shore_comms:/home/ishaan/eboat_src/install/examples_rclpy_minimal_action_client:/home/ishaan/eboat_src/install/examples_rclpy_guard_conditions:/home/ishaan/eboat_src/install/examples_rclpy_executors:/home/ishaan/eboat_src/install/GPIO_Test:/opt/ros/kilted /usr/bin/cmake /home/ishaan/eboat_src/ros_ws/src/gpio_interfaces -DCMAKE_INSTALL_PREFIX=/home/ishaan/eboat_src/install/gpio_interfaces
+[0.441s] -- The C compiler identification is GNU 13.3.0
+[1.353s] -- The CXX compiler identification is GNU 13.3.0
+[2.136s] -- Detecting C compiler ABI info
+[2.430s] -- Detecting C compiler ABI info - done
+[2.435s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.437s] -- Detecting C compile features
+[2.437s] -- Detecting C compile features - done
+[2.554s] -- Detecting CXX compiler ABI info
+[2.842s] -- Detecting CXX compiler ABI info - done
+[2.848s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.848s] -- Detecting CXX compile features
+[2.848s] -- Detecting CXX compile features - done
+[2.864s] -- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+[2.968s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.068s] -- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)
+[3.149s] -- Found rosidl_default_generators: 1.7.1 (/opt/ros/kilted/share/rosidl_default_generators/cmake)
+[3.158s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.341s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.388s] -- Found rosidl_adapter: 4.9.5 (/opt/ros/kilted/share/rosidl_adapter/cmake)
+[3.605s] [31mCMake Error at /opt/ros/kilted/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[3.605s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[3.605s]   gpio_interfaces --arguments-file
+[3.605s]   /home/ishaan/eboat_src/build/gpio_interfaces/rosidl_adapter__arguments__gpio_interfaces.json
+[3.605s]   --output-dir
+[3.605s]   /home/ishaan/eboat_src/build/gpio_interfaces/rosidl_adapter/gpio_interfaces
+[3.605s]   --output-file
+[3.605s]   /home/ishaan/eboat_src/build/gpio_interfaces/rosidl_adapter/gpio_interfaces.idls)
+[3.605s]   returned error code 1:
+[3.605s] 
+[3.605s]   Error processing 'float imu_x' of 'gpio_interfaces/GPIOResult': ''float' is
+[3.605s]   an invalid message name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$''
+[3.605s] 
+[3.605s]   Traceback (most recent call last):
+[3.606s] 
+[3.606s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[3.606s]     File "<frozen runpy>", line 88, in _run_code
+[3.606s]     File "/opt/ros/kilted/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[3.606s]       main()
+[3.606s]     File "/opt/ros/kilted/lib/python3.12/site-packages/rosidl_adapter/main.py", line 54, in main
+[3.606s]       abs_idl_file = convert_to_idl(
+[3.606s]                      ^^^^^^^^^^^^^^^
+[3.606s]     File "/opt/ros/kilted/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 22, in convert_to_idl
+[3.606s]       return convert_msg_to_idl(
+[3.606s]              ^^^^^^^^^^^^^^^^^^^
+[3.606s]     File "/opt/ros/kilted/lib/python3.12/site-packages/rosidl_adapter/msg/__init__.py", line 32, in convert_msg_to_idl
+[3.606s]       msg = parse_message_string(package_name, input_file.stem, content)
+[3.606s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[3.606s]     File "/opt/ros/kilted/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 539, in parse_message_string
+[3.606s]       Type(type_string, context_package_name=pkg_name),
+[3.606s]       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[3.606s]     File "/opt/ros/kilted/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 293, in __init__
+[3.606s]       super(Type, self).__init__(
+[3.606s]     File "/opt/ros/kilted/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 221, in __init__
+[3.606s]       raise InvalidResourceName(
+[3.606s] 
+[3.606s]   rosidl_adapter.parser.InvalidResourceName: 'float' is an invalid message
+[3.606s]   name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[3.606s] 
+[3.606s] Call Stack (most recent call first):
+[3.606s]   /opt/ros/kilted/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[3.606s]   CMakeLists.txt:27 (rosidl_generate_interfaces)
+[3.606s] 
+[3.606s] [0m
+[3.606s] -- Configuring incomplete, errors occurred!
+[3.611s] Invoked command in '/home/ishaan/eboat_src/build/gpio_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ishaan/eboat_src/install/shore_comms:/home/ishaan/eboat_src/install/examples_rclpy_minimal_action_client:/home/ishaan/eboat_src/install/examples_rclpy_guard_conditions:/home/ishaan/eboat_src/install/examples_rclpy_executors:/home/ishaan/eboat_src/install/GPIO_Test:/opt/ros/kilted /usr/bin/cmake /home/ishaan/eboat_src/ros_ws/src/gpio_interfaces -DCMAKE_INSTALL_PREFIX=/home/ishaan/eboat_src/install/gpio_interfaces

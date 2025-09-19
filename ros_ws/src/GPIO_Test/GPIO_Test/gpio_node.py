@@ -1,7 +1,7 @@
 import rclpy
 from rclpy.executors import ExternalShutdownException
 from rclpy.node import Node
-from gpio_interfaces.msg import GPIOResult
+from gpio_interfaces.msg import GPIOResult # type: ignore
 
 class GPIOMinimalService(Node):
     def __init__(self):

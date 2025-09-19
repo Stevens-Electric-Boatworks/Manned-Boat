@@ -1,0 +1,25 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/boat_data_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/electrical_data__type_support.cpp.o"
+  "CMakeFiles/boat_data_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/electrical_data__type_support.cpp.o.d"
+  "CMakeFiles/boat_data_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/gpio_data__type_support.cpp.o"
+  "CMakeFiles/boat_data_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/gpio_data__type_support.cpp.o.d"
+  "CMakeFiles/boat_data_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/motion_data__type_support.cpp.o"
+  "CMakeFiles/boat_data_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/motion_data__type_support.cpp.o.d"
+  "CMakeFiles/boat_data_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/motor_data__type_support.cpp.o"
+  "CMakeFiles/boat_data_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/motor_data__type_support.cpp.o.d"
+  "libboat_data_interfaces__rosidl_typesupport_fastrtps_cpp.pdb"
+  "libboat_data_interfaces__rosidl_typesupport_fastrtps_cpp.so"
+  "rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/electrical_data__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/gpio_data__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/motion_data__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/motor_data__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/electrical_data__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/gpio_data__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/motion_data__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/motor_data__rosidl_typesupport_fastrtps_cpp.hpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/boat_data_interfaces__rosidl_typesupport_fastrtps_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

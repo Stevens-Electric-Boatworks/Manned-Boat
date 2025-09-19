@@ -1,0 +1,10 @@
+{
+  "package_name": "boat_data_interfaces",
+  "output_dir": "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_type_description/boat_data_interfaces",
+  "idl_tuples": [
+    "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces:msg/ElectricalData.idl",
+    "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces:msg/GPIOData.idl",
+    "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces:msg/MotionData.idl",
+    "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces:msg/MotorData.idl"
+  ]
+}

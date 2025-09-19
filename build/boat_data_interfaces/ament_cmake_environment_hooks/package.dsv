@@ -1,0 +1,4 @@
+source;share/boat_data_interfaces/local_setup.bash
+source;share/boat_data_interfaces/local_setup.dsv
+source;share/boat_data_interfaces/local_setup.sh
+source;share/boat_data_interfaces/local_setup.zsh

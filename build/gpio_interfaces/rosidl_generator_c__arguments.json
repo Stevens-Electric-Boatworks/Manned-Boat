@@ -1,0 +1,36 @@
+{
+  "package_name": "gpio_interfaces",
+  "output_dir": "/home/ishaan/eboat_src/build/gpio_interfaces/rosidl_generator_c/gpio_interfaces",
+  "template_dir": "/opt/ros/kilted/share/rosidl_generator_c/cmake/../resource",
+  "idl_tuples": [
+    "/home/ishaan/eboat_src/build/gpio_interfaces/rosidl_adapter/gpio_interfaces:msg/GPIOResult.idl"
+  ],
+  "ros_interface_files": [
+    "/home/ishaan/eboat_src/ros_ws/src/gpio_interfaces/msg/GPIOResult.msg"
+  ],
+  "target_dependencies": [
+    "/opt/ros/kilted/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
+    "/opt/ros/kilted/share/rosidl_generator_c/cmake/../../../lib/python3.12/site-packages/rosidl_generator_c/__init__.py",
+    "/opt/ros/kilted/share/rosidl_generator_c/cmake/../resource/action__type_support.h.em",
+    "/opt/ros/kilted/share/rosidl_generator_c/cmake/../resource/action__type_support.c.em",
+    "/opt/ros/kilted/share/rosidl_generator_c/cmake/../resource/empty__description.c.em",
+    "/opt/ros/kilted/share/rosidl_generator_c/cmake/../resource/full__description.c.em",
+    "/opt/ros/kilted/share/rosidl_generator_c/cmake/../resource/idl.h.em",
+    "/opt/ros/kilted/share/rosidl_generator_c/cmake/../resource/idl__description.c.em",
+    "/opt/ros/kilted/share/rosidl_generator_c/cmake/../resource/idl__functions.c.em",
+    "/opt/ros/kilted/share/rosidl_generator_c/cmake/../resource/idl__functions.h.em",
+    "/opt/ros/kilted/share/rosidl_generator_c/cmake/../resource/idl__struct.h.em",
+    "/opt/ros/kilted/share/rosidl_generator_c/cmake/../resource/idl__type_support.c.em",
+    "/opt/ros/kilted/share/rosidl_generator_c/cmake/../resource/idl__type_support.h.em",
+    "/opt/ros/kilted/share/rosidl_generator_c/cmake/../resource/msg__functions.c.em",
+    "/opt/ros/kilted/share/rosidl_generator_c/cmake/../resource/msg__functions.h.em",
+    "/opt/ros/kilted/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
+    "/opt/ros/kilted/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
+    "/opt/ros/kilted/share/rosidl_generator_c/cmake/../resource/srv__type_support.c.em",
+    "/opt/ros/kilted/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
+    "/home/ishaan/eboat_src/build/gpio_interfaces/rosidl_adapter/gpio_interfaces/msg/GPIOResult.idl"
+  ],
+  "type_description_tuples": [
+    "msg/GPIOResult.idl:/home/ishaan/eboat_src/build/gpio_interfaces/rosidl_generator_type_description/gpio_interfaces/msg/GPIOResult.json"
+  ]
+}

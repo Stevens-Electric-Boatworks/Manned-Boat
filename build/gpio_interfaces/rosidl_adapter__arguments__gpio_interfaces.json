@@ -1,0 +1,6 @@
+{
+  "package_name": "gpio_interfaces",
+  "non_idl_tuples": [
+    "/home/ishaan/eboat_src/ros_ws/src/gpio_interfaces:msg/GPIOResult.msg"
+  ]
+}

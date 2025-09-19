@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "boat_data_interfaces__py",
+		"source" : "/home/ishaan/eboat_src/build/boat_data_interfaces/boat_data_interfaces__py"
+	}
+}

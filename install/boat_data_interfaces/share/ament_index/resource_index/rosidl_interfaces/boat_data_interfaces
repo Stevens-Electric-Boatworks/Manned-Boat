@@ -1,0 +1,8 @@
+msg/ElectricalData.idl
+msg/ElectricalData.msg
+msg/GPIOData.idl
+msg/GPIOData.msg
+msg/MotionData.idl
+msg/MotionData.msg
+msg/MotorData.idl
+msg/MotorData.msg

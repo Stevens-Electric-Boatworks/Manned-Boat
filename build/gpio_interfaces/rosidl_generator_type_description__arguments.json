@@ -1,0 +1,7 @@
+{
+  "package_name": "gpio_interfaces",
+  "output_dir": "/home/ishaan/eboat_src/build/gpio_interfaces/rosidl_generator_type_description/gpio_interfaces",
+  "idl_tuples": [
+    "/home/ishaan/eboat_src/build/gpio_interfaces/rosidl_adapter/gpio_interfaces:msg/GPIOResult.idl"
+  ]
+}

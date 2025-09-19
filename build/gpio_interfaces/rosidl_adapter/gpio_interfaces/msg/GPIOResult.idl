@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from gpio_interfaces/msg/GPIOResult.msg
+// generated code does not contain a copyright notice
+
+
+module gpio_interfaces {
+  module msg {
+    struct GPIOResult {
+      int64 temp;
+
+      float imu_x;
+
+      float imu_y;
+
+      float imu_z;
+
+      float gps_lat;
+
+      float gps_lon;
+
+      float gps_alt;
+    };
+  };
+};

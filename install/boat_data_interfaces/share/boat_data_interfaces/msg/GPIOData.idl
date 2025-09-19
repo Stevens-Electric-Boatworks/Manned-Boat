@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from boat_data_interfaces/msg/GPIOData.msg
+// generated code does not contain a copyright notice
+
+
+module boat_data_interfaces {
+  module msg {
+    struct GPIOData {
+      float coolant_temp;
+
+      uint8 throttle;
+    };
+  };
+};

@@ -1,0 +1,47 @@
+[0.169s] Invoking command in '/home/ishaan/eboat_src/build/examples_rclcpp_minimal_timer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/ishaan/eboat_src/ros_ws/src/examples/rclcpp/timers/minimal_timer -DCMAKE_INSTALL_PREFIX=/home/ishaan/eboat_src/install/examples_rclcpp_minimal_timer
+[0.554s] -- The C compiler identification is GNU 13.3.0
+[1.504s] -- The CXX compiler identification is GNU 13.3.0
+[2.569s] -- Detecting C compiler ABI info
+[2.990s] -- Detecting C compiler ABI info - done
+[3.001s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.001s] -- Detecting C compile features
+[3.002s] -- Detecting C compile features - done
+[3.136s] -- Detecting CXX compiler ABI info
+[3.504s] -- Detecting CXX compiler ABI info - done
+[3.514s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.515s] -- Detecting CXX compile features
+[3.515s] -- Detecting CXX compile features - done
+[3.517s] -- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+[3.688s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.833s] -- Found rclcpp: 29.5.2 (/opt/ros/kilted/share/rclcpp/cmake)
+[4.060s] -- Found rosidl_generator_c: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_c/cmake)
+[4.071s] -- Found rosidl_generator_cpp: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_cpp/cmake)
+[4.086s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.103s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.188s] -- Found rmw_implementation_cmake: 7.8.2 (/opt/ros/kilted/share/rmw_implementation_cmake/cmake)
+[4.192s] -- Found rmw_fastrtps_cpp: 9.3.2 (/opt/ros/kilted/share/rmw_fastrtps_cpp/cmake)
+[4.304s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[4.320s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.663s] -- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)
+[4.801s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.801s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.801s] -- Configured cppcheck include dirs: 
+[4.801s] -- Configured cppcheck exclude dirs and/or files: 
+[4.801s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.801s] -- Configured cpplint exclude dirs and/or files: 
+[4.802s] -- Added test 'lint_cmake' to check CMake code style
+[4.803s] -- Added test 'uncrustify' to check C / C++ code style
+[4.803s] -- Configured uncrustify additional arguments: 
+[4.803s] -- Added test 'xmllint' to check XML markup files
+[4.805s] -- Configuring done (4.6s)
+[4.825s] -- Generating done (0.0s)
+[4.834s] -- Build files have been written to: /home/ishaan/eboat_src/build/examples_rclcpp_minimal_timer
+[4.961s] Invoked command in '/home/ishaan/eboat_src/build/examples_rclcpp_minimal_timer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/ishaan/eboat_src/ros_ws/src/examples/rclcpp/timers/minimal_timer -DCMAKE_INSTALL_PREFIX=/home/ishaan/eboat_src/install/examples_rclcpp_minimal_timer
+[4.965s] Invoking command in '/home/ishaan/eboat_src/build/examples_rclcpp_minimal_timer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --build /home/ishaan/eboat_src/build/examples_rclcpp_minimal_timer -- -j16 -l16
+[5.035s] [ 25%] [32mBuilding CXX object CMakeFiles/timer_member_function.dir/member_function.cpp.o[0m
+[5.035s] [ 50%] [32mBuilding CXX object CMakeFiles/timer_lambda.dir/lambda.cpp.o[0m
+[22.300s] gmake[2]: *** [CMakeFiles/timer_lambda.dir/build.make:76: CMakeFiles/timer_lambda.dir/lambda.cpp.o] Interrupt
+[22.301s] gmake[2]: *** [CMakeFiles/timer_member_function.dir/build.make:76: CMakeFiles/timer_member_function.dir/member_function.cpp.o] Interrupt
+[22.301s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/timer_lambda.dir/all] Interrupt
+[22.301s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/timer_member_function.dir/all] Interrupt
+[22.301s] gmake: *** [Makefile:146: all] Interrupt

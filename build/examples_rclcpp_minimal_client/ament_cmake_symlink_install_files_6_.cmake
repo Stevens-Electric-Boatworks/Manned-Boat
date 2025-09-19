@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/ishaan/eboat_src/ros_ws/src/examples/rclcpp/services/minimal_client" FILES "/home/ishaan/eboat_src/build/examples_rclcpp_minimal_client/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/examples_rclcpp_minimal_client")

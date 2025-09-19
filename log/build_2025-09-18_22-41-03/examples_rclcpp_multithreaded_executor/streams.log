@@ -1,0 +1,32 @@
+[0.177s] Invoking command in '/home/ishaan/eboat_src/build/examples_rclcpp_multithreaded_executor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/ishaan/eboat_src/ros_ws/src/examples/rclcpp/executors/multithreaded_executor -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ishaan/eboat_src/install/examples_rclcpp_multithreaded_executor
+[1.487s] -- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+[1.487s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.487s] -- Found rclcpp: 29.5.2 (/opt/ros/kilted/share/rclcpp/cmake)
+[1.487s] -- Found rosidl_generator_c: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_c/cmake)
+[1.487s] -- Found rosidl_generator_cpp: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_cpp/cmake)
+[1.489s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.489s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.489s] -- Found rmw_implementation_cmake: 7.8.2 (/opt/ros/kilted/share/rmw_implementation_cmake/cmake)
+[1.489s] -- Found rmw_fastrtps_cpp: 9.3.2 (/opt/ros/kilted/share/rmw_fastrtps_cpp/cmake)
+[1.489s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.489s] -- Found std_msgs: 5.5.0 (/opt/ros/kilted/share/std_msgs/cmake)
+[1.489s] -- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)
+[1.489s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.490s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.490s] -- Configured cppcheck include dirs: 
+[1.490s] -- Configured cppcheck exclude dirs and/or files: 
+[1.490s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.490s] -- Configured cpplint exclude dirs and/or files: 
+[1.490s] -- Added test 'lint_cmake' to check CMake code style
+[1.490s] -- Added test 'uncrustify' to check C / C++ code style
+[1.490s] -- Configured uncrustify additional arguments: 
+[1.490s] -- Added test 'xmllint' to check XML markup files
+[1.490s] -- Configuring done (1.3s)
+[1.490s] -- Generating done (0.0s)
+[1.492s] -- Build files have been written to: /home/ishaan/eboat_src/build/examples_rclcpp_multithreaded_executor
+[1.538s] Invoked command in '/home/ishaan/eboat_src/build/examples_rclcpp_multithreaded_executor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/ishaan/eboat_src/ros_ws/src/examples/rclcpp/executors/multithreaded_executor -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ishaan/eboat_src/install/examples_rclcpp_multithreaded_executor
+[1.538s] Invoking command in '/home/ishaan/eboat_src/build/examples_rclcpp_multithreaded_executor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --build /home/ishaan/eboat_src/build/examples_rclcpp_multithreaded_executor -- -j16 -l16
+[1.626s] [ 50%] [32mBuilding CXX object CMakeFiles/multithreaded_executor.dir/multithreaded_executor.cpp.o[0m
+[6.056s] gmake[2]: *** [CMakeFiles/multithreaded_executor.dir/build.make:76: CMakeFiles/multithreaded_executor.dir/multithreaded_executor.cpp.o] Interrupt
+[6.056s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/multithreaded_executor.dir/all] Interrupt
+[6.057s] gmake: *** [Makefile:146: all] Interrupt

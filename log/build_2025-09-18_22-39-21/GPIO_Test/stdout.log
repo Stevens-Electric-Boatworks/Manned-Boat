@@ -1,0 +1,24 @@
+running egg_info
+creating ../../../build/GPIO_Test/GPIO_Test.egg-info
+writing ../../../build/GPIO_Test/GPIO_Test.egg-info/PKG-INFO
+writing dependency_links to ../../../build/GPIO_Test/GPIO_Test.egg-info/dependency_links.txt
+writing entry points to ../../../build/GPIO_Test/GPIO_Test.egg-info/entry_points.txt
+writing requirements to ../../../build/GPIO_Test/GPIO_Test.egg-info/requires.txt
+writing top-level names to ../../../build/GPIO_Test/GPIO_Test.egg-info/top_level.txt
+writing manifest file '../../../build/GPIO_Test/GPIO_Test.egg-info/SOURCES.txt'
+reading manifest file '../../../build/GPIO_Test/GPIO_Test.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../../build/GPIO_Test/GPIO_Test.egg-info/SOURCES.txt'
+running build
+running install
+running install_data
+creating /home/ishaan/eboat_src/install/GPIO_Test/share/ament_index
+creating /home/ishaan/eboat_src/install/GPIO_Test/share/ament_index/resource_index
+creating /home/ishaan/eboat_src/install/GPIO_Test/share/ament_index/resource_index/packages
+copying resource/GPIO_Test -> /home/ishaan/eboat_src/install/GPIO_Test/share/ament_index/resource_index/packages
+copying package.xml -> /home/ishaan/eboat_src/install/GPIO_Test/share/GPIO_Test
+running install_egg_info
+Copying ../../../build/GPIO_Test/GPIO_Test.egg-info to /home/ishaan/eboat_src/install/GPIO_Test/lib/python3.12/site-packages/GPIO_Test-0.0.0-py3.12.egg-info
+running install_scripts
+Installing publisher script to /home/ishaan/eboat_src/install/GPIO_Test/lib/GPIO_Test
+writing list of installed files to '/home/ishaan/eboat_src/build/GPIO_Test/install.log'

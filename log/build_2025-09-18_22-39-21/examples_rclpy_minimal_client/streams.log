@@ -1,0 +1,48 @@
+[8.484s] Invoking command in '/home/ishaan/eboat_src/ros_ws/src/examples/rclpy/services/minimal_client': PYTHONPATH=/home/ishaan/eboat_src/build/examples_rclpy_minimal_client/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ishaan/eboat_src/install/examples_rclpy_minimal_client/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../../../build/examples_rclpy_minimal_client build --build-base /home/ishaan/eboat_src/build/examples_rclpy_minimal_client/build install --record /home/ishaan/eboat_src/build/examples_rclpy_minimal_client/install.log --single-version-externally-managed install_data
+[17.487s] running egg_info
+[17.487s] creating ../../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info
+[17.487s] writing ../../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info/PKG-INFO
+[17.488s] writing dependency_links to ../../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info/dependency_links.txt
+[17.488s] writing entry points to ../../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info/entry_points.txt
+[17.488s] writing requirements to ../../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info/requires.txt
+[17.488s] writing top-level names to ../../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info/top_level.txt
+[17.488s] writing manifest file '../../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info/SOURCES.txt'
+[17.488s] reading manifest file '../../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info/SOURCES.txt'
+[17.488s] writing manifest file '../../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info/SOURCES.txt'
+[17.488s] running build
+[17.488s] running build_py
+[17.488s] creating /home/ishaan/eboat_src/build/examples_rclpy_minimal_client/build
+[17.488s] creating /home/ishaan/eboat_src/build/examples_rclpy_minimal_client/build/lib
+[17.488s] creating /home/ishaan/eboat_src/build/examples_rclpy_minimal_client/build/lib/examples_rclpy_minimal_client
+[17.488s] copying examples_rclpy_minimal_client/client_async_callback.py -> /home/ishaan/eboat_src/build/examples_rclpy_minimal_client/build/lib/examples_rclpy_minimal_client
+[17.488s] copying examples_rclpy_minimal_client/client_async_member_function.py -> /home/ishaan/eboat_src/build/examples_rclpy_minimal_client/build/lib/examples_rclpy_minimal_client
+[17.488s] copying examples_rclpy_minimal_client/client_async.py -> /home/ishaan/eboat_src/build/examples_rclpy_minimal_client/build/lib/examples_rclpy_minimal_client
+[17.488s] copying examples_rclpy_minimal_client/client.py -> /home/ishaan/eboat_src/build/examples_rclpy_minimal_client/build/lib/examples_rclpy_minimal_client
+[17.488s] copying examples_rclpy_minimal_client/__init__.py -> /home/ishaan/eboat_src/build/examples_rclpy_minimal_client/build/lib/examples_rclpy_minimal_client
+[17.488s] running install
+[17.488s] running install_lib
+[17.489s] creating /home/ishaan/eboat_src/install/examples_rclpy_minimal_client/lib/python3.12/site-packages/examples_rclpy_minimal_client
+[17.489s] copying /home/ishaan/eboat_src/build/examples_rclpy_minimal_client/build/lib/examples_rclpy_minimal_client/client_async_callback.py -> /home/ishaan/eboat_src/install/examples_rclpy_minimal_client/lib/python3.12/site-packages/examples_rclpy_minimal_client
+[17.489s] copying /home/ishaan/eboat_src/build/examples_rclpy_minimal_client/build/lib/examples_rclpy_minimal_client/client_async_member_function.py -> /home/ishaan/eboat_src/install/examples_rclpy_minimal_client/lib/python3.12/site-packages/examples_rclpy_minimal_client
+[17.489s] copying /home/ishaan/eboat_src/build/examples_rclpy_minimal_client/build/lib/examples_rclpy_minimal_client/client_async.py -> /home/ishaan/eboat_src/install/examples_rclpy_minimal_client/lib/python3.12/site-packages/examples_rclpy_minimal_client
+[17.489s] copying /home/ishaan/eboat_src/build/examples_rclpy_minimal_client/build/lib/examples_rclpy_minimal_client/client.py -> /home/ishaan/eboat_src/install/examples_rclpy_minimal_client/lib/python3.12/site-packages/examples_rclpy_minimal_client
+[17.489s] copying /home/ishaan/eboat_src/build/examples_rclpy_minimal_client/build/lib/examples_rclpy_minimal_client/__init__.py -> /home/ishaan/eboat_src/install/examples_rclpy_minimal_client/lib/python3.12/site-packages/examples_rclpy_minimal_client
+[17.489s] byte-compiling /home/ishaan/eboat_src/install/examples_rclpy_minimal_client/lib/python3.12/site-packages/examples_rclpy_minimal_client/client_async_callback.py to client_async_callback.cpython-312.pyc
+[17.489s] byte-compiling /home/ishaan/eboat_src/install/examples_rclpy_minimal_client/lib/python3.12/site-packages/examples_rclpy_minimal_client/client_async_member_function.py to client_async_member_function.cpython-312.pyc
+[17.489s] byte-compiling /home/ishaan/eboat_src/install/examples_rclpy_minimal_client/lib/python3.12/site-packages/examples_rclpy_minimal_client/client_async.py to client_async.cpython-312.pyc
+[17.489s] byte-compiling /home/ishaan/eboat_src/install/examples_rclpy_minimal_client/lib/python3.12/site-packages/examples_rclpy_minimal_client/client.py to client.cpython-312.pyc
+[17.489s] byte-compiling /home/ishaan/eboat_src/install/examples_rclpy_minimal_client/lib/python3.12/site-packages/examples_rclpy_minimal_client/__init__.py to __init__.cpython-312.pyc
+[17.489s] running install_data
+[17.489s] creating /home/ishaan/eboat_src/install/examples_rclpy_minimal_client/share/ament_index
+[17.490s] creating /home/ishaan/eboat_src/install/examples_rclpy_minimal_client/share/ament_index/resource_index
+[17.490s] creating /home/ishaan/eboat_src/install/examples_rclpy_minimal_client/share/ament_index/resource_index/packages
+[17.490s] copying resource/examples_rclpy_minimal_client -> /home/ishaan/eboat_src/install/examples_rclpy_minimal_client/share/ament_index/resource_index/packages
+[17.490s] copying package.xml -> /home/ishaan/eboat_src/install/examples_rclpy_minimal_client/share/examples_rclpy_minimal_client
+[17.490s] running install_egg_info
+[17.490s] Copying ../../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info to /home/ishaan/eboat_src/install/examples_rclpy_minimal_client/lib/python3.12/site-packages/examples_rclpy_minimal_client-0.20.5-py3.12.egg-info
+[17.490s] running install_scripts
+[17.490s] Installing client script to /home/ishaan/eboat_src/install/examples_rclpy_minimal_client/lib/examples_rclpy_minimal_client
+[17.490s] Installing client_async script to /home/ishaan/eboat_src/install/examples_rclpy_minimal_client/lib/examples_rclpy_minimal_client
+[17.490s] Installing client_async_callback script to /home/ishaan/eboat_src/install/examples_rclpy_minimal_client/lib/examples_rclpy_minimal_client
+[17.490s] Installing client_async_member_function script to /home/ishaan/eboat_src/install/examples_rclpy_minimal_client/lib/examples_rclpy_minimal_client
+[17.490s] writing list of installed files to '/home/ishaan/eboat_src/build/examples_rclpy_minimal_client/install.log'

@@ -1,0 +1,46 @@
+[0.170s] Invoking command in '/home/ishaan/eboat_src/build/examples_rclcpp_minimal_client': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/ishaan/eboat_src/ros_ws/src/examples/rclcpp/services/minimal_client -DCMAKE_INSTALL_PREFIX=/home/ishaan/eboat_src/install/examples_rclcpp_minimal_client
+[0.547s] -- The C compiler identification is GNU 13.3.0
+[1.605s] -- The CXX compiler identification is GNU 13.3.0
+[2.719s] -- Detecting C compiler ABI info
+[3.062s] -- Detecting C compiler ABI info - done
+[3.069s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.069s] -- Detecting C compile features
+[3.070s] -- Detecting C compile features - done
+[3.193s] -- Detecting CXX compiler ABI info
+[3.524s] -- Detecting CXX compiler ABI info - done
+[3.535s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.536s] -- Detecting CXX compile features
+[3.536s] -- Detecting CXX compile features - done
+[3.537s] -- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+[3.697s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.844s] -- Found example_interfaces: 0.13.0 (/opt/ros/kilted/share/example_interfaces/cmake)
+[4.071s] -- Found rosidl_generator_c: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_c/cmake)
+[4.086s] -- Found rosidl_generator_cpp: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_cpp/cmake)
+[4.102s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.120s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.237s] -- Found rclcpp: 29.5.2 (/opt/ros/kilted/share/rclcpp/cmake)
+[4.292s] -- Found rmw_implementation_cmake: 7.8.2 (/opt/ros/kilted/share/rmw_implementation_cmake/cmake)
+[4.297s] -- Found rmw_fastrtps_cpp: 9.3.2 (/opt/ros/kilted/share/rmw_fastrtps_cpp/cmake)
+[4.421s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[4.438s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.786s] -- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)
+[4.967s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.968s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.968s] -- Configured cppcheck include dirs: 
+[4.969s] -- Configured cppcheck exclude dirs and/or files: 
+[4.969s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.969s] -- Configured cpplint exclude dirs and/or files: 
+[4.974s] -- Added test 'lint_cmake' to check CMake code style
+[4.974s] -- Added test 'uncrustify' to check C / C++ code style
+[4.975s] -- Configured uncrustify additional arguments: 
+[4.975s] -- Added test 'xmllint' to check XML markup files
+[4.975s] -- Configuring done (4.8s)
+[4.987s] -- Generating done (0.0s)
+[4.993s] -- Build files have been written to: /home/ishaan/eboat_src/build/examples_rclcpp_minimal_client
+[5.954s] Invoked command in '/home/ishaan/eboat_src/build/examples_rclcpp_minimal_client' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/ishaan/eboat_src/ros_ws/src/examples/rclcpp/services/minimal_client -DCMAKE_INSTALL_PREFIX=/home/ishaan/eboat_src/install/examples_rclcpp_minimal_client
+[5.954s] Invoking command in '/home/ishaan/eboat_src/build/examples_rclcpp_minimal_client': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --build /home/ishaan/eboat_src/build/examples_rclcpp_minimal_client -- -j16 -l16
+[6.156s] [ 50%] [32mBuilding CXX object CMakeFiles/client_main.dir/main.cpp.o[0m
+[22.290s] gmake[2]: *** [CMakeFiles/client_main.dir/build.make:76: CMakeFiles/client_main.dir/main.cpp.o] Interrupt
+[22.291s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/client_main.dir/all] Interrupt
+[22.291s] gmake: *** [Makefile:146: all] Interrupt
+[22.417s] Invoked command in '/home/ishaan/eboat_src/build/examples_rclcpp_minimal_client' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --build /home/ishaan/eboat_src/build/examples_rclcpp_minimal_client -- -j16 -l16

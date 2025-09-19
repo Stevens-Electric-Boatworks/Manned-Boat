@@ -1,0 +1,7 @@
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/timer_member_function.dir/all] Error 2
+gmake[2]: *** [CMakeFiles/timer_lambda.dir/build.make:76: CMakeFiles/timer_lambda.dir/lambda.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/timer_lambda.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

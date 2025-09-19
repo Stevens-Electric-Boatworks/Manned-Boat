@@ -1,0 +1,35 @@
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:209: CMakeFiles/subscriber_member_function_with_topic_statistics.dir/all] Error 2
+gmake[2]: *** [CMakeFiles/subscriber_member_function_with_type_adapter.dir/build.make:76: CMakeFiles/subscriber_member_function_with_type_adapter.dir/member_function_with_type_adapter.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:235: CMakeFiles/subscriber_member_function_with_type_adapter.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/wait_set_subscriber_library.dir/build.make:90: CMakeFiles/wait_set_subscriber_library.dir/static_wait_set_subscriber.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/subscriber_content_filtering.dir/build.make:76: CMakeFiles/subscriber_content_filtering.dir/content_filtering.cpp.o] Interrupt
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** [CMakeFiles/time_triggered_wait_set_subscriber.dir/build.make:76: CMakeFiles/time_triggered_wait_set_subscriber.dir/rclcpp_components/node_main_time_triggered_wait_set_subscriber.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:157: CMakeFiles/subscriber_lambda.dir/all] Error 2
+gmake[1]: *** [CMakeFiles/Makefile2:313: CMakeFiles/subscriber_content_filtering.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/subscriber_member_function_with_unique_network_flow_endpoints.dir/build.make:76: CMakeFiles/subscriber_member_function_with_unique_network_flow_endpoints.dir/member_function_with_unique_network_flow_endpoints.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:417: CMakeFiles/time_triggered_wait_set_subscriber.dir/all] Interrupt
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:261: CMakeFiles/subscriber_member_function_with_unique_network_flow_endpoints.dir/all] Interrupt
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:287: CMakeFiles/subscriber_not_composable.dir/all] Error 2
+gmake[2]: *** [CMakeFiles/wait_set_subscriber_library.dir/build.make:104: CMakeFiles/wait_set_subscriber_library.dir/time_triggered_wait_set_subscriber.cpp.o] Interrupt
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:339: CMakeFiles/wait_set_subscriber_library.dir/all] Error 2
+gmake[1]: *** [CMakeFiles/Makefile2:391: CMakeFiles/static_wait_set_subscriber.dir/all] Error 2
+gmake[2]: *** [CMakeFiles/subscriber_member_function.dir/build.make:76: CMakeFiles/subscriber_member_function.dir/member_function.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/wait_set_subscriber.dir/build.make:76: CMakeFiles/wait_set_subscriber.dir/rclcpp_components/node_main_wait_set_subscriber.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:183: CMakeFiles/subscriber_member_function.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:365: CMakeFiles/wait_set_subscriber.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

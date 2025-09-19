@@ -1,0 +1,3 @@
+[1.779s] Invoking command in '/home/ishaan/eboat_src/build/examples_rclpy_guard_conditions': PYTHONPATH=/home/ishaan/eboat_src/build/examples_rclpy_guard_conditions/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ishaan/eboat_src/install/examples_rclpy_guard_conditions/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ishaan/eboat_src/build/examples_rclpy_guard_conditions/build --no-deps symlink_data --force
+[6.114s] running develop
+[6.114s] interrupted

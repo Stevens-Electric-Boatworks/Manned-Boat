@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/ishaan/eboat_src/ros_ws/src/examples/rclcpp/wait_set" FILES "/opt/ros/kilted/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/examples_rclcpp_wait_set/environment")

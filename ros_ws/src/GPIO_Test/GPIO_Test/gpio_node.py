@@ -15,7 +15,7 @@ class GPIOMinimalService(Node):
         msg = GPIOResult()
         msg.temp = int(self.i)
         self.publisher_.publish(msg)
-        self.get_logger().info('Publishing: "%s"' % msg.temp)
+        self.get_logger().info('PublishinP~g: "%s"' % msg.temp)
         self.i += 1
 
 def main(args=None):

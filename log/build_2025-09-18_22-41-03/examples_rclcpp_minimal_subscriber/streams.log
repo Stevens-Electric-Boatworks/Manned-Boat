@@ -1,0 +1,77 @@
+[0.176s] Invoking command in '/home/ishaan/eboat_src/build/examples_rclcpp_minimal_subscriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/ishaan/eboat_src/ros_ws/src/examples/rclcpp/topics/minimal_subscriber -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ishaan/eboat_src/install/examples_rclcpp_minimal_subscriber
+[0.940s] -- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+[0.941s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.941s] -- Found rclcpp: 29.5.2 (/opt/ros/kilted/share/rclcpp/cmake)
+[0.942s] -- Found rosidl_generator_c: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_c/cmake)
+[0.942s] -- Found rosidl_generator_cpp: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_cpp/cmake)
+[0.943s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.943s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.943s] -- Found rmw_implementation_cmake: 7.8.2 (/opt/ros/kilted/share/rmw_implementation_cmake/cmake)
+[0.944s] -- Found rmw_fastrtps_cpp: 9.3.2 (/opt/ros/kilted/share/rmw_fastrtps_cpp/cmake)
+[0.944s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.240s] -- Found rclcpp_components: 29.5.2 (/opt/ros/kilted/share/rclcpp_components/cmake)
+[1.278s] -- Found std_msgs: 5.5.0 (/opt/ros/kilted/share/std_msgs/cmake)
+[1.300s] -- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)
+[1.476s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.480s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.480s] -- Configured cppcheck include dirs: 
+[1.480s] -- Configured cppcheck exclude dirs and/or files: 
+[1.480s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.480s] -- Configured cpplint exclude dirs and/or files: 
+[1.480s] -- Added test 'lint_cmake' to check CMake code style
+[1.480s] -- Added test 'uncrustify' to check C / C++ code style
+[1.480s] -- Configured uncrustify additional arguments: 
+[1.480s] -- Added test 'xmllint' to check XML markup files
+[1.483s] -- Configuring done (1.3s)
+[1.569s] -- Generating done (0.1s)
+[1.597s] -- Build files have been written to: /home/ishaan/eboat_src/build/examples_rclcpp_minimal_subscriber
+[1.641s] Invoked command in '/home/ishaan/eboat_src/build/examples_rclcpp_minimal_subscriber' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/ishaan/eboat_src/ros_ws/src/examples/rclcpp/topics/minimal_subscriber -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ishaan/eboat_src/install/examples_rclcpp_minimal_subscriber
+[1.641s] Invoking command in '/home/ishaan/eboat_src/build/examples_rclcpp_minimal_subscriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --build /home/ishaan/eboat_src/build/examples_rclcpp_minimal_subscriber -- -j16 -l16
+[1.786s] [  4%] [32mBuilding CXX object CMakeFiles/subscriber_lambda.dir/lambda.cpp.o[0m
+[1.787s] [  8%] [32mBuilding CXX object CMakeFiles/subscriber_member_function.dir/member_function.cpp.o[0m
+[1.799s] [ 12%] [32mBuilding CXX object CMakeFiles/subscriber_member_function_with_unique_network_flow_endpoints.dir/member_function_with_unique_network_flow_endpoints.cpp.o[0m
+[1.811s] [ 16%] [32mBuilding CXX object CMakeFiles/subscriber_member_function_with_topic_statistics.dir/member_function_with_topic_statistics.cpp.o[0m
+[1.817s] [ 20%] [32mBuilding CXX object CMakeFiles/wait_set_subscriber_library.dir/wait_set_subscriber.cpp.o[0m
+[1.827s] [ 29%] [32mBuilding CXX object CMakeFiles/subscriber_content_filtering.dir/content_filtering.cpp.o[0m
+[1.830s] [ 29%] [32mBuilding CXX object CMakeFiles/wait_set_subscriber_library.dir/static_wait_set_subscriber.cpp.o[0m
+[1.831s] [ 33%] [32mBuilding CXX object CMakeFiles/wait_set_subscriber_library.dir/time_triggered_wait_set_subscriber.cpp.o[0m
+[1.832s] [ 37%] [32mBuilding CXX object CMakeFiles/subscriber_member_function_with_type_adapter.dir/member_function_with_type_adapter.cpp.o[0m
+[1.837s] [ 41%] [32mBuilding CXX object CMakeFiles/subscriber_not_composable.dir/not_composable.cpp.o[0m
+[1.854s] [ 45%] [32mBuilding CXX object CMakeFiles/wait_set_subscriber.dir/rclcpp_components/node_main_wait_set_subscriber.cpp.o[0m
+[1.856s] [ 50%] [32mBuilding CXX object CMakeFiles/static_wait_set_subscriber.dir/rclcpp_components/node_main_static_wait_set_subscriber.cpp.o[0m
+[1.905s] [ 54%] [32mBuilding CXX object CMakeFiles/time_triggered_wait_set_subscriber.dir/rclcpp_components/node_main_time_triggered_wait_set_subscriber.cpp.o[0m
+[6.037s] gmake[2]: *** wait: No child processes.  Stop.
+[6.038s] gmake[2]: *** Waiting for unfinished jobs....
+[6.038s] gmake[2]: *** wait: No child processes.  Stop.
+[6.038s] gmake[1]: *** [CMakeFiles/Makefile2:209: CMakeFiles/subscriber_member_function_with_topic_statistics.dir/all] Error 2
+[6.038s] gmake[2]: *** [CMakeFiles/subscriber_member_function_with_type_adapter.dir/build.make:76: CMakeFiles/subscriber_member_function_with_type_adapter.dir/member_function_with_type_adapter.cpp.o] Interrupt
+[6.038s] gmake[1]: *** [CMakeFiles/Makefile2:235: CMakeFiles/subscriber_member_function_with_type_adapter.dir/all] Interrupt
+[6.038s] gmake[2]: *** [CMakeFiles/wait_set_subscriber_library.dir/build.make:90: CMakeFiles/wait_set_subscriber_library.dir/static_wait_set_subscriber.cpp.o] Interrupt
+[6.038s] gmake[2]: *** [CMakeFiles/subscriber_content_filtering.dir/build.make:76: CMakeFiles/subscriber_content_filtering.dir/content_filtering.cpp.o] Interrupt
+[6.038s] gmake[2]: *** wait: No child processes.  Stop.
+[6.038s] gmake[2]: *** Waiting for unfinished jobs....
+[6.038s] gmake[2]: *** wait: No child processes.  Stop.
+[6.038s] gmake[2]: *** [CMakeFiles/time_triggered_wait_set_subscriber.dir/build.make:76: CMakeFiles/time_triggered_wait_set_subscriber.dir/rclcpp_components/node_main_time_triggered_wait_set_subscriber.cpp.o] Interrupt
+[6.038s] gmake[1]: *** [CMakeFiles/Makefile2:157: CMakeFiles/subscriber_lambda.dir/all] Error 2
+[6.038s] gmake[1]: *** [CMakeFiles/Makefile2:313: CMakeFiles/subscriber_content_filtering.dir/all] Interrupt
+[6.039s] gmake[2]: *** [CMakeFiles/subscriber_member_function_with_unique_network_flow_endpoints.dir/build.make:76: CMakeFiles/subscriber_member_function_with_unique_network_flow_endpoints.dir/member_function_with_unique_network_flow_endpoints.cpp.o] Interrupt
+[6.039s] gmake[1]: *** [CMakeFiles/Makefile2:417: CMakeFiles/time_triggered_wait_set_subscriber.dir/all] Interrupt
+[6.039s] gmake[2]: *** wait: No child processes.  Stop.
+[6.039s] gmake[2]: *** Waiting for unfinished jobs....
+[6.039s] gmake[2]: *** wait: No child processes.  Stop.
+[6.039s] gmake[1]: *** [CMakeFiles/Makefile2:261: CMakeFiles/subscriber_member_function_with_unique_network_flow_endpoints.dir/all] Interrupt
+[6.039s] gmake[2]: *** wait: No child processes.  Stop.
+[6.044s] gmake[2]: *** Waiting for unfinished jobs....
+[6.056s] gmake[2]: *** wait: No child processes.  Stop.
+[6.056s] gmake[1]: *** [CMakeFiles/Makefile2:287: CMakeFiles/subscriber_not_composable.dir/all] Error 2
+[6.056s] gmake[2]: *** [CMakeFiles/wait_set_subscriber_library.dir/build.make:104: CMakeFiles/wait_set_subscriber_library.dir/time_triggered_wait_set_subscriber.cpp.o] Interrupt
+[6.056s] gmake[2]: *** wait: No child processes.  Stop.
+[6.058s] gmake[2]: *** Waiting for unfinished jobs....
+[6.058s] gmake[2]: *** wait: No child processes.  Stop.
+[6.058s] gmake[1]: *** [CMakeFiles/Makefile2:339: CMakeFiles/wait_set_subscriber_library.dir/all] Error 2
+[6.058s] gmake[1]: *** [CMakeFiles/Makefile2:391: CMakeFiles/static_wait_set_subscriber.dir/all] Error 2
+[6.060s] gmake[2]: *** [CMakeFiles/subscriber_member_function.dir/build.make:76: CMakeFiles/subscriber_member_function.dir/member_function.cpp.o] Interrupt
+[6.060s] gmake[2]: *** [CMakeFiles/wait_set_subscriber.dir/build.make:76: CMakeFiles/wait_set_subscriber.dir/rclcpp_components/node_main_wait_set_subscriber.cpp.o] Interrupt
+[6.060s] gmake[1]: *** [CMakeFiles/Makefile2:183: CMakeFiles/subscriber_member_function.dir/all] Interrupt
+[6.061s] gmake[1]: *** [CMakeFiles/Makefile2:365: CMakeFiles/wait_set_subscriber.dir/all] Interrupt
+[6.061s] gmake: *** [Makefile:146: all] Interrupt

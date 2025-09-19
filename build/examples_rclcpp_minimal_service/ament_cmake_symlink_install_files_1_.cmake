@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/ishaan/eboat_src/ros_ws/src/examples/rclcpp/services/minimal_service" FILES "/home/ishaan/eboat_src/build/examples_rclcpp_minimal_service/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_minimal_service" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")

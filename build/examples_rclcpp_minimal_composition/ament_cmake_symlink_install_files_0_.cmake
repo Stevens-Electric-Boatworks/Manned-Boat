@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/ishaan/eboat_src/ros_ws/src/examples/rclcpp/composition/minimal_composition" FILES "/opt/ros/kilted/lib/python3.12/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/examples_rclcpp_minimal_composition/environment")

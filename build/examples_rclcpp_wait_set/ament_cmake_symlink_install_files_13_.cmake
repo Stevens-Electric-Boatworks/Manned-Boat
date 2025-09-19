@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/ishaan/eboat_src/ros_ws/src/examples/rclcpp/wait_set" FILES "/home/ishaan/eboat_src/build/examples_rclcpp_wait_set/ament_cmake_core/examples_rclcpp_wait_setConfig.cmake" "/home/ishaan/eboat_src/build/examples_rclcpp_wait_set/ament_cmake_core/examples_rclcpp_wait_setConfig-version.cmake" "DESTINATION" "share/examples_rclcpp_wait_set/cmake")

@@ -1,0 +1,15 @@
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** [CMakeFiles/action_client_not_composable_with_feedback.dir/build.make:76: CMakeFiles/action_client_not_composable_with_feedback.dir/not_composable_with_feedback.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/action_client_member_functions.dir/all] Error 2
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/action_client_not_composable_with_feedback.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/action_client_not_composable.dir/all] Error 2
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/action_client_not_composable_with_cancel.dir/all] Error 2
+gmake: *** [Makefile:146: all] Interrupt

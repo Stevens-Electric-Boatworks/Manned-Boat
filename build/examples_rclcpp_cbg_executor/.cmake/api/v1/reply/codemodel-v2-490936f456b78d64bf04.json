@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-2670e9a0aa1d7c8f2a03.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "examples_rclcpp_cbg_executor",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "examples_rclcpp_cbg_executor_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-examples_rclcpp_cbg_executor_uninstall-a841c44f875215819529.json",
+					"name" : "examples_rclcpp_cbg_executor_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ping::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ping-0b4eea1a07075ab6cad7.json",
+					"name" : "ping",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ping_pong::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ping_pong-07dbe5cb480613423fcf.json",
+					"name" : "ping_pong",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pong::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pong-e336458719b8624db953.json",
+					"name" : "pong",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-4dd3c324a3a1c884dce0.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ishaan/eboat_src/build/examples_rclcpp_cbg_executor",
+		"source" : "/home/ishaan/eboat_src/ros_ws/src/examples/rclcpp/executors/cbg_executor"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

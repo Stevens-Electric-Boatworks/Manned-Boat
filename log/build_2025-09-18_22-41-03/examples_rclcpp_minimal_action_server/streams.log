@@ -1,0 +1,40 @@
+[0.174s] Invoking command in '/home/ishaan/eboat_src/build/examples_rclcpp_minimal_action_server': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/ishaan/eboat_src/ros_ws/src/examples/rclcpp/actions/minimal_action_server -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ishaan/eboat_src/install/examples_rclcpp_minimal_action_server
+[0.909s] -- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+[0.909s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.910s] -- Found example_interfaces: 0.13.0 (/opt/ros/kilted/share/example_interfaces/cmake)
+[0.910s] -- Found rosidl_generator_c: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_c/cmake)
+[0.910s] -- Found rosidl_generator_cpp: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_cpp/cmake)
+[0.911s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.911s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.915s] -- Found rclcpp: 29.5.2 (/opt/ros/kilted/share/rclcpp/cmake)
+[0.962s] -- Found rmw_implementation_cmake: 7.8.2 (/opt/ros/kilted/share/rmw_implementation_cmake/cmake)
+[0.963s] -- Found rmw_fastrtps_cpp: 9.3.2 (/opt/ros/kilted/share/rmw_fastrtps_cpp/cmake)
+[1.009s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.331s] -- Found rclcpp_action: 29.5.2 (/opt/ros/kilted/share/rclcpp_action/cmake)
+[1.348s] -- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)
+[1.567s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.571s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.571s] -- Configured cppcheck include dirs: 
+[1.571s] -- Configured cppcheck exclude dirs and/or files: 
+[1.573s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.573s] -- Configured cpplint exclude dirs and/or files: 
+[1.573s] -- Added test 'lint_cmake' to check CMake code style
+[1.574s] -- Added test 'uncrustify' to check C / C++ code style
+[1.574s] -- Configured uncrustify additional arguments: 
+[1.580s] -- Added test 'xmllint' to check XML markup files
+[1.580s] -- Configuring done (1.4s)
+[1.607s] -- Generating done (0.0s)
+[1.623s] -- Build files have been written to: /home/ishaan/eboat_src/build/examples_rclcpp_minimal_action_server
+[1.654s] Invoked command in '/home/ishaan/eboat_src/build/examples_rclcpp_minimal_action_server' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/ishaan/eboat_src/ros_ws/src/examples/rclcpp/actions/minimal_action_server -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ishaan/eboat_src/install/examples_rclcpp_minimal_action_server
+[1.660s] Invoking command in '/home/ishaan/eboat_src/build/examples_rclcpp_minimal_action_server': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --build /home/ishaan/eboat_src/build/examples_rclcpp_minimal_action_server -- -j16 -l16
+[1.822s] [ 25%] [32mBuilding CXX object CMakeFiles/action_server_member_functions.dir/member_functions.cpp.o[0m
+[1.848s] [ 50%] [32mBuilding CXX object CMakeFiles/action_server_not_composable.dir/not_composable.cpp.o[0m
+[6.069s] gmake[2]: *** wait: No child processes.  Stop.
+[6.069s] gmake[2]: *** Waiting for unfinished jobs....
+[6.069s] gmake[2]: *** wait: No child processes.  Stop.
+[6.069s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/action_server_not_composable.dir/all] Error 2
+[6.069s] gmake[2]: *** wait: No child processes.  Stop.
+[6.069s] gmake[2]: *** Waiting for unfinished jobs....
+[6.069s] gmake[2]: *** wait: No child processes.  Stop.
+[6.069s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/action_server_member_functions.dir/all] Error 2
+[6.069s] gmake: *** [Makefile:146: all] Interrupt

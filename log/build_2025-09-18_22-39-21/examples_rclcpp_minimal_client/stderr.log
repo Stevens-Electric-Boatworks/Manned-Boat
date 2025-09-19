@@ -1,0 +1,3 @@
+gmake[2]: *** [CMakeFiles/client_main.dir/build.make:76: CMakeFiles/client_main.dir/main.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/client_main.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

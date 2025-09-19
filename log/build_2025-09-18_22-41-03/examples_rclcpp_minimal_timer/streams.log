@@ -1,0 +1,36 @@
+[0.176s] Invoking command in '/home/ishaan/eboat_src/build/examples_rclcpp_minimal_timer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/ishaan/eboat_src/ros_ws/src/examples/rclcpp/timers/minimal_timer -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ishaan/eboat_src/install/examples_rclcpp_minimal_timer
+[0.947s] -- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+[0.948s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.949s] -- Found rclcpp: 29.5.2 (/opt/ros/kilted/share/rclcpp/cmake)
+[0.949s] -- Found rosidl_generator_c: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_c/cmake)
+[0.949s] -- Found rosidl_generator_cpp: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_cpp/cmake)
+[0.949s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.949s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.949s] -- Found rmw_implementation_cmake: 7.8.2 (/opt/ros/kilted/share/rmw_implementation_cmake/cmake)
+[0.949s] -- Found rmw_fastrtps_cpp: 9.3.2 (/opt/ros/kilted/share/rmw_fastrtps_cpp/cmake)
+[0.949s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.238s] -- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)
+[1.418s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.418s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.418s] -- Configured cppcheck include dirs: 
+[1.418s] -- Configured cppcheck exclude dirs and/or files: 
+[1.419s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.419s] -- Configured cpplint exclude dirs and/or files: 
+[1.419s] -- Added test 'lint_cmake' to check CMake code style
+[1.423s] -- Added test 'uncrustify' to check C / C++ code style
+[1.423s] -- Configured uncrustify additional arguments: 
+[1.423s] -- Added test 'xmllint' to check XML markup files
+[1.425s] -- Configuring done (1.2s)
+[1.458s] -- Generating done (0.0s)
+[1.467s] -- Build files have been written to: /home/ishaan/eboat_src/build/examples_rclcpp_minimal_timer
+[1.493s] Invoked command in '/home/ishaan/eboat_src/build/examples_rclcpp_minimal_timer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/ishaan/eboat_src/ros_ws/src/examples/rclcpp/timers/minimal_timer -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ishaan/eboat_src/install/examples_rclcpp_minimal_timer
+[1.494s] Invoking command in '/home/ishaan/eboat_src/build/examples_rclcpp_minimal_timer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --build /home/ishaan/eboat_src/build/examples_rclcpp_minimal_timer -- -j16 -l16
+[1.597s] [ 25%] [32mBuilding CXX object CMakeFiles/timer_lambda.dir/lambda.cpp.o[0m
+[1.612s] [ 50%] [32mBuilding CXX object CMakeFiles/timer_member_function.dir/member_function.cpp.o[0m
+[6.059s] gmake[2]: *** wait: No child processes.  Stop.
+[6.059s] gmake[2]: *** Waiting for unfinished jobs....
+[6.059s] gmake[2]: *** wait: No child processes.  Stop.
+[6.059s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/timer_member_function.dir/all] Error 2
+[6.059s] gmake[2]: *** [CMakeFiles/timer_lambda.dir/build.make:76: CMakeFiles/timer_lambda.dir/lambda.cpp.o] Interrupt
+[6.059s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/timer_lambda.dir/all] Interrupt
+[6.059s] gmake: *** [Makefile:146: all] Interrupt

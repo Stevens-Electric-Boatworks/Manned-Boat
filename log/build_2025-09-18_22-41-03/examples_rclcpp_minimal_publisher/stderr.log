@@ -1,0 +1,17 @@
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/publisher_member_function_with_type_adapter.dir/all] Error 2
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/publisher_lambda.dir/all] Error 2
+gmake[2]: *** [CMakeFiles/publisher_wait_for_all_acked.dir/build.make:76: CMakeFiles/publisher_wait_for_all_acked.dir/member_function_with_wait_for_all_acked.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/publisher_wait_for_all_acked.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/publisher_member_function.dir/build.make:76: CMakeFiles/publisher_member_function.dir/member_function.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:173: CMakeFiles/publisher_member_function.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/publisher_not_composable.dir/build.make:76: CMakeFiles/publisher_not_composable.dir/not_composable.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/publisher_not_composable.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/publisher_member_function_with_unique_network_flow_endpoints.dir/build.make:76: CMakeFiles/publisher_member_function_with_unique_network_flow_endpoints.dir/member_function_with_unique_network_flow_endpoints.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:225: CMakeFiles/publisher_member_function_with_unique_network_flow_endpoints.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

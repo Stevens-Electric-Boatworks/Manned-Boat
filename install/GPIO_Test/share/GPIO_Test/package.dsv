@@ -1,0 +1,6 @@
+source;share/GPIO_Test/hook/pythonpath.ps1
+source;share/GPIO_Test/hook/pythonpath.dsv
+source;share/GPIO_Test/hook/pythonpath.sh
+source;share/GPIO_Test/hook/ament_prefix_path.ps1
+source;share/GPIO_Test/hook/ament_prefix_path.dsv
+source;share/GPIO_Test/hook/ament_prefix_path.sh

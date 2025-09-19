@@ -1,0 +1,3 @@
+[0.000000] (-) TimerEvent: {}
+[0.001504] (-) JobUnselected: {'identifier': 'GPIO_Test'}
+[0.002970] (-) EventReactorShutdown: {}

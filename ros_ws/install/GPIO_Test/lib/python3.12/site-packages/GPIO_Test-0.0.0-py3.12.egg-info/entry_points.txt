@@ -1,0 +1,2 @@
+[console_scripts]
+publisher = GPIO_Test.gpio_node:main

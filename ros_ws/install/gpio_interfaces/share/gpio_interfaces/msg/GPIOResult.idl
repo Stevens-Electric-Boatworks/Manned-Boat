@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from gpio_interfaces/msg/GPIOResult.msg
+// generated code does not contain a copyright notice
+
+
+module gpio_interfaces {
+  module msg {
+    struct GPIOResult {
+      int64 temp;
+    };
+  };
+};

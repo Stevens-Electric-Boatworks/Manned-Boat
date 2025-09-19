@@ -58,6 +58,23 @@ The ROS version used is [Kilted Kaiju](https://docs.ros.org/en/kilted/Installati
   * `rosdep install --from-paths src/ros2_canopen --ignore-src -r -y`
   * `colcon build` (this will take a while!!!)
 
+ 
+
+Run on ROS2 instance
+```
+sudo apt-get install -y ros-kilted-rosbridge-server
+sudo apt-get install -y ros-kilted-tf2-web-republisher
+sudo apt install python3-roslaunch
+```
+
+
+Run services before running other thing
+```
+roslaunch rosbridge_server rosbridge_websocket.launch
+rosrun tf2_web_republisher tf2_web_republisher
+```
+
+
 **End of steps as of 9/16/2025
 
 

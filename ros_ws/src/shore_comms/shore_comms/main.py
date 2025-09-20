@@ -3,7 +3,7 @@ from rclpy.executors import ExternalShutdownException
 import rclpy.logging
 from rclpy.node import Node
 
-from boat_data_interfaces.msg import ElectricalData, MotionData
+from boat_data_interfaces.msg import ElectricalData, MotionData, MotorData
 
 #Websockets
 import asyncio
@@ -16,7 +16,7 @@ import threading
 
 
 SHORE_URI = "wss://eboat.thiagoja.com/api"
-DATA_SEND = 0.35
+DATA_SEND = 0.15
 
 class ShoreDataCollector(Node):
     
@@ -25,6 +25,8 @@ class ShoreDataCollector(Node):
         self.data = {};
         self.create_sub(ElectricalData, "/electrical/all_sensors", self.electrical_collector)
         self.create_sub(MotionData, "/motion/all_sensors", self.motion_collector)
+        self.create_sub(MotorData, "/motors/all_sensors", self.motor_collector)
+
         threading.Thread(target=self.run_asyncio_loop, daemon=True).start()
 
     
@@ -57,12 +59,13 @@ class ShoreDataCollector(Node):
             self.get_logger().error("Attempted URI: " + SHORE_URI + ". SHUTTING DOWN...")
             self.destroy_node()
 
+        await self.sendData(False)
         while(True):
-            await self.sendData()
+            await self.sendData(True)
             await asyncio.sleep(DATA_SEND)
     
-    async def sendData(self):
-        if len(self.data) == 0:
+    async def sendData(self, ignore_empty):
+        if len(self.data) == 0 and ignore_empty:
             return
         outputData = {
             "type": "data",
@@ -91,6 +94,11 @@ class ShoreDataCollector(Node):
         self.addData("imu_y", msg.imu_y)
         self.addData("imu_z", msg.imu_z)
         self.addData("speed", msg.speed)
+
+    def motor_collector(self, msg:MotorData):
+        self.addData("rpm_a", msg.rpm_a)
+        self.addData("rpm_b", msg.rpm_b)
+        self.addData("propulsion_angle", msg.propulsion_angle)
 
 
 

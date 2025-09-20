@@ -10,7 +10,7 @@ class MotionNode(Node):
     def __init__(self):
         super().__init__('motion_node_test')
         self.publisher_ = self.create_publisher(MotionData, '/motion/all_sensors', 10)
-        timer_period = random.random() * 0.75
+        timer_period = random.random() * 0.2
         self._logger.info("Sending test data at a period of " + str(timer_period))
         self.timer = self.create_timer(timer_period, self.timer_callback)
 

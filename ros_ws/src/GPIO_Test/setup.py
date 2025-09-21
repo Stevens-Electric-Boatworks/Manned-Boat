@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'publisher = GPIO_Test.gpio_node:main'
+            'test = GPIO_Test.gpio_node:main'
         ],
     },
 )

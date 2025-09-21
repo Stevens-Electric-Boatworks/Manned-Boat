@@ -1,0 +1,18 @@
+%YAML 1.2
+---
+launch:
+  - node:
+      pkg: "shore_comms"
+      exec: "shore"
+      name: "shore_comms"
+
+  - node:
+      pkg: "electrical_node_test"
+      exec: "test"
+      name: "test_electrical_node"
+
+
+  - node:
+      pkg: "motor_node_test"
+      exec: "test"
+      name: "motor_node"

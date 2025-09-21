@@ -1,3 +1,4 @@
+from websockets.exceptions import ConnectionClosed
 import rclpy
 from rclpy.executors import ExternalShutdownException
 import rclpy.logging
@@ -51,18 +52,22 @@ class ShoreDataCollector(Node):
         """
         Starts the background task to send the data to the shore server. Is automatically called every 100ms
         """
-        self.get_logger().info("Started the background task to send logging data to the shore.")
-
-        self.websocket = await connect(SHORE_URI)
-        if self.websocket.open == False:
-            self.get_logger().error("Unable to open a connect to the shore server.")
-            self.get_logger().error("Attempted URI: " + SHORE_URI + ". SHUTTING DOWN...")
-            self.destroy_node()
-
-        await self.sendData(False)
-        while(True):
-            await self.sendData(True)
-            await asyncio.sleep(DATA_SEND)
+        self.get_logger().info(f"Attempting to connect to the Shore Server via a Websocket at {SHORE_URI}")
+        async for self.websocket in connect(SHORE_URI):
+            try:
+                if self.websocket.open == False:
+                    self.get_logger().error("Unable to open a connect to the shore server.")
+                    self.get_logger().error(f"Attempted URI: {SHORE_URI}. SHUTTING DOWN...")
+                    self.destroy_node()
+                await self.sendData(False)
+                self.get_logger().info(f"Connected to the websocket at {SHORE_URI}")
+                while(True):
+                    await self.sendData(True)
+                    await asyncio.sleep(DATA_SEND)
+            except ConnectionClosed as e:
+                self.get_logger().error(f"Unable to start the connection: {e.reason}")
+                continue
+            
     
     async def sendData(self, ignore_empty):
         if len(self.data) == 0 and ignore_empty:

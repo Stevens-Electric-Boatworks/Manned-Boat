@@ -11,8 +11,12 @@ launch:
       exec: "test"
       name: "test_electrical_node"
 
-
   - node:
       pkg: "motor_node_test"
       exec: "test"
       name: "motor_node"
+
+  - node:
+      pkg: "motion_node_test"
+      exec: "test"
+      name: "motion_node"

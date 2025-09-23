@@ -1,7 +1,8 @@
 import rclpy
 from rclpy.executors import ExternalShutdownException
 from rclpy.node import Node
-from boat_data_interfaces.msg import MotorData # type: ignore
+from builtin_interfaces.msg import Time
+from boat_data_interfaces.msg import MotorData, BoatAlarm # type: ignore
 
 import random
 import json
@@ -9,10 +10,12 @@ import json
 class MotorNode(Node):
     def __init__(self):
         super().__init__('motor_node')
-        self.publisher_ = self.create_publisher(MotorData, '/motors/all_sensors', 10)
+        self.sensor_publisher_ = self.create_publisher(MotorData, '/motors/all_sensors', 10)
+        self.alarm_publisher_ = self.create_publisher(BoatAlarm, '/all_alarms', 10)
         timer_period = random.random() * 0.2
         self._logger.info("Sending test data at a period of " + str(timer_period))
-        self.timer = self.create_timer(timer_period, self.timer_callback)
+        self.sensor_timer = self.create_timer(timer_period, self.timer_callback)
+        self.alarm_timer = self.create_timer(2, self.alarm_callback)
 
     def timer_callback(self):
         msg = MotorData()
@@ -21,7 +24,14 @@ class MotorNode(Node):
         # Make sure it is a float, or else you will get an eror without a stacktrace
         msg.propulsion_angle = float(random.randint(-90, 90))
 
-        self.publisher_.publish(msg)
+        self.sensor_publisher_.publish(msg)
+    
+    def alarm_callback(self):
+        msg = BoatAlarm()
+        msg.error_code = random.randint(0, 1)
+        msg.timestamp = self.get_clock().now().to_msg()
+        self._logger.info("Sending alarm of " + str(msg))
+        self.alarm_publisher_.publish(msg)
 
 
 def main(args=None):

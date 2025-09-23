@@ -1,7 +1,7 @@
 import rclpy
 from rclpy.executors import ExternalShutdownException
 from rclpy.node import Node
-from boat_data_interfaces.msg import MotionData # type: ignore
+from boat_data_interfaces.msg import MotionData, BoatAlarm # type: ignore
 
 import random
 import json
@@ -10,9 +10,12 @@ class MotionNode(Node):
     def __init__(self):
         super().__init__('motion_node_test')
         self.publisher_ = self.create_publisher(MotionData, '/motion/all_sensors', 10)
+        self.alarm_publisher_ = self.create_publisher(BoatAlarm, '/all_alarms', 10)
         timer_period = random.random() * 0.2
         self._logger.info("Sending test data at a period of " + str(timer_period))
         self.timer = self.create_timer(timer_period, self.timer_callback)
+        self.alarm_timer = self.create_timer(2, self.alarm_callback)
+
 
     def timer_callback(self):
         msg = MotionData()
@@ -27,6 +30,13 @@ class MotionNode(Node):
         msg.imu_z = -90 + random.random() * 180
 
         self.publisher_.publish(msg)
+
+    def alarm_callback(self):
+        msg = BoatAlarm()
+        msg.error_code = random.randint(3, 4)
+        msg.timestamp = self.get_clock().now().to_msg()
+        self._logger.info("Sending alarm of " + str(msg))
+        self.alarm_publisher_.publish(msg)
 
 
 def main(args=None):

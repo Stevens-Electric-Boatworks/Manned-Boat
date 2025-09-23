@@ -1,0 +1,25 @@
+[1.544s] Invoking command in '/home/ishaan/eboat_src/ros_ws/src/shore_comms': PYTHONPATH=/home/ishaan/eboat_src/ros_ws/src/build/shore_comms/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ishaan/eboat_src/ros_ws/src/install/shore_comms/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/shore_comms build --build-base /home/ishaan/eboat_src/ros_ws/src/build/shore_comms/build install --record /home/ishaan/eboat_src/ros_ws/src/build/shore_comms/install.log --single-version-externally-managed install_data
+[2.009s] running egg_info
+[2.045s] writing ../build/shore_comms/shore_comms.egg-info/PKG-INFO
+[2.046s] writing dependency_links to ../build/shore_comms/shore_comms.egg-info/dependency_links.txt
+[2.047s] writing entry points to ../build/shore_comms/shore_comms.egg-info/entry_points.txt
+[2.048s] writing requirements to ../build/shore_comms/shore_comms.egg-info/requires.txt
+[2.049s] writing top-level names to ../build/shore_comms/shore_comms.egg-info/top_level.txt
+[2.129s] reading manifest file '../build/shore_comms/shore_comms.egg-info/SOURCES.txt'
+[2.130s] adding license file 'LICENSE'
+[2.131s] writing manifest file '../build/shore_comms/shore_comms.egg-info/SOURCES.txt'
+[2.132s] running build
+[2.133s] running build_py
+[2.133s] copying shore_comms/main.py -> /home/ishaan/eboat_src/ros_ws/src/build/shore_comms/build/lib/shore_comms
+[2.133s] running install
+[2.142s] running install_lib
+[2.174s] copying /home/ishaan/eboat_src/ros_ws/src/build/shore_comms/build/lib/shore_comms/main.py -> /home/ishaan/eboat_src/ros_ws/src/install/shore_comms/lib/python3.12/site-packages/shore_comms
+[2.175s] byte-compiling /home/ishaan/eboat_src/ros_ws/src/install/shore_comms/lib/python3.12/site-packages/shore_comms/main.py to main.cpython-312.pyc
+[2.179s] running install_data
+[2.179s] running install_egg_info
+[2.210s] removing '/home/ishaan/eboat_src/ros_ws/src/install/shore_comms/lib/python3.12/site-packages/shore_comms-0.0.0-py3.12.egg-info' (and everything under it)
+[2.211s] Copying ../build/shore_comms/shore_comms.egg-info to /home/ishaan/eboat_src/ros_ws/src/install/shore_comms/lib/python3.12/site-packages/shore_comms-0.0.0-py3.12.egg-info
+[2.213s] running install_scripts
+[2.525s] Installing shore script to /home/ishaan/eboat_src/ros_ws/src/install/shore_comms/lib/shore_comms
+[2.526s] writing list of installed files to '/home/ishaan/eboat_src/ros_ws/src/build/shore_comms/install.log'
+[2.573s] Invoked command in '/home/ishaan/eboat_src/ros_ws/src/shore_comms' returned '0': PYTHONPATH=/home/ishaan/eboat_src/ros_ws/src/build/shore_comms/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ishaan/eboat_src/ros_ws/src/install/shore_comms/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/shore_comms build --build-base /home/ishaan/eboat_src/ros_ws/src/build/shore_comms/build install --record /home/ishaan/eboat_src/ros_ws/src/build/shore_comms/install.log --single-version-externally-managed install_data

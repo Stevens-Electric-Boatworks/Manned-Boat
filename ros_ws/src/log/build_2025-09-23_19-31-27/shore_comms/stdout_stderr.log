@@ -1,0 +1,23 @@
+running egg_info
+writing ../build/shore_comms/shore_comms.egg-info/PKG-INFO
+writing dependency_links to ../build/shore_comms/shore_comms.egg-info/dependency_links.txt
+writing entry points to ../build/shore_comms/shore_comms.egg-info/entry_points.txt
+writing requirements to ../build/shore_comms/shore_comms.egg-info/requires.txt
+writing top-level names to ../build/shore_comms/shore_comms.egg-info/top_level.txt
+reading manifest file '../build/shore_comms/shore_comms.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../build/shore_comms/shore_comms.egg-info/SOURCES.txt'
+running build
+running build_py
+copying shore_comms/main.py -> /home/ishaan/eboat_src/ros_ws/src/build/shore_comms/build/lib/shore_comms
+running install
+running install_lib
+copying /home/ishaan/eboat_src/ros_ws/src/build/shore_comms/build/lib/shore_comms/main.py -> /home/ishaan/eboat_src/ros_ws/src/install/shore_comms/lib/python3.12/site-packages/shore_comms
+byte-compiling /home/ishaan/eboat_src/ros_ws/src/install/shore_comms/lib/python3.12/site-packages/shore_comms/main.py to main.cpython-312.pyc
+running install_data
+running install_egg_info
+removing '/home/ishaan/eboat_src/ros_ws/src/install/shore_comms/lib/python3.12/site-packages/shore_comms-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../build/shore_comms/shore_comms.egg-info to /home/ishaan/eboat_src/ros_ws/src/install/shore_comms/lib/python3.12/site-packages/shore_comms-0.0.0-py3.12.egg-info
+running install_scripts
+Installing shore script to /home/ishaan/eboat_src/ros_ws/src/install/shore_comms/lib/shore_comms
+writing list of installed files to '/home/ishaan/eboat_src/ros_ws/src/build/shore_comms/install.log'

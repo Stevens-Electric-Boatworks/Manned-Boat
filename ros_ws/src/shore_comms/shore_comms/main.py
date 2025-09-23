@@ -50,7 +50,7 @@ class ShoreDataCollector(Node):
         """
         self.data[dataName] = data
     
-    def addAlarm(self, error_code: int, timestamp: int):
+    def addAlarm(self, error_code: int, timestamp):
         """
         Adds data to be sent to the shore server.
         :param dataName - The name of the data as required by the ShoreAPI

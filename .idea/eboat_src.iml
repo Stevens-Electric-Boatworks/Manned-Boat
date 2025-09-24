@@ -11,6 +11,9 @@
       <sourceFolder url="file://$MODULE_DIR$/ros_ws/install/shore_comms/lib/python3.12/site-packages" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ros_ws/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ros_ws/src/alarms_watchdog_node/alarms_watchdog_node" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ros_ws/install/electrical_node/lib/python3.12/site-packages" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ros_ws/install/motion_node/lib/python3.12/site-packages" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ros_ws/install/motor_node/lib/python3.12/site-packages" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
       <excludeFolder url="file://$MODULE_DIR$/install" />

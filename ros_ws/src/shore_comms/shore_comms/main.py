@@ -13,19 +13,20 @@ from boat_data_interfaces.msg import ElectricalData, MotionData, MotorData, GPIO
 #Websockets
 import asyncio
 from websockets.client import connect
+from websockets.client import WebSocketClientProtocol
 import json
 import threading
 
 
 
 SHORE_URI = "wss://eboat.thiagoja.com/api"
-DATA_SEND = 0.4
+DATA_SEND = 0.15
 
 class ShoreDataCollector(Node):
     
     def __init__(self):
         super().__init__('shore_subscriber')
-        self.websocket:smtplib.SMTP = None
+        self.websocket:WebSocketClientProtocol
         self.data = {}
         self.alarms = []
         self.alarm_publisher = self.create_publisher(BoatAlarm, "/all_alarms", 10)
@@ -126,6 +127,7 @@ class ShoreDataCollector(Node):
         if len(self.alarms) == 0 and ignore_empty:
             return
         #go through all alarms in the queue
+
         for alarm in self.alarms:
             output_data = {
             "type": "alarm",
@@ -137,7 +139,6 @@ class ShoreDataCollector(Node):
                 "type": "error"
                 }   
             }
-            self._logger.debug("The output data from sendAlarms() " + json.dumps(output_data))
             await self.websocket.send(json.dumps(output_data))
         self.alarms.clear()
 

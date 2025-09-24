@@ -1,0 +1,331 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found canopen_interfaces: 0.3.1 (/home/ishaan/eboat_src/install/canopen_interfaces/share/canopen_interfaces/cmake)
+-- Found rosidl_generator_c: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found lely_core_libraries: 0.3.1 (/home/ishaan/eboat_src/install/lely_core_libraries/share/lely_core_libraries/cmake)
+-- Found lifecycle_msgs: 2.3.0 (/opt/ros/kilted/share/lifecycle_msgs/cmake)
+-- Found rclcpp: 29.5.2 (/opt/ros/kilted/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 7.8.2 (/opt/ros/kilted/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 9.3.2 (/opt/ros/kilted/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_components: 29.5.2 (/opt/ros/kilted/share/rclcpp_components/cmake)
+-- Found rclcpp_lifecycle: 29.5.2 (/opt/ros/kilted/share/rclcpp_lifecycle/cmake)
+-- Found yaml_cpp_vendor: 9.1.0 (/opt/ros/kilted/share/yaml_cpp_vendor/cmake)
+-- Setting yaml-cpp_DIR to: '/opt/ros/kilted/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system thread 
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(node_canopen_driver PUBLIC
+      ${canopen_interfaces_TARGETS}
+      rclcpp::rclcpp
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  CMakeLists.txt:55 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(node_canopen_master PUBLIC
+      ${canopen_interfaces_TARGETS}
+      rclcpp::rclcpp
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  CMakeLists.txt:76 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(device_container PUBLIC
+      ${canopen_interfaces_TARGETS}
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  CMakeLists.txt:99 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(device_container_node PUBLIC
+      ${canopen_interfaces_TARGETS}
+      ${lifecycle_msgs_TARGETS}
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  CMakeLists.txt:121 (ament_target_dependencies)
+
+[0m
+-- Found ament_cmake_gtest: 2.7.3 (/opt/ros/kilted/share/ament_cmake_gtest/cmake)
+-- Found ament_cmake_gmock: 2.7.3 (/opt/ros/kilted/share/ament_cmake_gmock/cmake)
+-- Found gmock sources under '/opt/ros/kilted/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+-- Found gtest sources under '/opt/ros/kilted/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(test_node_canopen_driver PUBLIC
+      ${canopen_interfaces_TARGETS}
+      rclcpp::rclcpp
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  test/CMakeLists.txt:4 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(test_node_canopen_master PUBLIC
+      ${canopen_interfaces_TARGETS}
+      rclcpp::rclcpp
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  test/CMakeLists.txt:22 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(test_canopen_driver PUBLIC
+      ${canopen_interfaces_TARGETS}
+      ${lifecycle_msgs_TARGETS}
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  test/CMakeLists.txt:60 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(test_lifecycle_canopen_driver PUBLIC
+      ${canopen_interfaces_TARGETS}
+      ${lifecycle_msgs_TARGETS}
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  test/CMakeLists.txt:74 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(test_canopen_master PUBLIC
+      ${canopen_interfaces_TARGETS}
+      ${lifecycle_msgs_TARGETS}
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  test/CMakeLists.txt:88 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(test_lifecycle_canopen_master PUBLIC
+      ${canopen_interfaces_TARGETS}
+      ${lifecycle_msgs_TARGETS}
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  test/CMakeLists.txt:102 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(test_lifecycle_manager PUBLIC
+      ${canopen_interfaces_TARGETS}
+      ${lifecycle_msgs_TARGETS}
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  test/CMakeLists.txt:116 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(test_errors PUBLIC
+      ${canopen_interfaces_TARGETS}
+      ${lifecycle_msgs_TARGETS}
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  test/CMakeLists.txt:129 (ament_target_dependencies)
+
+[0m
+-- Configuring done (3.6s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/ishaan/eboat_src/build/canopen_core
+[ 11%] [32mBuilding CXX object CMakeFiles/node_canopen_driver.dir/src/driver_error.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/node_canopen_driver.dir/src/node_interfaces/node_canopen_driver.cpp.o[0m
+[ 11%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/kilted/src/gtest_vendor/src/gtest-all.cc.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/node_canopen_driver.dir/src/driver_node.cpp.o[0m
+[ 13%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/node_canopen_master.dir/src/master_node.cpp.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/node_canopen_master.dir/src/node_interfaces/node_canopen_master.cpp.o[0m
+[ 22%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/node_canopen_master.dir/src/master_error.cpp.o[0m
+[ 27%] [32m[1mLinking CXX static library libgmock_main.a[0m
+[ 27%] Built target gmock_main
+[ 30%] [32m[1mLinking CXX static library libgmock.a[0m
+[ 30%] Built target gmock
+[ 33%] [32m[1mLinking CXX shared library libnode_canopen_master.so[0m
+[ 33%] Built target node_canopen_master
+[ 38%] [32mBuilding CXX object test/CMakeFiles/test_node_canopen_master.dir/test_node_canopen_master.cpp.o[0m
+[ 38%] [32mBuilding CXX object test/CMakeFiles/test_lifecycle_canopen_master.dir/test_lifecycle_canopen_master.cpp.o[0m
+[ 41%] [32mBuilding CXX object test/CMakeFiles/test_canopen_master.dir/test_canopen_master.cpp.o[0m
+[ 44%] [32m[1mLinking CXX shared library libnode_canopen_driver.so[0m
+[ 44%] Built target node_canopen_driver
+[ 55%] [32mBuilding CXX object CMakeFiles/device_container.dir/src/device_container_error.cpp.o[0m
+[ 55%] [32mBuilding CXX object test/CMakeFiles/test_node_canopen_driver.dir/test_node_canopen_driver.cpp.o[0m
+[ 55%] [32mBuilding CXX object test/CMakeFiles/test_lifecycle_canopen_driver.dir/test_lifecycle_canopen_driver.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/device_container.dir/src/lifecycle_manager.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/device_container.dir/src/configuration_manager.cpp.o[0m
+[ 63%] [32mBuilding CXX object test/CMakeFiles/test_canopen_driver.dir/test_canopen_driver.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/device_container.dir/src/device_container.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable test_canopen_master[0m
+[ 66%] Built target test_canopen_master
+[ 69%] [32m[1mLinking CXX executable test_lifecycle_canopen_master[0m
+[ 72%] [32m[1mLinking CXX executable test_node_canopen_master[0m
+[ 72%] Built target test_lifecycle_canopen_master
+[ 72%] Built target test_node_canopen_master
+[ 75%] [32m[1mLinking CXX executable test_canopen_driver[0m
+[ 77%] [32m[1mLinking CXX executable test_lifecycle_canopen_driver[0m
+[ 80%] [32m[1mLinking CXX executable test_node_canopen_driver[0m
+[ 80%] Built target test_canopen_driver
+[ 80%] Built target test_lifecycle_canopen_driver
+[ 83%] [32m[1mLinking CXX shared library libdevice_container.so[0m
+[ 83%] Built target test_node_canopen_driver
+[ 83%] Built target device_container
+[ 86%] [32mBuilding CXX object CMakeFiles/device_container_node.dir/src/device_container_node.cpp.o[0m
+[ 91%] [32mBuilding CXX object test/CMakeFiles/test_errors.dir/test_errors.cpp.o[0m
+[ 91%] [32mBuilding CXX object test/CMakeFiles/test_lifecycle_manager.dir/test_lifecycle_manager.cpp.o[0m
+[ 94%] [32m[1mLinking CXX executable test_errors[0m
+[ 94%] Built target test_errors
+[ 97%] [32m[1mLinking CXX executable device_container_node[0m
+[ 97%] Built target device_container_node
+[100%] [32m[1mLinking CXX executable test_lifecycle_manager[0m
+[100%] Built target test_lifecycle_manager
+-- Install configuration: ""
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/include
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/include/canopen_core
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/include/canopen_core/master_node.hpp
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/include/canopen_core/driver_error.hpp
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/include/canopen_core/visibility_control.h
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/include/canopen_core/configuration_manager.hpp
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/include/canopen_core/exchange.hpp
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/include/canopen_core/master_error.hpp
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/include/canopen_core/driver_node.hpp
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/include/canopen_core/lifecycle_manager.hpp
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/include/canopen_core/device_container.hpp
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/include/canopen_core/device_container_error.hpp
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/include/canopen_core/node_interfaces
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/include/canopen_core/node_interfaces/node_canopen_master.hpp
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/include/canopen_core/node_interfaces/node_canopen_driver.hpp
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/include/canopen_core/node_interfaces/node_canopen_master_interface.hpp
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/include/canopen_core/node_interfaces/node_canopen_driver_interface.hpp
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/canopen_core/launch/
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/canopen_core/launch//canopen.launch.py
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/lib/libnode_canopen_driver.so
+-- Set non-toolchain portion of runtime path of "/home/ishaan/eboat_src/install/canopen_core/lib/libnode_canopen_driver.so" to ""
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/lib/libnode_canopen_master.so
+-- Set non-toolchain portion of runtime path of "/home/ishaan/eboat_src/install/canopen_core/lib/libnode_canopen_master.so" to ""
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/lib/libdevice_container.so
+-- Set non-toolchain portion of runtime path of "/home/ishaan/eboat_src/install/canopen_core/lib/libdevice_container.so" to ""
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/lib/canopen_core/device_container_node
+-- Set non-toolchain portion of runtime path of "/home/ishaan/eboat_src/install/canopen_core/lib/canopen_core/device_container_node" to ""
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/canopen_core/environment/library_path.sh
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/canopen_core/environment/library_path.dsv
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/ament_index/resource_index/package_run_dependencies/canopen_core
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/ament_index/resource_index/parent_prefix_path/canopen_core
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/canopen_core/environment/ament_prefix_path.sh
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/canopen_core/environment/ament_prefix_path.dsv
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/canopen_core/environment/path.sh
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/canopen_core/environment/path.dsv
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/canopen_core/local_setup.bash
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/canopen_core/local_setup.sh
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/canopen_core/local_setup.zsh
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/canopen_core/local_setup.dsv
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/canopen_core/package.dsv
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/ament_index/resource_index/packages/canopen_core
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/canopen_core/cmake/export_canopen_coreExport.cmake
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/canopen_core/cmake/export_canopen_coreExport-noconfig.cmake
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/canopen_core/cmake/ConfigExtras.cmake
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/canopen_core/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/canopen_core/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/canopen_core/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/canopen_core/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/canopen_core/cmake/canopen_coreConfig.cmake
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/canopen_core/cmake/canopen_coreConfig-version.cmake
+-- Installing: /home/ishaan/eboat_src/install/canopen_core/share/canopen_core/package.xml

@@ -1,0 +1,19 @@
+{
+  "package_name": "canopen_interfaces",
+  "output_dir": "/home/ishaan/eboat_src/build/canopen_interfaces/rosidl_generator_type_description/canopen_interfaces",
+  "idl_tuples": [
+    "/home/ishaan/eboat_src/build/canopen_interfaces/rosidl_adapter/canopen_interfaces:srv/COHeartbeatID.idl",
+    "/home/ishaan/eboat_src/build/canopen_interfaces/rosidl_adapter/canopen_interfaces:srv/CONmtID.idl",
+    "/home/ishaan/eboat_src/build/canopen_interfaces/rosidl_adapter/canopen_interfaces:srv/CORead.idl",
+    "/home/ishaan/eboat_src/build/canopen_interfaces/rosidl_adapter/canopen_interfaces:srv/COReadID.idl",
+    "/home/ishaan/eboat_src/build/canopen_interfaces/rosidl_adapter/canopen_interfaces:srv/COWrite.idl",
+    "/home/ishaan/eboat_src/build/canopen_interfaces/rosidl_adapter/canopen_interfaces:srv/COWriteID.idl",
+    "/home/ishaan/eboat_src/build/canopen_interfaces/rosidl_adapter/canopen_interfaces:srv/COTargetDouble.idl",
+    "/home/ishaan/eboat_src/build/canopen_interfaces/rosidl_adapter/canopen_interfaces:srv/CONode.idl",
+    "/home/ishaan/eboat_src/build/canopen_interfaces/rosidl_adapter/canopen_interfaces:msg/COData.idl"
+  ],
+  "include_paths": [
+    "service_msgs:/opt/ros/kilted/share/service_msgs",
+    "builtin_interfaces:/opt/ros/kilted/share/builtin_interfaces"
+  ]
+}

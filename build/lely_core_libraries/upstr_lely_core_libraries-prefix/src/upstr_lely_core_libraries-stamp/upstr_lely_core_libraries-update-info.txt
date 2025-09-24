@@ -1,0 +1,7 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The patch step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+command (connected)=COMMAND;git;reset;--hard;COMMAND;git;apply;--whitespace=fix;--reject;/home/ishaan/eboat_src/ros_ws/src/ros2_canopen/lely_core_libraries/patches/0001-Fix-dcf-tools.patch
+command (disconnected)=COMMAND;git;reset;--hard;COMMAND;git;apply;--whitespace=fix;--reject;/home/ishaan/eboat_src/ros_ws/src/ros2_canopen/lely_core_libraries/patches/0001-Fix-dcf-tools.patch
+work_dir=/home/ishaan/eboat_src/build/lely_core_libraries/upstream

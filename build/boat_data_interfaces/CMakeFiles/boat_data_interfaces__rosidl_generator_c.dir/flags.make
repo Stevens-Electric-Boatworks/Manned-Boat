@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DROSIDL_GENERATOR_C_BUILDING_DLL_boat_data_interfaces -DROS_PACKAGE_NAME=\"boat_data_interfaces\"
 
-C_INCLUDES = -I/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_c -isystem /opt/ros/kilted/include/rosidl_runtime_c -isystem /opt/ros/kilted/include/rcutils -isystem /opt/ros/kilted/include/rosidl_typesupport_interface
+C_INCLUDES = -I/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_c -isystem /opt/ros/kilted/include/builtin_interfaces -isystem /opt/ros/kilted/include/rosidl_runtime_c -isystem /opt/ros/kilted/include/rcutils -isystem /opt/ros/kilted/include/rosidl_typesupport_interface
 
 C_FLAGS = -std=gnu11 -fPIC -Wall
 

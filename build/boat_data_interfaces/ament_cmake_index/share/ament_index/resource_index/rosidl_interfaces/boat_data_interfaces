@@ -1,3 +1,5 @@
+msg/BoatAlarm.idl
+msg/BoatAlarm.msg
 msg/ElectricalData.idl
 msg/ElectricalData.msg
 msg/GPIOData.idl

@@ -59,7 +59,7 @@ endif()
 add_library(boat_data_interfaces::boat_data_interfaces__rosidl_typesupport_c SHARED IMPORTED)
 
 set_target_properties(boat_data_interfaces::boat_data_interfaces__rosidl_typesupport_c PROPERTIES
-  INTERFACE_LINK_LIBRARIES "boat_data_interfaces::boat_data_interfaces__rosidl_generator_c"
+  INTERFACE_LINK_LIBRARIES "boat_data_interfaces::boat_data_interfaces__rosidl_generator_c;builtin_interfaces::builtin_interfaces__rosidl_typesupport_c"
 )
 
 if(CMAKE_VERSION VERSION_LESS 2.8.12)

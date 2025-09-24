@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "canopen_interfaces/srv/COTargetDouble_Response",
+      "fields": [
+        {
+          "name": "success",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "canopen_interfaces/srv/COTargetDouble_Response",
+      "hash_string": "RIHS01_c4aef65cfdf816d278781ef3d5f03d873b6c0fe5045254ed72973b536be2741f"
+    }
+  ]
+}

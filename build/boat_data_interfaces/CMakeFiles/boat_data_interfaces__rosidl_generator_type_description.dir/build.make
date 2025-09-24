@@ -70,6 +70,7 @@ CMakeFiles/boat_data_interfaces__rosidl_generator_type_description: rosidl_gener
 CMakeFiles/boat_data_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/boat_data_interfaces/msg/GPIOData.json
 CMakeFiles/boat_data_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/boat_data_interfaces/msg/MotionData.json
 CMakeFiles/boat_data_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/boat_data_interfaces/msg/MotorData.json
+CMakeFiles/boat_data_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/boat_data_interfaces/msg/BoatAlarm.json
 
 rosidl_generator_type_description/boat_data_interfaces/msg/ElectricalData.json: /opt/ros/kilted/lib/rosidl_generator_type_description/rosidl_generator_type_description
 rosidl_generator_type_description/boat_data_interfaces/msg/ElectricalData.json: /opt/ros/kilted/lib/python3.12/site-packages/rosidl_generator_type_description/__init__.py
@@ -77,6 +78,7 @@ rosidl_generator_type_description/boat_data_interfaces/msg/ElectricalData.json: 
 rosidl_generator_type_description/boat_data_interfaces/msg/ElectricalData.json: rosidl_adapter/boat_data_interfaces/msg/GPIOData.idl
 rosidl_generator_type_description/boat_data_interfaces/msg/ElectricalData.json: rosidl_adapter/boat_data_interfaces/msg/MotionData.idl
 rosidl_generator_type_description/boat_data_interfaces/msg/ElectricalData.json: rosidl_adapter/boat_data_interfaces/msg/MotorData.idl
+rosidl_generator_type_description/boat_data_interfaces/msg/ElectricalData.json: rosidl_adapter/boat_data_interfaces/msg/BoatAlarm.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ishaan/eboat_src/build/boat_data_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating type hashes for ROS interfaces"
 	/usr/bin/python3 /opt/ros/kilted/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file /home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_type_description__arguments.json
 
@@ -89,7 +91,11 @@ rosidl_generator_type_description/boat_data_interfaces/msg/MotionData.json: rosi
 rosidl_generator_type_description/boat_data_interfaces/msg/MotorData.json: rosidl_generator_type_description/boat_data_interfaces/msg/ElectricalData.json
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/boat_data_interfaces/msg/MotorData.json
 
+rosidl_generator_type_description/boat_data_interfaces/msg/BoatAlarm.json: rosidl_generator_type_description/boat_data_interfaces/msg/ElectricalData.json
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/boat_data_interfaces/msg/BoatAlarm.json
+
 boat_data_interfaces__rosidl_generator_type_description: CMakeFiles/boat_data_interfaces__rosidl_generator_type_description
+boat_data_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/boat_data_interfaces/msg/BoatAlarm.json
 boat_data_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/boat_data_interfaces/msg/ElectricalData.json
 boat_data_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/boat_data_interfaces/msg/GPIOData.json
 boat_data_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/boat_data_interfaces/msg/MotionData.json

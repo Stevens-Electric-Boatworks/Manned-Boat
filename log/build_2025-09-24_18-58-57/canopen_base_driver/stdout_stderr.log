@@ -1,0 +1,234 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found ament_cmake_ros: 0.14.3 (/opt/ros/kilted/share/ament_cmake_ros/cmake)
+-- Found canopen_core: 0.3.1 (/home/ishaan/eboat_src/install/canopen_core/share/canopen_core/cmake)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system thread 
+-- Found rosidl_generator_c: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.8.2 (/opt/ros/kilted/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 9.3.2 (/opt/ros/kilted/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Setting yaml-cpp_DIR to: '/opt/ros/kilted/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'
+-- Found std_msgs: 5.5.0 (/opt/ros/kilted/share/std_msgs/cmake)
+-- Found std_srvs: 5.5.0 (/opt/ros/kilted/share/std_srvs/cmake)
+-- Found diagnostic_updater: 4.3.6 (/opt/ros/kilted/share/diagnostic_updater/cmake)
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(lely_driver_bridge PUBLIC
+      ${canopen_interfaces_TARGETS}
+      ${std_msgs_TARGETS}
+      ${std_srvs_TARGETS}
+      canopen_core::device_container
+      canopen_core::node_canopen_driver
+      canopen_core::node_canopen_master
+      diagnostic_updater::diagnostic_updater
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  CMakeLists.txt:43 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(node_canopen_base_driver PUBLIC
+      ${canopen_interfaces_TARGETS}
+      ${std_msgs_TARGETS}
+      ${std_srvs_TARGETS}
+      canopen_core::device_container
+      canopen_core::node_canopen_driver
+      canopen_core::node_canopen_master
+      diagnostic_updater::diagnostic_updater
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  CMakeLists.txt:62 (ament_target_dependencies)
+
+[0m
+-- node_canopen_base_driver: /home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-can.so;/home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-co.so;/home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-coapp.so;/home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-ev.so;/home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-io2.so;/home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-libc.so;/home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-tap.so;/home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-util.so
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(lifecycle_base_driver PUBLIC
+      ${canopen_interfaces_TARGETS}
+      ${std_msgs_TARGETS}
+      ${std_srvs_TARGETS}
+      canopen_core::device_container
+      canopen_core::node_canopen_driver
+      canopen_core::node_canopen_master
+      diagnostic_updater::diagnostic_updater
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  CMakeLists.txt:81 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(base_driver PUBLIC
+      ${canopen_interfaces_TARGETS}
+      ${std_msgs_TARGETS}
+      ${std_srvs_TARGETS}
+      canopen_core::device_container
+      canopen_core::node_canopen_driver
+      canopen_core::node_canopen_master
+      diagnostic_updater::diagnostic_updater
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  CMakeLists.txt:108 (ament_target_dependencies)
+
+[0m
+-- Found gtest sources under '/opt/ros/kilted/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Found Threads: TRUE  
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(test_node_canopen_base_driver_ros PUBLIC
+      ${canopen_interfaces_TARGETS}
+      ${std_msgs_TARGETS}
+      ${std_srvs_TARGETS}
+      canopen_core::device_container
+      canopen_core::node_canopen_driver
+      canopen_core::node_canopen_master
+      diagnostic_updater::diagnostic_updater
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  test/CMakeLists.txt:4 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(test_base_driver_component PUBLIC
+      ${canopen_interfaces_TARGETS}
+      ${std_msgs_TARGETS}
+      ${std_srvs_TARGETS}
+      canopen_core::device_container
+      canopen_core::node_canopen_driver
+      canopen_core::node_canopen_master
+      diagnostic_updater::diagnostic_updater
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  test/CMakeLists.txt:20 (ament_target_dependencies)
+
+[0m
+-- Configuring done (4.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ishaan/eboat_src/build/canopen_base_driver
+[ 18%] [32mBuilding CXX object CMakeFiles/lely_driver_bridge.dir/src/lely_driver_bridge.cpp.o[0m
+[ 18%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[ 18%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[ 25%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[ 25%] Built target gtest_main
+[ 31%] [32m[1mLinking CXX static library libgtest.a[0m
+[ 31%] Built target gtest
+[ 37%] [32mBuilding CXX object test/CMakeFiles/test_base_driver_component.dir/test_base_driver_component.cpp.o[0m
+[ 43%] [32m[1mLinking CXX shared library liblely_driver_bridge.so[0m
+[ 43%] Built target lely_driver_bridge
+[ 50%] [32mBuilding CXX object CMakeFiles/node_canopen_base_driver.dir/src/node_interfaces/node_canopen_base_driver.cpp.o[0m
+[ 56%] [32m[1mLinking CXX executable test_base_driver_component[0m
+[ 56%] Built target test_base_driver_component
+[ 62%] [32m[1mLinking CXX shared library libnode_canopen_base_driver.so[0m
+[ 62%] Built target node_canopen_base_driver
+[ 75%] [32mBuilding CXX object CMakeFiles/base_driver.dir/src/base_driver.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/lifecycle_base_driver.dir/src/lifecycle_base_driver.cpp.o[0m
+[ 81%] [32mBuilding CXX object test/CMakeFiles/test_node_canopen_base_driver_ros.dir/test_node_canopen_base_driver_ros.cpp.o[0m
+[ 87%] [32m[1mLinking CXX executable test_node_canopen_base_driver_ros[0m
+[ 93%] [32m[1mLinking CXX shared library liblifecycle_base_driver.so[0m
+[100%] [32m[1mLinking CXX shared library libbase_driver.so[0m
+[100%] Built target test_node_canopen_base_driver_ros
+[100%] Built target base_driver
+[100%] Built target lifecycle_base_driver
+-- Install configuration: ""
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/include
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/include/canopen_base_driver
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/include/canopen_base_driver/visibility_control.h
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/include/canopen_base_driver/lely_driver_bridge.hpp
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/include/canopen_base_driver/lifecycle_base_driver.hpp
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/include/canopen_base_driver/base_driver.hpp
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/include/canopen_base_driver/diagnostic_collector.hpp
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/include/canopen_base_driver/node_interfaces
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/include/canopen_base_driver/node_interfaces/node_canopen_base_driver.hpp
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/include/canopen_base_driver/node_interfaces/node_canopen_base_driver_impl.hpp
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/lib/liblifecycle_base_driver.so
+-- Set non-toolchain portion of runtime path of "/home/ishaan/eboat_src/install/canopen_base_driver/lib/liblifecycle_base_driver.so" to ""
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/lib/libbase_driver.so
+-- Set non-toolchain portion of runtime path of "/home/ishaan/eboat_src/install/canopen_base_driver/lib/libbase_driver.so" to ""
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/lib/libnode_canopen_base_driver.so
+-- Set non-toolchain portion of runtime path of "/home/ishaan/eboat_src/install/canopen_base_driver/lib/libnode_canopen_base_driver.so" to ""
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/lib/liblely_driver_bridge.so
+-- Set non-toolchain portion of runtime path of "/home/ishaan/eboat_src/install/canopen_base_driver/lib/liblely_driver_bridge.so" to ""
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/share/canopen_base_driver/environment/library_path.sh
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/share/canopen_base_driver/environment/library_path.dsv
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/share/ament_index/resource_index/package_run_dependencies/canopen_base_driver
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/share/ament_index/resource_index/parent_prefix_path/canopen_base_driver
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/share/canopen_base_driver/environment/ament_prefix_path.sh
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/share/canopen_base_driver/environment/ament_prefix_path.dsv
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/share/canopen_base_driver/environment/path.sh
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/share/canopen_base_driver/environment/path.dsv
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/share/canopen_base_driver/local_setup.bash
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/share/canopen_base_driver/local_setup.sh
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/share/canopen_base_driver/local_setup.zsh
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/share/canopen_base_driver/local_setup.dsv
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/share/canopen_base_driver/package.dsv
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/share/ament_index/resource_index/packages/canopen_base_driver
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/share/ament_index/resource_index/rclcpp_components/canopen_base_driver
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/share/canopen_base_driver/cmake/export_canopen_base_driverExport.cmake
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/share/canopen_base_driver/cmake/export_canopen_base_driverExport-noconfig.cmake
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/share/canopen_base_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/share/canopen_base_driver/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/share/canopen_base_driver/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/share/canopen_base_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/share/canopen_base_driver/cmake/canopen_base_driverConfig.cmake
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/share/canopen_base_driver/cmake/canopen_base_driverConfig-version.cmake
+-- Installing: /home/ishaan/eboat_src/install/canopen_base_driver/share/canopen_base_driver/package.xml

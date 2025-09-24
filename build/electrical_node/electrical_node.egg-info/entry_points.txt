@@ -1,0 +1,2 @@
+[console_scripts]
+test = electrical_node.electrical_node_test:main

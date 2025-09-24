@@ -4,6 +4,7 @@
     "/home/ishaan/eboat_src/ros_ws/src/boat_data_interfaces:msg/ElectricalData.msg",
     "/home/ishaan/eboat_src/ros_ws/src/boat_data_interfaces:msg/GPIOData.msg",
     "/home/ishaan/eboat_src/ros_ws/src/boat_data_interfaces:msg/MotionData.msg",
-    "/home/ishaan/eboat_src/ros_ws/src/boat_data_interfaces:msg/MotorData.msg"
+    "/home/ishaan/eboat_src/ros_ws/src/boat_data_interfaces:msg/MotorData.msg",
+    "/home/ishaan/eboat_src/ros_ws/src/boat_data_interfaces:msg/BoatAlarm.msg"
   ]
 }

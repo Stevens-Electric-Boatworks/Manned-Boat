@@ -1,0 +1,20 @@
+[2.103s] Invoking command in '/home/ishaan/eboat_src/ros_ws/src/GPIO_Test': PYTHONPATH=/home/ishaan/eboat_src/build/GPIO_Test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ishaan/eboat_src/install/GPIO_Test/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/GPIO_Test build --build-base /home/ishaan/eboat_src/build/GPIO_Test/build install --record /home/ishaan/eboat_src/build/GPIO_Test/install.log --single-version-externally-managed install_data
+[2.397s] running egg_info
+[2.415s] writing ../../../build/GPIO_Test/GPIO_Test.egg-info/PKG-INFO
+[2.416s] writing dependency_links to ../../../build/GPIO_Test/GPIO_Test.egg-info/dependency_links.txt
+[2.416s] writing entry points to ../../../build/GPIO_Test/GPIO_Test.egg-info/entry_points.txt
+[2.416s] writing requirements to ../../../build/GPIO_Test/GPIO_Test.egg-info/requires.txt
+[2.416s] writing top-level names to ../../../build/GPIO_Test/GPIO_Test.egg-info/top_level.txt
+[2.432s] reading manifest file '../../../build/GPIO_Test/GPIO_Test.egg-info/SOURCES.txt'
+[2.433s] adding license file 'LICENSE'
+[2.433s] writing manifest file '../../../build/GPIO_Test/GPIO_Test.egg-info/SOURCES.txt'
+[2.433s] running build
+[2.434s] running install
+[2.441s] running install_data
+[2.441s] running install_egg_info
+[2.484s] removing '/home/ishaan/eboat_src/install/GPIO_Test/lib/python3.12/site-packages/GPIO_Test-0.0.0-py3.12.egg-info' (and everything under it)
+[2.485s] Copying ../../../build/GPIO_Test/GPIO_Test.egg-info to /home/ishaan/eboat_src/install/GPIO_Test/lib/python3.12/site-packages/GPIO_Test-0.0.0-py3.12.egg-info
+[2.485s] running install_scripts
+[2.636s] Installing test script to /home/ishaan/eboat_src/install/GPIO_Test/lib/GPIO_Test
+[2.636s] writing list of installed files to '/home/ishaan/eboat_src/build/GPIO_Test/install.log'
+[2.725s] Invoked command in '/home/ishaan/eboat_src/ros_ws/src/GPIO_Test' returned '0': PYTHONPATH=/home/ishaan/eboat_src/build/GPIO_Test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ishaan/eboat_src/install/GPIO_Test/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/GPIO_Test build --build-base /home/ishaan/eboat_src/build/GPIO_Test/build install --record /home/ishaan/eboat_src/build/GPIO_Test/install.log --single-version-externally-managed install_data

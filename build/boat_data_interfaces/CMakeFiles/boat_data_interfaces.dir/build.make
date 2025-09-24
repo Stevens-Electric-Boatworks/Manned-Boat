@@ -70,6 +70,9 @@ CMakeFiles/boat_data_interfaces: /home/ishaan/eboat_src/ros_ws/src/boat_data_int
 CMakeFiles/boat_data_interfaces: /home/ishaan/eboat_src/ros_ws/src/boat_data_interfaces/msg/GPIOData.msg
 CMakeFiles/boat_data_interfaces: /home/ishaan/eboat_src/ros_ws/src/boat_data_interfaces/msg/MotionData.msg
 CMakeFiles/boat_data_interfaces: /home/ishaan/eboat_src/ros_ws/src/boat_data_interfaces/msg/MotorData.msg
+CMakeFiles/boat_data_interfaces: /home/ishaan/eboat_src/ros_ws/src/boat_data_interfaces/msg/BoatAlarm.msg
+CMakeFiles/boat_data_interfaces: /opt/ros/kilted/share/builtin_interfaces/msg/Duration.idl
+CMakeFiles/boat_data_interfaces: /opt/ros/kilted/share/builtin_interfaces/msg/Time.idl
 
 boat_data_interfaces: CMakeFiles/boat_data_interfaces
 boat_data_interfaces: CMakeFiles/boat_data_interfaces.dir/build.make

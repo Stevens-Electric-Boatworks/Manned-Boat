@@ -1,0 +1,293 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-cd1523180bc7a60b147e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						7,
+						8,
+						17
+					]
+				},
+				{
+					"build" : "test",
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"jsonFile" : "directory-test-451c0598f41488bb20b9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "test",
+					"targetIndexes" : 
+					[
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16
+					]
+				},
+				{
+					"build" : "gmock",
+					"jsonFile" : "directory-gmock-af08a46d8f7ca897b41e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "/opt/ros/kilted/src/gmock_vendor",
+					"targetIndexes" : 
+					[
+						3,
+						4
+					]
+				},
+				{
+					"build" : "gtest",
+					"jsonFile" : "directory-gtest-e6a142a390cad2c510c6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "/opt/ros/kilted/src/gtest_vendor",
+					"targetIndexes" : 
+					[
+						5,
+						6
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "canopen_core",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "gmock",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "gtest",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "canopen_core_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-canopen_core_uninstall-da879a90e52a8c21be79.json",
+					"name" : "canopen_core_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "device_container::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-device_container-58ca2aa90f7920c00a0e.json",
+					"name" : "device_container",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "device_container_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-device_container_node-874ff2580b5154daa449.json",
+					"name" : "device_container_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "gmock::@0590522bda6a4df7f28a",
+					"jsonFile" : "target-gmock-7b05419cdd3591807ccd.json",
+					"name" : "gmock",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "gmock_main::@0590522bda6a4df7f28a",
+					"jsonFile" : "target-gmock_main-5259208448d2969ecc4a.json",
+					"name" : "gmock_main",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "gtest::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest-966586dab49dbdcd81ac.json",
+					"name" : "gtest",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "gtest_main::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest_main-61e45432115337402374.json",
+					"name" : "gtest_main",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "node_canopen_driver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-node_canopen_driver-efeb9f5f61fc434be6f4.json",
+					"name" : "node_canopen_driver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "node_canopen_master::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-node_canopen_master-a10a15870bfc1dbe0bba.json",
+					"name" : "node_canopen_master",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_canopen_driver::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test_canopen_driver-b8be7a64770958fdfa58.json",
+					"name" : "test_canopen_driver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_canopen_master::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test_canopen_master-dcfbe7331eba3340eee8.json",
+					"name" : "test_canopen_master",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_errors::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test_errors-4e72725daaa04d884697.json",
+					"name" : "test_errors",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_lifecycle_canopen_driver::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test_lifecycle_canopen_driver-81646f7427b7b4bbab2e.json",
+					"name" : "test_lifecycle_canopen_driver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_lifecycle_canopen_master::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test_lifecycle_canopen_master-064aea61994547cc685a.json",
+					"name" : "test_lifecycle_canopen_master",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_lifecycle_manager::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test_lifecycle_manager-7f249aa7db2d094a95a7.json",
+					"name" : "test_lifecycle_manager",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_node_canopen_driver::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test_node_canopen_driver-5594a90af3614dd04ce5.json",
+					"name" : "test_node_canopen_driver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_node_canopen_master::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test_node_canopen_master-de1518b8a07107ef4ff2.json",
+					"name" : "test_node_canopen_master",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-a9b4272b72b2f60e32ee.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ishaan/eboat_src/build/canopen_core",
+		"source" : "/home/ishaan/eboat_src/ros_ws/src/ros2_canopen/canopen_core"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

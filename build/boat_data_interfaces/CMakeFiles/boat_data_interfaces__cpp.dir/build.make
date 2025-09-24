@@ -86,6 +86,11 @@ CMakeFiles/boat_data_interfaces__cpp: rosidl_generator_cpp/boat_data_interfaces/
 CMakeFiles/boat_data_interfaces__cpp: rosidl_generator_cpp/boat_data_interfaces/msg/detail/motor_data__struct.hpp
 CMakeFiles/boat_data_interfaces__cpp: rosidl_generator_cpp/boat_data_interfaces/msg/detail/motor_data__traits.hpp
 CMakeFiles/boat_data_interfaces__cpp: rosidl_generator_cpp/boat_data_interfaces/msg/detail/motor_data__type_support.hpp
+CMakeFiles/boat_data_interfaces__cpp: rosidl_generator_cpp/boat_data_interfaces/msg/boat_alarm.hpp
+CMakeFiles/boat_data_interfaces__cpp: rosidl_generator_cpp/boat_data_interfaces/msg/detail/boat_alarm__builder.hpp
+CMakeFiles/boat_data_interfaces__cpp: rosidl_generator_cpp/boat_data_interfaces/msg/detail/boat_alarm__struct.hpp
+CMakeFiles/boat_data_interfaces__cpp: rosidl_generator_cpp/boat_data_interfaces/msg/detail/boat_alarm__traits.hpp
+CMakeFiles/boat_data_interfaces__cpp: rosidl_generator_cpp/boat_data_interfaces/msg/detail/boat_alarm__type_support.hpp
 CMakeFiles/boat_data_interfaces__cpp: rosidl_generator_cpp/boat_data_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/boat_data_interfaces/msg/electrical_data.hpp: /opt/ros/kilted/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -111,6 +116,9 @@ rosidl_generator_cpp/boat_data_interfaces/msg/electrical_data.hpp: rosidl_adapte
 rosidl_generator_cpp/boat_data_interfaces/msg/electrical_data.hpp: rosidl_adapter/boat_data_interfaces/msg/GPIOData.idl
 rosidl_generator_cpp/boat_data_interfaces/msg/electrical_data.hpp: rosidl_adapter/boat_data_interfaces/msg/MotionData.idl
 rosidl_generator_cpp/boat_data_interfaces/msg/electrical_data.hpp: rosidl_adapter/boat_data_interfaces/msg/MotorData.idl
+rosidl_generator_cpp/boat_data_interfaces/msg/electrical_data.hpp: rosidl_adapter/boat_data_interfaces/msg/BoatAlarm.idl
+rosidl_generator_cpp/boat_data_interfaces/msg/electrical_data.hpp: /opt/ros/kilted/share/builtin_interfaces/msg/Duration.idl
+rosidl_generator_cpp/boat_data_interfaces/msg/electrical_data.hpp: /opt/ros/kilted/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ishaan/eboat_src/build/boat_data_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/kilted/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_cpp__arguments.json
 
@@ -171,10 +179,30 @@ rosidl_generator_cpp/boat_data_interfaces/msg/detail/motor_data__traits.hpp: ros
 rosidl_generator_cpp/boat_data_interfaces/msg/detail/motor_data__type_support.hpp: rosidl_generator_cpp/boat_data_interfaces/msg/electrical_data.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/boat_data_interfaces/msg/detail/motor_data__type_support.hpp
 
+rosidl_generator_cpp/boat_data_interfaces/msg/boat_alarm.hpp: rosidl_generator_cpp/boat_data_interfaces/msg/electrical_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/boat_data_interfaces/msg/boat_alarm.hpp
+
+rosidl_generator_cpp/boat_data_interfaces/msg/detail/boat_alarm__builder.hpp: rosidl_generator_cpp/boat_data_interfaces/msg/electrical_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/boat_data_interfaces/msg/detail/boat_alarm__builder.hpp
+
+rosidl_generator_cpp/boat_data_interfaces/msg/detail/boat_alarm__struct.hpp: rosidl_generator_cpp/boat_data_interfaces/msg/electrical_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/boat_data_interfaces/msg/detail/boat_alarm__struct.hpp
+
+rosidl_generator_cpp/boat_data_interfaces/msg/detail/boat_alarm__traits.hpp: rosidl_generator_cpp/boat_data_interfaces/msg/electrical_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/boat_data_interfaces/msg/detail/boat_alarm__traits.hpp
+
+rosidl_generator_cpp/boat_data_interfaces/msg/detail/boat_alarm__type_support.hpp: rosidl_generator_cpp/boat_data_interfaces/msg/electrical_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/boat_data_interfaces/msg/detail/boat_alarm__type_support.hpp
+
 rosidl_generator_cpp/boat_data_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp: rosidl_generator_cpp/boat_data_interfaces/msg/electrical_data.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/boat_data_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 
 boat_data_interfaces__cpp: CMakeFiles/boat_data_interfaces__cpp
+boat_data_interfaces__cpp: rosidl_generator_cpp/boat_data_interfaces/msg/boat_alarm.hpp
+boat_data_interfaces__cpp: rosidl_generator_cpp/boat_data_interfaces/msg/detail/boat_alarm__builder.hpp
+boat_data_interfaces__cpp: rosidl_generator_cpp/boat_data_interfaces/msg/detail/boat_alarm__struct.hpp
+boat_data_interfaces__cpp: rosidl_generator_cpp/boat_data_interfaces/msg/detail/boat_alarm__traits.hpp
+boat_data_interfaces__cpp: rosidl_generator_cpp/boat_data_interfaces/msg/detail/boat_alarm__type_support.hpp
 boat_data_interfaces__cpp: rosidl_generator_cpp/boat_data_interfaces/msg/detail/electrical_data__builder.hpp
 boat_data_interfaces__cpp: rosidl_generator_cpp/boat_data_interfaces/msg/detail/electrical_data__struct.hpp
 boat_data_interfaces__cpp: rosidl_generator_cpp/boat_data_interfaces/msg/detail/electrical_data__traits.hpp

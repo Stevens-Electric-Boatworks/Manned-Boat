@@ -1,0 +1,194 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-6ab9be25d0dc5bf39477.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						4,
+						5,
+						6,
+						9
+					]
+				},
+				{
+					"build" : "test",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-test-451c0598f41488bb20b9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "test",
+					"targetIndexes" : 
+					[
+						7,
+						8
+					]
+				},
+				{
+					"build" : "gtest",
+					"jsonFile" : "directory-gtest-e6a142a390cad2c510c6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "/opt/ros/kilted/src/gtest_vendor",
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "canopen_base_driver",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "gtest",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "base_driver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-base_driver-2514b05a0e53e9116d5d.json",
+					"name" : "base_driver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "canopen_base_driver_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-canopen_base_driver_uninstall-48695850ec03d8c03518.json",
+					"name" : "canopen_base_driver_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "gtest::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest-d23a9cbcdf4b10904a3a.json",
+					"name" : "gtest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "gtest_main::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest_main-cd4e70886ffc0df6744a.json",
+					"name" : "gtest_main",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lely_driver_bridge::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lely_driver_bridge-ce24f740b623be82c931.json",
+					"name" : "lely_driver_bridge",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lifecycle_base_driver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lifecycle_base_driver-852bfff13d82b27dd448.json",
+					"name" : "lifecycle_base_driver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "node_canopen_base_driver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-node_canopen_base_driver-caac662d6b9c926025f6.json",
+					"name" : "node_canopen_base_driver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_base_driver_component::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test_base_driver_component-35d5f721865bd009f38c.json",
+					"name" : "test_base_driver_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_node_canopen_base_driver_ros::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test_node_canopen_base_driver_ros-30cd29baccc1a800ebcf.json",
+					"name" : "test_node_canopen_base_driver_ros",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-b20123cb22bcdaa3b0d1.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ishaan/eboat_src/build/canopen_base_driver",
+		"source" : "/home/ishaan/eboat_src/ros_ws/src/ros2_canopen/canopen_base_driver"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

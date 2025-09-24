@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DROSIDL_TYPESUPPORT_CPP_BUILDING_DLL -DROS_PACKAGE_NAME=\"boat_data_interfaces\"
 
-CXX_INCLUDES = -I/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_c -I/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_cpp -isystem /opt/ros/kilted/include/rosidl_runtime_c -isystem /opt/ros/kilted/include/rcutils -isystem /opt/ros/kilted/include/rosidl_typesupport_interface -isystem /opt/ros/kilted/include/rosidl_runtime_cpp -isystem /opt/ros/kilted/include/rosidl_typesupport_cpp -isystem /opt/ros/kilted/include/rosidl_typesupport_c
+CXX_INCLUDES = -I/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_c -I/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_cpp -isystem /opt/ros/kilted/include/builtin_interfaces -isystem /opt/ros/kilted/include/rosidl_runtime_c -isystem /opt/ros/kilted/include/rcutils -isystem /opt/ros/kilted/include/rosidl_typesupport_interface -isystem /opt/ros/kilted/include/rosidl_runtime_cpp -isystem /opt/ros/kilted/include/rosidl_typesupport_cpp -isystem /opt/ros/kilted/include/rosidl_typesupport_c
 
 CXX_FLAGS = -std=gnu++17 -fPIC -Wall -Wextra -Wpedantic
 

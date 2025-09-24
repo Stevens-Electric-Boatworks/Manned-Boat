@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/boat_data_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/boat_data_interfaces/msg/boat_alarm__type_support.cpp.o"
+  "CMakeFiles/boat_data_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/boat_data_interfaces/msg/boat_alarm__type_support.cpp.o.d"
   "CMakeFiles/boat_data_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/boat_data_interfaces/msg/electrical_data__type_support.cpp.o"
   "CMakeFiles/boat_data_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/boat_data_interfaces/msg/electrical_data__type_support.cpp.o.d"
   "CMakeFiles/boat_data_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/boat_data_interfaces/msg/gpio_data__type_support.cpp.o"
@@ -9,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/boat_data_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/boat_data_interfaces/msg/motor_data__type_support.cpp.o.d"
   "libboat_data_interfaces__rosidl_typesupport_c.pdb"
   "libboat_data_interfaces__rosidl_typesupport_c.so"
+  "rosidl_typesupport_c/boat_data_interfaces/msg/boat_alarm__type_support.cpp"
   "rosidl_typesupport_c/boat_data_interfaces/msg/electrical_data__type_support.cpp"
   "rosidl_typesupport_c/boat_data_interfaces/msg/gpio_data__type_support.cpp"
   "rosidl_typesupport_c/boat_data_interfaces/msg/motion_data__type_support.cpp"

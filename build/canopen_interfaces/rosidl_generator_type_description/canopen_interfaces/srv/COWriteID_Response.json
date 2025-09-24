@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "canopen_interfaces/srv/COWriteID_Response",
+      "fields": [
+        {
+          "name": "success",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "canopen_interfaces/srv/COWriteID_Response",
+      "hash_string": "RIHS01_639781a99b4f9958a21d83ca0ab1b4e2bd6cbf0f9069501c97b78ec6449fd81d"
+    }
+  ]
+}

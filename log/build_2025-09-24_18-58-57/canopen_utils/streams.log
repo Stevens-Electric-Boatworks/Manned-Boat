@@ -1,0 +1,48 @@
+[0.869s] Invoking command in '/home/ishaan/eboat_src/ros_ws/src/ros2_canopen/canopen_utils': AMENT_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/ishaan/eboat_src/install/canopen_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ishaan/eboat_src/build/canopen_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ishaan/eboat_src/install/canopen_utils/lib/python3.12/site-packages:/home/ishaan/eboat_src/install/canopen_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/canopen_utils build --build-base /home/ishaan/eboat_src/build/canopen_utils/build install --record /home/ishaan/eboat_src/build/canopen_utils/install.log --single-version-externally-managed install_data
+[1.033s] running egg_info
+[1.034s] creating ../../../../build/canopen_utils/canopen_utils.egg-info
+[1.044s] writing ../../../../build/canopen_utils/canopen_utils.egg-info/PKG-INFO
+[1.044s] writing dependency_links to ../../../../build/canopen_utils/canopen_utils.egg-info/dependency_links.txt
+[1.044s] writing entry points to ../../../../build/canopen_utils/canopen_utils.egg-info/entry_points.txt
+[1.044s] writing requirements to ../../../../build/canopen_utils/canopen_utils.egg-info/requires.txt
+[1.044s] writing top-level names to ../../../../build/canopen_utils/canopen_utils.egg-info/top_level.txt
+[1.045s] writing manifest file '../../../../build/canopen_utils/canopen_utils.egg-info/SOURCES.txt'
+[1.073s] reading manifest file '../../../../build/canopen_utils/canopen_utils.egg-info/SOURCES.txt'
+[1.073s] adding license file 'LICENSE'
+[1.073s] writing manifest file '../../../../build/canopen_utils/canopen_utils.egg-info/SOURCES.txt'
+[1.073s] running build
+[1.073s] running build_py
+[1.074s] creating /home/ishaan/eboat_src/build/canopen_utils/build
+[1.074s] creating /home/ishaan/eboat_src/build/canopen_utils/build/lib
+[1.074s] creating /home/ishaan/eboat_src/build/canopen_utils/build/lib/canopen_utils
+[1.074s] copying canopen_utils/cyclic_tester.py -> /home/ishaan/eboat_src/build/canopen_utils/build/lib/canopen_utils
+[1.074s] copying canopen_utils/simple_rpdo_tpdo_tester.py -> /home/ishaan/eboat_src/build/canopen_utils/build/lib/canopen_utils
+[1.074s] copying canopen_utils/launch_test_node.py -> /home/ishaan/eboat_src/build/canopen_utils/build/lib/canopen_utils
+[1.074s] copying canopen_utils/test_node.py -> /home/ishaan/eboat_src/build/canopen_utils/build/lib/canopen_utils
+[1.074s] copying canopen_utils/__init__.py -> /home/ishaan/eboat_src/build/canopen_utils/build/lib/canopen_utils
+[1.075s] running install
+[1.079s] running install_lib
+[1.090s] creating /home/ishaan/eboat_src/install/canopen_utils/lib/python3.12/site-packages/canopen_utils
+[1.090s] copying /home/ishaan/eboat_src/build/canopen_utils/build/lib/canopen_utils/cyclic_tester.py -> /home/ishaan/eboat_src/install/canopen_utils/lib/python3.12/site-packages/canopen_utils
+[1.090s] copying /home/ishaan/eboat_src/build/canopen_utils/build/lib/canopen_utils/simple_rpdo_tpdo_tester.py -> /home/ishaan/eboat_src/install/canopen_utils/lib/python3.12/site-packages/canopen_utils
+[1.090s] copying /home/ishaan/eboat_src/build/canopen_utils/build/lib/canopen_utils/launch_test_node.py -> /home/ishaan/eboat_src/install/canopen_utils/lib/python3.12/site-packages/canopen_utils
+[1.091s] copying /home/ishaan/eboat_src/build/canopen_utils/build/lib/canopen_utils/test_node.py -> /home/ishaan/eboat_src/install/canopen_utils/lib/python3.12/site-packages/canopen_utils
+[1.091s] copying /home/ishaan/eboat_src/build/canopen_utils/build/lib/canopen_utils/__init__.py -> /home/ishaan/eboat_src/install/canopen_utils/lib/python3.12/site-packages/canopen_utils
+[1.091s] byte-compiling /home/ishaan/eboat_src/install/canopen_utils/lib/python3.12/site-packages/canopen_utils/cyclic_tester.py to cyclic_tester.cpython-312.pyc
+[1.092s] byte-compiling /home/ishaan/eboat_src/install/canopen_utils/lib/python3.12/site-packages/canopen_utils/simple_rpdo_tpdo_tester.py to simple_rpdo_tpdo_tester.cpython-312.pyc
+[1.092s] byte-compiling /home/ishaan/eboat_src/install/canopen_utils/lib/python3.12/site-packages/canopen_utils/launch_test_node.py to launch_test_node.cpython-312.pyc
+[1.093s] byte-compiling /home/ishaan/eboat_src/install/canopen_utils/lib/python3.12/site-packages/canopen_utils/test_node.py to test_node.cpython-312.pyc
+[1.094s] byte-compiling /home/ishaan/eboat_src/install/canopen_utils/lib/python3.12/site-packages/canopen_utils/__init__.py to __init__.cpython-312.pyc
+[1.094s] running install_data
+[1.094s] creating /home/ishaan/eboat_src/install/canopen_utils/share/ament_index
+[1.094s] creating /home/ishaan/eboat_src/install/canopen_utils/share/ament_index/resource_index
+[1.094s] creating /home/ishaan/eboat_src/install/canopen_utils/share/ament_index/resource_index/packages
+[1.095s] copying resource/canopen_utils -> /home/ishaan/eboat_src/install/canopen_utils/share/ament_index/resource_index/packages
+[1.095s] copying package.xml -> /home/ishaan/eboat_src/install/canopen_utils/share/canopen_utils
+[1.095s] running install_egg_info
+[1.107s] Copying ../../../../build/canopen_utils/canopen_utils.egg-info to /home/ishaan/eboat_src/install/canopen_utils/lib/python3.12/site-packages/canopen_utils-0.3.1-py3.12.egg-info
+[1.108s] running install_scripts
+[1.186s] Installing cyclic_tester script to /home/ishaan/eboat_src/install/canopen_utils/lib/canopen_utils
+[1.186s] Installing simple_tester script to /home/ishaan/eboat_src/install/canopen_utils/lib/canopen_utils
+[1.187s] writing list of installed files to '/home/ishaan/eboat_src/build/canopen_utils/install.log'
+[1.218s] Invoked command in '/home/ishaan/eboat_src/ros_ws/src/ros2_canopen/canopen_utils' returned '0': AMENT_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/ishaan/eboat_src/install/canopen_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ishaan/eboat_src/build/canopen_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ishaan/eboat_src/install/canopen_utils/lib/python3.12/site-packages:/home/ishaan/eboat_src/install/canopen_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/canopen_utils build --build-base /home/ishaan/eboat_src/build/canopen_utils/build install --record /home/ishaan/eboat_src/build/canopen_utils/install.log --single-version-externally-managed install_data

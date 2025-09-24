@@ -1,0 +1,38 @@
+[2.093s] Invoking command in '/home/ishaan/eboat_src/ros_ws/src/electrical_node': PYTHONPATH=/home/ishaan/eboat_src/build/electrical_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ishaan/eboat_src/install/electrical_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/electrical_node build --build-base /home/ishaan/eboat_src/build/electrical_node/build install --record /home/ishaan/eboat_src/build/electrical_node/install.log --single-version-externally-managed install_data
+[2.387s] running egg_info
+[2.388s] creating ../../../build/electrical_node/electrical_node.egg-info
+[2.404s] writing ../../../build/electrical_node/electrical_node.egg-info/PKG-INFO
+[2.404s] writing dependency_links to ../../../build/electrical_node/electrical_node.egg-info/dependency_links.txt
+[2.405s] writing entry points to ../../../build/electrical_node/electrical_node.egg-info/entry_points.txt
+[2.405s] writing requirements to ../../../build/electrical_node/electrical_node.egg-info/requires.txt
+[2.405s] writing top-level names to ../../../build/electrical_node/electrical_node.egg-info/top_level.txt
+[2.405s] writing manifest file '../../../build/electrical_node/electrical_node.egg-info/SOURCES.txt'
+[2.443s] reading manifest file '../../../build/electrical_node/electrical_node.egg-info/SOURCES.txt'
+[2.443s] adding license file 'LICENSE'
+[2.444s] writing manifest file '../../../build/electrical_node/electrical_node.egg-info/SOURCES.txt'
+[2.444s] running build
+[2.444s] running build_py
+[2.444s] creating /home/ishaan/eboat_src/build/electrical_node/build
+[2.445s] creating /home/ishaan/eboat_src/build/electrical_node/build/lib
+[2.445s] creating /home/ishaan/eboat_src/build/electrical_node/build/lib/electrical_node
+[2.445s] copying electrical_node/electrical_node_test.py -> /home/ishaan/eboat_src/build/electrical_node/build/lib/electrical_node
+[2.445s] copying electrical_node/__init__.py -> /home/ishaan/eboat_src/build/electrical_node/build/lib/electrical_node
+[2.445s] running install
+[2.451s] running install_lib
+[2.474s] creating /home/ishaan/eboat_src/install/electrical_node/lib/python3.12/site-packages/electrical_node
+[2.474s] copying /home/ishaan/eboat_src/build/electrical_node/build/lib/electrical_node/electrical_node_test.py -> /home/ishaan/eboat_src/install/electrical_node/lib/python3.12/site-packages/electrical_node
+[2.474s] copying /home/ishaan/eboat_src/build/electrical_node/build/lib/electrical_node/__init__.py -> /home/ishaan/eboat_src/install/electrical_node/lib/python3.12/site-packages/electrical_node
+[2.474s] byte-compiling /home/ishaan/eboat_src/install/electrical_node/lib/python3.12/site-packages/electrical_node/electrical_node_test.py to electrical_node_test.cpython-312.pyc
+[2.475s] byte-compiling /home/ishaan/eboat_src/install/electrical_node/lib/python3.12/site-packages/electrical_node/__init__.py to __init__.cpython-312.pyc
+[2.475s] running install_data
+[2.476s] creating /home/ishaan/eboat_src/install/electrical_node/share/ament_index
+[2.476s] creating /home/ishaan/eboat_src/install/electrical_node/share/ament_index/resource_index
+[2.476s] creating /home/ishaan/eboat_src/install/electrical_node/share/ament_index/resource_index/packages
+[2.476s] copying resource/electrical_node -> /home/ishaan/eboat_src/install/electrical_node/share/ament_index/resource_index/packages
+[2.476s] copying package.xml -> /home/ishaan/eboat_src/install/electrical_node/share/electrical_node
+[2.476s] running install_egg_info
+[2.502s] Copying ../../../build/electrical_node/electrical_node.egg-info to /home/ishaan/eboat_src/install/electrical_node/lib/python3.12/site-packages/electrical_node-0.0.0-py3.12.egg-info
+[2.503s] running install_scripts
+[2.648s] Installing test script to /home/ishaan/eboat_src/install/electrical_node/lib/electrical_node
+[2.650s] writing list of installed files to '/home/ishaan/eboat_src/build/electrical_node/install.log'
+[2.800s] Invoked command in '/home/ishaan/eboat_src/ros_ws/src/electrical_node' returned '0': PYTHONPATH=/home/ishaan/eboat_src/build/electrical_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ishaan/eboat_src/install/electrical_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/electrical_node build --build-base /home/ishaan/eboat_src/build/electrical_node/build install --record /home/ishaan/eboat_src/build/electrical_node/install.log --single-version-externally-managed install_data

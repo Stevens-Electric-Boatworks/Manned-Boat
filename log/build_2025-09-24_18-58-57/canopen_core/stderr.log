@@ -1,0 +1,191 @@
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(node_canopen_driver PUBLIC
+      ${canopen_interfaces_TARGETS}
+      rclcpp::rclcpp
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  CMakeLists.txt:55 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(node_canopen_master PUBLIC
+      ${canopen_interfaces_TARGETS}
+      rclcpp::rclcpp
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  CMakeLists.txt:76 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(device_container PUBLIC
+      ${canopen_interfaces_TARGETS}
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  CMakeLists.txt:99 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(device_container_node PUBLIC
+      ${canopen_interfaces_TARGETS}
+      ${lifecycle_msgs_TARGETS}
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  CMakeLists.txt:121 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(test_node_canopen_driver PUBLIC
+      ${canopen_interfaces_TARGETS}
+      rclcpp::rclcpp
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  test/CMakeLists.txt:4 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(test_node_canopen_master PUBLIC
+      ${canopen_interfaces_TARGETS}
+      rclcpp::rclcpp
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  test/CMakeLists.txt:22 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(test_canopen_driver PUBLIC
+      ${canopen_interfaces_TARGETS}
+      ${lifecycle_msgs_TARGETS}
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  test/CMakeLists.txt:60 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(test_lifecycle_canopen_driver PUBLIC
+      ${canopen_interfaces_TARGETS}
+      ${lifecycle_msgs_TARGETS}
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  test/CMakeLists.txt:74 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(test_canopen_master PUBLIC
+      ${canopen_interfaces_TARGETS}
+      ${lifecycle_msgs_TARGETS}
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  test/CMakeLists.txt:88 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(test_lifecycle_canopen_master PUBLIC
+      ${canopen_interfaces_TARGETS}
+      ${lifecycle_msgs_TARGETS}
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  test/CMakeLists.txt:102 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(test_lifecycle_manager PUBLIC
+      ${canopen_interfaces_TARGETS}
+      ${lifecycle_msgs_TARGETS}
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  test/CMakeLists.txt:116 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(test_errors PUBLIC
+      ${canopen_interfaces_TARGETS}
+      ${lifecycle_msgs_TARGETS}
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  test/CMakeLists.txt:129 (ament_target_dependencies)
+
+[0m

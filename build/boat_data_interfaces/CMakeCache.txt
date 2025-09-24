@@ -247,7 +247,7 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 SITE:STRING=Ishaans-Framework
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/kilted/lib/librosidl_typesupport_cpp.so
+_lib:FILEPATH=/opt/ros/kilted/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 
 //The directory containing a CMake configuration file for ament_cmake.
 ament_cmake_DIR:PATH=/opt/ros/kilted/share/ament_cmake/cmake
@@ -339,6 +339,9 @@ boat_data_interfaces_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 boat_data_interfaces_SOURCE_DIR:STATIC=/home/ishaan/eboat_src/ros_ws/src/boat_data_interfaces
 
+//The directory containing a CMake configuration file for builtin_interfaces.
+builtin_interfaces_DIR:PATH=/opt/ros/kilted/share/builtin_interfaces/cmake
+
 //The directory containing a CMake configuration file for fastcdr.
 fastcdr_DIR:PATH=/opt/ros/kilted/lib/cmake/fastcdr
 
@@ -359,6 +362,9 @@ rosidl_cmake_DIR:PATH=/opt/ros/kilted/share/rosidl_cmake/cmake
 
 //The directory containing a CMake configuration file for rosidl_core_generators.
 rosidl_core_generators_DIR:PATH=/opt/ros/kilted/share/rosidl_core_generators/cmake
+
+//The directory containing a CMake configuration file for rosidl_core_runtime.
+rosidl_core_runtime_DIR:PATH=/opt/ros/kilted/share/rosidl_core_runtime/cmake
 
 //The directory containing a CMake configuration file for rosidl_default_generators.
 rosidl_default_generators_DIR:PATH=/opt/ros/kilted/share/rosidl_default_generators/cmake
@@ -577,6 +583,8 @@ _Python3_INCLUDE_DIR:INTERNAL=/usr/include/python3.12
 //Python3 Properties
 _Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;12;3;64;;cpython-312-x86_64-linux-gnu;abi3;/usr/lib/python3.12;/usr/lib/python3.12;/usr/local/lib/python3.12/dist-packages;/usr/local/lib/python3.12/dist-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=4c8bfa8951e99fa32e4000a94f8c04a2
+//Interpreter reason failure
+_Python3_Interpreter_REASON_FAILURE:INTERNAL=
 //Path to a library.
 _Python3_LIBRARY_RELEASE:INTERNAL=/usr/lib/x86_64-linux-gnu/libpython3.12.so
 _Python3_NUMPY_SIGNATURE:INTERNAL=d5ddeb909deee809c18fdfbea68bafbe

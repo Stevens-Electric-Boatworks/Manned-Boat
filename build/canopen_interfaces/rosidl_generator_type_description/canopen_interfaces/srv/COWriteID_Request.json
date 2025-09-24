@@ -1,0 +1,66 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "canopen_interfaces/srv/COWriteID_Request",
+      "fields": [
+        {
+          "name": "nodeid",
+          "type": {
+            "type_id": 2,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "index",
+          "type": {
+            "type_id": 5,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "subindex",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "data",
+          "type": {
+            "type_id": 7,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "canopen_datatype",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "canopen_interfaces/srv/COWriteID_Request",
+      "hash_string": "RIHS01_5e9e55f1e335a92f9455b16b37ea0b76429004ea17b0bace03ecdd310eefa022"
+    }
+  ]
+}

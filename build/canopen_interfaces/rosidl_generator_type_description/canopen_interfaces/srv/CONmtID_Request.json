@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "canopen_interfaces/srv/CONmtID_Request",
+      "fields": [
+        {
+          "name": "nmtcommand",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "nodeid",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "canopen_interfaces/srv/CONmtID_Request",
+      "hash_string": "RIHS01_084bf20f333b7b9404c198395cee3481abcd82291cf3fd1bd5a413cad0f4646f"
+    }
+  ]
+}

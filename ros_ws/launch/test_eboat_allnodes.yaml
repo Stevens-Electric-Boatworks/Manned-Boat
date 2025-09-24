@@ -2,6 +2,13 @@
 ---
 launch:
   - node:
+      pkg: "alarms_watchdog_node"
+      exec: "main"
+      name: "alarms_watchdog"
+      param:
+          - name: "faults_file"
+            value: "~/eboat_src/data/FAULTS.csv"
+  - node:
       pkg: "shore_comms"
       exec: "shore"
       name: "shore_comms"
@@ -20,11 +27,3 @@ launch:
       pkg: "motion_node_test"
       exec: "test"
       name: "motion_node"
-
-  - node:
-      pkg: "alarms_watchdog_node"
-      exec: "main"
-      name: "alarms_watchdog"
-      param:
-          - name: "faults_file"
-            value: "~/eboat_src/data/FAULTS.csv"

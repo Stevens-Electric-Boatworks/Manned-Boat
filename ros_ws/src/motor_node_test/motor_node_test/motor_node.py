@@ -28,7 +28,7 @@ class MotorNode(Node):
     
     def alarm_callback(self):
         msg = BoatAlarm()
-        msg.error_code = random.randint(0, 1)
+        msg.error_code = 1 # Test random warning
         msg.timestamp = self.get_clock().now().to_msg()
         self.alarm_publisher_.publish(msg)
 

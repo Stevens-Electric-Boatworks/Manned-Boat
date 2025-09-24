@@ -40,6 +40,8 @@ class AlarmsWatchdog(Node):
             reader = csv.DictReader(file)
             i = 0
             for row in reader:
+                if len(row["ID"]) == 0:
+                    continue
                 self.codes[int(row["ID"])] = (row['Type'], row['Message'])
                 i += 1
         

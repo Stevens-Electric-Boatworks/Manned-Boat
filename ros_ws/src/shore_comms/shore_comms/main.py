@@ -1,5 +1,6 @@
 import atexit
 import datetime
+import smtplib
 
 from websockets.exceptions import ConnectionClosed
 import rclpy
@@ -24,9 +25,9 @@ class ShoreDataCollector(Node):
     
     def __init__(self):
         super().__init__('shore_subscriber')
-        self.websocket = None
+        self.websocket:smtplib.SMTP = None
         self.data = {}
-        self.alarms:websocket = []
+        self.alarms = []
         self.alarm_publisher = self.create_publisher(BoatAlarm, "/all_alarms", 10)
         self.create_sub(BoatAlarm, "/all_alarms", self.alarms_collector)
         self.create_sub(ElectricalData, "/electrical/all_sensors", self.electrical_collector)

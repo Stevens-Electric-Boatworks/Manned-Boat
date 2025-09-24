@@ -33,7 +33,7 @@ class MotionNode(Node):
 
     def alarm_callback(self):
         msg = BoatAlarm()
-        msg.error_code = random.randint(3, 4)
+        msg.error_code = 4 # Motion Node Example Error
         msg.timestamp = self.get_clock().now().to_msg()
         self.alarm_publisher_.publish(msg)
 

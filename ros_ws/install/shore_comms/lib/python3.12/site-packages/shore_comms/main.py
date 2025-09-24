@@ -1,4 +1,6 @@
 import atexit
+import datetime
+
 from websockets.exceptions import ConnectionClosed
 import rclpy
 from rclpy.executors import ExternalShutdownException
@@ -11,8 +13,6 @@ from boat_data_interfaces.msg import ElectricalData, MotionData, MotorData, GPIO
 import asyncio
 from websockets.client import connect
 import json
-from datetime import datetime
-
 import threading
 
 
@@ -24,8 +24,10 @@ class ShoreDataCollector(Node):
     
     def __init__(self):
         super().__init__('shore_subscriber')
+        self.websocket = None
         self.data = {}
-        self.alarms = []
+        self.alarms:websocket = []
+        self.alarm_publisher = self.create_publisher(BoatAlarm, "/all_alarms", 10)
         self.create_sub(BoatAlarm, "/all_alarms", self.alarms_collector)
         self.create_sub(ElectricalData, "/electrical/all_sensors", self.electrical_collector)
         self.create_sub(MotionData, "/motion/all_sensors", self.motion_collector)
@@ -43,21 +45,27 @@ class ShoreDataCollector(Node):
         asyncio.run(self.start_background_shore_sender())
 
     
-    def addData(self, dataName, data):
+    def add_data(self, data_name, data):
         """
         Adds data to be sent to the shore server.
-        :param dataName - The name of the data as required by the ShoreAPI
+        :param data_name - The name of the data as required by the ShoreAPI
         :param data - The actual data to send
         """
-        self.data[dataName] = data
+        self.data[data_name] = data
     
-    def addAlarm(self, error_code: int, timestamp):
+    def add_alarm(self, error_code: int, timestamp):
         """
         Queues an alarm to be sent to the shore server.
         :param error_code - The error code based on the spreadsheet
         :param timestamp - The timestamp of when the alarm was issued
         """
         self.alarms.append((error_code, timestamp))
+
+    def declare_alarm(self, error_code):
+        msg = BoatAlarm()
+        msg.error_code = error_code
+        msg.timestamp = self.get_clock().now().to_msg()
+        self.alarm_publisher.publish(msg)
 
 
     async def start_background_shore_sender(self):
@@ -67,16 +75,17 @@ class ShoreDataCollector(Node):
         self.get_logger().info(f"Attempting to connect to the Shore Server via a Websocket at {SHORE_URI}")
         async for self.websocket in connect(SHORE_URI):
             try:
-                if self.websocket.open == False:
+                if not self.websocket.open:
                     self.get_logger().error("Unable to open a connect to the shore server.")
                     self.get_logger().error(f"Attempted URI: {SHORE_URI}. SHUTTING DOWN...")
+                    self.declare_alarm(3) # ALARM: Shore Comms Node Shutdown
                     self.destroy_node()
                     return
-                await self.sendData(False)
+                await self.send_data_to_shore(False)
                 self.get_logger().info(f"Connected to the websocket at {SHORE_URI} ✅")
-                while(True):
-                    await self.sendData(True)
-                    await self.sendAlarms(True)
+                while True:
+                    await self.send_data_to_shore(True)
+                    await self.send_alarms_to_shore(True)
                     await asyncio.sleep(DATA_SEND)
             except ConnectionClosed as e:
                 self.get_logger().error(f"Unable to start the connection: {e.reason}")
@@ -84,36 +93,40 @@ class ShoreDataCollector(Node):
     
     def watchdog_callback(self):
         self._logger.debug("[Websocket Watchdog] running callback")
-        if not hasattr(self, "websocket"):
+        if self.websocket is None:
             self._logger.warn("[Websocket Watchdog] Websocket is not opened yet...")
-            
+            self.declare_alarm(2) # ALARM: Shore Comms Websocket failure
+
         elif not self.websocket.open:
             self._logger.error("[Websocket Watchdog] The shore server is not connected to the websocket.")
+            self.declare_alarm(2) # ALARM: Shore Comms Websocket failure
+
     
-    def on_exit(self):
+
+    async def on_exit(self):
         self._logger.info("Shutting down the websocket.")
         if hasattr(self, "websocket"):
-            v = self.sendData(False)
-            v = self.websocket.close()
+            await self.send_data_to_shore(False)
+            await self.websocket.close()
 
 
     
-    async def sendData(self, ignore_empty):
+    async def send_data_to_shore(self, ignore_empty):
         if len(self.data) == 0 and ignore_empty:
             return
-        outputData = {
+        output_data = {
             "type": "data",
             "payload" : self.data
         }
-        await self.websocket.send(json.dumps(outputData))
+        await self.websocket.send(json.dumps(output_data))
         self.data.clear()
 
-    async def sendAlarms(self, ignore_empty):
+    async def send_alarms_to_shore(self, ignore_empty):
         if len(self.alarms) == 0 and ignore_empty:
             return
         #go through all alarms in the queue
         for alarm in self.alarms:
-            outputData = {
+            output_data = {
             "type": "alarm",
             "action": "set",
             "payload" : {
@@ -123,39 +136,38 @@ class ShoreDataCollector(Node):
                 "type": "error"
                 }   
             }
-            self._logger.debug("The output data from sendAlarms() " + json.dumps(outputData))
-            await self.websocket.send(json.dumps(outputData))
+            self._logger.debug("The output data from sendAlarms() " + json.dumps(output_data))
+            await self.websocket.send(json.dumps(output_data))
         self.alarms.clear()
-
 
 
                     # IMPORTANT: Parameter name MUST be "msg"
     def electrical_collector(self, msg:ElectricalData):
-        self.addData("vbat", msg.vbat)
-        self.addData("vebat", msg.vebat)
-        self.addData("temp_bat", msg.temp_bat)
-        self.addData("battery_percent", msg.battery_percent)
-        self.addData("current_bat", msg.current_bat)
-        self.addData("bms_temp", msg.bms_temp)
-        self.addData("can_bus_util_percent", msg.can_bus_util_percent)
+        self.add_data("vbat", msg.vbat)
+        self.add_data("vebat", msg.vebat)
+        self.add_data("temp_bat", msg.temp_bat)
+        self.add_data("battery_percent", msg.battery_percent)
+        self.add_data("current_bat", msg.current_bat)
+        self.add_data("bms_temp", msg.bms_temp)
+        self.add_data("can_bus_util_percent", msg.can_bus_util_percent)
 
     def motion_collector(self, msg:MotionData):
-        self.addData("heading", msg.heading)
-        self.addData("gps_lat", msg.gps_lat)
-        self.addData("gps_alt", msg.gps_lat)
-        self.addData("gps_long", msg.gps_long)
-        self.addData("imu_x", msg.imu_x)
-        self.addData("imu_y", msg.imu_y)
-        self.addData("imu_z", msg.imu_z)
-        self.addData("speed", msg.speed)
+        self.add_data("heading", msg.heading)
+        self.add_data("gps_lat", msg.gps_lat)
+        self.add_data("gps_alt", msg.gps_lat)
+        self.add_data("gps_long", msg.gps_long)
+        self.add_data("imu_x", msg.imu_x)
+        self.add_data("imu_y", msg.imu_y)
+        self.add_data("imu_z", msg.imu_z)
+        self.add_data("speed", msg.speed)
 
     def motor_collector(self, msg:MotorData):
-        self.addData("rpm_a", msg.rpm_a)
-        self.addData("rpm_b", msg.rpm_b)
-        self.addData("propulsion_angle", msg.propulsion_angle)
+        self.add_data("rpm_a", msg.rpm_a)
+        self.add_data("rpm_b", msg.rpm_b)
+        self.add_data("propulsion_angle", msg.propulsion_angle)
     
     def alarms_collector(self, msg:BoatAlarm):
-        self.addAlarm(msg.error_code, msg.timestamp.sec * 1000.0)
+        self.add_alarm(msg.error_code, msg.timestamp.sec * 1000.0)
     
 
 

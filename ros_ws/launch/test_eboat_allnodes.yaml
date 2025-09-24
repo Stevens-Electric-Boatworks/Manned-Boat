@@ -21,8 +21,10 @@ launch:
       exec: "test"
       name: "motion_node"
 
-      
   - node:
       pkg: "alarms_watchdog_node"
       exec: "main"
       name: "alarms_watchdog"
+      param:
+          - name: "faults_file"
+            value: "~/eboat_src/data/FAULTS.csv"

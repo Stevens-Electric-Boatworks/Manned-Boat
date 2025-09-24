@@ -1,0 +1,15 @@
+%YAML 1.2
+---
+launch:
+  - node:
+      pkg: "shore_comms"
+      exec: "shore"
+      name: "shore_comms"
+
+  - node:
+      pkg: "alarms_watchdog_node"
+      exec: "main"
+      name: "alarms_watchdog"
+
+  - node:
+      pkg: d

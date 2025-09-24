@@ -1,2 +1,0 @@
-[console_scripts]
-shore = shore_comms.main:main

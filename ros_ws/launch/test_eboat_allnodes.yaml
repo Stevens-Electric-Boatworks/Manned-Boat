@@ -20,3 +20,9 @@ launch:
       pkg: "motion_node_test"
       exec: "test"
       name: "motion_node"
+
+      
+  - node:
+      pkg: "alarms_watchdog_node"
+      exec: "main"
+      name: "alarms_watchdog"

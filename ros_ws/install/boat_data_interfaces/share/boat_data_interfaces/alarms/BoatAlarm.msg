@@ -1,2 +1,0 @@
-uint8 error_code
-builtin_interfaces/Time timestamp

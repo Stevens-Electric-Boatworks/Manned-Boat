@@ -1,3 +1,4 @@
+import atexit
 from websockets.exceptions import ConnectionClosed
 import rclpy
 from rclpy.executors import ExternalShutdownException
@@ -52,16 +53,16 @@ class ShoreDataCollector(Node):
     
     def addAlarm(self, error_code: int, timestamp):
         """
-        Adds data to be sent to the shore server.
-        :param dataName - The name of the data as required by the ShoreAPI
-        :param data - The actual data to send
+        Queues an alarm to be sent to the shore server.
+        :param error_code - The error code based on the spreadsheet
+        :param timestamp - The timestamp of when the alarm was issued
         """
         self.alarms.append((error_code, timestamp))
 
 
     async def start_background_shore_sender(self):
         """
-        Starts the background task to send the data to the shore server. Is automatically called every 100ms
+        Starts the background task to send the data to the shore server. Is automatically called every DATA_SEND ms
         """
         self.get_logger().info(f"Attempting to connect to the Shore Server via a Websocket at {SHORE_URI}")
         async for self.websocket in connect(SHORE_URI):
@@ -70,8 +71,9 @@ class ShoreDataCollector(Node):
                     self.get_logger().error("Unable to open a connect to the shore server.")
                     self.get_logger().error(f"Attempted URI: {SHORE_URI}. SHUTTING DOWN...")
                     self.destroy_node()
+                    return
                 await self.sendData(False)
-                self.get_logger().info(f"Connected to the websocket at {SHORE_URI}")
+                self.get_logger().info(f"Connected to the websocket at {SHORE_URI} ✅")
                 while(True):
                     await self.sendData(True)
                     await self.sendAlarms(True)
@@ -87,6 +89,13 @@ class ShoreDataCollector(Node):
             
         elif not self.websocket.open:
             self._logger.error("[Websocket Watchdog] The shore server is not connected to the websocket.")
+    
+    def on_exit(self):
+        self._logger.info("Shutting down the websocket.")
+        if hasattr(self, "websocket"):
+            v = self.sendData(False)
+            v = self.websocket.close()
+
 
     
     async def sendData(self, ignore_empty):
@@ -116,8 +125,6 @@ class ShoreDataCollector(Node):
             }
             self._logger.debug("The output data from sendAlarms() " + json.dumps(outputData))
             await self.websocket.send(json.dumps(outputData))
-
-        
         self.alarms.clear()
 
 
@@ -149,6 +156,7 @@ class ShoreDataCollector(Node):
     
     def alarms_collector(self, msg:BoatAlarm):
         self.addAlarm(msg.error_code, msg.timestamp.sec * 1000.0)
+    
 
 
 
@@ -156,6 +164,7 @@ def main(args=None):
     try:
         with rclpy.init(args=args):
             minimal_subscriber = ShoreDataCollector()
+            atexit.register(minimal_subscriber.on_exit)
             rclpy.spin(minimal_subscriber)
     except (KeyboardInterrupt, ExternalShutdownException):
         pass

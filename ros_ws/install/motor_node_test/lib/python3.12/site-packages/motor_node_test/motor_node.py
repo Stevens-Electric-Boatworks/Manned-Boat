@@ -15,7 +15,7 @@ class MotorNode(Node):
         timer_period = random.random() * 0.2
         self._logger.info("Sending test data at a period of " + str(timer_period))
         self.sensor_timer = self.create_timer(timer_period, self.timer_callback)
-        self.alarm_timer = self.create_timer(2, self.alarm_callback)
+        self.alarm_timer = self.create_timer(15, self.alarm_callback)
 
     def timer_callback(self):
         msg = MotorData()
@@ -30,7 +30,6 @@ class MotorNode(Node):
         msg = BoatAlarm()
         msg.error_code = random.randint(0, 1)
         msg.timestamp = self.get_clock().now().to_msg()
-        self._logger.info("Sending alarm of " + str(msg))
         self.alarm_publisher_.publish(msg)
 
 

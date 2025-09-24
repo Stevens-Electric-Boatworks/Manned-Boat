@@ -14,7 +14,7 @@ class MotionNode(Node):
         timer_period = random.random() * 0.2
         self._logger.info("Sending test data at a period of " + str(timer_period))
         self.timer = self.create_timer(timer_period, self.timer_callback)
-        self.alarm_timer = self.create_timer(2, self.alarm_callback)
+        self.alarm_timer = self.create_timer(8, self.alarm_callback)
 
 
     def timer_callback(self):
@@ -35,7 +35,6 @@ class MotionNode(Node):
         msg = BoatAlarm()
         msg.error_code = random.randint(3, 4)
         msg.timestamp = self.get_clock().now().to_msg()
-        self._logger.info("Sending alarm of " + str(msg))
         self.alarm_publisher_.publish(msg)
 
 

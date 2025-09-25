@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "test = motor_node.motor_node_test:main"
+            # "test = motor_node.motor_node_test:main",
+            "can_test = motor_node.old_can.canmotor_old_test:main"
         ],
     },
 )

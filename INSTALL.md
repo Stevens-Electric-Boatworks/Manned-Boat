@@ -59,6 +59,9 @@ The ROS version used is [Kilted Kaiju](https://docs.ros.org/en/kilted/Installati
   * `colcon build` (this will take a while!!!)
 
  
+### CAN_Motor Branch Specific Instructions
+
+* Install the python package `canopen` by running `pip install canopen --break-system-packages`
 
 Run on ROS2 instance
 ```

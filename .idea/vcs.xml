@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ros_ws/build/lely_core_libraries/upstream" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ros_ws/src/ros2_canopen" vcs="Git" />
   </component>
 </project>

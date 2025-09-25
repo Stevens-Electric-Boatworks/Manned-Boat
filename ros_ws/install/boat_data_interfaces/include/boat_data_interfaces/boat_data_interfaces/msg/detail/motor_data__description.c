@@ -102,7 +102,8 @@ static char toplevel_type_raw_source[] =
   "uint8 rpm_a\n"
   "uint8 rpm_b\n"
   "float32 motor_synch\n"
-  "float32 propulsion_angle";
+  "float32 propulsion_angle\n"
+  "";
 
 static char msg_encoding[] = "msg";
 
@@ -116,7 +117,7 @@ boat_data_interfaces__msg__MotorData__get_individual_type_description_source(
   static const rosidl_runtime_c__type_description__TypeSource source = {
     {boat_data_interfaces__msg__MotorData__TYPE_NAME, 34, 34},
     {msg_encoding, 3, 3},
-    {toplevel_type_raw_source, 69, 69},
+    {toplevel_type_raw_source, 70, 70},
   };
   return &source;
 }

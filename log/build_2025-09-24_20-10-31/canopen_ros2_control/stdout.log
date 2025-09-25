@@ -1,0 +1,69 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ros2_control_test_assets: 5.5.0 (/opt/ros/kilted/share/ros2_control_test_assets/cmake)
+-- Found ament_cmake_gmock: 2.7.3 (/opt/ros/kilted/share/ament_cmake_gmock/cmake)
+-- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found canopen_402_driver: 0.3.1 (/home/ishaan/eboat_src/install/canopen_402_driver/share/canopen_402_driver/cmake)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system thread 
+-- Found rosidl_generator_c: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.8.2 (/opt/ros/kilted/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 9.3.2 (/opt/ros/kilted/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Setting yaml-cpp_DIR to: '/opt/ros/kilted/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'
+-- Found hardware_interface: 5.5.0 (/opt/ros/kilted/share/hardware_interface/cmake)
+-- Configuring done (4.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ishaan/eboat_src/build/canopen_ros2_control
+[ 50%] [32mBuilding CXX object CMakeFiles/canopen_ros2_control.dir/src/robot_system.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/canopen_ros2_control.dir/src/cia402_system.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/canopen_ros2_control.dir/src/canopen_system.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libcanopen_ros2_control.so[0m
+[100%] Built target canopen_ros2_control
+-- Install configuration: ""
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/share/canopen_ros2_control/canopen_ros2_control.xml
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/lib/libcanopen_ros2_control.so
+-- Set non-toolchain portion of runtime path of "/home/ishaan/eboat_src/install/canopen_ros2_control/lib/libcanopen_ros2_control.so" to ""
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/include
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/include/canopen_ros2_control
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/include/canopen_ros2_control/robot_system.hpp
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/include/canopen_ros2_control/cia402_system.hpp
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/include/canopen_ros2_control/visibility_control.h
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/include/canopen_ros2_control/helpers.hpp
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/include/canopen_ros2_control/cia402_data.hpp
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/include/canopen_ros2_control/canopen_system.hpp
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/share/canopen_ros2_control/environment/library_path.sh
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/share/canopen_ros2_control/environment/library_path.dsv
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/share/ament_index/resource_index/package_run_dependencies/canopen_ros2_control
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/share/ament_index/resource_index/parent_prefix_path/canopen_ros2_control
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/share/canopen_ros2_control/environment/ament_prefix_path.sh
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/share/canopen_ros2_control/environment/ament_prefix_path.dsv
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/share/canopen_ros2_control/environment/path.sh
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/share/canopen_ros2_control/environment/path.dsv
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/share/canopen_ros2_control/local_setup.bash
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/share/canopen_ros2_control/local_setup.sh
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/share/canopen_ros2_control/local_setup.zsh
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/share/canopen_ros2_control/local_setup.dsv
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/share/canopen_ros2_control/package.dsv
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/share/ament_index/resource_index/packages/canopen_ros2_control
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/canopen_ros2_control
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/share/canopen_ros2_control/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/share/canopen_ros2_control/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/share/canopen_ros2_control/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/share/canopen_ros2_control/cmake/canopen_ros2_controlConfig.cmake
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/share/canopen_ros2_control/cmake/canopen_ros2_controlConfig-version.cmake
+-- Installing: /home/ishaan/eboat_src/install/canopen_ros2_control/share/canopen_ros2_control/package.xml

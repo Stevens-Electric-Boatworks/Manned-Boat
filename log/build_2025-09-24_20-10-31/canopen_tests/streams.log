@@ -1,0 +1,395 @@
+[1.276s] Invoking command in '/home/ishaan/eboat_src/build/canopen_tests': AMENT_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_ros2_controllers:/home/ishaan/eboat_src/install/canopen_402_driver:/home/ishaan/eboat_src/install/canopen_proxy_driver:/home/ishaan/eboat_src/install/canopen_base_driver:/home/ishaan/eboat_src/install/canopen_fake_slaves:/home/ishaan/eboat_src/install/canopen_core:/home/ishaan/eboat_src/install/lely_core_libraries:/home/ishaan/eboat_src/install/canopen_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_ros2_controllers:/home/ishaan/eboat_src/install/canopen_402_driver:/home/ishaan/eboat_src/install/canopen_proxy_driver:/home/ishaan/eboat_src/install/canopen_base_driver:/home/ishaan/eboat_src/install/canopen_fake_slaves:/home/ishaan/eboat_src/install/canopen_core:/home/ishaan/eboat_src/install/lely_core_libraries:/home/ishaan/eboat_src/install/canopen_interfaces:/home/ishaan/eboat_src/ros_ws/install/canopen_tests:/home/ishaan/eboat_src/ros_ws/install/canopen_ros2_controllers:/home/ishaan/eboat_src/ros_ws/install/canopen_ros2_control:/home/ishaan/eboat_src/ros_ws/install/canopen:/home/ishaan/eboat_src/ros_ws/install/canopen_402_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_proxy_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_master_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_fake_slaves:/home/ishaan/eboat_src/ros_ws/install/canopen_base_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_core:/home/ishaan/eboat_src/ros_ws/install/lely_core_libraries:/home/ishaan/eboat_src/ros_ws/install/canopen_interfaces:/home/ishaan/eboat_src/ros_ws/install/boat_data_interfaces:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/home/ishaan/eboat_src/ros_ws/install/shore_comms:/home/ishaan/eboat_src/ros_ws/install/motor_node_test:/home/ishaan/eboat_src/ros_ws/install/motor_node:/home/ishaan/eboat_src/ros_ws/install/motion_node_test:/home/ishaan/eboat_src/ros_ws/install/motion_node:/home/ishaan/eboat_src/ros_ws/install/electrical_node_test:/home/ishaan/eboat_src/ros_ws/install/electrical_node:/home/ishaan/eboat_src/ros_ws/install/canopen_utils:/home/ishaan/eboat_src/ros_ws/install/alarms_watchdog_node:/home/ishaan/eboat_src/ros_ws/install/GPIO_Test:/opt/ros/kilted LD_LIBRARY_PATH=/home/ishaan/eboat_src/install/canopen_ros2_controllers/lib:/home/ishaan/eboat_src/install/canopen_402_driver/lib:/home/ishaan/eboat_src/install/canopen_proxy_driver/lib:/home/ishaan/eboat_src/install/canopen_base_driver/lib:/home/ishaan/eboat_src/install/canopen_core/lib:/home/ishaan/eboat_src/install/lely_core_libraries/lib:/home/ishaan/eboat_src/install/canopen_interfaces/lib:${LD_LIBRARY_PATH} PATH=/home/ishaan/eboat_src/install/lely_core_libraries/bin:${PATH} PYTHONPATH=/home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages:/home/ishaan/eboat_src/install/canopen_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ishaan/eboat_src/ros_ws/src/ros2_canopen/canopen_tests -DCMAKE_INSTALL_PREFIX=/home/ishaan/eboat_src/install/canopen_tests
+[1.453s] -- The C compiler identification is GNU 13.3.0
+[2.385s] -- The CXX compiler identification is GNU 13.3.0
+[3.312s] -- Detecting C compiler ABI info
+[3.646s] -- Detecting C compiler ABI info - done
+[3.651s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.651s] -- Detecting C compile features
+[3.651s] -- Detecting C compile features - done
+[3.790s] -- Detecting CXX compiler ABI info
+[4.121s] -- Detecting CXX compiler ABI info - done
+[4.127s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.127s] -- Detecting CXX compile features
+[4.127s] -- Detecting CXX compile features - done
+[4.129s] -- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+[4.239s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[4.315s] -- Found lely_core_libraries: 0.3.1 (/home/ishaan/eboat_src/install/lely_core_libraries/share/lely_core_libraries/cmake)
+[4.375s] -- Configuring done (3.1s)
+[4.381s] -- Generating done (0.0s)
+[4.384s] -- Build files have been written to: /home/ishaan/eboat_src/build/canopen_tests
+[4.388s] Invoked command in '/home/ishaan/eboat_src/build/canopen_tests' returned '0': AMENT_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_ros2_controllers:/home/ishaan/eboat_src/install/canopen_402_driver:/home/ishaan/eboat_src/install/canopen_proxy_driver:/home/ishaan/eboat_src/install/canopen_base_driver:/home/ishaan/eboat_src/install/canopen_fake_slaves:/home/ishaan/eboat_src/install/canopen_core:/home/ishaan/eboat_src/install/lely_core_libraries:/home/ishaan/eboat_src/install/canopen_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_ros2_controllers:/home/ishaan/eboat_src/install/canopen_402_driver:/home/ishaan/eboat_src/install/canopen_proxy_driver:/home/ishaan/eboat_src/install/canopen_base_driver:/home/ishaan/eboat_src/install/canopen_fake_slaves:/home/ishaan/eboat_src/install/canopen_core:/home/ishaan/eboat_src/install/lely_core_libraries:/home/ishaan/eboat_src/install/canopen_interfaces:/home/ishaan/eboat_src/ros_ws/install/canopen_tests:/home/ishaan/eboat_src/ros_ws/install/canopen_ros2_controllers:/home/ishaan/eboat_src/ros_ws/install/canopen_ros2_control:/home/ishaan/eboat_src/ros_ws/install/canopen:/home/ishaan/eboat_src/ros_ws/install/canopen_402_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_proxy_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_master_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_fake_slaves:/home/ishaan/eboat_src/ros_ws/install/canopen_base_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_core:/home/ishaan/eboat_src/ros_ws/install/lely_core_libraries:/home/ishaan/eboat_src/ros_ws/install/canopen_interfaces:/home/ishaan/eboat_src/ros_ws/install/boat_data_interfaces:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/home/ishaan/eboat_src/ros_ws/install/shore_comms:/home/ishaan/eboat_src/ros_ws/install/motor_node_test:/home/ishaan/eboat_src/ros_ws/install/motor_node:/home/ishaan/eboat_src/ros_ws/install/motion_node_test:/home/ishaan/eboat_src/ros_ws/install/motion_node:/home/ishaan/eboat_src/ros_ws/install/electrical_node_test:/home/ishaan/eboat_src/ros_ws/install/electrical_node:/home/ishaan/eboat_src/ros_ws/install/canopen_utils:/home/ishaan/eboat_src/ros_ws/install/alarms_watchdog_node:/home/ishaan/eboat_src/ros_ws/install/GPIO_Test:/opt/ros/kilted LD_LIBRARY_PATH=/home/ishaan/eboat_src/install/canopen_ros2_controllers/lib:/home/ishaan/eboat_src/install/canopen_402_driver/lib:/home/ishaan/eboat_src/install/canopen_proxy_driver/lib:/home/ishaan/eboat_src/install/canopen_base_driver/lib:/home/ishaan/eboat_src/install/canopen_core/lib:/home/ishaan/eboat_src/install/lely_core_libraries/lib:/home/ishaan/eboat_src/install/canopen_interfaces/lib:${LD_LIBRARY_PATH} PATH=/home/ishaan/eboat_src/install/lely_core_libraries/bin:${PATH} PYTHONPATH=/home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages:/home/ishaan/eboat_src/install/canopen_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ishaan/eboat_src/ros_ws/src/ros2_canopen/canopen_tests -DCMAKE_INSTALL_PREFIX=/home/ishaan/eboat_src/install/canopen_tests
+[4.389s] Invoking command in '/home/ishaan/eboat_src/build/canopen_tests': AMENT_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_ros2_controllers:/home/ishaan/eboat_src/install/canopen_402_driver:/home/ishaan/eboat_src/install/canopen_proxy_driver:/home/ishaan/eboat_src/install/canopen_base_driver:/home/ishaan/eboat_src/install/canopen_fake_slaves:/home/ishaan/eboat_src/install/canopen_core:/home/ishaan/eboat_src/install/lely_core_libraries:/home/ishaan/eboat_src/install/canopen_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_ros2_controllers:/home/ishaan/eboat_src/install/canopen_402_driver:/home/ishaan/eboat_src/install/canopen_proxy_driver:/home/ishaan/eboat_src/install/canopen_base_driver:/home/ishaan/eboat_src/install/canopen_fake_slaves:/home/ishaan/eboat_src/install/canopen_core:/home/ishaan/eboat_src/install/lely_core_libraries:/home/ishaan/eboat_src/install/canopen_interfaces:/home/ishaan/eboat_src/ros_ws/install/canopen_tests:/home/ishaan/eboat_src/ros_ws/install/canopen_ros2_controllers:/home/ishaan/eboat_src/ros_ws/install/canopen_ros2_control:/home/ishaan/eboat_src/ros_ws/install/canopen:/home/ishaan/eboat_src/ros_ws/install/canopen_402_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_proxy_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_master_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_fake_slaves:/home/ishaan/eboat_src/ros_ws/install/canopen_base_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_core:/home/ishaan/eboat_src/ros_ws/install/lely_core_libraries:/home/ishaan/eboat_src/ros_ws/install/canopen_interfaces:/home/ishaan/eboat_src/ros_ws/install/boat_data_interfaces:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/home/ishaan/eboat_src/ros_ws/install/shore_comms:/home/ishaan/eboat_src/ros_ws/install/motor_node_test:/home/ishaan/eboat_src/ros_ws/install/motor_node:/home/ishaan/eboat_src/ros_ws/install/motion_node_test:/home/ishaan/eboat_src/ros_ws/install/motion_node:/home/ishaan/eboat_src/ros_ws/install/electrical_node_test:/home/ishaan/eboat_src/ros_ws/install/electrical_node:/home/ishaan/eboat_src/ros_ws/install/canopen_utils:/home/ishaan/eboat_src/ros_ws/install/alarms_watchdog_node:/home/ishaan/eboat_src/ros_ws/install/GPIO_Test:/opt/ros/kilted LD_LIBRARY_PATH=/home/ishaan/eboat_src/install/canopen_ros2_controllers/lib:/home/ishaan/eboat_src/install/canopen_402_driver/lib:/home/ishaan/eboat_src/install/canopen_proxy_driver/lib:/home/ishaan/eboat_src/install/canopen_base_driver/lib:/home/ishaan/eboat_src/install/canopen_core/lib:/home/ishaan/eboat_src/install/lely_core_libraries/lib:/home/ishaan/eboat_src/install/canopen_interfaces/lib:${LD_LIBRARY_PATH} PATH=/home/ishaan/eboat_src/install/lely_core_libraries/bin:${PATH} PYTHONPATH=/home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages:/home/ishaan/eboat_src/install/canopen_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ishaan/eboat_src/build/canopen_tests -- -j16 -l16
+[4.432s] Built target simple_prepare
+[4.433s] Built target cia402_prepare
+[4.433s] Built target cia402_system_prepare
+[4.433s] Built target cia402_lifecycle_prepare
+[4.434s] Built target simple_lifecycle_prepare
+[4.434s] Built target canopen_system_prepare
+[4.434s] Built target robot_control_prepare
+[4.434s] Built target simple_diagnostics_prepare
+[4.434s] Built target cia402_namespaced_system_prepare
+[4.435s] Built target cia402_diagnostics_prepare
+[4.681s] cia402_device_1: writing 4 bytes to 0x1400/1: 02 02 00 80
+[4.682s] cia402_device_1: writing 1 bytes to 0x1600/0: 00
+[4.682s] cia402_device_1: writing 4 bytes to 0x1600/1: 10 00 40 60
+[4.682s] cia402_device_1: writing 4 bytes to 0x1600/2: 08 00 60 60
+[4.682s] cia402_device_1: writing 1 bytes to 0x1600/0: 02
+[4.683s] cia402_device_1: writing 4 bytes to 0x1400/1: 02 02 00 00
+[4.683s] cia402_device_1: writing 4 bytes to 0x1401/1: 02 03 00 80
+[4.683s] cia402_device_1: writing 1 bytes to 0x1601/0: 00
+[4.683s] cia402_device_1: writing 4 bytes to 0x1601/1: 20 00 7A 60
+[4.683s] cia402_device_1: writing 4 bytes to 0x1601/2: 20 00 FF 60
+[4.683s] cia402_device_1: writing 1 bytes to 0x1601/0: 02
+[4.683s] cia402_device_1: writing 4 bytes to 0x1401/1: 02 03 00 00
+[4.683s] cia402_device_1: writing 4 bytes to 0x1800/1: 82 01 00 80
+[4.683s] cia402_device_1: writing 1 bytes to 0x1A00/0: 00
+[4.683s] cia402_device_1: writing 4 bytes to 0x1A00/1: 10 00 41 60
+[4.683s] cia402_device_1: writing 4 bytes to 0x1A00/2: 08 00 61 60
+[4.683s] cia402_device_1: writing 1 bytes to 0x1A00/0: 02
+[4.683s] cia402_device_1: writing 4 bytes to 0x1800/1: 82 01 00 00
+[4.684s] cia402_device_1: writing 4 bytes to 0x1801/1: 82 02 00 80
+[4.684s] cia402_device_1: writing 1 bytes to 0x1A01/0: 00
+[4.684s] cia402_device_1: writing 4 bytes to 0x1A01/1: 20 00 64 60
+[4.684s] cia402_device_1: writing 4 bytes to 0x1A01/2: 20 00 6C 60
+[4.684s] cia402_device_1: writing 1 bytes to 0x1A01/0: 02
+[4.684s] cia402_device_1: writing 4 bytes to 0x1801/1: 82 02 00 00
+[4.684s] cia402_device_1: writing 4 bytes to 0x1802/1: 82 03 00 C0
+[4.684s] cia402_device_1: writing 1 bytes to 0x60C2/1: 32
+[4.684s] cia402_device_1: writing 1 bytes to 0x60C2/2: FD
+[4.776s] Built target simple
+[4.789s] Built target simple_lifecycle
+[4.792s] Built target canopen_system
+[4.796s] joint_1: writing 4 bytes to 0x1400/1: 02 02 00 80
+[4.796s] joint_1: writing 1 bytes to 0x1600/0: 00
+[4.797s] joint_1: writing 4 bytes to 0x1600/1: 10 00 40 60
+[4.797s] joint_1: writing 4 bytes to 0x1600/2: 08 00 60 60
+[4.797s] joint_1: writing 1 bytes to 0x1600/0: 02
+[4.797s] joint_1: writing 4 bytes to 0x1400/1: 02 02 00 00
+[4.797s] joint_1: writing 4 bytes to 0x1401/1: 02 03 00 80
+[4.797s] joint_1: writing 1 bytes to 0x1601/0: 00
+[4.797s] joint_1: writing 4 bytes to 0x1601/1: 20 00 7A 60
+[4.797s] joint_1: writing 1 bytes to 0x1601/0: 01
+[4.797s] joint_1: writing 4 bytes to 0x1401/1: 02 03 00 00
+[4.797s] joint_1: writing 4 bytes to 0x1800/1: 82 01 00 80
+[4.797s] joint_1: writing 1 bytes to 0x1800/2: 01
+[4.797s] joint_1: writing 1 bytes to 0x1A00/0: 00
+[4.797s] joint_1: writing 4 bytes to 0x1A00/1: 10 00 41 60
+[4.797s] joint_1: writing 4 bytes to 0x1A00/2: 08 00 61 60
+[4.797s] joint_1: writing 1 bytes to 0x1A00/0: 02
+[4.797s] joint_1: writing 4 bytes to 0x1800/1: 82 01 00 00
+[4.797s] joint_1: writing 4 bytes to 0x1801/1: 82 02 00 80
+[4.797s] joint_1: writing 1 bytes to 0x1801/2: 01
+[4.797s] joint_1: writing 1 bytes to 0x1A01/0: 00
+[4.797s] joint_1: writing 4 bytes to 0x1A01/1: 20 00 64 60
+[4.797s] joint_1: writing 4 bytes to 0x1A01/2: 20 00 6C 60
+[4.797s] joint_1: writing 1 bytes to 0x1A01/0: 02
+[4.797s] joint_1: writing 4 bytes to 0x1801/1: 82 02 00 00
+[4.797s] joint_1: writing 1 bytes to 0x60C2/1: 32
+[4.797s] joint_1: writing 1 bytes to 0x60C2/2: FD
+[4.797s] joint_1: writing 4 bytes to 0x6081/0: E8 03 00 00
+[4.797s] joint_1: writing 4 bytes to 0x6083/0: D0 07 00 00
+[4.797s] joint_1: writing 1 bytes to 0x6060/0: 07
+[4.797s] joint_2: writing 4 bytes to 0x1400/1: 03 02 00 80
+[4.797s] joint_2: writing 1 bytes to 0x1600/0: 00
+[4.797s] joint_2: writing 4 bytes to 0x1600/1: 10 00 40 60
+[4.797s] joint_2: writing 4 bytes to 0x1600/2: 08 00 60 60
+[4.797s] joint_2: writing 1 bytes to 0x1600/0: 02
+[4.797s] joint_2: writing 4 bytes to 0x1400/1: 03 02 00 00
+[4.797s] joint_2: writing 4 bytes to 0x1401/1: 03 03 00 80
+[4.797s] joint_2: writing 1 bytes to 0x1601/0: 00
+[4.797s] joint_2: writing 4 bytes to 0x1601/1: 20 00 7A 60
+[4.798s] joint_2: writing 1 bytes to 0x1601/0: 01
+[4.798s] joint_2: writing 4 bytes to 0x1401/1: 03 03 00 00
+[4.798s] joint_2: writing 4 bytes to 0x1800/1: 83 01 00 80
+[4.798s] joint_2: writing 1 bytes to 0x1800/2: 01
+[4.798s] joint_2: writing 1 bytes to 0x1A00/0: 00
+[4.798s] joint_2: writing 4 bytes to 0x1A00/1: 10 00 41 60
+[4.798s] joint_2: writing 4 bytes to 0x1A00/2: 08 00 61 60
+[4.798s] joint_2: writing 1 bytes to 0x1A00/0: 02
+[4.798s] joint_2: writing 4 bytes to 0x1800/1: 83 01 00 00
+[4.798s] joint_2: writing 4 bytes to 0x1801/1: 83 02 00 80
+[4.798s] joint_2: writing 1 bytes to 0x1801/2: 01
+[4.798s] joint_2: writing 1 bytes to 0x1A01/0: 00
+[4.798s] joint_2: writing 4 bytes to 0x1A01/1: 20 00 64 60
+[4.798s] joint_2: writing 4 bytes to 0x1A01/2: 20 00 6C 60
+[4.798s] joint_2: writing 1 bytes to 0x1A01/0: 02
+[4.798s] joint_2: writing 4 bytes to 0x1801/1: 83 02 00 00
+[4.798s] joint_2: writing 1 bytes to 0x60C2/1: 32
+[4.798s] joint_2: writing 1 bytes to 0x60C2/2: FD
+[4.798s] joint_2: writing 4 bytes to 0x6081/0: E8 03 00 00
+[4.798s] joint_2: writing 4 bytes to 0x6083/0: D0 07 00 00
+[4.798s] joint_2: writing 1 bytes to 0x6060/0: 07
+[4.816s] Built target cia402_lifecycle
+[4.847s] cia402_device_1: writing 1 bytes to 0x1600/0: 00
+[4.847s] cia402_device_1: writing 4 bytes to 0x1600/1: 10 00 40 60
+[4.847s] cia402_device_1: writing 4 bytes to 0x1600/2: 08 00 60 60
+[4.847s] cia402_device_1: writing 1 bytes to 0x1600/0: 02
+[4.847s] cia402_device_1: writing 4 bytes to 0x1400/1: 02 02 00 00
+[4.847s] cia402_device_1: writing 1 bytes to 0x1601/0: 00
+[4.847s] cia402_device_1: writing 4 bytes to 0x1601/1: 20 00 7A 60
+[4.847s] cia402_device_1: writing 4 bytes to 0x1601/2: 20 00 FF 60
+[4.847s] cia402_device_1: writing 1 bytes to 0x1601/0: 02
+[4.847s] cia402_device_1: writing 4 bytes to 0x1401/1: 02 03 00 00
+[4.847s] cia402_device_1: writing 1 bytes to 0x1A00/0: 00
+[4.847s] cia402_device_1: writing 4 bytes to 0x1A00/1: 10 00 41 60
+[4.847s] cia402_device_1: writing 4 bytes to 0x1A00/2: 08 00 61 60
+[4.847s] cia402_device_1: writing 1 bytes to 0x1A00/0: 02
+[4.847s] cia402_device_1: writing 4 bytes to 0x1800/1: 82 01 00 00
+[4.847s] cia402_device_1: writing 1 bytes to 0x1A01/0: 00
+[4.848s] cia402_device_1: writing 4 bytes to 0x1A01/1: 20 00 64 60
+[4.848s] cia402_device_1: writing 4 bytes to 0x1A01/2: 20 00 6C 60
+[4.848s] cia402_device_1: writing 1 bytes to 0x1A01/0: 02
+[4.848s] cia402_device_1: writing 4 bytes to 0x1801/1: 82 02 00 00
+[4.848s] cia402_device_1: writing 1 bytes to 0x60C2/1: 32
+[4.848s] cia402_device_1: writing 1 bytes to 0x60C2/2: FD
+[4.848s] cia402_device_1: writing 4 bytes to 0x6081/0: E8 03 00 00
+[4.848s] cia402_device_1: writing 4 bytes to 0x6083/0: D0 07 00 00
+[4.851s] cia402_device_1: writing 1 bytes to 0x1600/0: 00
+[4.851s] cia402_device_1: writing 4 bytes to 0x1600/1: 10 00 40 60
+[4.851s] cia402_device_1: writing 4 bytes to 0x1600/2: 08 00 60 60
+[4.851s] cia402_device_1: writing 1 bytes to 0x1600/0: 02
+[4.851s] cia402_device_1: writing 4 bytes to 0x1400/1: 02 02 00 00
+[4.851s] cia402_device_1: writing 1 bytes to 0x1601/0: 00
+[4.851s] cia402_device_1: writing 4 bytes to 0x1601/1: 20 00 7A 60
+[4.851s] cia402_device_1: writing 4 bytes to 0x1601/2: 20 00 FF 60
+[4.852s] cia402_device_1: writing 1 bytes to 0x1601/0: 02
+[4.852s] cia402_device_1: writing 4 bytes to 0x1401/1: 02 03 00 00
+[4.852s] cia402_device_1: writing 1 bytes to 0x1A00/0: 00
+[4.852s] cia402_device_1: writing 4 bytes to 0x1A00/1: 10 00 41 60
+[4.852s] cia402_device_1: writing 4 bytes to 0x1A00/2: 08 00 61 60
+[4.852s] cia402_device_1: writing 1 bytes to 0x1A00/0: 02
+[4.852s] cia402_device_1: writing 4 bytes to 0x1800/1: 82 01 00 00
+[4.852s] cia402_device_1: writing 1 bytes to 0x1A01/0: 00
+[4.852s] cia402_device_1: writing 4 bytes to 0x1A01/1: 20 00 64 60
+[4.852s] cia402_device_1: writing 4 bytes to 0x1A01/2: 20 00 6C 60
+[4.852s] cia402_device_1: writing 1 bytes to 0x1A01/0: 02
+[4.852s] cia402_device_1: writing 4 bytes to 0x1801/1: 82 02 00 00
+[4.852s] cia402_device_1: writing 1 bytes to 0x60C2/1: 32
+[4.852s] cia402_device_1: writing 1 bytes to 0x60C2/2: FD
+[4.852s] cia402_device_1: writing 4 bytes to 0x6081/0: E8 03 00 00
+[4.852s] cia402_device_1: writing 4 bytes to 0x6083/0: D0 07 00 00
+[4.866s] cia402_device_1: writing 1 bytes to 0x1600/0: 00
+[4.866s] cia402_device_1: writing 4 bytes to 0x1600/1: 10 00 40 60
+[4.867s] cia402_device_1: writing 4 bytes to 0x1600/2: 08 00 60 60
+[4.867s] cia402_device_1: writing 1 bytes to 0x1600/0: 02
+[4.867s] cia402_device_1: writing 4 bytes to 0x1400/1: 02 02 00 00
+[4.867s] cia402_device_1: writing 1 bytes to 0x1601/0: 00
+[4.867s] cia402_device_1: writing 4 bytes to 0x1601/1: 20 00 7A 60
+[4.867s] cia402_device_1: writing 4 bytes to 0x1601/2: 20 00 FF 60
+[4.867s] cia402_device_1: writing 1 bytes to 0x1601/0: 02
+[4.867s] cia402_device_1: writing 4 bytes to 0x1401/1: 02 03 00 00
+[4.867s] cia402_device_1: writing 1 bytes to 0x1A00/0: 00
+[4.867s] cia402_device_1: writing 4 bytes to 0x1A00/1: 10 00 41 60
+[4.867s] cia402_device_1: writing 4 bytes to 0x1A00/2: 08 00 61 60
+[4.867s] cia402_device_1: writing 1 bytes to 0x1A00/0: 02
+[4.868s] cia402_device_1: writing 4 bytes to 0x1800/1: 82 01 00 00
+[4.868s] cia402_device_1: writing 1 bytes to 0x1A01/0: 00
+[4.868s] cia402_device_1: writing 4 bytes to 0x1A01/1: 20 00 64 60
+[4.868s] cia402_device_1: writing 4 bytes to 0x1A01/2: 20 00 6C 60
+[4.868s] cia402_device_1: writing 1 bytes to 0x1A01/0: 02
+[4.868s] cia402_device_1: writing 4 bytes to 0x1801/1: 82 02 00 00
+[4.868s] cia402_device_1: writing 1 bytes to 0x60C2/1: 32
+[4.868s] cia402_device_1: writing 1 bytes to 0x60C2/2: FD
+[4.868s] cia402_device_1: writing 4 bytes to 0x6081/0: E8 03 00 00
+[4.868s] cia402_device_1: writing 4 bytes to 0x6083/0: D0 07 00 00
+[4.945s] Built target simple_diagnostics
+[4.948s] cia402_device_1: writing 1 bytes to 0x1600/0: 00
+[4.948s] cia402_device_1: writing 4 bytes to 0x1600/1: 10 00 40 60
+[4.948s] cia402_device_1: writing 4 bytes to 0x1600/2: 08 00 60 60
+[4.949s] cia402_device_1: writing 1 bytes to 0x1600/0: 02
+[4.949s] cia402_device_1: writing 4 bytes to 0x1400/1: 02 02 00 00
+[4.949s] cia402_device_1: writing 1 bytes to 0x1601/0: 00
+[4.949s] cia402_device_1: writing 4 bytes to 0x1601/1: 20 00 7A 60
+[4.949s] cia402_device_1: writing 4 bytes to 0x1601/2: 20 00 FF 60
+[4.949s] cia402_device_1: writing 1 bytes to 0x1601/0: 02
+[4.950s] cia402_device_1: writing 4 bytes to 0x1401/1: 02 03 00 00
+[4.950s] cia402_device_1: writing 1 bytes to 0x1A00/0: 00
+[4.950s] cia402_device_1: writing 4 bytes to 0x1A00/1: 10 00 41 60
+[4.951s] cia402_device_1: writing 4 bytes to 0x1A00/2: 08 00 61 60
+[4.951s] cia402_device_1: writing 1 bytes to 0x1A00/0: 02
+[4.951s] cia402_device_1: writing 4 bytes to 0x1800/1: 82 01 00 00
+[4.951s] cia402_device_1: writing 1 bytes to 0x1A01/0: 00
+[4.952s] cia402_device_1: writing 4 bytes to 0x1A01/1: 20 00 64 60
+[4.952s] cia402_device_1: writing 4 bytes to 0x1A01/2: 20 00 6C 60
+[4.952s] cia402_device_1: writing 1 bytes to 0x1A01/0: 02
+[4.953s] cia402_device_1: writing 4 bytes to 0x1801/1: 82 02 00 00
+[4.953s] cia402_device_1: writing 1 bytes to 0x60C2/1: 32
+[4.953s] cia402_device_1: writing 1 bytes to 0x60C2/2: FD
+[4.953s] cia402_device_1: writing 4 bytes to 0x6081/0: E8 03 00 00
+[4.954s] cia402_device_1: writing 4 bytes to 0x6083/0: D0 07 00 00
+[4.954s] cia402_device_2: writing 1 bytes to 0x1600/0: 00
+[4.954s] cia402_device_2: writing 4 bytes to 0x1600/1: 10 00 40 60
+[4.955s] cia402_device_2: writing 4 bytes to 0x1600/2: 08 00 60 60
+[4.955s] cia402_device_2: writing 1 bytes to 0x1600/0: 02
+[4.955s] cia402_device_2: writing 4 bytes to 0x1400/1: 03 02 00 00
+[4.955s] cia402_device_2: writing 1 bytes to 0x1601/0: 00
+[4.955s] cia402_device_2: writing 4 bytes to 0x1601/1: 20 00 7A 60
+[4.955s] cia402_device_2: writing 4 bytes to 0x1601/2: 20 00 FF 60
+[4.955s] cia402_device_2: writing 1 bytes to 0x1601/0: 02
+[4.955s] cia402_device_2: writing 4 bytes to 0x1401/1: 03 03 00 00
+[4.956s] cia402_device_2: writing 1 bytes to 0x1A00/0: 00
+[4.956s] cia402_device_2: writing 4 bytes to 0x1A00/1: 10 00 41 60
+[4.956s] cia402_device_2: writing 4 bytes to 0x1A00/2: 08 00 61 60
+[4.956s] cia402_device_2: writing 1 bytes to 0x1A00/0: 02
+[4.956s] cia402_device_2: writing 4 bytes to 0x1800/1: 83 01 00 00
+[4.956s] cia402_device_2: writing 1 bytes to 0x1A01/0: 00
+[4.956s] cia402_device_2: writing 4 bytes to 0x1A01/1: 20 00 64 60
+[4.956s] cia402_device_2: writing 4 bytes to 0x1A01/2: 20 00 6C 60
+[4.956s] cia402_device_2: writing 1 bytes to 0x1A01/0: 02
+[4.956s] cia402_device_2: writing 4 bytes to 0x1801/1: 83 02 00 00
+[4.956s] cia402_device_2: writing 1 bytes to 0x60C2/1: 32
+[4.956s] cia402_device_2: writing 1 bytes to 0x60C2/2: FD
+[4.956s] cia402_device_2: writing 4 bytes to 0x6081/0: E8 03 00 00
+[4.956s] cia402_device_2: writing 4 bytes to 0x6083/0: D0 07 00 00
+[4.956s] cia402_device_3: writing 1 bytes to 0x1600/0: 00
+[4.957s] cia402_device_3: writing 4 bytes to 0x1600/1: 10 00 40 60
+[4.957s] cia402_device_3: writing 4 bytes to 0x1600/2: 08 00 60 60
+[4.957s] cia402_device_3: writing 1 bytes to 0x1600/0: 02
+[4.957s] cia402_device_3: writing 4 bytes to 0x1400/1: 04 02 00 00
+[4.957s] cia402_device_3: writing 1 bytes to 0x1601/0: 00
+[4.957s] cia402_device_3: writing 4 bytes to 0x1601/1: 20 00 7A 60
+[4.957s] cia402_device_3: writing 4 bytes to 0x1601/2: 20 00 FF 60
+[4.957s] cia402_device_3: writing 1 bytes to 0x1601/0: 02
+[4.957s] cia402_device_3: writing 4 bytes to 0x1401/1: 04 03 00 00
+[4.957s] cia402_device_3: writing 1 bytes to 0x1A00/0: 00
+[4.957s] cia402_device_3: writing 4 bytes to 0x1A00/1: 10 00 41 60
+[4.957s] cia402_device_3: writing 4 bytes to 0x1A00/2: 08 00 61 60
+[4.957s] cia402_device_3: writing 1 bytes to 0x1A00/0: 02
+[4.957s] cia402_device_3: writing 4 bytes to 0x1800/1: 84 01 00 00
+[4.957s] cia402_device_3: writing 1 bytes to 0x1A01/0: 00
+[4.957s] cia402_device_3: writing 4 bytes to 0x1A01/1: 20 00 64 60
+[4.957s] cia402_device_3: writing 4 bytes to 0x1A01/2: 20 00 6C 60
+[4.957s] cia402_device_3: writing 1 bytes to 0x1A01/0: 02
+[4.957s] cia402_device_3: writing 4 bytes to 0x1801/1: 84 02 00 00
+[4.957s] cia402_device_3: writing 1 bytes to 0x60C2/1: 32
+[4.957s] cia402_device_3: writing 1 bytes to 0x60C2/2: FD
+[4.957s] cia402_device_3: writing 4 bytes to 0x6081/0: E8 03 00 00
+[4.958s] cia402_device_3: writing 4 bytes to 0x6083/0: D0 07 00 00
+[4.958s] Built target cia402
+[4.958s] Built target robot_control
+[4.959s] Built target cia402_system
+[4.979s] Built target cia402_namespaced_system
+[5.043s] Built target cia402_diagnostics
+[5.053s] Invoked command in '/home/ishaan/eboat_src/build/canopen_tests' returned '0': AMENT_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_ros2_controllers:/home/ishaan/eboat_src/install/canopen_402_driver:/home/ishaan/eboat_src/install/canopen_proxy_driver:/home/ishaan/eboat_src/install/canopen_base_driver:/home/ishaan/eboat_src/install/canopen_fake_slaves:/home/ishaan/eboat_src/install/canopen_core:/home/ishaan/eboat_src/install/lely_core_libraries:/home/ishaan/eboat_src/install/canopen_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_ros2_controllers:/home/ishaan/eboat_src/install/canopen_402_driver:/home/ishaan/eboat_src/install/canopen_proxy_driver:/home/ishaan/eboat_src/install/canopen_base_driver:/home/ishaan/eboat_src/install/canopen_fake_slaves:/home/ishaan/eboat_src/install/canopen_core:/home/ishaan/eboat_src/install/lely_core_libraries:/home/ishaan/eboat_src/install/canopen_interfaces:/home/ishaan/eboat_src/ros_ws/install/canopen_tests:/home/ishaan/eboat_src/ros_ws/install/canopen_ros2_controllers:/home/ishaan/eboat_src/ros_ws/install/canopen_ros2_control:/home/ishaan/eboat_src/ros_ws/install/canopen:/home/ishaan/eboat_src/ros_ws/install/canopen_402_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_proxy_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_master_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_fake_slaves:/home/ishaan/eboat_src/ros_ws/install/canopen_base_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_core:/home/ishaan/eboat_src/ros_ws/install/lely_core_libraries:/home/ishaan/eboat_src/ros_ws/install/canopen_interfaces:/home/ishaan/eboat_src/ros_ws/install/boat_data_interfaces:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/home/ishaan/eboat_src/ros_ws/install/shore_comms:/home/ishaan/eboat_src/ros_ws/install/motor_node_test:/home/ishaan/eboat_src/ros_ws/install/motor_node:/home/ishaan/eboat_src/ros_ws/install/motion_node_test:/home/ishaan/eboat_src/ros_ws/install/motion_node:/home/ishaan/eboat_src/ros_ws/install/electrical_node_test:/home/ishaan/eboat_src/ros_ws/install/electrical_node:/home/ishaan/eboat_src/ros_ws/install/canopen_utils:/home/ishaan/eboat_src/ros_ws/install/alarms_watchdog_node:/home/ishaan/eboat_src/ros_ws/install/GPIO_Test:/opt/ros/kilted LD_LIBRARY_PATH=/home/ishaan/eboat_src/install/canopen_ros2_controllers/lib:/home/ishaan/eboat_src/install/canopen_402_driver/lib:/home/ishaan/eboat_src/install/canopen_proxy_driver/lib:/home/ishaan/eboat_src/install/canopen_base_driver/lib:/home/ishaan/eboat_src/install/canopen_core/lib:/home/ishaan/eboat_src/install/lely_core_libraries/lib:/home/ishaan/eboat_src/install/canopen_interfaces/lib:${LD_LIBRARY_PATH} PATH=/home/ishaan/eboat_src/install/lely_core_libraries/bin:${PATH} PYTHONPATH=/home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages:/home/ishaan/eboat_src/install/canopen_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ishaan/eboat_src/build/canopen_tests -- -j16 -l16
+[5.054s] Invoking command in '/home/ishaan/eboat_src/build/canopen_tests': AMENT_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_ros2_controllers:/home/ishaan/eboat_src/install/canopen_402_driver:/home/ishaan/eboat_src/install/canopen_proxy_driver:/home/ishaan/eboat_src/install/canopen_base_driver:/home/ishaan/eboat_src/install/canopen_fake_slaves:/home/ishaan/eboat_src/install/canopen_core:/home/ishaan/eboat_src/install/lely_core_libraries:/home/ishaan/eboat_src/install/canopen_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_ros2_controllers:/home/ishaan/eboat_src/install/canopen_402_driver:/home/ishaan/eboat_src/install/canopen_proxy_driver:/home/ishaan/eboat_src/install/canopen_base_driver:/home/ishaan/eboat_src/install/canopen_fake_slaves:/home/ishaan/eboat_src/install/canopen_core:/home/ishaan/eboat_src/install/lely_core_libraries:/home/ishaan/eboat_src/install/canopen_interfaces:/home/ishaan/eboat_src/ros_ws/install/canopen_tests:/home/ishaan/eboat_src/ros_ws/install/canopen_ros2_controllers:/home/ishaan/eboat_src/ros_ws/install/canopen_ros2_control:/home/ishaan/eboat_src/ros_ws/install/canopen:/home/ishaan/eboat_src/ros_ws/install/canopen_402_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_proxy_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_master_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_fake_slaves:/home/ishaan/eboat_src/ros_ws/install/canopen_base_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_core:/home/ishaan/eboat_src/ros_ws/install/lely_core_libraries:/home/ishaan/eboat_src/ros_ws/install/canopen_interfaces:/home/ishaan/eboat_src/ros_ws/install/boat_data_interfaces:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/home/ishaan/eboat_src/ros_ws/install/shore_comms:/home/ishaan/eboat_src/ros_ws/install/motor_node_test:/home/ishaan/eboat_src/ros_ws/install/motor_node:/home/ishaan/eboat_src/ros_ws/install/motion_node_test:/home/ishaan/eboat_src/ros_ws/install/motion_node:/home/ishaan/eboat_src/ros_ws/install/electrical_node_test:/home/ishaan/eboat_src/ros_ws/install/electrical_node:/home/ishaan/eboat_src/ros_ws/install/canopen_utils:/home/ishaan/eboat_src/ros_ws/install/alarms_watchdog_node:/home/ishaan/eboat_src/ros_ws/install/GPIO_Test:/opt/ros/kilted LD_LIBRARY_PATH=/home/ishaan/eboat_src/install/canopen_ros2_controllers/lib:/home/ishaan/eboat_src/install/canopen_402_driver/lib:/home/ishaan/eboat_src/install/canopen_proxy_driver/lib:/home/ishaan/eboat_src/install/canopen_base_driver/lib:/home/ishaan/eboat_src/install/canopen_core/lib:/home/ishaan/eboat_src/install/lely_core_libraries/lib:/home/ishaan/eboat_src/install/canopen_interfaces/lib:${LD_LIBRARY_PATH} PATH=/home/ishaan/eboat_src/install/lely_core_libraries/bin:${PATH} PYTHONPATH=/home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages:/home/ishaan/eboat_src/install/canopen_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ishaan/eboat_src/build/canopen_tests
+[5.061s] -- Install configuration: ""
+[5.061s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/simple/
+[5.061s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/simple//simple.eds
+[5.061s] -- Up-to-date: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/simple/
+[5.062s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/simple//master.dcf
+[5.062s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/simple//bus.yml
+[5.062s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/canopen_system/
+[5.062s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/canopen_system//simple.eds
+[5.062s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/canopen_system//ros2_controllers.yaml
+[5.063s] -- Up-to-date: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/canopen_system/
+[5.063s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/canopen_system//master.dcf
+[5.063s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/canopen_system//bus.yml
+[5.063s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_system/
+[5.063s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_system//cia402_slave.eds
+[5.063s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_system//ros2_controllers.yaml
+[5.064s] -- Up-to-date: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_system/
+[5.064s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_system//cia402_device_1.bin
+[5.064s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_system//preprocessed_bus.yml
+[5.065s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_system//master.dcf
+[5.065s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_system//bus.yml
+[5.065s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_namespaced_system/
+[5.065s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_namespaced_system//cia402_slave.eds
+[5.065s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_namespaced_system//ros2_controllers.yaml
+[5.065s] -- Up-to-date: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_namespaced_system/
+[5.065s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_namespaced_system//cia402_device_1.bin
+[5.066s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_namespaced_system//preprocessed_bus.yml
+[5.066s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_namespaced_system//master.dcf
+[5.066s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_namespaced_system//bus.yml
+[5.066s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402/
+[5.066s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402//cia402_slave.eds
+[5.066s] -- Up-to-date: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402/
+[5.067s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402//cia402_device_1.bin
+[5.067s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402//preprocessed_bus.yml
+[5.067s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402//master.dcf
+[5.067s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402//bus.yml
+[5.067s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_lifecycle/
+[5.067s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_lifecycle//cia402_slave.eds
+[5.068s] -- Up-to-date: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_lifecycle/
+[5.068s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_lifecycle//cia402_device_1.bin
+[5.068s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_lifecycle//master.dcf
+[5.069s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_lifecycle//bus.yml
+[5.069s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_diagnostics/
+[5.069s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_diagnostics//cia402_slave.eds
+[5.069s] -- Up-to-date: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_diagnostics/
+[5.069s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_diagnostics//cia402_device_1.bin
+[5.070s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_diagnostics//cia402_device_2.bin
+[5.070s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_diagnostics//preprocessed_bus.yml
+[5.070s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_diagnostics//master.dcf
+[5.070s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_diagnostics//cia402_device_3.bin
+[5.070s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/cia402_diagnostics//bus.yml
+[5.070s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/simple_lifecycle/
+[5.070s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/simple_lifecycle//simple.eds
+[5.070s] -- Up-to-date: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/simple_lifecycle/
+[5.071s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/simple_lifecycle//master.dcf
+[5.071s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/simple_lifecycle//bus.yml
+[5.071s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/simple_diagnostics/
+[5.071s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/simple_diagnostics//simple.eds
+[5.071s] -- Up-to-date: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/simple_diagnostics/
+[5.072s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/simple_diagnostics//preprocessed_bus.yml
+[5.072s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/simple_diagnostics//master.dcf
+[5.072s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/simple_diagnostics//bus.yml
+[5.072s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/robot_control/
+[5.073s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/robot_control//prbt_0_1.dcf
+[5.073s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/robot_control//cia402_slave.eds
+[5.073s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/robot_control//ros2_controllers.yaml
+[5.073s] -- Up-to-date: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/robot_control/
+[5.073s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/robot_control//joint_1.bin
+[5.073s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/robot_control//master.dcf
+[5.074s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/robot_control//bus.yml
+[5.074s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/config/robot_control//joint_2.bin
+[5.074s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/launch
+[5.074s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/launch/proxy_setup_namespaced.launch.py
+[5.074s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/launch/robot_control_setup.launch.py
+[5.074s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/launch/canopen_system.launch.py
+[5.074s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/launch/analyzers
+[5.074s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/launch/analyzers/proxy_diagnostic_analyzer.yaml
+[5.074s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/launch/analyzers/cia402_diagnostic_analyzer.yaml
+[5.074s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/launch/proxy_lifecycle_setup.launch.py
+[5.074s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/launch/cia402_setup.launch.py
+[5.074s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/launch/cia402_namespaced_system.launch.py
+[5.075s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/launch/view_urdf.launch.py
+[5.075s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/launch/cia402_system.launch.py
+[5.075s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/launch/cia402_diagnostics_setup.launch.py
+[5.076s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/launch/cia402_lifecycle_setup.launch.py
+[5.076s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/launch/proxy_setup.launch.py
+[5.076s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/launch/proxy_diagnostics_setup.launch.py
+[5.077s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/rviz
+[5.077s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/rviz/robot_controller.rviz
+[5.077s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/urdf
+[5.077s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/urdf/cia402_system
+[5.077s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/urdf/cia402_system/cia402_system.ros2_control.xacro
+[5.078s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/urdf/cia402_system/cia402_system.urdf.xacro
+[5.078s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/urdf/robot_controller
+[5.078s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/urdf/robot_controller/robot_controller.urdf.xacro
+[5.079s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/urdf/robot_controller/robot_controller.macro.xacro
+[5.079s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/urdf/robot_controller/robot_controller.ros2_control.xacro
+[5.079s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/urdf/canopen_system
+[5.080s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/urdf/canopen_system/canopen_system.urdf.xacro
+[5.080s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/urdf/canopen_system/canopen_system.ros2_control.xacro
+[5.081s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/launch_tests
+[5.081s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/launch_tests/test_proxy_driver_namespaced.py
+[5.081s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/launch_tests/test_cia402_driver.py
+[5.081s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/launch_tests/test_robot_control.py
+[5.081s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/launch_tests/test_proxy_lifecycle_driver.py
+[5.082s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/launch_tests/test_proxy_driver.py
+[5.082s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/ament_index/resource_index/package_run_dependencies/canopen_tests
+[5.082s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/ament_index/resource_index/parent_prefix_path/canopen_tests
+[5.083s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/environment/ament_prefix_path.sh
+[5.083s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/environment/ament_prefix_path.dsv
+[5.083s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/environment/path.sh
+[5.083s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/environment/path.dsv
+[5.083s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/local_setup.bash
+[5.083s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/local_setup.sh
+[5.083s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/local_setup.zsh
+[5.083s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/local_setup.dsv
+[5.084s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/package.dsv
+[5.084s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/ament_index/resource_index/packages/canopen_tests
+[5.084s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/cmake/canopen_testsConfig.cmake
+[5.084s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/cmake/canopen_testsConfig-version.cmake
+[5.085s] -- Installing: /home/ishaan/eboat_src/install/canopen_tests/share/canopen_tests/package.xml
+[5.088s] Invoked command in '/home/ishaan/eboat_src/build/canopen_tests' returned '0': AMENT_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_ros2_controllers:/home/ishaan/eboat_src/install/canopen_402_driver:/home/ishaan/eboat_src/install/canopen_proxy_driver:/home/ishaan/eboat_src/install/canopen_base_driver:/home/ishaan/eboat_src/install/canopen_fake_slaves:/home/ishaan/eboat_src/install/canopen_core:/home/ishaan/eboat_src/install/lely_core_libraries:/home/ishaan/eboat_src/install/canopen_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_ros2_controllers:/home/ishaan/eboat_src/install/canopen_402_driver:/home/ishaan/eboat_src/install/canopen_proxy_driver:/home/ishaan/eboat_src/install/canopen_base_driver:/home/ishaan/eboat_src/install/canopen_fake_slaves:/home/ishaan/eboat_src/install/canopen_core:/home/ishaan/eboat_src/install/lely_core_libraries:/home/ishaan/eboat_src/install/canopen_interfaces:/home/ishaan/eboat_src/ros_ws/install/canopen_tests:/home/ishaan/eboat_src/ros_ws/install/canopen_ros2_controllers:/home/ishaan/eboat_src/ros_ws/install/canopen_ros2_control:/home/ishaan/eboat_src/ros_ws/install/canopen:/home/ishaan/eboat_src/ros_ws/install/canopen_402_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_proxy_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_master_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_fake_slaves:/home/ishaan/eboat_src/ros_ws/install/canopen_base_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_core:/home/ishaan/eboat_src/ros_ws/install/lely_core_libraries:/home/ishaan/eboat_src/ros_ws/install/canopen_interfaces:/home/ishaan/eboat_src/ros_ws/install/boat_data_interfaces:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/home/ishaan/eboat_src/ros_ws/install/shore_comms:/home/ishaan/eboat_src/ros_ws/install/motor_node_test:/home/ishaan/eboat_src/ros_ws/install/motor_node:/home/ishaan/eboat_src/ros_ws/install/motion_node_test:/home/ishaan/eboat_src/ros_ws/install/motion_node:/home/ishaan/eboat_src/ros_ws/install/electrical_node_test:/home/ishaan/eboat_src/ros_ws/install/electrical_node:/home/ishaan/eboat_src/ros_ws/install/canopen_utils:/home/ishaan/eboat_src/ros_ws/install/alarms_watchdog_node:/home/ishaan/eboat_src/ros_ws/install/GPIO_Test:/opt/ros/kilted LD_LIBRARY_PATH=/home/ishaan/eboat_src/install/canopen_ros2_controllers/lib:/home/ishaan/eboat_src/install/canopen_402_driver/lib:/home/ishaan/eboat_src/install/canopen_proxy_driver/lib:/home/ishaan/eboat_src/install/canopen_base_driver/lib:/home/ishaan/eboat_src/install/canopen_core/lib:/home/ishaan/eboat_src/install/lely_core_libraries/lib:/home/ishaan/eboat_src/install/canopen_interfaces/lib:${LD_LIBRARY_PATH} PATH=/home/ishaan/eboat_src/install/lely_core_libraries/bin:${PATH} PYTHONPATH=/home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages:/home/ishaan/eboat_src/install/canopen_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ishaan/eboat_src/build/canopen_tests

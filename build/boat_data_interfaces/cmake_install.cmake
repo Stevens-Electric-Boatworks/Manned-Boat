@@ -63,6 +63,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/msg" TYPE FILE FILES "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_type_description/boat_data_interfaces/msg/BoatAlarm.json")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/boat_data_interfaces/boat_data_interfaces" TYPE DIRECTORY FILES "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_c/boat_data_interfaces/" REGEX "/[^/]*\\.h$")
 endif()
 
@@ -113,10 +117,41 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libboat_data_interfaces__rosidl_typesupport_fastrtps_c.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libboat_data_interfaces__rosidl_typesupport_fastrtps_c.so"
-         OLD_RPATH "/opt/ros/kilted/lib:/home/ishaan/eboat_src/build/boat_data_interfaces:"
+         OLD_RPATH "/home/ishaan/eboat_src/build/boat_data_interfaces:/opt/ros/kilted/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libboat_data_interfaces__rosidl_typesupport_fastrtps_c.so")
+    endif()
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/boat_data_interfaces/boat_data_interfaces" TYPE DIRECTORY FILES "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_cpp/boat_data_interfaces/" REGEX "/[^/]*\\.hpp$")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/boat_data_interfaces/boat_data_interfaces" TYPE DIRECTORY FILES "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/" REGEX "/[^/]*\\.cpp$" EXCLUDE)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libboat_data_interfaces__rosidl_typesupport_fastrtps_cpp.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libboat_data_interfaces__rosidl_typesupport_fastrtps_cpp.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libboat_data_interfaces__rosidl_typesupport_fastrtps_cpp.so"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/ishaan/eboat_src/build/boat_data_interfaces/libboat_data_interfaces__rosidl_typesupport_fastrtps_cpp.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libboat_data_interfaces__rosidl_typesupport_fastrtps_cpp.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libboat_data_interfaces__rosidl_typesupport_fastrtps_cpp.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libboat_data_interfaces__rosidl_typesupport_fastrtps_cpp.so"
+         OLD_RPATH "/opt/ros/kilted/lib:/home/ishaan/eboat_src/build/boat_data_interfaces:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libboat_data_interfaces__rosidl_typesupport_fastrtps_cpp.so")
     endif()
   endif()
 endif()
@@ -167,37 +202,6 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libboat_data_interfaces__rosidl_typesupport_c.so")
-    endif()
-  endif()
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/boat_data_interfaces/boat_data_interfaces" TYPE DIRECTORY FILES "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_cpp/boat_data_interfaces/" REGEX "/[^/]*\\.hpp$")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/boat_data_interfaces/boat_data_interfaces" TYPE DIRECTORY FILES "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/" REGEX "/[^/]*\\.cpp$" EXCLUDE)
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libboat_data_interfaces__rosidl_typesupport_fastrtps_cpp.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libboat_data_interfaces__rosidl_typesupport_fastrtps_cpp.so")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libboat_data_interfaces__rosidl_typesupport_fastrtps_cpp.so"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/ishaan/eboat_src/build/boat_data_interfaces/libboat_data_interfaces__rosidl_typesupport_fastrtps_cpp.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libboat_data_interfaces__rosidl_typesupport_fastrtps_cpp.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libboat_data_interfaces__rosidl_typesupport_fastrtps_cpp.so")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libboat_data_interfaces__rosidl_typesupport_fastrtps_cpp.so"
-         OLD_RPATH "/opt/ros/kilted/lib:/home/ishaan/eboat_src/build/boat_data_interfaces:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libboat_data_interfaces__rosidl_typesupport_fastrtps_cpp.so")
     endif()
   endif()
 endif()
@@ -391,6 +395,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/msg" TYPE FILE FILES "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces/msg/BoatAlarm.idl")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/msg" TYPE FILE FILES "/home/ishaan/eboat_src/ros_ws/src/boat_data_interfaces/msg/ElectricalData.msg")
 endif()
 
@@ -404,6 +412,10 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/msg" TYPE FILE FILES "/home/ishaan/eboat_src/ros_ws/src/boat_data_interfaces/msg/MotorData.msg")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/msg" TYPE FILE FILES "/home/ishaan/eboat_src/ros_ws/src/boat_data_interfaces/msg/BoatAlarm.msg")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -501,6 +513,49 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_generator_cppExport.cmake")
+    file(DIFFERENT _cmake_export_file_changed FILES
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_generator_cppExport.cmake"
+         "/home/ishaan/eboat_src/build/boat_data_interfaces/CMakeFiles/Export/9818108b47250e7b7d06238444c89ca0/export_boat_data_interfaces__rosidl_generator_cppExport.cmake")
+    if(_cmake_export_file_changed)
+      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_generator_cppExport-*.cmake")
+      if(_cmake_old_config_files)
+        string(REPLACE ";" ", " _cmake_old_config_files_text "${_cmake_old_config_files}")
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_generator_cppExport.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
+        unset(_cmake_old_config_files_text)
+        file(REMOVE ${_cmake_old_config_files})
+      endif()
+      unset(_cmake_old_config_files)
+    endif()
+    unset(_cmake_export_file_changed)
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake" TYPE FILE FILES "/home/ishaan/eboat_src/build/boat_data_interfaces/CMakeFiles/Export/9818108b47250e7b7d06238444c89ca0/export_boat_data_interfaces__rosidl_generator_cppExport.cmake")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake")
+    file(DIFFERENT _cmake_export_file_changed FILES
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake"
+         "/home/ishaan/eboat_src/build/boat_data_interfaces/CMakeFiles/Export/9818108b47250e7b7d06238444c89ca0/export_boat_data_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake")
+    if(_cmake_export_file_changed)
+      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_typesupport_fastrtps_cppExport-*.cmake")
+      if(_cmake_old_config_files)
+        string(REPLACE ";" ", " _cmake_old_config_files_text "${_cmake_old_config_files}")
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
+        unset(_cmake_old_config_files_text)
+        file(REMOVE ${_cmake_old_config_files})
+      endif()
+      unset(_cmake_old_config_files)
+    endif()
+    unset(_cmake_export_file_changed)
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake" TYPE FILE FILES "/home/ishaan/eboat_src/build/boat_data_interfaces/CMakeFiles/Export/9818108b47250e7b7d06238444c89ca0/export_boat_data_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake")
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake" TYPE FILE FILES "/home/ishaan/eboat_src/build/boat_data_interfaces/CMakeFiles/Export/9818108b47250e7b7d06238444c89ca0/export_boat_data_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake/boat_data_interfaces__rosidl_typesupport_introspection_cExport.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake/boat_data_interfaces__rosidl_typesupport_introspection_cExport.cmake"
@@ -543,49 +598,6 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake" TYPE FILE FILES "/home/ishaan/eboat_src/build/boat_data_interfaces/CMakeFiles/Export/9818108b47250e7b7d06238444c89ca0/boat_data_interfaces__rosidl_typesupport_cExport.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
     file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake" TYPE FILE FILES "/home/ishaan/eboat_src/build/boat_data_interfaces/CMakeFiles/Export/9818108b47250e7b7d06238444c89ca0/boat_data_interfaces__rosidl_typesupport_cExport-noconfig.cmake")
-  endif()
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_generator_cppExport.cmake")
-    file(DIFFERENT _cmake_export_file_changed FILES
-         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_generator_cppExport.cmake"
-         "/home/ishaan/eboat_src/build/boat_data_interfaces/CMakeFiles/Export/9818108b47250e7b7d06238444c89ca0/export_boat_data_interfaces__rosidl_generator_cppExport.cmake")
-    if(_cmake_export_file_changed)
-      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_generator_cppExport-*.cmake")
-      if(_cmake_old_config_files)
-        string(REPLACE ";" ", " _cmake_old_config_files_text "${_cmake_old_config_files}")
-        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_generator_cppExport.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
-        unset(_cmake_old_config_files_text)
-        file(REMOVE ${_cmake_old_config_files})
-      endif()
-      unset(_cmake_old_config_files)
-    endif()
-    unset(_cmake_export_file_changed)
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake" TYPE FILE FILES "/home/ishaan/eboat_src/build/boat_data_interfaces/CMakeFiles/Export/9818108b47250e7b7d06238444c89ca0/export_boat_data_interfaces__rosidl_generator_cppExport.cmake")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake")
-    file(DIFFERENT _cmake_export_file_changed FILES
-         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake"
-         "/home/ishaan/eboat_src/build/boat_data_interfaces/CMakeFiles/Export/9818108b47250e7b7d06238444c89ca0/export_boat_data_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake")
-    if(_cmake_export_file_changed)
-      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_typesupport_fastrtps_cppExport-*.cmake")
-      if(_cmake_old_config_files)
-        string(REPLACE ";" ", " _cmake_old_config_files_text "${_cmake_old_config_files}")
-        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
-        unset(_cmake_old_config_files_text)
-        file(REMOVE ${_cmake_old_config_files})
-      endif()
-      unset(_cmake_old_config_files)
-    endif()
-    unset(_cmake_export_file_changed)
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake" TYPE FILE FILES "/home/ishaan/eboat_src/build/boat_data_interfaces/CMakeFiles/Export/9818108b47250e7b7d06238444c89ca0/export_boat_data_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake")
-  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake" TYPE FILE FILES "/home/ishaan/eboat_src/build/boat_data_interfaces/CMakeFiles/Export/9818108b47250e7b7d06238444c89ca0/export_boat_data_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake")
   endif()
 endif()
 
@@ -663,6 +675,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake" TYPE FILE FILES "/home/ishaan/eboat_src/build/boat_data_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake" TYPE FILE FILES "/home/ishaan/eboat_src/build/boat_data_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake")
 endif()
 
@@ -676,10 +692,6 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake" TYPE FILE FILES "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/boat_data_interfaces/cmake" TYPE FILE FILES "/home/ishaan/eboat_src/build/boat_data_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

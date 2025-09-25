@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-eea0432198718a8caac7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "canopen_ros2_control",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "canopen_ros2_control::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-canopen_ros2_control-a32a09ddb63ce571cec0.json",
+					"name" : "canopen_ros2_control",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "canopen_ros2_control_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-canopen_ros2_control_uninstall-95d7b372a1cdff4ae703.json",
+					"name" : "canopen_ros2_control_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-9999403a477c271dc51f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ishaan/eboat_src/build/canopen_ros2_control",
+		"source" : "/home/ishaan/eboat_src/ros_ws/src/ros2_canopen/canopen_ros2_control"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,5 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/boat_data_interfaces__cpp"
+  "rosidl_generator_cpp/boat_data_interfaces/msg/boat_alarm.hpp"
+  "rosidl_generator_cpp/boat_data_interfaces/msg/detail/boat_alarm__builder.hpp"
+  "rosidl_generator_cpp/boat_data_interfaces/msg/detail/boat_alarm__struct.hpp"
+  "rosidl_generator_cpp/boat_data_interfaces/msg/detail/boat_alarm__traits.hpp"
+  "rosidl_generator_cpp/boat_data_interfaces/msg/detail/boat_alarm__type_support.hpp"
   "rosidl_generator_cpp/boat_data_interfaces/msg/detail/electrical_data__builder.hpp"
   "rosidl_generator_cpp/boat_data_interfaces/msg/detail/electrical_data__struct.hpp"
   "rosidl_generator_cpp/boat_data_interfaces/msg/detail/electrical_data__traits.hpp"

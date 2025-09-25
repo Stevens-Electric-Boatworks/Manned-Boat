@@ -1,0 +1,222 @@
+[0.898s] Invoking command in '/home/ishaan/eboat_src/build/canopen_proxy_driver': AMENT_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_base_driver:/home/ishaan/eboat_src/install/canopen_core:/home/ishaan/eboat_src/install/lely_core_libraries:/home/ishaan/eboat_src/install/canopen_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_base_driver:/home/ishaan/eboat_src/install/canopen_core:/home/ishaan/eboat_src/install/lely_core_libraries:/home/ishaan/eboat_src/install/canopen_interfaces:/home/ishaan/eboat_src/ros_ws/install/canopen_tests:/home/ishaan/eboat_src/ros_ws/install/canopen_ros2_controllers:/home/ishaan/eboat_src/ros_ws/install/canopen_ros2_control:/home/ishaan/eboat_src/ros_ws/install/canopen:/home/ishaan/eboat_src/ros_ws/install/canopen_402_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_proxy_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_master_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_fake_slaves:/home/ishaan/eboat_src/ros_ws/install/canopen_base_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_core:/home/ishaan/eboat_src/ros_ws/install/lely_core_libraries:/home/ishaan/eboat_src/ros_ws/install/canopen_interfaces:/home/ishaan/eboat_src/ros_ws/install/boat_data_interfaces:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/home/ishaan/eboat_src/ros_ws/install/shore_comms:/home/ishaan/eboat_src/ros_ws/install/motor_node_test:/home/ishaan/eboat_src/ros_ws/install/motor_node:/home/ishaan/eboat_src/ros_ws/install/motion_node_test:/home/ishaan/eboat_src/ros_ws/install/motion_node:/home/ishaan/eboat_src/ros_ws/install/electrical_node_test:/home/ishaan/eboat_src/ros_ws/install/electrical_node:/home/ishaan/eboat_src/ros_ws/install/canopen_utils:/home/ishaan/eboat_src/ros_ws/install/alarms_watchdog_node:/home/ishaan/eboat_src/ros_ws/install/GPIO_Test:/opt/ros/kilted LD_LIBRARY_PATH=/home/ishaan/eboat_src/install/canopen_base_driver/lib:/home/ishaan/eboat_src/install/canopen_core/lib:/home/ishaan/eboat_src/install/lely_core_libraries/lib:/home/ishaan/eboat_src/install/canopen_interfaces/lib:${LD_LIBRARY_PATH} PATH=/home/ishaan/eboat_src/install/lely_core_libraries/bin:${PATH} PYTHONPATH=/home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages:/home/ishaan/eboat_src/install/canopen_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ishaan/eboat_src/ros_ws/src/ros2_canopen/canopen_proxy_driver -DCMAKE_INSTALL_PREFIX=/home/ishaan/eboat_src/install/canopen_proxy_driver
+[1.092s] -- The C compiler identification is GNU 13.3.0
+[2.130s] -- The CXX compiler identification is GNU 13.3.0
+[3.043s] -- Detecting C compiler ABI info
+[3.377s] -- Detecting C compiler ABI info - done
+[3.383s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.383s] -- Detecting C compile features
+[3.384s] -- Detecting C compile features - done
+[3.523s] -- Detecting CXX compiler ABI info
+[3.865s] -- Detecting CXX compiler ABI info - done
+[3.870s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.870s] -- Detecting CXX compile features
+[3.870s] -- Detecting CXX compile features - done
+[3.873s] -- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+[3.982s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[4.062s] -- Found ament_cmake_ros: 0.14.3 (/opt/ros/kilted/share/ament_cmake_ros/cmake)
+[4.070s] -- Found canopen_base_driver: 0.3.1 (/home/ishaan/eboat_src/install/canopen_base_driver/share/canopen_base_driver/cmake)
+[4.284s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system thread 
+[4.500s] -- Found rosidl_generator_c: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_c/cmake)
+[4.509s] -- Found rosidl_generator_cpp: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_cpp/cmake)
+[4.521s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.533s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.627s] -- Found rmw_implementation_cmake: 7.8.2 (/opt/ros/kilted/share/rmw_implementation_cmake/cmake)
+[4.629s] -- Found rmw_fastrtps_cpp: 9.3.2 (/opt/ros/kilted/share/rmw_fastrtps_cpp/cmake)
+[4.692s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[4.701s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.002s] -- Setting yaml-cpp_DIR to: '/opt/ros/kilted/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'
+[5.051s] [0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+[5.052s]   ament_target_dependencies() is deprecated.  Use target_link_libraries()
+[5.052s]   with modern CMake targets instead.  Try replacing this call with:
+[5.052s] 
+[5.052s]     target_link_libraries(node_canopen_proxy_driver PUBLIC
+[5.052s]       ${canopen_interfaces_TARGETS}
+[5.052s]       ${std_msgs_TARGETS}
+[5.052s]       ${std_srvs_TARGETS}
+[5.052s]       canopen_base_driver::base_driver
+[5.052s]       canopen_base_driver::lely_driver_bridge
+[5.052s]       canopen_base_driver::lifecycle_base_driver
+[5.052s]       canopen_base_driver::node_canopen_base_driver
+[5.052s]       canopen_core::device_container
+[5.052s]       canopen_core::node_canopen_driver
+[5.052s]       canopen_core::node_canopen_master
+[5.052s]       rclcpp::rclcpp
+[5.052s]       rclcpp_components::component
+[5.052s]       rclcpp_components::component_manager
+[5.052s]       rclcpp_lifecycle::rclcpp_lifecycle
+[5.052s]     )
+[5.052s] 
+[5.052s] Call Stack (most recent call first):
+[5.052s]   CMakeLists.txt:43 (ament_target_dependencies)
+[5.052s] 
+[5.052s] [0m
+[5.055s] [0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+[5.055s]   ament_target_dependencies() is deprecated.  Use target_link_libraries()
+[5.055s]   with modern CMake targets instead.  Try replacing this call with:
+[5.055s] 
+[5.055s]     target_link_libraries(lifecycle_proxy_driver PUBLIC
+[5.055s]       ${canopen_interfaces_TARGETS}
+[5.055s]       ${std_msgs_TARGETS}
+[5.055s]       ${std_srvs_TARGETS}
+[5.055s]       canopen_base_driver::base_driver
+[5.055s]       canopen_base_driver::lely_driver_bridge
+[5.055s]       canopen_base_driver::lifecycle_base_driver
+[5.055s]       canopen_base_driver::node_canopen_base_driver
+[5.055s]       canopen_core::device_container
+[5.055s]       canopen_core::node_canopen_driver
+[5.055s]       canopen_core::node_canopen_master
+[5.055s]       rclcpp::rclcpp
+[5.055s]       rclcpp_components::component
+[5.055s]       rclcpp_components::component_manager
+[5.055s]       rclcpp_lifecycle::rclcpp_lifecycle
+[5.055s]     )
+[5.055s] 
+[5.055s] Call Stack (most recent call first):
+[5.055s]   CMakeLists.txt:60 (ament_target_dependencies)
+[5.055s] 
+[5.055s] [0m
+[5.059s] [0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+[5.059s]   ament_target_dependencies() is deprecated.  Use target_link_libraries()
+[5.059s]   with modern CMake targets instead.  Try replacing this call with:
+[5.059s] 
+[5.059s]     target_link_libraries(proxy_driver PUBLIC
+[5.059s]       ${canopen_interfaces_TARGETS}
+[5.059s]       ${std_msgs_TARGETS}
+[5.059s]       ${std_srvs_TARGETS}
+[5.059s]       canopen_base_driver::base_driver
+[5.059s]       canopen_base_driver::lely_driver_bridge
+[5.059s]       canopen_base_driver::lifecycle_base_driver
+[5.059s]       canopen_base_driver::node_canopen_base_driver
+[5.059s]       canopen_core::device_container
+[5.059s]       canopen_core::node_canopen_driver
+[5.059s]       canopen_core::node_canopen_master
+[5.059s]       rclcpp::rclcpp
+[5.059s]       rclcpp_components::component
+[5.059s]       rclcpp_components::component_manager
+[5.059s]       rclcpp_lifecycle::rclcpp_lifecycle
+[5.059s]     )
+[5.059s] 
+[5.059s] Call Stack (most recent call first):
+[5.059s]   CMakeLists.txt:86 (ament_target_dependencies)
+[5.059s] 
+[5.059s] [0m
+[5.070s] -- Found gtest sources under '/opt/ros/kilted/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.072s] -- Found Threads: TRUE  
+[5.073s] [0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+[5.073s]   ament_target_dependencies() is deprecated.  Use target_link_libraries()
+[5.073s]   with modern CMake targets instead.  Try replacing this call with:
+[5.073s] 
+[5.073s]     target_link_libraries(test_node_interface PUBLIC
+[5.073s]       ${canopen_interfaces_TARGETS}
+[5.073s]       ${std_msgs_TARGETS}
+[5.073s]       ${std_srvs_TARGETS}
+[5.073s]       canopen_base_driver::base_driver
+[5.073s]       canopen_base_driver::lely_driver_bridge
+[5.073s]       canopen_base_driver::lifecycle_base_driver
+[5.073s]       canopen_base_driver::node_canopen_base_driver
+[5.073s]       canopen_core::device_container
+[5.073s]       canopen_core::node_canopen_driver
+[5.073s]       canopen_core::node_canopen_master
+[5.073s]       rclcpp::rclcpp
+[5.073s]       rclcpp_components::component
+[5.073s]       rclcpp_components::component_manager
+[5.073s]       rclcpp_lifecycle::rclcpp_lifecycle
+[5.073s]     )
+[5.073s] 
+[5.073s] Call Stack (most recent call first):
+[5.073s]   test/CMakeLists.txt:4 (ament_target_dependencies)
+[5.073s] 
+[5.073s] [0m
+[5.078s] [0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+[5.078s]   ament_target_dependencies() is deprecated.  Use target_link_libraries()
+[5.078s]   with modern CMake targets instead.  Try replacing this call with:
+[5.078s] 
+[5.078s]     target_link_libraries(test_driver_component PUBLIC
+[5.078s]       ${canopen_interfaces_TARGETS}
+[5.078s]       ${std_msgs_TARGETS}
+[5.078s]       ${std_srvs_TARGETS}
+[5.078s]       canopen_base_driver::base_driver
+[5.078s]       canopen_base_driver::lely_driver_bridge
+[5.078s]       canopen_base_driver::lifecycle_base_driver
+[5.078s]       canopen_base_driver::node_canopen_base_driver
+[5.078s]       canopen_core::device_container
+[5.078s]       canopen_core::node_canopen_driver
+[5.078s]       canopen_core::node_canopen_master
+[5.078s]       rclcpp::rclcpp
+[5.078s]       rclcpp_components::component
+[5.078s]       rclcpp_components::component_manager
+[5.078s]       rclcpp_lifecycle::rclcpp_lifecycle
+[5.078s]     )
+[5.078s] 
+[5.078s] Call Stack (most recent call first):
+[5.078s]   test/CMakeLists.txt:20 (ament_target_dependencies)
+[5.079s] 
+[5.079s] [0m
+[5.146s] -- Configuring done (4.2s)
+[5.176s] -- Generating done (0.0s)
+[5.184s] -- Build files have been written to: /home/ishaan/eboat_src/build/canopen_proxy_driver
+[5.195s] Invoked command in '/home/ishaan/eboat_src/build/canopen_proxy_driver' returned '0': AMENT_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_base_driver:/home/ishaan/eboat_src/install/canopen_core:/home/ishaan/eboat_src/install/lely_core_libraries:/home/ishaan/eboat_src/install/canopen_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_base_driver:/home/ishaan/eboat_src/install/canopen_core:/home/ishaan/eboat_src/install/lely_core_libraries:/home/ishaan/eboat_src/install/canopen_interfaces:/home/ishaan/eboat_src/ros_ws/install/canopen_tests:/home/ishaan/eboat_src/ros_ws/install/canopen_ros2_controllers:/home/ishaan/eboat_src/ros_ws/install/canopen_ros2_control:/home/ishaan/eboat_src/ros_ws/install/canopen:/home/ishaan/eboat_src/ros_ws/install/canopen_402_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_proxy_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_master_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_fake_slaves:/home/ishaan/eboat_src/ros_ws/install/canopen_base_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_core:/home/ishaan/eboat_src/ros_ws/install/lely_core_libraries:/home/ishaan/eboat_src/ros_ws/install/canopen_interfaces:/home/ishaan/eboat_src/ros_ws/install/boat_data_interfaces:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/home/ishaan/eboat_src/ros_ws/install/shore_comms:/home/ishaan/eboat_src/ros_ws/install/motor_node_test:/home/ishaan/eboat_src/ros_ws/install/motor_node:/home/ishaan/eboat_src/ros_ws/install/motion_node_test:/home/ishaan/eboat_src/ros_ws/install/motion_node:/home/ishaan/eboat_src/ros_ws/install/electrical_node_test:/home/ishaan/eboat_src/ros_ws/install/electrical_node:/home/ishaan/eboat_src/ros_ws/install/canopen_utils:/home/ishaan/eboat_src/ros_ws/install/alarms_watchdog_node:/home/ishaan/eboat_src/ros_ws/install/GPIO_Test:/opt/ros/kilted LD_LIBRARY_PATH=/home/ishaan/eboat_src/install/canopen_base_driver/lib:/home/ishaan/eboat_src/install/canopen_core/lib:/home/ishaan/eboat_src/install/lely_core_libraries/lib:/home/ishaan/eboat_src/install/canopen_interfaces/lib:${LD_LIBRARY_PATH} PATH=/home/ishaan/eboat_src/install/lely_core_libraries/bin:${PATH} PYTHONPATH=/home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages:/home/ishaan/eboat_src/install/canopen_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ishaan/eboat_src/ros_ws/src/ros2_canopen/canopen_proxy_driver -DCMAKE_INSTALL_PREFIX=/home/ishaan/eboat_src/install/canopen_proxy_driver
+[5.196s] Invoking command in '/home/ishaan/eboat_src/build/canopen_proxy_driver': AMENT_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_base_driver:/home/ishaan/eboat_src/install/canopen_core:/home/ishaan/eboat_src/install/lely_core_libraries:/home/ishaan/eboat_src/install/canopen_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_base_driver:/home/ishaan/eboat_src/install/canopen_core:/home/ishaan/eboat_src/install/lely_core_libraries:/home/ishaan/eboat_src/install/canopen_interfaces:/home/ishaan/eboat_src/ros_ws/install/canopen_tests:/home/ishaan/eboat_src/ros_ws/install/canopen_ros2_controllers:/home/ishaan/eboat_src/ros_ws/install/canopen_ros2_control:/home/ishaan/eboat_src/ros_ws/install/canopen:/home/ishaan/eboat_src/ros_ws/install/canopen_402_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_proxy_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_master_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_fake_slaves:/home/ishaan/eboat_src/ros_ws/install/canopen_base_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_core:/home/ishaan/eboat_src/ros_ws/install/lely_core_libraries:/home/ishaan/eboat_src/ros_ws/install/canopen_interfaces:/home/ishaan/eboat_src/ros_ws/install/boat_data_interfaces:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/home/ishaan/eboat_src/ros_ws/install/shore_comms:/home/ishaan/eboat_src/ros_ws/install/motor_node_test:/home/ishaan/eboat_src/ros_ws/install/motor_node:/home/ishaan/eboat_src/ros_ws/install/motion_node_test:/home/ishaan/eboat_src/ros_ws/install/motion_node:/home/ishaan/eboat_src/ros_ws/install/electrical_node_test:/home/ishaan/eboat_src/ros_ws/install/electrical_node:/home/ishaan/eboat_src/ros_ws/install/canopen_utils:/home/ishaan/eboat_src/ros_ws/install/alarms_watchdog_node:/home/ishaan/eboat_src/ros_ws/install/GPIO_Test:/opt/ros/kilted LD_LIBRARY_PATH=/home/ishaan/eboat_src/install/canopen_base_driver/lib:/home/ishaan/eboat_src/install/canopen_core/lib:/home/ishaan/eboat_src/install/lely_core_libraries/lib:/home/ishaan/eboat_src/install/canopen_interfaces/lib:${LD_LIBRARY_PATH} PATH=/home/ishaan/eboat_src/install/lely_core_libraries/bin:${PATH} PYTHONPATH=/home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages:/home/ishaan/eboat_src/install/canopen_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ishaan/eboat_src/build/canopen_proxy_driver -- -j16 -l16
+[5.232s] [ 21%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[5.232s] [ 21%] [32mBuilding CXX object CMakeFiles/node_canopen_proxy_driver.dir/src/node_interfaces/node_canopen_proxy_driver.cpp.o[0m
+[5.232s] [ 21%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[5.791s] [ 28%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[5.819s] [ 28%] Built target gtest_main
+[7.777s] [ 35%] [32m[1mLinking CXX static library libgtest.a[0m
+[7.818s] [ 35%] Built target gtest
+[7.835s] [ 42%] [32mBuilding CXX object test/CMakeFiles/test_driver_component.dir/test_driver_component.cpp.o[0m
+[12.563s] [ 50%] [32m[1mLinking CXX executable test_driver_component[0m
+[12.855s] [ 50%] Built target test_driver_component
+[15.320s] [ 57%] [32m[1mLinking CXX shared library libnode_canopen_proxy_driver.so[0m
+[15.772s] [ 57%] Built target node_canopen_proxy_driver
+[15.788s] [ 78%] [32mBuilding CXX object CMakeFiles/lifecycle_proxy_driver.dir/src/lifecycle_proxy_driver.cpp.o[0m
+[15.788s] [ 78%] [32mBuilding CXX object CMakeFiles/proxy_driver.dir/src/proxy_driver.cpp.o[0m
+[15.788s] [ 78%] [32mBuilding CXX object test/CMakeFiles/test_node_interface.dir/test_node_interface.cpp.o[0m
+[20.690s] [ 85%] [32m[1mLinking CXX executable test_node_interface[0m
+[20.844s] [100%] [32m[1mLinking CXX shared library liblifecycle_proxy_driver.so[0m
+[20.844s] [100%] [32m[1mLinking CXX shared library libproxy_driver.so[0m
+[21.164s] [100%] Built target test_node_interface
+[21.187s] [100%] Built target proxy_driver
+[21.187s] [100%] Built target lifecycle_proxy_driver
+[21.196s] Invoked command in '/home/ishaan/eboat_src/build/canopen_proxy_driver' returned '0': AMENT_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_base_driver:/home/ishaan/eboat_src/install/canopen_core:/home/ishaan/eboat_src/install/lely_core_libraries:/home/ishaan/eboat_src/install/canopen_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_base_driver:/home/ishaan/eboat_src/install/canopen_core:/home/ishaan/eboat_src/install/lely_core_libraries:/home/ishaan/eboat_src/install/canopen_interfaces:/home/ishaan/eboat_src/ros_ws/install/canopen_tests:/home/ishaan/eboat_src/ros_ws/install/canopen_ros2_controllers:/home/ishaan/eboat_src/ros_ws/install/canopen_ros2_control:/home/ishaan/eboat_src/ros_ws/install/canopen:/home/ishaan/eboat_src/ros_ws/install/canopen_402_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_proxy_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_master_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_fake_slaves:/home/ishaan/eboat_src/ros_ws/install/canopen_base_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_core:/home/ishaan/eboat_src/ros_ws/install/lely_core_libraries:/home/ishaan/eboat_src/ros_ws/install/canopen_interfaces:/home/ishaan/eboat_src/ros_ws/install/boat_data_interfaces:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/home/ishaan/eboat_src/ros_ws/install/shore_comms:/home/ishaan/eboat_src/ros_ws/install/motor_node_test:/home/ishaan/eboat_src/ros_ws/install/motor_node:/home/ishaan/eboat_src/ros_ws/install/motion_node_test:/home/ishaan/eboat_src/ros_ws/install/motion_node:/home/ishaan/eboat_src/ros_ws/install/electrical_node_test:/home/ishaan/eboat_src/ros_ws/install/electrical_node:/home/ishaan/eboat_src/ros_ws/install/canopen_utils:/home/ishaan/eboat_src/ros_ws/install/alarms_watchdog_node:/home/ishaan/eboat_src/ros_ws/install/GPIO_Test:/opt/ros/kilted LD_LIBRARY_PATH=/home/ishaan/eboat_src/install/canopen_base_driver/lib:/home/ishaan/eboat_src/install/canopen_core/lib:/home/ishaan/eboat_src/install/lely_core_libraries/lib:/home/ishaan/eboat_src/install/canopen_interfaces/lib:${LD_LIBRARY_PATH} PATH=/home/ishaan/eboat_src/install/lely_core_libraries/bin:${PATH} PYTHONPATH=/home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages:/home/ishaan/eboat_src/install/canopen_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ishaan/eboat_src/build/canopen_proxy_driver -- -j16 -l16
+[21.197s] Invoking command in '/home/ishaan/eboat_src/build/canopen_proxy_driver': AMENT_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_base_driver:/home/ishaan/eboat_src/install/canopen_core:/home/ishaan/eboat_src/install/lely_core_libraries:/home/ishaan/eboat_src/install/canopen_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_base_driver:/home/ishaan/eboat_src/install/canopen_core:/home/ishaan/eboat_src/install/lely_core_libraries:/home/ishaan/eboat_src/install/canopen_interfaces:/home/ishaan/eboat_src/ros_ws/install/canopen_tests:/home/ishaan/eboat_src/ros_ws/install/canopen_ros2_controllers:/home/ishaan/eboat_src/ros_ws/install/canopen_ros2_control:/home/ishaan/eboat_src/ros_ws/install/canopen:/home/ishaan/eboat_src/ros_ws/install/canopen_402_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_proxy_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_master_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_fake_slaves:/home/ishaan/eboat_src/ros_ws/install/canopen_base_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_core:/home/ishaan/eboat_src/ros_ws/install/lely_core_libraries:/home/ishaan/eboat_src/ros_ws/install/canopen_interfaces:/home/ishaan/eboat_src/ros_ws/install/boat_data_interfaces:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/home/ishaan/eboat_src/ros_ws/install/shore_comms:/home/ishaan/eboat_src/ros_ws/install/motor_node_test:/home/ishaan/eboat_src/ros_ws/install/motor_node:/home/ishaan/eboat_src/ros_ws/install/motion_node_test:/home/ishaan/eboat_src/ros_ws/install/motion_node:/home/ishaan/eboat_src/ros_ws/install/electrical_node_test:/home/ishaan/eboat_src/ros_ws/install/electrical_node:/home/ishaan/eboat_src/ros_ws/install/canopen_utils:/home/ishaan/eboat_src/ros_ws/install/alarms_watchdog_node:/home/ishaan/eboat_src/ros_ws/install/GPIO_Test:/opt/ros/kilted LD_LIBRARY_PATH=/home/ishaan/eboat_src/install/canopen_base_driver/lib:/home/ishaan/eboat_src/install/canopen_core/lib:/home/ishaan/eboat_src/install/lely_core_libraries/lib:/home/ishaan/eboat_src/install/canopen_interfaces/lib:${LD_LIBRARY_PATH} PATH=/home/ishaan/eboat_src/install/lely_core_libraries/bin:${PATH} PYTHONPATH=/home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages:/home/ishaan/eboat_src/install/canopen_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ishaan/eboat_src/build/canopen_proxy_driver
+[21.202s] -- Install configuration: ""
+[21.203s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/include
+[21.203s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/include/canopen_proxy_driver
+[21.203s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/include/canopen_proxy_driver/proxy_driver.hpp
+[21.203s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/include/canopen_proxy_driver/visibility_control.h
+[21.203s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/include/canopen_proxy_driver/lifecycle_proxy_driver.hpp
+[21.203s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/include/canopen_proxy_driver/node_interfaces
+[21.203s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/include/canopen_proxy_driver/node_interfaces/node_canopen_proxy_driver.hpp
+[21.204s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/include/canopen_proxy_driver/node_interfaces/node_canopen_proxy_driver_impl.hpp
+[21.204s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/lib/liblifecycle_proxy_driver.so
+[21.204s] -- Set non-toolchain portion of runtime path of "/home/ishaan/eboat_src/install/canopen_proxy_driver/lib/liblifecycle_proxy_driver.so" to ""
+[21.204s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/lib/libproxy_driver.so
+[21.205s] -- Set non-toolchain portion of runtime path of "/home/ishaan/eboat_src/install/canopen_proxy_driver/lib/libproxy_driver.so" to ""
+[21.205s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/lib/libnode_canopen_proxy_driver.so
+[21.210s] -- Set non-toolchain portion of runtime path of "/home/ishaan/eboat_src/install/canopen_proxy_driver/lib/libnode_canopen_proxy_driver.so" to ""
+[21.210s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/share/canopen_proxy_driver/environment/library_path.sh
+[21.210s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/share/canopen_proxy_driver/environment/library_path.dsv
+[21.210s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/share/ament_index/resource_index/package_run_dependencies/canopen_proxy_driver
+[21.210s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/share/ament_index/resource_index/parent_prefix_path/canopen_proxy_driver
+[21.211s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/share/canopen_proxy_driver/environment/ament_prefix_path.sh
+[21.211s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/share/canopen_proxy_driver/environment/ament_prefix_path.dsv
+[21.211s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/share/canopen_proxy_driver/environment/path.sh
+[21.211s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/share/canopen_proxy_driver/environment/path.dsv
+[21.211s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/share/canopen_proxy_driver/local_setup.bash
+[21.212s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/share/canopen_proxy_driver/local_setup.sh
+[21.212s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/share/canopen_proxy_driver/local_setup.zsh
+[21.212s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/share/canopen_proxy_driver/local_setup.dsv
+[21.212s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/share/canopen_proxy_driver/package.dsv
+[21.212s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/share/ament_index/resource_index/packages/canopen_proxy_driver
+[21.212s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/share/ament_index/resource_index/rclcpp_components/canopen_proxy_driver
+[21.212s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/share/canopen_proxy_driver/cmake/export_canopen_proxy_driverExport.cmake
+[21.213s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/share/canopen_proxy_driver/cmake/export_canopen_proxy_driverExport-noconfig.cmake
+[21.213s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/share/canopen_proxy_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[21.213s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/share/canopen_proxy_driver/cmake/ament_cmake_export_libraries-extras.cmake
+[21.213s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/share/canopen_proxy_driver/cmake/ament_cmake_export_targets-extras.cmake
+[21.213s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/share/canopen_proxy_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[21.213s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/share/canopen_proxy_driver/cmake/canopen_proxy_driverConfig.cmake
+[21.213s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/share/canopen_proxy_driver/cmake/canopen_proxy_driverConfig-version.cmake
+[21.213s] -- Installing: /home/ishaan/eboat_src/install/canopen_proxy_driver/share/canopen_proxy_driver/package.xml
+[21.214s] Invoked command in '/home/ishaan/eboat_src/build/canopen_proxy_driver' returned '0': AMENT_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_base_driver:/home/ishaan/eboat_src/install/canopen_core:/home/ishaan/eboat_src/install/lely_core_libraries:/home/ishaan/eboat_src/install/canopen_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ishaan/eboat_src/install/canopen_base_driver:/home/ishaan/eboat_src/install/canopen_core:/home/ishaan/eboat_src/install/lely_core_libraries:/home/ishaan/eboat_src/install/canopen_interfaces:/home/ishaan/eboat_src/ros_ws/install/canopen_tests:/home/ishaan/eboat_src/ros_ws/install/canopen_ros2_controllers:/home/ishaan/eboat_src/ros_ws/install/canopen_ros2_control:/home/ishaan/eboat_src/ros_ws/install/canopen:/home/ishaan/eboat_src/ros_ws/install/canopen_402_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_proxy_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_master_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_fake_slaves:/home/ishaan/eboat_src/ros_ws/install/canopen_base_driver:/home/ishaan/eboat_src/ros_ws/install/canopen_core:/home/ishaan/eboat_src/ros_ws/install/lely_core_libraries:/home/ishaan/eboat_src/ros_ws/install/canopen_interfaces:/home/ishaan/eboat_src/ros_ws/install/boat_data_interfaces:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/home/ishaan/eboat_src/ros_ws/install/shore_comms:/home/ishaan/eboat_src/ros_ws/install/motor_node_test:/home/ishaan/eboat_src/ros_ws/install/motor_node:/home/ishaan/eboat_src/ros_ws/install/motion_node_test:/home/ishaan/eboat_src/ros_ws/install/motion_node:/home/ishaan/eboat_src/ros_ws/install/electrical_node_test:/home/ishaan/eboat_src/ros_ws/install/electrical_node:/home/ishaan/eboat_src/ros_ws/install/canopen_utils:/home/ishaan/eboat_src/ros_ws/install/alarms_watchdog_node:/home/ishaan/eboat_src/ros_ws/install/GPIO_Test:/opt/ros/kilted LD_LIBRARY_PATH=/home/ishaan/eboat_src/install/canopen_base_driver/lib:/home/ishaan/eboat_src/install/canopen_core/lib:/home/ishaan/eboat_src/install/lely_core_libraries/lib:/home/ishaan/eboat_src/install/canopen_interfaces/lib:${LD_LIBRARY_PATH} PATH=/home/ishaan/eboat_src/install/lely_core_libraries/bin:${PATH} PYTHONPATH=/home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages:/home/ishaan/eboat_src/install/canopen_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ishaan/eboat_src/build/canopen_proxy_driver

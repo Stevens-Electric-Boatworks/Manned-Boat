@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/boat_data_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/boat_alarm__type_support.cpp.o"
+  "CMakeFiles/boat_data_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/boat_alarm__type_support.cpp.o.d"
   "CMakeFiles/boat_data_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/electrical_data__type_support.cpp.o"
   "CMakeFiles/boat_data_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/electrical_data__type_support.cpp.o.d"
   "CMakeFiles/boat_data_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/gpio_data__type_support.cpp.o"
@@ -9,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/boat_data_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/motor_data__type_support.cpp.o.d"
   "libboat_data_interfaces__rosidl_typesupport_fastrtps_cpp.pdb"
   "libboat_data_interfaces__rosidl_typesupport_fastrtps_cpp.so"
+  "rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/boat_alarm__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/boat_alarm__type_support.cpp"
   "rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/electrical_data__type_support.cpp"
   "rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/gpio_data__type_support.cpp"
   "rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/motion_data__type_support.cpp"

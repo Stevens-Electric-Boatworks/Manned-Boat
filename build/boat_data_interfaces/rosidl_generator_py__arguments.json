@@ -6,7 +6,12 @@
     "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces:msg/ElectricalData.idl",
     "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces:msg/GPIOData.idl",
     "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces:msg/MotionData.idl",
-    "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces:msg/MotorData.idl"
+    "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces:msg/MotorData.idl",
+    "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces:msg/BoatAlarm.idl"
+  ],
+  "ros_interface_dependencies": [
+    "builtin_interfaces:/opt/ros/kilted/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/kilted/share/builtin_interfaces/msg/Time.idl"
   ],
   "target_dependencies": [
     "/opt/ros/kilted/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
@@ -25,6 +30,9 @@
     "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces/msg/ElectricalData.idl",
     "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces/msg/GPIOData.idl",
     "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces/msg/MotionData.idl",
-    "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces/msg/MotorData.idl"
+    "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces/msg/MotorData.idl",
+    "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces/msg/BoatAlarm.idl",
+    "/opt/ros/kilted/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/kilted/share/builtin_interfaces/msg/Time.idl"
   ]
 }

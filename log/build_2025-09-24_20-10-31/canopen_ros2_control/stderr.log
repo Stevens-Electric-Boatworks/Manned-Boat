@@ -1,0 +1,53 @@
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(canopen_ros2_control PUBLIC
+      canopen_402_driver::cia402_driver
+      canopen_402_driver::lely_motion_controller_bridge
+      canopen_402_driver::lifecycle_cia402_driver
+      canopen_402_driver::node_canopen_cia402_driver
+      canopen_core::device_container
+      canopen_core::node_canopen_driver
+      canopen_core::node_canopen_master
+      canopen_proxy_driver::lifecycle_proxy_driver
+      canopen_proxy_driver::node_canopen_proxy_driver
+      canopen_proxy_driver::proxy_driver
+      hardware_interface::hardware_interface
+      hardware_interface::mock_components
+      pluginlib::pluginlib
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  CMakeLists.txt:42 (ament_target_dependencies)
+
+[0m
+[01m[K/home/ishaan/eboat_src/ros_ws/src/ros2_canopen/canopen_ros2_control/src/canopen_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::CallbackReturn canopen_ros2_control::CanopenSystem::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’:
+[01m[K/home/ishaan/eboat_src/ros_ws/src/ros2_canopen/canopen_ros2_control/src/canopen_system.cpp:63:51:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn hardware_interface::SystemInterface::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’ is deprecated: Use on_init(const HardwareComponentInterfaceParams & params) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   63 |   if ([01;35m[Khardware_interface::SystemInterface::on_init(info)[m[K != CallbackReturn::SUCCESS)
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+In file included from [01m[K/home/ishaan/eboat_src/ros_ws/src/ros2_canopen/canopen_ros2_control/include/canopen_ros2_control/canopen_system.hpp:39[m[K,
+                 from [01m[K/home/ishaan/eboat_src/ros_ws/src/ros2_canopen/canopen_ros2_control/src/canopen_system.cpp:24[m[K:
+[01m[K/opt/ros/kilted/include/hardware_interface/hardware_interface/system_interface.hpp:226:26:[m[K [01;36m[Knote: [m[Kdeclared here
+  226 |   virtual CallbackReturn [01;36m[Kon_init[m[K(const HardwareInfo & hardware_info)
+      |                          [01;36m[K^~~~~~~[m[K
+[01m[K/home/ishaan/eboat_src/ros_ws/src/ros2_canopen/canopen_ros2_control/src/robot_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::CallbackReturn canopen_ros2_control::RobotSystem::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’:
+[01m[K/home/ishaan/eboat_src/ros_ws/src/ros2_canopen/canopen_ros2_control/src/robot_system.cpp:27:51:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn hardware_interface::SystemInterface::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’ is deprecated: Use on_init(const HardwareComponentInterfaceParams & params) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   27 |   if ([01;35m[Khardware_interface::SystemInterface::on_init(info)[m[K != CallbackReturn::SUCCESS)
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+In file included from [01m[K/home/ishaan/eboat_src/ros_ws/src/ros2_canopen/canopen_ros2_control/include/canopen_ros2_control/robot_system.hpp:26[m[K,
+                 from [01m[K/home/ishaan/eboat_src/ros_ws/src/ros2_canopen/canopen_ros2_control/src/robot_system.cpp:17[m[K:
+[01m[K/opt/ros/kilted/include/hardware_interface/hardware_interface/system_interface.hpp:226:26:[m[K [01;36m[Knote: [m[Kdeclared here
+  226 |   virtual CallbackReturn [01;36m[Kon_init[m[K(const HardwareInfo & hardware_info)
+      |                          [01;36m[K^~~~~~~[m[K
+[01m[K/home/ishaan/eboat_src/ros_ws/src/ros2_canopen/canopen_ros2_control/include/canopen_ros2_control/canopen_system.hpp:[m[K In member function ‘[01m[Kvoid canopen_ros2_control::Ros2ControlEmcyData::[01;32m[Kset_emcy[m[K(ros2_canopen::COEmcy)[m[K’:
+[01m[K/home/ishaan/eboat_src/ros_ws/src/ros2_canopen/canopen_ros2_control/include/canopen_ros2_control/canopen_system.hpp:257:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid*[01;32m[K memcpy[m[K(void*, const void*, size_t)[m[K’ reading 2 bytes from a region of size 1 [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wstringop-overread-Wstringop-overread]8;;[m[K]
+  257 |     [01;35m[Kstd::memcpy(&msef_data, &e.msef[4], sizeof(uint16_t))[m[K;
+      |     [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ishaan/eboat_src/ros_ws/src/ros2_canopen/canopen_ros2_control/include/canopen_ros2_control/canopen_system.hpp:236:38:[m[K [01;36m[Knote: [m[Kat offset 7 into source object ‘[01m[Ke[m[K’ of size 8
+  236 |   void set_emcy([01;36m[Kros2_canopen::COEmcy e[m[K)
+      |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~^[m[K

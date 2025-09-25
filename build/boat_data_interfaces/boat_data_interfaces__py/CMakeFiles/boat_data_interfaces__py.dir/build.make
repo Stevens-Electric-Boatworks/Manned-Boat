@@ -73,11 +73,13 @@ include /home/ishaan/eboat_src/build/boat_data_interfaces/boat_data_interfaces__
 /home/ishaan/eboat_src/build/boat_data_interfaces/boat_data_interfaces__py/CMakeFiles/boat_data_interfaces__py: rosidl_generator_py/boat_data_interfaces/msg/_gpio_data.py
 /home/ishaan/eboat_src/build/boat_data_interfaces/boat_data_interfaces__py/CMakeFiles/boat_data_interfaces__py: rosidl_generator_py/boat_data_interfaces/msg/_motion_data.py
 /home/ishaan/eboat_src/build/boat_data_interfaces/boat_data_interfaces__py/CMakeFiles/boat_data_interfaces__py: rosidl_generator_py/boat_data_interfaces/msg/_motor_data.py
+/home/ishaan/eboat_src/build/boat_data_interfaces/boat_data_interfaces__py/CMakeFiles/boat_data_interfaces__py: rosidl_generator_py/boat_data_interfaces/msg/_boat_alarm.py
 /home/ishaan/eboat_src/build/boat_data_interfaces/boat_data_interfaces__py/CMakeFiles/boat_data_interfaces__py: rosidl_generator_py/boat_data_interfaces/msg/__init__.py
 /home/ishaan/eboat_src/build/boat_data_interfaces/boat_data_interfaces__py/CMakeFiles/boat_data_interfaces__py: rosidl_generator_py/boat_data_interfaces/msg/_electrical_data_s.c
 /home/ishaan/eboat_src/build/boat_data_interfaces/boat_data_interfaces__py/CMakeFiles/boat_data_interfaces__py: rosidl_generator_py/boat_data_interfaces/msg/_gpio_data_s.c
 /home/ishaan/eboat_src/build/boat_data_interfaces/boat_data_interfaces__py/CMakeFiles/boat_data_interfaces__py: rosidl_generator_py/boat_data_interfaces/msg/_motion_data_s.c
 /home/ishaan/eboat_src/build/boat_data_interfaces/boat_data_interfaces__py/CMakeFiles/boat_data_interfaces__py: rosidl_generator_py/boat_data_interfaces/msg/_motor_data_s.c
+/home/ishaan/eboat_src/build/boat_data_interfaces/boat_data_interfaces__py/CMakeFiles/boat_data_interfaces__py: rosidl_generator_py/boat_data_interfaces/msg/_boat_alarm_s.c
 
 rosidl_generator_py/boat_data_interfaces/_boat_data_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/kilted/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/boat_data_interfaces/_boat_data_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/kilted/lib/python3.12/site-packages/rosidl_generator_py/__init__.py
@@ -96,6 +98,9 @@ rosidl_generator_py/boat_data_interfaces/_boat_data_interfaces_s.ep.rosidl_types
 rosidl_generator_py/boat_data_interfaces/_boat_data_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/boat_data_interfaces/msg/GPIOData.idl
 rosidl_generator_py/boat_data_interfaces/_boat_data_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/boat_data_interfaces/msg/MotionData.idl
 rosidl_generator_py/boat_data_interfaces/_boat_data_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/boat_data_interfaces/msg/MotorData.idl
+rosidl_generator_py/boat_data_interfaces/_boat_data_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/boat_data_interfaces/msg/BoatAlarm.idl
+rosidl_generator_py/boat_data_interfaces/_boat_data_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/kilted/share/builtin_interfaces/msg/Duration.idl
+rosidl_generator_py/boat_data_interfaces/_boat_data_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/kilted/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ishaan/eboat_src/build/boat_data_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
 	cd /home/ishaan/eboat_src/build/boat_data_interfaces/boat_data_interfaces__py && /usr/bin/python3 /opt/ros/kilted/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
@@ -117,6 +122,9 @@ rosidl_generator_py/boat_data_interfaces/msg/_motion_data.py: rosidl_generator_p
 rosidl_generator_py/boat_data_interfaces/msg/_motor_data.py: rosidl_generator_py/boat_data_interfaces/_boat_data_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/boat_data_interfaces/msg/_motor_data.py
 
+rosidl_generator_py/boat_data_interfaces/msg/_boat_alarm.py: rosidl_generator_py/boat_data_interfaces/_boat_data_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/boat_data_interfaces/msg/_boat_alarm.py
+
 rosidl_generator_py/boat_data_interfaces/msg/__init__.py: rosidl_generator_py/boat_data_interfaces/_boat_data_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/boat_data_interfaces/msg/__init__.py
 
@@ -132,11 +140,16 @@ rosidl_generator_py/boat_data_interfaces/msg/_motion_data_s.c: rosidl_generator_
 rosidl_generator_py/boat_data_interfaces/msg/_motor_data_s.c: rosidl_generator_py/boat_data_interfaces/_boat_data_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/boat_data_interfaces/msg/_motor_data_s.c
 
+rosidl_generator_py/boat_data_interfaces/msg/_boat_alarm_s.c: rosidl_generator_py/boat_data_interfaces/_boat_data_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/boat_data_interfaces/msg/_boat_alarm_s.c
+
 boat_data_interfaces__py: /home/ishaan/eboat_src/build/boat_data_interfaces/boat_data_interfaces__py/CMakeFiles/boat_data_interfaces__py
 boat_data_interfaces__py: rosidl_generator_py/boat_data_interfaces/_boat_data_interfaces_s.ep.rosidl_typesupport_c.c
 boat_data_interfaces__py: rosidl_generator_py/boat_data_interfaces/_boat_data_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 boat_data_interfaces__py: rosidl_generator_py/boat_data_interfaces/_boat_data_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 boat_data_interfaces__py: rosidl_generator_py/boat_data_interfaces/msg/__init__.py
+boat_data_interfaces__py: rosidl_generator_py/boat_data_interfaces/msg/_boat_alarm.py
+boat_data_interfaces__py: rosidl_generator_py/boat_data_interfaces/msg/_boat_alarm_s.c
 boat_data_interfaces__py: rosidl_generator_py/boat_data_interfaces/msg/_electrical_data.py
 boat_data_interfaces__py: rosidl_generator_py/boat_data_interfaces/msg/_electrical_data_s.c
 boat_data_interfaces__py: rosidl_generator_py/boat_data_interfaces/msg/_gpio_data.py

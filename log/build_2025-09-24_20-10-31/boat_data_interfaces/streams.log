@@ -1,0 +1,357 @@
+[0.336s] Invoking command in '/home/ishaan/eboat_src/build/boat_data_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ishaan/eboat_src/ros_ws/install/shore_comms:/home/ishaan/eboat_src/ros_ws/install/motor_node_test:/home/ishaan/eboat_src/ros_ws/install/motor_node:/home/ishaan/eboat_src/ros_ws/install/motion_node_test:/home/ishaan/eboat_src/ros_ws/install/motion_node:/home/ishaan/eboat_src/ros_ws/install/electrical_node_test:/home/ishaan/eboat_src/ros_ws/install/electrical_node:/home/ishaan/eboat_src/ros_ws/install/canopen_utils:/home/ishaan/eboat_src/ros_ws/install/alarms_watchdog_node:/home/ishaan/eboat_src/ros_ws/install/GPIO_Test:/opt/ros/kilted /usr/bin/cmake --build /home/ishaan/eboat_src/build/boat_data_interfaces -- -j16 -l16
+[0.780s] -- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+[0.780s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.780s] -- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)
+[0.781s] -- Found builtin_interfaces: 2.3.0 (/opt/ros/kilted/share/builtin_interfaces/cmake)
+[0.863s] -- Found rosidl_generator_c: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_c/cmake)
+[0.883s] -- Found rosidl_generator_cpp: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_cpp/cmake)
+[0.902s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.939s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.964s] -- Found rosidl_default_generators: 1.7.1 (/opt/ros/kilted/share/rosidl_default_generators/cmake)
+[0.992s] -- Found rosidl_adapter: 4.9.5 (/opt/ros/kilted/share/rosidl_adapter/cmake)
+[1.256s] -- Found ament_cmake_ros_core: 0.14.3 (/opt/ros/kilted/share/ament_cmake_ros_core/cmake)
+[1.420s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.489s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.863s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[1.883s] -- Added test 'lint_cmake' to check CMake code style
+[1.886s] -- Added test 'xmllint' to check XML markup files
+[1.912s] -- Configuring done (1.5s)
+[1.984s] -- Generating done (0.1s)
+[1.996s] -- Build files have been written to: /home/ishaan/eboat_src/build/boat_data_interfaces
+[2.037s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[2.060s] [  1%] Built target ament_cmake_python_copy_boat_data_interfaces
+[2.359s] running egg_info
+[2.383s] writing boat_data_interfaces.egg-info/PKG-INFO
+[2.384s] writing dependency_links to boat_data_interfaces.egg-info/dependency_links.txt
+[2.384s] writing top-level names to boat_data_interfaces.egg-info/top_level.txt
+[2.396s] [  1%] Built target boat_data_interfaces__rosidl_generator_type_description
+[2.409s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.425s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.466s] reading manifest file 'boat_data_interfaces.egg-info/SOURCES.txt'
+[2.467s] writing manifest file 'boat_data_interfaces.egg-info/SOURCES.txt'
+[2.543s] [  4%] Built target ament_cmake_python_build_boat_data_interfaces_egg
+[2.946s] [  4%] Built target boat_data_interfaces__cpp
+[3.031s] [  5%] [32mBuilding C object CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/electrical_data__description.c.o[0m
+[3.032s] [  6%] [32mBuilding C object CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/gpio_data__description.c.o[0m
+[3.032s] [  9%] [32mBuilding C object CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/electrical_data__type_support.c.o[0m
+[3.032s] [  9%] [32mBuilding C object CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/motion_data__functions.c.o[0m
+[3.032s] [ 10%] [32mBuilding C object CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/motor_data__functions.c.o[0m
+[3.032s] [ 12%] [32mBuilding C object CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/gpio_data__type_support.c.o[0m
+[3.032s] [ 13%] [32mBuilding C object CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/electrical_data__functions.c.o[0m
+[3.033s] [ 14%] [32mBuilding C object CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__description.c.o[0m
+[3.033s] [ 17%] [32mBuilding C object CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/gpio_data__functions.c.o[0m
+[3.033s] [ 17%] [32mBuilding C object CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.c.o[0m
+[3.033s] [ 20%] [32mBuilding C object CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/motion_data__type_support.c.o[0m
+[3.033s] [ 21%] [32mBuilding C object CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/motor_data__description.c.o[0m
+[3.033s] [ 21%] [32mBuilding C object CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/motor_data__type_support.c.o[0m
+[3.034s] [ 22%] [32mBuilding C object CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/motion_data__description.c.o[0m
+[3.041s] [ 24%] [32mBuilding C object CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.c.o[0m
+[3.128s] [ 25%] [32m[1mLinking C shared library libboat_data_interfaces__rosidl_generator_c.so[0m
+[3.263s] [ 25%] Built target boat_data_interfaces__rosidl_generator_c
+[3.271s] [ 28%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.272s] [ 28%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.272s] [ 29%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.273s] [ 31%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.273s] [ 32%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.273s] [ 33%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.565s] [ 35%] [32mBuilding CXX object CMakeFiles/boat_data_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/boat_data_interfaces/msg/motion_data__type_support.cpp.o[0m
+[3.565s] [ 36%] [32mBuilding CXX object CMakeFiles/boat_data_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/boat_data_interfaces/msg/boat_alarm__type_support.cpp.o[0m
+[3.566s] [ 37%] [32mBuilding CXX object CMakeFiles/boat_data_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/boat_data_interfaces/msg/gpio_data__type_support.cpp.o[0m
+[3.566s] [ 39%] [32mBuilding CXX object CMakeFiles/boat_data_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/boat_data_interfaces/msg/motor_data__type_support.cpp.o[0m
+[3.566s] [ 40%] [32mBuilding CXX object CMakeFiles/boat_data_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/boat_data_interfaces/msg/electrical_data__type_support.cpp.o[0m
+[3.582s] [ 41%] [32mBuilding CXX object CMakeFiles/boat_data_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/boat_data_interfaces/msg/gpio_data__type_support.cpp.o[0m
+[3.582s] [ 43%] [32mBuilding CXX object CMakeFiles/boat_data_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/boat_data_interfaces/msg/motion_data__type_support.cpp.o[0m
+[3.584s] [ 44%] [32mBuilding CXX object CMakeFiles/boat_data_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/boat_data_interfaces/msg/electrical_data__type_support.cpp.o[0m
+[3.584s] [ 45%] [32mBuilding CXX object CMakeFiles/boat_data_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/boat_data_interfaces/msg/motor_data__type_support.cpp.o[0m
+[3.588s] [ 47%] [32mBuilding CXX object CMakeFiles/boat_data_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/boat_data_interfaces/msg/boat_alarm__type_support.cpp.o[0m
+[3.618s] [ 48%] [32mBuilding CXX object CMakeFiles/boat_data_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/boat_data_interfaces/msg/detail/motion_data__type_support.cpp.o[0m
+[3.619s] [ 50%] [32mBuilding CXX object CMakeFiles/boat_data_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/boat_data_interfaces/msg/detail/gpio_data__type_support.cpp.o[0m
+[3.623s] [ 51%] [32mBuilding CXX object CMakeFiles/boat_data_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/boat_data_interfaces/msg/detail/electrical_data__type_support.cpp.o[0m
+[3.639s] [ 54%] [32m[1mLinking CXX shared library libboat_data_interfaces__rosidl_typesupport_c.so[0m
+[3.639s] [ 54%] [32mBuilding CXX object CMakeFiles/boat_data_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/boat_data_interfaces/msg/detail/motor_data__type_support.cpp.o[0m
+[3.640s] [ 55%] [32mBuilding CXX object CMakeFiles/boat_data_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/boat_data_interfaces/msg/detail/boat_alarm__type_support.cpp.o[0m
+[3.646s] [ 56%] [32mBuilding C object CMakeFiles/boat_data_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/boat_data_interfaces/msg/detail/electrical_data__type_support.c.o[0m
+[3.646s] [ 58%] [32mBuilding C object CMakeFiles/boat_data_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/boat_data_interfaces/msg/detail/gpio_data__type_support.c.o[0m
+[3.649s] [ 59%] [32mBuilding C object CMakeFiles/boat_data_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/boat_data_interfaces/msg/detail/motion_data__type_support.c.o[0m
+[3.700s] [ 60%] [32mBuilding C object CMakeFiles/boat_data_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/boat_data_interfaces/msg/detail/motor_data__type_support.c.o[0m
+[3.728s] [ 62%] [32mBuilding C object CMakeFiles/boat_data_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.c.o[0m
+[3.750s] [ 63%] [32mBuilding CXX object CMakeFiles/boat_data_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/boat_data_interfaces/msg/detail/gpio_data__type_support_c.cpp.o[0m
+[3.756s] [ 64%] [32mBuilding CXX object CMakeFiles/boat_data_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/electrical_data__type_support.cpp.o[0m
+[3.757s] [ 66%] [32mBuilding CXX object CMakeFiles/boat_data_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/boat_data_interfaces/msg/detail/electrical_data__type_support_c.cpp.o[0m
+[3.761s] [ 67%] [32mBuilding CXX object CMakeFiles/boat_data_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/gpio_data__type_support.cpp.o[0m
+[3.809s] [ 68%] [32m[1mLinking C shared library libboat_data_interfaces__rosidl_typesupport_introspection_c.so[0m
+[3.946s] [ 68%] Built target boat_data_interfaces__rosidl_typesupport_c
+[3.965s] [ 70%] [32mBuilding CXX object CMakeFiles/boat_data_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/motion_data__type_support.cpp.o[0m
+[4.151s] [ 71%] [32mBuilding CXX object CMakeFiles/boat_data_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/motor_data__type_support.cpp.o[0m
+[4.172s] [ 72%] [32mBuilding CXX object CMakeFiles/boat_data_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/boat_data_interfaces/msg/detail/motion_data__type_support_c.cpp.o[0m
+[4.173s] [ 72%] Built target boat_data_interfaces__rosidl_typesupport_introspection_c
+[4.190s] [ 74%] [32mBuilding CXX object CMakeFiles/boat_data_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/boat_data_interfaces/msg/detail/motor_data__type_support_c.cpp.o[0m
+[4.192s] [ 75%] [32mBuilding CXX object CMakeFiles/boat_data_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/boat_data_interfaces/msg/detail/dds_fastrtps/boat_alarm__type_support.cpp.o[0m
+[4.205s] [ 77%] [32mBuilding CXX object CMakeFiles/boat_data_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/boat_data_interfaces/msg/detail/boat_alarm__type_support_c.cpp.o[0m
+[4.287s] [ 78%] [32m[1mLinking CXX shared library libboat_data_interfaces__rosidl_typesupport_cpp.so[0m
+[4.303s] [ 79%] [32m[1mLinking CXX shared library libboat_data_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[4.631s] [ 79%] Built target boat_data_interfaces__rosidl_typesupport_cpp
+[4.686s] [ 79%] Built target boat_data_interfaces__rosidl_typesupport_introspection_cpp
+[4.833s] [ 81%] [32m[1mLinking CXX shared library libboat_data_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[4.839s] [ 82%] [32m[1mLinking CXX shared library libboat_data_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.984s] [ 82%] Built target boat_data_interfaces__rosidl_typesupport_fastrtps_cpp
+[4.986s] [ 82%] Built target boat_data_interfaces__rosidl_typesupport_fastrtps_c
+[5.009s] [ 82%] Built target boat_data_interfaces
+[5.032s] [ 83%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.548s] [ 83%] Built target boat_data_interfaces__py
+[5.577s] [ 87%] [32mBuilding C object CMakeFiles/boat_data_interfaces__rosidl_generator_py.dir/rosidl_generator_py/boat_data_interfaces/msg/_motion_data_s.c.o[0m
+[5.577s] [ 87%] [32mBuilding C object CMakeFiles/boat_data_interfaces__rosidl_generator_py.dir/rosidl_generator_py/boat_data_interfaces/msg/_electrical_data_s.c.o[0m
+[5.577s] [ 87%] [32mBuilding C object CMakeFiles/boat_data_interfaces__rosidl_generator_py.dir/rosidl_generator_py/boat_data_interfaces/msg/_motor_data_s.c.o[0m
+[5.579s] [ 90%] [32mBuilding C object CMakeFiles/boat_data_interfaces__rosidl_generator_py.dir/rosidl_generator_py/boat_data_interfaces/msg/_gpio_data_s.c.o[0m
+[5.580s] [ 90%] [32mBuilding C object CMakeFiles/boat_data_interfaces__rosidl_generator_py.dir/rosidl_generator_py/boat_data_interfaces/msg/_boat_alarm_s.c.o[0m
+[5.764s] [ 91%] [32m[1mLinking C shared library libboat_data_interfaces__rosidl_generator_py.so[0m
+[5.961s] [ 91%] Built target boat_data_interfaces__rosidl_generator_py
+[5.980s] [ 95%] [32mBuilding C object CMakeFiles/boat_data_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/boat_data_interfaces/_boat_data_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[5.980s] [ 95%] [32mBuilding C object CMakeFiles/boat_data_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/boat_data_interfaces/_boat_data_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.980s] [ 95%] [32mBuilding C object CMakeFiles/boat_data_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/boat_data_interfaces/_boat_data_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[6.060s] [ 98%] [32m[1mLinking C shared module rosidl_generator_py/boat_data_interfaces/boat_data_interfaces_s__rosidl_typesupport_introspection_c.so[0m
+[6.060s] [ 98%] [32m[1mLinking C shared module rosidl_generator_py/boat_data_interfaces/boat_data_interfaces_s__rosidl_typesupport_c.so[0m
+[6.069s] [100%] [32m[1mLinking C shared module rosidl_generator_py/boat_data_interfaces/boat_data_interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[6.185s] [100%] Built target boat_data_interfaces_s__rosidl_typesupport_c
+[6.185s] [100%] Built target boat_data_interfaces_s__rosidl_typesupport_introspection_c
+[6.267s] [100%] Built target boat_data_interfaces_s__rosidl_typesupport_fastrtps_c
+[6.278s] Invoked command in '/home/ishaan/eboat_src/build/boat_data_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ishaan/eboat_src/ros_ws/install/shore_comms:/home/ishaan/eboat_src/ros_ws/install/motor_node_test:/home/ishaan/eboat_src/ros_ws/install/motor_node:/home/ishaan/eboat_src/ros_ws/install/motion_node_test:/home/ishaan/eboat_src/ros_ws/install/motion_node:/home/ishaan/eboat_src/ros_ws/install/electrical_node_test:/home/ishaan/eboat_src/ros_ws/install/electrical_node:/home/ishaan/eboat_src/ros_ws/install/canopen_utils:/home/ishaan/eboat_src/ros_ws/install/alarms_watchdog_node:/home/ishaan/eboat_src/ros_ws/install/GPIO_Test:/opt/ros/kilted /usr/bin/cmake --build /home/ishaan/eboat_src/build/boat_data_interfaces -- -j16 -l16
+[6.287s] Invoking command in '/home/ishaan/eboat_src/build/boat_data_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ishaan/eboat_src/ros_ws/install/shore_comms:/home/ishaan/eboat_src/ros_ws/install/motor_node_test:/home/ishaan/eboat_src/ros_ws/install/motor_node:/home/ishaan/eboat_src/ros_ws/install/motion_node_test:/home/ishaan/eboat_src/ros_ws/install/motion_node:/home/ishaan/eboat_src/ros_ws/install/electrical_node_test:/home/ishaan/eboat_src/ros_ws/install/electrical_node:/home/ishaan/eboat_src/ros_ws/install/canopen_utils:/home/ishaan/eboat_src/ros_ws/install/alarms_watchdog_node:/home/ishaan/eboat_src/ros_ws/install/GPIO_Test:/opt/ros/kilted /usr/bin/cmake --install /home/ishaan/eboat_src/build/boat_data_interfaces
+[6.294s] -- Install configuration: ""
+[6.294s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/ament_index/resource_index/rosidl_interfaces/boat_data_interfaces
+[6.294s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/msg/ElectricalData.json
+[6.294s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/msg/GPIOData.json
+[6.294s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/msg/MotionData.json
+[6.295s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/msg/MotorData.json
+[6.295s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/msg/BoatAlarm.json
+[6.295s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces
+[6.295s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg
+[6.295s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/electrical_data.h
+[6.296s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail
+[6.296s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motion_data__struct.h
+[6.296s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/boat_alarm__description.c
+[6.297s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/electrical_data__type_support.c
+[6.297s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/boat_alarm__functions.c
+[6.297s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/gpio_data__type_support.c
+[6.297s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motion_data__functions.h
+[6.297s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/electrical_data__struct.h
+[6.297s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motor_data__description.c
+[6.297s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/gpio_data__functions.c
+[6.298s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motor_data__functions.h
+[6.298s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motor_data__type_support.h
+[6.298s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motion_data__type_support.c
+[6.298s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/boat_alarm__type_support.c
+[6.298s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/boat_alarm__struct.h
+[6.298s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/gpio_data__struct.h
+[6.298s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/boat_alarm__functions.h
+[6.298s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/electrical_data__description.c
+[6.299s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motion_data__description.c
+[6.299s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/electrical_data__functions.h
+[6.299s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/electrical_data__functions.c
+[6.299s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motion_data__type_support.h
+[6.299s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/gpio_data__description.c
+[6.299s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motion_data__functions.c
+[6.300s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/electrical_data__type_support.h
+[6.300s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motor_data__functions.c
+[6.300s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motor_data__type_support.c
+[6.300s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/boat_alarm__type_support.h
+[6.300s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/gpio_data__functions.h
+[6.300s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/gpio_data__type_support.h
+[6.300s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motor_data__struct.h
+[6.300s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/gpio_data.h
+[6.300s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/rosidl_generator_c__visibility_control.h
+[6.300s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/boat_alarm.h
+[6.301s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/motor_data.h
+[6.301s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/motion_data.h
+[6.301s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/environment/library_path.sh
+[6.301s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/environment/library_path.dsv
+[6.301s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/libboat_data_interfaces__rosidl_generator_c.so
+[6.302s] -- Set non-toolchain portion of runtime path of "/home/ishaan/eboat_src/install/boat_data_interfaces/lib/libboat_data_interfaces__rosidl_generator_c.so" to ""
+[6.302s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces
+[6.302s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg
+[6.302s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[6.302s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail
+[6.302s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/boat_alarm__rosidl_typesupport_fastrtps_c.h
+[6.302s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/gpio_data__rosidl_typesupport_fastrtps_c.h
+[6.302s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motor_data__rosidl_typesupport_fastrtps_c.h
+[6.303s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motion_data__rosidl_typesupport_fastrtps_c.h
+[6.303s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/electrical_data__rosidl_typesupport_fastrtps_c.h
+[6.303s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/libboat_data_interfaces__rosidl_typesupport_fastrtps_c.so
+[6.303s] -- Set non-toolchain portion of runtime path of "/home/ishaan/eboat_src/install/boat_data_interfaces/lib/libboat_data_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[6.303s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces
+[6.303s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg
+[6.304s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/gpio_data.hpp
+[6.304s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/boat_alarm.hpp
+[6.304s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/electrical_data.hpp
+[6.304s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail
+[6.304s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motion_data__traits.hpp
+[6.305s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/boat_alarm__traits.hpp
+[6.305s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motor_data__traits.hpp
+[6.305s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/electrical_data__traits.hpp
+[6.305s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/electrical_data__builder.hpp
+[6.306s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motion_data__type_support.hpp
+[6.306s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motion_data__struct.hpp
+[6.306s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/electrical_data__struct.hpp
+[6.306s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/gpio_data__type_support.hpp
+[6.307s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/boat_alarm__struct.hpp
+[6.307s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/gpio_data__builder.hpp
+[6.307s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/boat_alarm__builder.hpp
+[6.307s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motor_data__type_support.hpp
+[6.308s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/gpio_data__traits.hpp
+[6.308s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/boat_alarm__type_support.hpp
+[6.308s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/electrical_data__type_support.hpp
+[6.308s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motion_data__builder.hpp
+[6.308s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/gpio_data__struct.hpp
+[6.309s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motor_data__builder.hpp
+[6.309s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motor_data__struct.hpp
+[6.309s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/motor_data.hpp
+[6.309s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/motion_data.hpp
+[6.309s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[6.309s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces
+[6.309s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg
+[6.309s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail
+[6.309s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motion_data__rosidl_typesupport_fastrtps_cpp.hpp
+[6.309s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motor_data__rosidl_typesupport_fastrtps_cpp.hpp
+[6.309s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/gpio_data__rosidl_typesupport_fastrtps_cpp.hpp
+[6.309s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/dds_fastrtps
+[6.309s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/boat_alarm__rosidl_typesupport_fastrtps_cpp.hpp
+[6.310s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/electrical_data__rosidl_typesupport_fastrtps_cpp.hpp
+[6.310s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[6.310s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/libboat_data_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[6.310s] -- Set non-toolchain portion of runtime path of "/home/ishaan/eboat_src/install/boat_data_interfaces/lib/libboat_data_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[6.310s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces
+[6.310s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg
+[6.311s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[6.311s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail
+[6.311s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motor_data__rosidl_typesupport_introspection_c.h
+[6.311s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/electrical_data__type_support.c
+[6.311s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/gpio_data__type_support.c
+[6.311s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motion_data__rosidl_typesupport_introspection_c.h
+[6.311s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motion_data__type_support.c
+[6.312s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/boat_alarm__rosidl_typesupport_introspection_c.h
+[6.312s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/boat_alarm__type_support.c
+[6.312s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/electrical_data__rosidl_typesupport_introspection_c.h
+[6.312s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/gpio_data__rosidl_typesupport_introspection_c.h
+[6.312s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motor_data__type_support.c
+[6.313s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/libboat_data_interfaces__rosidl_typesupport_introspection_c.so
+[6.313s] -- Set non-toolchain portion of runtime path of "/home/ishaan/eboat_src/install/boat_data_interfaces/lib/libboat_data_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[6.313s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/libboat_data_interfaces__rosidl_typesupport_c.so
+[6.313s] -- Set non-toolchain portion of runtime path of "/home/ishaan/eboat_src/install/boat_data_interfaces/lib/libboat_data_interfaces__rosidl_typesupport_c.so" to ""
+[6.314s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces
+[6.314s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg
+[6.314s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail
+[6.314s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motion_data__type_support.cpp
+[6.314s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motion_data__rosidl_typesupport_introspection_cpp.hpp
+[6.315s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/electrical_data__rosidl_typesupport_introspection_cpp.hpp
+[6.315s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/gpio_data__type_support.cpp
+[6.315s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/boat_alarm__rosidl_typesupport_introspection_cpp.hpp
+[6.315s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/boat_alarm__type_support.cpp
+[6.315s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motor_data__rosidl_typesupport_introspection_cpp.hpp
+[6.315s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/motor_data__type_support.cpp
+[6.315s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/gpio_data__rosidl_typesupport_introspection_cpp.hpp
+[6.315s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/include/boat_data_interfaces/boat_data_interfaces/msg/detail/electrical_data__type_support.cpp
+[6.315s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/libboat_data_interfaces__rosidl_typesupport_introspection_cpp.so
+[6.315s] -- Set non-toolchain portion of runtime path of "/home/ishaan/eboat_src/install/boat_data_interfaces/lib/libboat_data_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[6.315s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/libboat_data_interfaces__rosidl_typesupport_cpp.so
+[6.315s] -- Set non-toolchain portion of runtime path of "/home/ishaan/eboat_src/install/boat_data_interfaces/lib/libboat_data_interfaces__rosidl_typesupport_cpp.so" to ""
+[6.315s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/environment/pythonpath.sh
+[6.315s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/environment/pythonpath.dsv
+[6.315s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces-0.0.0-py3.12.egg-info
+[6.315s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces-0.0.0-py3.12.egg-info/top_level.txt
+[6.315s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt
+[6.315s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces-0.0.0-py3.12.egg-info/PKG-INFO
+[6.315s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt
+[6.315s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces
+[6.315s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/boat_data_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[6.316s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/_boat_data_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[6.316s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/boat_data_interfaces_s__rosidl_typesupport_introspection_c.so
+[6.316s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/_boat_data_interfaces_s.ep.rosidl_typesupport_c.c
+[6.316s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/msg
+[6.316s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/msg/_boat_alarm_s.c
+[6.316s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/msg/_gpio_data_s.c
+[6.316s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/msg/_gpio_data.py
+[6.316s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/msg/_electrical_data.py
+[6.316s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/msg/_electrical_data_s.c
+[6.316s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/msg/_motion_data_s.c
+[6.316s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/msg/__init__.py
+[6.316s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/msg/_boat_alarm.py
+[6.316s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/msg/_motor_data_s.c
+[6.316s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/msg/_motor_data.py
+[6.316s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/msg/_motion_data.py
+[6.316s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/__init__.py
+[6.316s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/_boat_data_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[6.316s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/boat_data_interfaces_s__rosidl_typesupport_c.so
+[6.350s] Listing '/home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces'...
+[6.350s] Compiling '/home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/__init__.py'...
+[6.350s] Listing '/home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/msg'...
+[6.350s] Compiling '/home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/msg/__init__.py'...
+[6.350s] Compiling '/home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/msg/_boat_alarm.py'...
+[6.350s] Compiling '/home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/msg/_electrical_data.py'...
+[6.350s] Compiling '/home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/msg/_gpio_data.py'...
+[6.350s] Compiling '/home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/msg/_motion_data.py'...
+[6.350s] Compiling '/home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/msg/_motor_data.py'...
+[6.357s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/boat_data_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[6.357s] -- Set non-toolchain portion of runtime path of "/home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/boat_data_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""
+[6.357s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/boat_data_interfaces_s__rosidl_typesupport_introspection_c.so
+[6.358s] -- Set non-toolchain portion of runtime path of "/home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/boat_data_interfaces_s__rosidl_typesupport_introspection_c.so" to ""
+[6.358s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/boat_data_interfaces_s__rosidl_typesupport_c.so
+[6.358s] -- Set non-toolchain portion of runtime path of "/home/ishaan/eboat_src/install/boat_data_interfaces/lib/python3.12/site-packages/boat_data_interfaces/boat_data_interfaces_s__rosidl_typesupport_c.so" to ""
+[6.358s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/lib/libboat_data_interfaces__rosidl_generator_py.so
+[6.359s] -- Set non-toolchain portion of runtime path of "/home/ishaan/eboat_src/install/boat_data_interfaces/lib/libboat_data_interfaces__rosidl_generator_py.so" to ""
+[6.359s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/msg/ElectricalData.idl
+[6.359s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/msg/GPIOData.idl
+[6.359s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/msg/MotionData.idl
+[6.359s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/msg/MotorData.idl
+[6.359s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/msg/BoatAlarm.idl
+[6.360s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/msg/ElectricalData.msg
+[6.360s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/msg/GPIOData.msg
+[6.360s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/msg/MotionData.msg
+[6.360s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/msg/MotorData.msg
+[6.360s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/msg/BoatAlarm.msg
+[6.361s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/ament_index/resource_index/package_run_dependencies/boat_data_interfaces
+[6.361s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/ament_index/resource_index/parent_prefix_path/boat_data_interfaces
+[6.361s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/environment/ament_prefix_path.sh
+[6.361s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/environment/ament_prefix_path.dsv
+[6.361s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/environment/path.sh
+[6.362s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/environment/path.dsv
+[6.362s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/local_setup.bash
+[6.362s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/local_setup.sh
+[6.362s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/local_setup.zsh
+[6.363s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/local_setup.dsv
+[6.363s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/package.dsv
+[6.363s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/share/ament_index/resource_index/packages/boat_data_interfaces
+[6.364s] -- Old export file "/home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_generator_cExport.cmake" will be replaced.  Removing files [/home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_generator_cExport-noconfig.cmake].
+[6.364s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_generator_cExport.cmake
+[6.365s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_generator_cExport-noconfig.cmake
+[6.365s] -- Old export file "/home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_typesupport_fastrtps_cExport.cmake" will be replaced.  Removing files [/home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake].
+[6.365s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[6.365s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[6.365s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_generator_cppExport.cmake
+[6.366s] -- Old export file "/home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake" will be replaced.  Removing files [/home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake].
+[6.366s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[6.366s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[6.367s] -- Old export file "/home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/boat_data_interfaces__rosidl_typesupport_introspection_cExport.cmake" will be replaced.  Removing files [/home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/boat_data_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake].
+[6.367s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/boat_data_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[6.367s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/boat_data_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[6.367s] -- Old export file "/home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/boat_data_interfaces__rosidl_typesupport_cExport.cmake" will be replaced.  Removing files [/home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/boat_data_interfaces__rosidl_typesupport_cExport-noconfig.cmake].
+[6.367s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/boat_data_interfaces__rosidl_typesupport_cExport.cmake
+[6.368s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/boat_data_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[6.368s] -- Old export file "/home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/boat_data_interfaces__rosidl_typesupport_introspection_cppExport.cmake" will be replaced.  Removing files [/home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/boat_data_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake].
+[6.368s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/boat_data_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[6.368s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/boat_data_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[6.369s] -- Old export file "/home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/boat_data_interfaces__rosidl_typesupport_cppExport.cmake" will be replaced.  Removing files [/home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/boat_data_interfaces__rosidl_typesupport_cppExport-noconfig.cmake].
+[6.369s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/boat_data_interfaces__rosidl_typesupport_cppExport.cmake
+[6.369s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/boat_data_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[6.370s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_generator_pyExport.cmake
+[6.370s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/export_boat_data_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[6.371s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/rosidl_cmake-extras.cmake
+[6.371s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.371s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.371s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[6.371s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[6.372s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[6.372s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[6.372s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/boat_data_interfacesConfig.cmake
+[6.373s] -- Up-to-date: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/cmake/boat_data_interfacesConfig-version.cmake
+[6.374s] -- Installing: /home/ishaan/eboat_src/install/boat_data_interfaces/share/boat_data_interfaces/package.xml
+[6.375s] Invoked command in '/home/ishaan/eboat_src/build/boat_data_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ishaan/eboat_src/ros_ws/install/shore_comms:/home/ishaan/eboat_src/ros_ws/install/motor_node_test:/home/ishaan/eboat_src/ros_ws/install/motor_node:/home/ishaan/eboat_src/ros_ws/install/motion_node_test:/home/ishaan/eboat_src/ros_ws/install/motion_node:/home/ishaan/eboat_src/ros_ws/install/electrical_node_test:/home/ishaan/eboat_src/ros_ws/install/electrical_node:/home/ishaan/eboat_src/ros_ws/install/canopen_utils:/home/ishaan/eboat_src/ros_ws/install/alarms_watchdog_node:/home/ishaan/eboat_src/ros_ws/install/GPIO_Test:/opt/ros/kilted /usr/bin/cmake --install /home/ishaan/eboat_src/build/boat_data_interfaces

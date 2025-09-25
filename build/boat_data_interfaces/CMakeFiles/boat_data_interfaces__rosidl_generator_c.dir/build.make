@@ -92,6 +92,9 @@ rosidl_generator_c/boat_data_interfaces/msg/electrical_data.h: rosidl_adapter/bo
 rosidl_generator_c/boat_data_interfaces/msg/electrical_data.h: rosidl_adapter/boat_data_interfaces/msg/GPIOData.idl
 rosidl_generator_c/boat_data_interfaces/msg/electrical_data.h: rosidl_adapter/boat_data_interfaces/msg/MotionData.idl
 rosidl_generator_c/boat_data_interfaces/msg/electrical_data.h: rosidl_adapter/boat_data_interfaces/msg/MotorData.idl
+rosidl_generator_c/boat_data_interfaces/msg/electrical_data.h: rosidl_adapter/boat_data_interfaces/msg/BoatAlarm.idl
+rosidl_generator_c/boat_data_interfaces/msg/electrical_data.h: /opt/ros/kilted/share/builtin_interfaces/msg/Duration.idl
+rosidl_generator_c/boat_data_interfaces/msg/electrical_data.h: /opt/ros/kilted/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ishaan/eboat_src/build/boat_data_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/kilted/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_c__arguments.json
 
@@ -140,6 +143,18 @@ rosidl_generator_c/boat_data_interfaces/msg/detail/motor_data__struct.h: rosidl_
 rosidl_generator_c/boat_data_interfaces/msg/detail/motor_data__type_support.h: rosidl_generator_c/boat_data_interfaces/msg/electrical_data.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/boat_data_interfaces/msg/detail/motor_data__type_support.h
 
+rosidl_generator_c/boat_data_interfaces/msg/boat_alarm.h: rosidl_generator_c/boat_data_interfaces/msg/electrical_data.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/boat_data_interfaces/msg/boat_alarm.h
+
+rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.h: rosidl_generator_c/boat_data_interfaces/msg/electrical_data.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.h
+
+rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__struct.h: rosidl_generator_c/boat_data_interfaces/msg/electrical_data.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__struct.h
+
+rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.h: rosidl_generator_c/boat_data_interfaces/msg/electrical_data.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.h
+
 rosidl_generator_c/boat_data_interfaces/msg/detail/electrical_data__description.c: rosidl_generator_c/boat_data_interfaces/msg/electrical_data.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/boat_data_interfaces/msg/detail/electrical_data__description.c
 
@@ -175,6 +190,15 @@ rosidl_generator_c/boat_data_interfaces/msg/detail/motor_data__functions.c: rosi
 
 rosidl_generator_c/boat_data_interfaces/msg/detail/motor_data__type_support.c: rosidl_generator_c/boat_data_interfaces/msg/electrical_data.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/boat_data_interfaces/msg/detail/motor_data__type_support.c
+
+rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__description.c: rosidl_generator_c/boat_data_interfaces/msg/electrical_data.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__description.c
+
+rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.c: rosidl_generator_c/boat_data_interfaces/msg/electrical_data.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.c
+
+rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.c: rosidl_generator_c/boat_data_interfaces/msg/electrical_data.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.c
 
 CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/electrical_data__description.c.o: CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/electrical_data__description.c.o: rosidl_generator_c/boat_data_interfaces/msg/detail/electrical_data__description.c
@@ -344,6 +368,48 @@ CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/motor_data__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_c/boat_data_interfaces/msg/detail/motor_data__type_support.c -o CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/motor_data__type_support.c.s
 
+CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__description.c.o: CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__description.c.o: rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__description.c
+CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__description.c.o: CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ishaan/eboat_src/build/boat_data_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__description.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__description.c.o -MF CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__description.c.o.d -o CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__description.c.o -c /home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__description.c
+
+CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__description.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__description.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__description.c > CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__description.c.i
+
+CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__description.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__description.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__description.c -o CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__description.c.s
+
+CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.c.o: CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.c.o: rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.c
+CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.c.o: CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ishaan/eboat_src/build/boat_data_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.c.o -MF CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.c.o.d -o CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.c.o -c /home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.c
+
+CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.c > CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.c.i
+
+CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.c -o CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.c.s
+
+CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.c.o: CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.c.o: rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.c
+CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.c.o: CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ishaan/eboat_src/build/boat_data_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.c.o -MF CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.c.o.d -o CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.c.o -c /home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.c
+
+CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.c > CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.c.i
+
+CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.c -o CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.c.s
+
 # Object files for target boat_data_interfaces__rosidl_generator_c
 boat_data_interfaces__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/electrical_data__description.c.o" \
@@ -357,7 +423,10 @@ boat_data_interfaces__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/motion_data__type_support.c.o" \
 "CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/motor_data__description.c.o" \
 "CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/motor_data__functions.c.o" \
-"CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/motor_data__type_support.c.o"
+"CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/motor_data__type_support.c.o" \
+"CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__description.c.o" \
+"CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.c.o" \
+"CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.c.o"
 
 # External object files for target boat_data_interfaces__rosidl_generator_c
 boat_data_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
@@ -374,11 +443,15 @@ libboat_data_interfaces__rosidl_generator_c.so: CMakeFiles/boat_data_interfaces_
 libboat_data_interfaces__rosidl_generator_c.so: CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/motor_data__description.c.o
 libboat_data_interfaces__rosidl_generator_c.so: CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/motor_data__functions.c.o
 libboat_data_interfaces__rosidl_generator_c.so: CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/motor_data__type_support.c.o
+libboat_data_interfaces__rosidl_generator_c.so: CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__description.c.o
+libboat_data_interfaces__rosidl_generator_c.so: CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.c.o
+libboat_data_interfaces__rosidl_generator_c.so: CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.c.o
 libboat_data_interfaces__rosidl_generator_c.so: CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/build.make
+libboat_data_interfaces__rosidl_generator_c.so: /opt/ros/kilted/lib/libbuiltin_interfaces__rosidl_generator_c.so
 libboat_data_interfaces__rosidl_generator_c.so: /opt/ros/kilted/lib/librosidl_runtime_c.so
 libboat_data_interfaces__rosidl_generator_c.so: /opt/ros/kilted/lib/librcutils.so
 libboat_data_interfaces__rosidl_generator_c.so: CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ishaan/eboat_src/build/boat_data_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking C shared library libboat_data_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ishaan/eboat_src/build/boat_data_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking C shared library libboat_data_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -389,6 +462,13 @@ CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/clean
 
+CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/boat_data_interfaces/msg/boat_alarm.h
+CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__description.c
+CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.c
+CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__functions.h
+CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__struct.h
+CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.c
+CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/boat_data_interfaces/msg/detail/boat_alarm__type_support.h
 CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/boat_data_interfaces/msg/detail/electrical_data__description.c
 CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/boat_data_interfaces/msg/detail/electrical_data__functions.c
 CMakeFiles/boat_data_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/boat_data_interfaces/msg/detail/electrical_data__functions.h

@@ -1,0 +1,38 @@
+[2.165s] Invoking command in '/home/ishaan/eboat_src/ros_ws/src/motion_node': PYTHONPATH=/home/ishaan/eboat_src/build/motion_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ishaan/eboat_src/install/motion_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/motion_node build --build-base /home/ishaan/eboat_src/build/motion_node/build install --record /home/ishaan/eboat_src/build/motion_node/install.log --single-version-externally-managed install_data
+[2.498s] running egg_info
+[2.498s] creating ../../../build/motion_node/motion_node.egg-info
+[2.536s] writing ../../../build/motion_node/motion_node.egg-info/PKG-INFO
+[2.538s] writing dependency_links to ../../../build/motion_node/motion_node.egg-info/dependency_links.txt
+[2.538s] writing entry points to ../../../build/motion_node/motion_node.egg-info/entry_points.txt
+[2.538s] writing requirements to ../../../build/motion_node/motion_node.egg-info/requires.txt
+[2.538s] writing top-level names to ../../../build/motion_node/motion_node.egg-info/top_level.txt
+[2.538s] writing manifest file '../../../build/motion_node/motion_node.egg-info/SOURCES.txt'
+[2.596s] reading manifest file '../../../build/motion_node/motion_node.egg-info/SOURCES.txt'
+[2.597s] adding license file 'LICENSE'
+[2.597s] writing manifest file '../../../build/motion_node/motion_node.egg-info/SOURCES.txt'
+[2.598s] running build
+[2.598s] running build_py
+[2.598s] creating /home/ishaan/eboat_src/build/motion_node/build
+[2.598s] creating /home/ishaan/eboat_src/build/motion_node/build/lib
+[2.599s] creating /home/ishaan/eboat_src/build/motion_node/build/lib/motion_node
+[2.599s] copying motion_node/motion_node_test.py -> /home/ishaan/eboat_src/build/motion_node/build/lib/motion_node
+[2.599s] copying motion_node/__init__.py -> /home/ishaan/eboat_src/build/motion_node/build/lib/motion_node
+[2.599s] running install
+[2.607s] running install_lib
+[2.635s] creating /home/ishaan/eboat_src/install/motion_node/lib/python3.12/site-packages/motion_node
+[2.635s] copying /home/ishaan/eboat_src/build/motion_node/build/lib/motion_node/motion_node_test.py -> /home/ishaan/eboat_src/install/motion_node/lib/python3.12/site-packages/motion_node
+[2.636s] copying /home/ishaan/eboat_src/build/motion_node/build/lib/motion_node/__init__.py -> /home/ishaan/eboat_src/install/motion_node/lib/python3.12/site-packages/motion_node
+[2.637s] byte-compiling /home/ishaan/eboat_src/install/motion_node/lib/python3.12/site-packages/motion_node/motion_node_test.py to motion_node_test.cpython-312.pyc
+[2.638s] byte-compiling /home/ishaan/eboat_src/install/motion_node/lib/python3.12/site-packages/motion_node/__init__.py to __init__.cpython-312.pyc
+[2.638s] running install_data
+[2.638s] creating /home/ishaan/eboat_src/install/motion_node/share/ament_index
+[2.639s] creating /home/ishaan/eboat_src/install/motion_node/share/ament_index/resource_index
+[2.639s] creating /home/ishaan/eboat_src/install/motion_node/share/ament_index/resource_index/packages
+[2.639s] copying resource/motion_node -> /home/ishaan/eboat_src/install/motion_node/share/ament_index/resource_index/packages
+[2.639s] copying package.xml -> /home/ishaan/eboat_src/install/motion_node/share/motion_node
+[2.639s] running install_egg_info
+[2.664s] Copying ../../../build/motion_node/motion_node.egg-info to /home/ishaan/eboat_src/install/motion_node/lib/python3.12/site-packages/motion_node-0.0.0-py3.12.egg-info
+[2.666s] running install_scripts
+[2.830s] Installing test script to /home/ishaan/eboat_src/install/motion_node/lib/motion_node
+[2.830s] writing list of installed files to '/home/ishaan/eboat_src/build/motion_node/install.log'
+[2.947s] Invoked command in '/home/ishaan/eboat_src/ros_ws/src/motion_node' returned '0': PYTHONPATH=/home/ishaan/eboat_src/build/motion_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ishaan/eboat_src/install/motion_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/motion_node build --build-base /home/ishaan/eboat_src/build/motion_node/build install --record /home/ishaan/eboat_src/build/motion_node/install.log --single-version-externally-managed install_data

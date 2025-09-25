@@ -1,0 +1,931 @@
+[0.040s] Invoking command in '/home/ishaan/eboat_src/build/lely_core_libraries': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ishaan/eboat_src/ros_ws/install/shore_comms:/home/ishaan/eboat_src/ros_ws/install/motor_node_test:/home/ishaan/eboat_src/ros_ws/install/motor_node:/home/ishaan/eboat_src/ros_ws/install/motion_node_test:/home/ishaan/eboat_src/ros_ws/install/motion_node:/home/ishaan/eboat_src/ros_ws/install/electrical_node_test:/home/ishaan/eboat_src/ros_ws/install/electrical_node:/home/ishaan/eboat_src/ros_ws/install/canopen_utils:/home/ishaan/eboat_src/ros_ws/install/alarms_watchdog_node:/home/ishaan/eboat_src/ros_ws/install/GPIO_Test:/opt/ros/kilted /usr/bin/cmake /home/ishaan/eboat_src/ros_ws/src/ros2_canopen/lely_core_libraries -DCMAKE_INSTALL_PREFIX=/home/ishaan/eboat_src/install/lely_core_libraries
+[0.795s] -- The C compiler identification is GNU 13.3.0
+[1.473s] -- The CXX compiler identification is GNU 13.3.0
+[2.672s] -- Detecting C compiler ABI info
+[3.201s] -- Detecting C compiler ABI info - done
+[3.207s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.208s] -- Detecting C compile features
+[3.210s] -- Detecting C compile features - done
+[3.352s] -- Detecting CXX compiler ABI info
+[3.971s] -- Detecting CXX compiler ABI info - done
+[3.993s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.994s] -- Detecting CXX compile features
+[3.994s] -- Detecting CXX compile features - done
+[4.003s] -- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+[4.390s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[4.900s] -- Configuring done (4.8s)
+[4.904s] -- Generating done (0.0s)
+[4.906s] -- Build files have been written to: /home/ishaan/eboat_src/build/lely_core_libraries
+[4.913s] Invoked command in '/home/ishaan/eboat_src/build/lely_core_libraries' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ishaan/eboat_src/ros_ws/install/shore_comms:/home/ishaan/eboat_src/ros_ws/install/motor_node_test:/home/ishaan/eboat_src/ros_ws/install/motor_node:/home/ishaan/eboat_src/ros_ws/install/motion_node_test:/home/ishaan/eboat_src/ros_ws/install/motion_node:/home/ishaan/eboat_src/ros_ws/install/electrical_node_test:/home/ishaan/eboat_src/ros_ws/install/electrical_node:/home/ishaan/eboat_src/ros_ws/install/canopen_utils:/home/ishaan/eboat_src/ros_ws/install/alarms_watchdog_node:/home/ishaan/eboat_src/ros_ws/install/GPIO_Test:/opt/ros/kilted /usr/bin/cmake /home/ishaan/eboat_src/ros_ws/src/ros2_canopen/lely_core_libraries -DCMAKE_INSTALL_PREFIX=/home/ishaan/eboat_src/install/lely_core_libraries
+[4.914s] Invoking command in '/home/ishaan/eboat_src/build/lely_core_libraries': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ishaan/eboat_src/ros_ws/install/shore_comms:/home/ishaan/eboat_src/ros_ws/install/motor_node_test:/home/ishaan/eboat_src/ros_ws/install/motor_node:/home/ishaan/eboat_src/ros_ws/install/motion_node_test:/home/ishaan/eboat_src/ros_ws/install/motion_node:/home/ishaan/eboat_src/ros_ws/install/electrical_node_test:/home/ishaan/eboat_src/ros_ws/install/electrical_node:/home/ishaan/eboat_src/ros_ws/install/canopen_utils:/home/ishaan/eboat_src/ros_ws/install/alarms_watchdog_node:/home/ishaan/eboat_src/ros_ws/install/GPIO_Test:/opt/ros/kilted /usr/bin/cmake --build /home/ishaan/eboat_src/build/lely_core_libraries -- -j16 -l16
+[4.954s] [ 12%] [34m[1mCreating directories for 'upstr_lely_core_libraries'[0m
+[4.962s] [ 12%] Built target ament_cmake_python_copy_cogen_setup
+[4.962s] [ 12%] Built target ament_cmake_python_copy_cogen
+[4.977s] [ 25%] [34m[1mPerforming download step (git clone) for 'upstr_lely_core_libraries'[0m
+[5.021s] Cloning into 'upstream'...
+[5.164s] running install_scripts
+[5.170s] running egg_info
+[5.171s] creating cogen.egg-info
+[5.191s] writing cogen.egg-info/PKG-INFO
+[5.192s] writing dependency_links to cogen.egg-info/dependency_links.txt
+[5.192s] writing entry points to cogen.egg-info/entry_points.txt
+[5.192s] writing top-level names to cogen.egg-info/top_level.txt
+[5.192s] writing manifest file 'cogen.egg-info/SOURCES.txt'
+[5.201s] /usr/lib/python3/dist-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[5.201s] !!
+[5.201s] 
+[5.201s]         ********************************************************************************
+[5.201s]         Please avoid running ``setup.py`` directly.
+[5.201s]         Instead, use pypa/build, pypa/installer or other
+[5.201s]         standards-based tools.
+[5.201s] 
+[5.201s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[5.201s]         ********************************************************************************
+[5.201s] 
+[5.201s] !!
+[5.201s]   self.initialize_options()
+[5.204s] running egg_info
+[5.238s] writing cogen.egg-info/PKG-INFO
+[5.239s] writing dependency_links to cogen.egg-info/dependency_links.txt
+[5.239s] writing entry points to cogen.egg-info/entry_points.txt
+[5.239s] writing top-level names to cogen.egg-info/top_level.txt
+[5.242s] reading manifest file 'cogen.egg-info/SOURCES.txt'
+[5.242s] writing manifest file 'cogen.egg-info/SOURCES.txt'
+[5.268s] reading manifest file 'cogen.egg-info/SOURCES.txt'
+[5.268s] writing manifest file 'cogen.egg-info/SOURCES.txt'
+[5.311s] [ 25%] Built target ament_cmake_python_build_cogen_egg
+[5.402s] Installing cogen script to scripts
+[5.466s] [ 25%] Built target ament_cmake_python_build_cogen_scripts
+[6.708s] HEAD is now at fb735b79 nmt: remove EMCY messages when life-guarding/heartbeat errors are resolved
+[6.750s] [ 37%] [34m[1mPerforming update step for 'upstr_lely_core_libraries'[0m
+[6.777s] HEAD is now at fb735b79 nmt: remove EMCY messages when life-guarding/heartbeat errors are resolved
+[6.780s] Checking patch configure.ac...
+[6.780s] Hunk #1 succeeded at 577 (offset 8 lines).
+[6.780s] Checking patch python/dcf-tools/Makefile.am...
+[6.781s] Applied patch configure.ac cleanly.
+[6.781s] Applied patch python/dcf-tools/Makefile.am cleanly.
+[6.786s] [ 50%] [34m[1mNo patch step for 'upstr_lely_core_libraries'[0m
+[6.804s] [ 62%] [34m[1mPerforming configure step for 'upstr_lely_core_libraries'[0m
+[10.176s] libtoolize: putting auxiliary files in '.'.
+[10.176s] libtoolize: copying file './ltmain.sh'
+[10.247s] libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+[10.248s] libtoolize: copying file 'm4/libtool.m4'
+[10.365s] libtoolize: copying file 'm4/ltoptions.m4'
+[10.541s] libtoolize: copying file 'm4/ltsugar.m4'
+[10.638s] libtoolize: copying file 'm4/ltversion.m4'
+[10.714s] libtoolize: copying file 'm4/lt~obsolete.m4'
+[11.868s] configure.ac:17: warning: The macro `AC_PROG_CC_STDC' is obsolete.
+[11.868s] configure.ac:17: You should run autoupdate.
+[11.868s] ./lib/autoconf/c.m4:1666: AC_PROG_CC_STDC is expanded from...
+[11.868s] configure.ac:17: the top level
+[11.868s] configure.ac:442: warning: AC_CHECK_HEADERS($ixxat_header): you should use literals
+[11.868s] ./lib/autoconf/headers.m4:217: AC_CHECK_HEADERS is expanded from...
+[11.868s] lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+[11.868s] lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+[11.868s] configure.ac:442: the top level
+[12.430s] configure.ac:17: installing './compile'
+[12.433s] configure.ac:6: installing './config.guess'
+[12.435s] configure.ac:6: installing './config.sub'
+[12.438s] configure.ac:7: installing './install-sh'
+[12.441s] configure.ac:7: installing './missing'
+[12.443s] configure.ac:610: installing './tap-driver.sh'
+[12.662s] src/can/Makefile.am: installing './depcomp'
+[13.123s] parallel-tests: installing './test-driver'
+[13.287s] checking build system type... x86_64-pc-linux-gnu
+[13.288s] checking host system type... x86_64-pc-linux-gnu
+[13.288s] checking target system type... x86_64-pc-linux-gnu
+[13.297s] checking for a BSD-compatible install... /usr/bin/install -c
+[13.300s] checking whether build environment is sane... yes
+[13.308s] checking for a race-free mkdir -p... /usr/bin/mkdir -p
+[13.308s] checking for gawk... gawk
+[13.316s] checking whether make sets $(MAKE)... yes
+[13.322s] checking whether make supports nested variables... yes
+[13.403s] checking whether to enable maintainer-specific portions of Makefiles... yes
+[13.403s] checking whether make supports nested variables... (cached) yes
+[13.406s] checking for a sed that does not truncate output... /usr/bin/sed
+[13.407s] checking whether to build with code coverage support... no
+[13.477s] checking for valgrind... no
+[13.484s] checking whether make supports the include directive... yes (GNU style)
+[13.484s] checking for gcc... gcc
+[13.688s] checking whether the C compiler works... yes
+[13.688s] checking for C compiler default output file name... a.out
+[13.858s] checking for suffix of executables... 
+[14.023s] checking whether we are cross compiling... no
+[14.038s] checking for suffix of object files... o
+[14.052s] checking whether the compiler supports GNU C... yes
+[14.067s] checking whether gcc accepts -g... yes
+[14.117s] checking for gcc option to enable C11 features... none needed
+[14.141s] checking whether gcc understands -c and -o together... yes
+[14.168s] checking dependency style of gcc... gcc3
+[14.185s] checking for stdio.h... yes
+[14.204s] checking for stdlib.h... yes
+[14.222s] checking for string.h... yes
+[14.242s] checking for inttypes.h... yes
+[14.259s] checking for stdint.h... yes
+[14.277s] checking for strings.h... yes
+[14.296s] checking for sys/stat.h... yes
+[14.315s] checking for sys/types.h... yes
+[14.339s] checking for unistd.h... yes
+[14.364s] checking for wchar.h... yes
+[14.391s] checking for minix/config.h... no
+[14.415s] checking whether it is safe to define __EXTENSIONS__... yes
+[14.432s] checking whether _XOPEN_SOURCE should be defined... no
+[14.432s] checking for g++... g++
+[14.459s] checking whether the compiler supports GNU C++... yes
+[14.471s] checking whether g++ accepts -g... yes
+[14.523s] checking for g++ option to enable C++11 features... none needed
+[14.548s] checking dependency style of g++... gcc3
+[14.579s] checking whether g++ supports C++11 features with -std=gnu++11... yes
+[14.652s] checking how to print strings... printf
+[14.652s] checking for a sed that does not truncate output... (cached) /usr/bin/sed
+[14.655s] checking for grep that handles long lines and -e... /usr/bin/grep
+[14.656s] checking for egrep... /usr/bin/grep -E
+[14.658s] checking for fgrep... /usr/bin/grep -F
+[14.661s] checking for ld used by gcc... /usr/bin/ld
+[14.663s] checking if the linker (/usr/bin/ld) is GNU ld... yes
+[14.667s] checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+[14.684s] checking the name lister (/usr/bin/nm -B) interface... BSD nm
+[14.684s] checking whether ln -s works... yes
+[14.688s] checking the maximum length of command line arguments... 1572864
+[14.691s] checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+[14.691s] checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+[14.691s] checking for /usr/bin/ld option to reload object files... -r
+[14.691s] checking for file... file
+[14.691s] checking for objdump... objdump
+[14.692s] checking how to recognize dependent libraries... pass_all
+[14.761s] checking for dlltool... no
+[14.761s] checking how to associate runtime and link libraries... printf %s\n
+[14.761s] checking for ar... ar
+[14.781s] checking for archiver @FILE support... @
+[14.781s] checking for strip... strip
+[14.782s] checking for ranlib... ranlib
+[14.975s] checking command to parse /usr/bin/nm -B output from gcc object... ok
+[14.977s] checking for sysroot... no
+[14.982s] checking for a working dd... /usr/bin/dd
+[14.985s] checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+[15.080s] checking for mt... no
+[15.084s] checking if : is a manifest tool... no
+[15.122s] checking for dlfcn.h... yes
+[15.125s] checking for objdir... .libs
+[15.305s] checking if gcc supports -fno-rtti -fno-exceptions... no
+[15.306s] checking for gcc option to produce PIC... -fPIC -DPIC
+[15.320s] checking if gcc PIC flag -fPIC -DPIC works... yes
+[15.557s] checking if gcc static flag -static works... yes
+[15.577s] checking if gcc supports -c -o file.o... yes
+[15.577s] checking if gcc supports -c -o file.o... (cached) yes
+[15.583s] checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+[15.740s] checking whether -lc should be explicitly linked in... no
+[15.928s] checking dynamic linker characteristics... GNU/Linux ld.so
+[15.928s] checking how to hardcode library paths into programs... immediate
+[15.930s] checking whether stripping libraries is possible... yes
+[15.930s] checking if libtool supports shared libraries... yes
+[15.930s] checking whether to build shared libraries... yes
+[15.930s] checking whether to build static libraries... no
+[15.952s] checking how to run the C++ preprocessor... g++ -std=gnu++11 -E
+[16.146s] checking for ld used by g++ -std=gnu++11... /usr/bin/ld -m elf_x86_64
+[16.148s] checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+[16.153s] checking whether the g++ -std=gnu++11 linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+[16.329s] checking for g++ -std=gnu++11 option to produce PIC... -fPIC -DPIC
+[16.342s] checking if g++ -std=gnu++11 PIC flag -fPIC -DPIC works... yes
+[16.511s] checking if g++ -std=gnu++11 static flag -static works... yes
+[16.531s] checking if g++ -std=gnu++11 supports -c -o file.o... yes
+[16.531s] checking if g++ -std=gnu++11 supports -c -o file.o... (cached) yes
+[16.531s] checking whether the g++ -std=gnu++11 linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+[16.535s] checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+[16.535s] checking how to hardcode library paths into programs... immediate
+[16.603s] checking for windres... no
+[16.909s] checking for timer_create in -lrt... yes
+[16.927s] checking how to run the C preprocessor... gcc -E
+[16.952s] checking whether gcc is Clang... no
+[17.133s] checking whether pthreads work with "-pthread" and "-lpthread"... yes
+[17.294s] checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+[17.294s] checking whether more special flags are required for pthreads... no
+[17.457s] checking for PTHREAD_PRIO_INHERIT... yes
+[17.458s] checking for pkg-config... /usr/bin/pkg-config
+[17.461s] checking pkg-config is at least version 0.9.0... yes
+[17.562s] checking for cpputest >= 4... no
+[17.588s] checking for valgrind/valgrind.h... no
+[17.621s] checking for linux/can.h... yes
+[17.652s] checking for linux/can/error.h... yes
+[17.665s] checking for bluetooth/bluetooth.h... no
+[17.677s] checking for bluetooth/rfcomm.h... no
+[18.019s] checking for library containing str2ba... no
+[18.053s] checking for ifaddrs.h... yes
+[18.084s] checking for linux/can/netlink.h... yes
+[18.116s] checking for linux/can/raw.h... yes
+[18.162s] checking for linux/rtnetlink.h... yes
+[18.193s] checking for sys/epoll.h... yes
+[18.226s] checking for sys/ioctl.h... yes
+[18.412s] checking for a Python interpreter with version >= 3.3... python3
+[18.412s] checking for python3... /usr/bin/python3
+[18.427s] checking for python3 version... 3.12
+[18.441s] checking for python3 platform... linux
+[18.441s] checking for GNU default python3 prefix... ${prefix}
+[18.441s] checking for GNU default python3 exec_prefix... ${exec_prefix}
+[18.462s] checking for python3 script directory (pythondir)... ${PYTHON_PREFIX}/lib/python3.12/site-packages
+[18.483s] checking for python3 extension module directory (pyexecdir)... ${PYTHON_EXEC_PREFIX}/lib/python3.12/site-packages
+[18.483s] checking for gawk... (cached) gawk
+[18.498s] checking that generated files are newer than configure... done
+[18.499s] configure: creating ./config.status
+[19.068s] config.status: creating doc/Doxyfile
+[19.090s] config.status: creating doc/Makefile
+[19.104s] config.status: creating include/Makefile
+[19.120s] config.status: creating pkgconfig/liblely-can.pc
+[19.136s] config.status: creating pkgconfig/liblely-co.pc
+[19.150s] config.status: creating pkgconfig/liblely-coapp.pc
+[19.165s] config.status: creating pkgconfig/liblely-ev.pc
+[19.180s] config.status: creating pkgconfig/liblely-io.pc
+[19.195s] config.status: creating pkgconfig/liblely-io2.pc
+[19.209s] config.status: creating pkgconfig/liblely-libc.pc
+[19.222s] config.status: creating pkgconfig/liblely-libc_rt.pc
+[19.236s] config.status: creating pkgconfig/liblely-tap.pc
+[19.250s] config.status: creating pkgconfig/liblely-util.pc
+[19.271s] config.status: creating pkgconfig/Makefile
+[19.291s] config.status: creating python/can/Makefile
+[19.313s] config.status: creating python/dcf-tools/Makefile
+[19.333s] config.status: creating python/io/Makefile
+[19.352s] config.status: creating python/Makefile
+[19.364s] config.status: creating src/can/Makefile
+[19.378s] config.status: creating src/co/Makefile
+[19.394s] config.status: creating src/co/version.rc
+[19.407s] config.status: creating src/coapp/Makefile
+[19.421s] config.status: creating src/coapp/version.rc
+[19.434s] config.status: creating src/ev/Makefile
+[19.448s] config.status: creating src/ev/version.rc
+[19.463s] config.status: creating src/io/Makefile
+[19.478s] config.status: creating src/io2/Makefile
+[19.493s] config.status: creating src/io2/version.rc
+[19.508s] config.status: creating src/libc/Makefile
+[19.524s] config.status: creating src/libc/version.rc
+[19.538s] config.status: creating src/tap/Makefile
+[19.552s] config.status: creating src/tap/version.rc
+[19.566s] config.status: creating src/util/Makefile
+[19.579s] config.status: creating src/util/version.rc
+[19.592s] config.status: creating src/Makefile
+[19.604s] config.status: creating tools/Makefile
+[19.617s] config.status: creating tools/version.dcf2c.rc
+[19.629s] config.status: creating test/co-nmt-master.dcf
+[19.643s] config.status: creating test/Makefile
+[19.656s] config.status: creating unit-tests/Makefile
+[19.670s] config.status: creating exec-wrapper.sh
+[19.680s] config.status: creating lcov-wrapper.sh
+[19.690s] config.status: creating Makefile
+[19.700s] config.status: creating config.h
+[19.708s] config.status: executing depfiles commands
+[20.441s] config.status: executing libtool commands
+[20.490s] [ 75%] [34m[1mPerforming build step for 'upstr_lely_core_libraries'[0m
+[20.501s] Making all in doc
+[20.502s] Making all in include
+[20.506s] Making all in src
+[20.512s] Making all in libc
+[20.515s]   CC       liblely_libc_la-clock.lo
+[20.515s]   CC       liblely_libc_la-getopt.lo
+[20.515s]   CC       liblely_libc_la-stdatomic.lo
+[20.516s]   CC       liblely_libc_la-stdio.lo
+[20.517s]   CC       liblely_libc_la-stdlib.lo
+[20.517s]   CC       liblely_libc_la-string.lo
+[20.518s]   CC       liblely_libc_la-strings.lo
+[20.518s]   CC       liblely_libc_la-sleep.lo
+[20.519s]   CC       liblely_libc_la-threads-pthread.lo
+[20.519s]   CC       liblely_libc_la-time.lo
+[20.593s]   CCLD     liblely-libc.la
+[20.830s] Making all in tap
+[20.833s]   CC       liblely_tap_la-tap.lo
+[20.907s]   CCLD     liblely-tap.la
+[21.150s] Making all in util
+[21.152s]   CC       liblely_util_la-bimap.lo
+[21.153s]   CC       liblely_util_la-mkjmp.lo
+[21.154s]   CC       liblely_util_la-sllist.lo
+[21.154s]   CC       liblely_util_la-spscring.lo
+[21.154s]   CC       liblely_util_la-bits.lo
+[21.155s]   CC       liblely_util_la-bitset.lo
+[21.155s]   CC       liblely_util_la-cmp.lo
+[21.156s]   CC       liblely_util_la-config.lo
+[21.156s]   CC       liblely_util_la-config_ini.lo
+[21.156s]   CC       liblely_util_la-diag.lo
+[21.157s]   CC       liblely_util_la-daemon.lo
+[21.157s]   CC       liblely_util_la-endian.lo
+[21.158s]   CC       liblely_util_la-dllist.lo
+[21.159s]   CC       liblely_util_la-errnum.lo
+[21.160s]   CXX      liblely_util_la-exception.lo
+[21.160s]   CC       liblely_util_la-fiber.lo
+[21.285s]   CC       liblely_util_la-frbuf.lo
+[21.302s]   CC       liblely_util_la-fwbuf.lo
+[21.317s]   CC       liblely_util_la-lex.lo
+[21.317s]   CC       liblely_util_la-membuf.lo
+[21.323s]   CC       liblely_util_la-pheap.lo
+[21.336s]   CC       liblely_util_la-print.lo
+[21.356s]   CC       liblely_util_la-rbtree.lo
+[21.356s]   CC       liblely_util_la-stop.lo
+[21.375s]   CC       liblely_util_la-time.lo
+[21.376s]   CC       liblely_util_la-ustring.lo
+[21.670s]   CXXLD    liblely-util.la
+[21.932s] Making all in can
+[21.934s]   CC       liblely_can_la-buf.lo
+[21.935s]   CC       liblely_can_la-msg.lo
+[21.935s]   CC       liblely_can_la-net.lo
+[21.935s]   CC       liblely_can_la-socket.lo
+[22.104s]   CCLD     liblely-can.la
+[22.373s] Making all in co
+[22.377s]   CC       liblely_co_la-crc.lo
+[22.378s]   CC       liblely_co_la-csdo.lo
+[22.378s]   CC       liblely_co_la-dcf.lo
+[22.378s]   CC       liblely_co_la-dev.lo
+[22.379s]   CC       liblely_co_la-emcy.lo
+[22.379s]   CC       liblely_co_la-gw.lo
+[22.380s]   CC       liblely_co_la-lss.lo
+[22.380s]   CC       liblely_co_la-gw_txt.lo
+[22.380s]   CC       liblely_co_la-nmt_boot.lo
+[22.380s]   CC       liblely_co_la-nmt.lo
+[22.381s]   CC       liblely_co_la-nmt_cfg.lo
+[22.381s]   CC       liblely_co_la-nmt_hb.lo
+[22.382s]   CC       liblely_co_la-nmt_srv.lo
+[22.383s]   CC       liblely_co_la-obj.lo
+[22.383s]   CC       liblely_co_la-pdo.lo
+[22.384s]   CC       liblely_co_la-rpdo.lo
+[22.513s]   CC       liblely_co_la-sdev.lo
+[22.625s]   CC       liblely_co_la-sdo.lo
+[22.687s]   CC       liblely_co_la-ssdo.lo
+[22.700s]   CC       liblely_co_la-sync.lo
+[22.746s]   CC       liblely_co_la-time.lo
+[22.754s]   CC       liblely_co_la-tpdo.lo
+[22.872s]   CC       liblely_co_la-type.lo
+[22.915s]   CC       liblely_co_la-val.lo
+[22.937s]   CC       liblely_co_la-wtm.lo
+[23.378s]   CCLD     liblely-co.la
+[23.676s] Making all in io
+[23.680s]   CC       liblely_io_la-addr.lo
+[23.680s]   CC       liblely_io_la-attr.lo
+[23.680s]   CC       liblely_io_la-can.lo
+[23.681s]   CC       liblely_io_la-handle.lo
+[23.681s]   CC       liblely_io_la-file.lo
+[23.681s]   CC       liblely_io_la-if.lo
+[23.682s]   CC       liblely_io_la-io.lo
+[23.683s]   CC       liblely_io_la-pipe.lo
+[23.684s]   CC       liblely_io_la-rtnl.lo
+[23.684s]   CC       liblely_io_la-poll.lo
+[23.684s]   CC       liblely_io_la-serial.lo
+[23.685s]   CC       liblely_io_la-sock.lo
+[24.007s]   CCLD     liblely-io.la
+[24.308s] Making all in ev
+[24.310s]   CC       liblely_ev_la-exec.lo
+[24.310s]   CC       liblely_ev_la-fiber_exec.lo
+[24.311s]   CC       liblely_ev_la-future.lo
+[24.312s]   CC       liblely_ev_la-loop.lo
+[24.312s]   CC       liblely_ev_la-poll.lo
+[24.312s]   CC       liblely_ev_la-std_exec.lo
+[24.313s]   CC       liblely_ev_la-strand.lo
+[24.313s]   CC       liblely_ev_la-task.lo
+[24.314s]   CC       liblely_ev_la-thrd_loop.lo
+[24.560s]   CCLD     liblely-ev.la
+[24.810s] Making all in io2
+[24.818s]   CC       liblely_io2_la-can.lo
+[24.819s]   CC       liblely_io2_la-can_net.lo
+[24.819s]   CC       liblely_io2_la-can_rt.lo
+[24.820s]   CC       liblely_io2_la-clock.lo
+[24.820s]   CC       liblely_io2_la-ctx.lo
+[24.821s]   CC       liblely_io2_la-dev.lo
+[24.821s]   CC       liblely_io2_la-sigset.lo
+[24.821s]   CC       liblely_io2_la-timer.lo
+[24.822s]   CC       liblely_io2_la-tqueue.lo
+[24.822s]   CC       liblely_io2_la-vcan.lo
+[24.895s]   CC       can/liblely_io2_la-msg.lo
+[24.895s]   CC       linux/liblely_io2_la-can_chan.lo
+[24.896s]   CC       linux/liblely_io2_la-can_ctrl.lo
+[24.897s]   CC       linux/liblely_io2_la-poll.lo
+[24.897s]   CC       posix/liblely_io2_la-fd.lo
+[24.899s]   CC       posix/liblely_io2_la-sigset.lo
+[24.899s]   CC       posix/liblely_io2_la-io.lo
+[24.900s]   CC       linux/liblely_io2_la-timer.lo
+[24.915s]   CC       sys/liblely_io2_la-clock.lo
+[24.917s]   CC       sys/liblely_io2_la-io.lo
+[24.935s]   CC       user/liblely_io2_la-can.lo
+[24.961s]   CC       user/liblely_io2_la-timer.lo
+[25.451s]   CCLD     liblely-io2.la
+[25.761s] Making all in coapp
+[25.763s]   CXX      liblely_coapp_la-device.lo
+[25.764s]   CXX      liblely_coapp_la-driver.lo
+[25.764s]   CXX      liblely_coapp_la-logical_driver.lo
+[25.765s]   CXX      liblely_coapp_la-fiber_driver.lo
+[25.765s]   CXX      liblely_coapp_la-loop_driver.lo
+[25.766s]   CXX      liblely_coapp_la-lss_master.lo
+[25.766s]   CXX      liblely_coapp_la-master.lo
+[25.767s]   CXX      liblely_coapp_la-node.lo
+[25.768s]   CXX      liblely_coapp_la-sdo.lo
+[25.768s]   CXX      liblely_coapp_la-sdo_error.lo
+[25.769s]   CXX      liblely_coapp_la-slave.lo
+[25.769s]   CXX      liblely_coapp_la-type_traits.lo
+[29.661s]   CXXLD    liblely-coapp.la
+[30.070s] Making all in python
+[30.076s] Making all in dcf-tools
+[30.079s] Making all in pkgconfig
+[30.097s] [ 87%] [34m[1mNo install step for 'upstr_lely_core_libraries'[0m
+[30.117s] [100%] [34m[1mCompleted 'upstr_lely_core_libraries'[0m
+[30.141s] [100%] Built target upstr_lely_core_libraries
+[30.152s] Invoked command in '/home/ishaan/eboat_src/build/lely_core_libraries' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ishaan/eboat_src/ros_ws/install/shore_comms:/home/ishaan/eboat_src/ros_ws/install/motor_node_test:/home/ishaan/eboat_src/ros_ws/install/motor_node:/home/ishaan/eboat_src/ros_ws/install/motion_node_test:/home/ishaan/eboat_src/ros_ws/install/motion_node:/home/ishaan/eboat_src/ros_ws/install/electrical_node_test:/home/ishaan/eboat_src/ros_ws/install/electrical_node:/home/ishaan/eboat_src/ros_ws/install/canopen_utils:/home/ishaan/eboat_src/ros_ws/install/alarms_watchdog_node:/home/ishaan/eboat_src/ros_ws/install/GPIO_Test:/opt/ros/kilted /usr/bin/cmake --build /home/ishaan/eboat_src/build/lely_core_libraries -- -j16 -l16
+[30.154s] Invoking command in '/home/ishaan/eboat_src/build/lely_core_libraries': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ishaan/eboat_src/ros_ws/install/shore_comms:/home/ishaan/eboat_src/ros_ws/install/motor_node_test:/home/ishaan/eboat_src/ros_ws/install/motor_node:/home/ishaan/eboat_src/ros_ws/install/motion_node_test:/home/ishaan/eboat_src/ros_ws/install/motion_node:/home/ishaan/eboat_src/ros_ws/install/electrical_node_test:/home/ishaan/eboat_src/ros_ws/install/electrical_node:/home/ishaan/eboat_src/ros_ws/install/canopen_utils:/home/ishaan/eboat_src/ros_ws/install/alarms_watchdog_node:/home/ishaan/eboat_src/ros_ws/install/GPIO_Test:/opt/ros/kilted /usr/bin/cmake --install /home/ishaan/eboat_src/build/lely_core_libraries
+[30.162s] -- Install configuration: ""
+[30.169s] Making install in doc
+[30.171s] gmake[1]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/doc'
+[30.173s] gmake[2]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/doc'
+[30.173s] gmake[2]: Nothing to be done for 'install-exec-am'.
+[30.173s] gmake[2]: Nothing to be done for 'install-data-am'.
+[30.173s] gmake[2]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/doc'
+[30.173s] gmake[1]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/doc'
+[30.173s] Making install in include
+[30.177s] gmake[1]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/include'
+[30.179s] gmake[2]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/include'
+[30.179s] gmake[2]: Nothing to be done for 'install-exec-am'.
+[30.182s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/include'
+[30.189s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/co'
+[30.191s]  /usr/bin/install -c -m 644  /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/co.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/crc.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/csdo.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/csdo.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/dcf.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/dcf.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/dev.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/dev.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/emcy.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/emcy.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/gw.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/gw.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/gw_txt.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/gw_txt.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/lss.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/lss.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/nmt.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/nmt.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/obj.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/obj.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/pdo.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/rpdo.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/rpdo.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/sdev.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/sdev.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/sdo.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/ssdo.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/ssdo.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/sync.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/sync.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/time.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/time.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/tpdo.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/tpdo.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/type.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/type.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/val.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/val.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/wtm.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/wtm.hpp '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/co'
+[30.194s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/libc'
+[30.195s]  /usr/bin/install -c -m 644  /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/libc/chrono.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/libc/functional.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/libc/stdatomic.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/libc/stddef.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/libc/stdint.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/libc/stdio.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/libc/stdlib.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/libc/string.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/libc/strings.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/libc/threads.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/libc/time.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/libc/type_traits.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/libc/uchar.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/libc/unistd.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/libc/utility.hpp '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/libc'
+[30.197s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/ev'
+[30.199s]  /usr/bin/install -c -m 644  /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/ev/co_task.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/ev/ev.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/ev/exec.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/ev/exec.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/ev/fiber_exec.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/ev/fiber_exec.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/ev/future.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/ev/future.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/ev/loop.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/ev/loop.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/ev/poll.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/ev/poll.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/ev/std_exec.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/ev/strand.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/ev/strand.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/ev/task.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/ev/task.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/ev/thrd_loop.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/ev/thrd_loop.hpp '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/ev'
+[30.202s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/coapp'
+[30.203s]  /usr/bin/install -c -m 644  /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/coapp/type_traits.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/coapp/device.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/coapp/driver.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/coapp/fiber_driver.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/coapp/logical_driver.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/coapp/loop_driver.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/coapp/lss_master.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/coapp/master.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/coapp/node.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/coapp/sdo.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/coapp/sdo_error.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/coapp/slave.hpp '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/coapp'
+[30.205s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/can'
+[30.207s]  /usr/bin/install -c -m 644  /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/can/buf.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/can/buf.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/can/err.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/can/msg.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/can/net.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/can/net.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/can/socket.h '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/can'
+[30.208s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/io2/linux'
+[30.210s]  /usr/bin/install -c -m 644  /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/linux/can.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/linux/can.hpp '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/io2/linux'
+[30.212s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/io2/sys'
+[30.214s]  /usr/bin/install -c -m 644  /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/sys/clock.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/sys/clock.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/sys/io.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/sys/io.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/sys/sigset.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/sys/sigset.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/sys/timer.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/sys/timer.hpp '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/io2/sys'
+[30.217s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/util'
+[30.218s]  /usr/bin/install -c -m 644  /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/bimap.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/coroutine.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/coroutine.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/mkjmp.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/sllist.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/spscring.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/bits.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/bitset.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/c_call.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/c_type.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/chrono.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/cmp.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/config.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/daemon.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/diag.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/dllist.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/endian.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/errnum.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/error.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/exception.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/fiber.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/fiber.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/float.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/frbuf.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/fwbuf.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/invoker.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/lex.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/membuf.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/mutex.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/pheap.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/print.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/rbtree.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/result.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/stop.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/stop.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/time.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/ustring.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/util.h '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/util'
+[30.221s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/co/detail'
+[30.222s]  /usr/bin/install -c -m 644  /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/detail/dev.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/detail/obj.h '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/co/detail'
+[30.225s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/io2/posix'
+[30.227s]  /usr/bin/install -c -m 644  /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/posix/poll.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/posix/poll.hpp '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/io2/posix'
+[30.228s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/util/def'
+[30.230s]  /usr/bin/install -c -m 644  /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/util/def/type.def '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/util/def'
+[30.231s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/io2/user'
+[30.233s]  /usr/bin/install -c -m 644  /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/user/can.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/user/can.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/user/timer.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/user/timer.hpp '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/io2/user'
+[30.235s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/io2/can'
+[30.236s]  /usr/bin/install -c -m 644  /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/can/err.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/can/err.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/can/msg.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/can/msg.hpp '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/io2/can'
+[30.237s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/co/def'
+[30.238s]  /usr/bin/install -c -m 644  /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/def/array.def /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/def/basic.def /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/def/cxx.def /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/def/time.def /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/co/def/type.def '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/co/def'
+[30.241s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/io'
+[30.242s]  /usr/bin/install -c -m 644  /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io/addr.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io/attr.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io/can.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io/can.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io/file.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io/file.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io/if.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io/io.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io/io.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io/pipe.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io/pipe.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io/poll.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io/poll.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io/serial.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io/serial.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io/sock.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io/sock.hpp '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/io'
+[30.244s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/tap'
+[30.246s]  /usr/bin/install -c -m 644  /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/tap/tap.h '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/tap'
+[30.248s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/libc/sys'
+[30.249s]  /usr/bin/install -c -m 644  /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/libc/sys/types.h '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/libc/sys'
+[30.252s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/io2'
+[30.253s]  /usr/bin/install -c -m 644  /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/can.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/can.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/can_net.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/can_net.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/can_rt.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/can_rt.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/clock.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/clock.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/co_can.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/co_can_rt.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/co_sigset.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/co_timer.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/co_tqueue.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/ctx.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/ctx.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/dev.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/dev.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/event.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/event.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/io2.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/sigset.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/sigset.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/timer.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/timer.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/tqueue.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/tqueue.hpp /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/vcan.h /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/io2/vcan.hpp '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely/io2'
+[30.255s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely'
+[30.256s]  /usr/bin/install -c -m 644  /home/ishaan/eboat_src/build/lely_core_libraries/upstream/include/lely/features.h '/home/ishaan/eboat_src/install/lely_core_libraries/include/lely'
+[30.257s] gmake[2]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/include'
+[30.258s] gmake[1]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/include'
+[30.258s] Making install in src
+[30.259s] gmake[1]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src'
+[30.262s] Making install in libc
+[30.267s] gmake[2]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/libc'
+[30.273s] gmake[3]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/libc'
+[30.274s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/lib'
+[30.275s]  /bin/bash ../../libtool   --mode=install /usr/bin/install -c   liblely-libc.la '/home/ishaan/eboat_src/install/lely_core_libraries/lib'
+[30.295s] libtool: install: /usr/bin/install -c .libs/liblely-libc.so.2.4.0 /home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-libc.so.2.4.0
+[30.298s] libtool: install: (cd /home/ishaan/eboat_src/install/lely_core_libraries/lib && { ln -s -f liblely-libc.so.2.4.0 liblely-libc.so.2 || { rm -f liblely-libc.so.2 && ln -s liblely-libc.so.2.4.0 liblely-libc.so.2; }; })
+[30.301s] libtool: install: (cd /home/ishaan/eboat_src/install/lely_core_libraries/lib && { ln -s -f liblely-libc.so.2.4.0 liblely-libc.so || { rm -f liblely-libc.so && ln -s liblely-libc.so.2.4.0 liblely-libc.so; }; })
+[30.306s] libtool: install: /usr/bin/install -c .libs/liblely-libc.lai /home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-libc.la
+[30.328s] libtool: finish: PATH="/home/ishaan/eboat_src/ros_ws/install/lely_core_libraries/bin:/home/ishaan/.local/bin:/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Zulu/zulu-21/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Ishaan/AppData/Local/JetBrains/Toolbox/scripts:/mnt/c/FlutterSDK/flutter/bin:/mnt/c/Program Files/Git:/mnt/c/Users/Ishaan/AppData/Local/Programs/Ollama:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WinGet/Links:/mnt/c/Users/Ishaan/AppData/Local/wplib-cli/bin:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WinGet/Packages/Genymobile.scrcpy_Microsoft.Winget.Source_8wekyb3d8bbwe/scrcpy-win64-v3.3.1:/mnt/c/Users/Ishaan/AppData/Local/Android/Sdk/platform-tools:/mnt/c/Users/Ishaan/AppData/Local/spicetify:/mnt/c/Users/Ishaan/go/bin:/snap/bin:/sbin" ldconfig -n /home/ishaan/eboat_src/install/lely_core_libraries/lib
+[30.329s] ----------------------------------------------------------------------
+[30.330s] Libraries have been installed in:
+[30.330s]    /home/ishaan/eboat_src/install/lely_core_libraries/lib
+[30.330s] 
+[30.330s] If you ever happen to want to link against installed libraries
+[30.330s] in a given directory, LIBDIR, you must either use libtool, and
+[30.330s] specify the full pathname of the library, or use the '-LLIBDIR'
+[30.330s] flag during linking and do at least one of the following:
+[30.330s]    - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+[30.330s]      during execution
+[30.330s]    - add LIBDIR to the 'LD_RUN_PATH' environment variable
+[30.330s]      during linking
+[30.330s]    - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+[30.330s]    - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+[30.330s] 
+[30.330s] See any operating system documentation about shared libraries for
+[30.330s] more information, such as the ld(1) and ld.so(8) manual pages.
+[30.330s] ----------------------------------------------------------------------
+[30.333s] gmake[3]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/libc'
+[30.334s] gmake[2]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/libc'
+[30.334s] Making install in tap
+[30.338s] gmake[2]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/tap'
+[30.344s] gmake[3]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/tap'
+[30.346s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/lib'
+[30.347s]  /bin/bash ../../libtool   --mode=install /usr/bin/install -c   liblely-tap.la '/home/ishaan/eboat_src/install/lely_core_libraries/lib'
+[30.378s] libtool: warning: relinking 'liblely-tap.la'
+[30.381s] libtool: install: (cd /home/ishaan/eboat_src/build/lely_core_libraries/build/src/tap; /bin/bash "/home/ishaan/eboat_src/build/lely_core_libraries/build/libtool"  --silent --tag CC --mode=relink gcc -Wall -Wextra -pedantic -Werror -Wno-static-in-inline -pthread -g -O2 -no-undefined -version-number 2:4:0 -Wl,--as-needed -o liblely-tap.la -rpath /home/ishaan/eboat_src/install/lely_core_libraries/lib liblely_tap_la-tap.lo ../../src/libc/liblely-libc.la -lpthread )
+[30.562s] libtool: install: /usr/bin/install -c .libs/liblely-tap.so.2.4.0T /home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-tap.so.2.4.0
+[30.565s] libtool: install: (cd /home/ishaan/eboat_src/install/lely_core_libraries/lib && { ln -s -f liblely-tap.so.2.4.0 liblely-tap.so.2 || { rm -f liblely-tap.so.2 && ln -s liblely-tap.so.2.4.0 liblely-tap.so.2; }; })
+[30.568s] libtool: install: (cd /home/ishaan/eboat_src/install/lely_core_libraries/lib && { ln -s -f liblely-tap.so.2.4.0 liblely-tap.so || { rm -f liblely-tap.so && ln -s liblely-tap.so.2.4.0 liblely-tap.so; }; })
+[30.572s] libtool: install: /usr/bin/install -c .libs/liblely-tap.lai /home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-tap.la
+[30.594s] libtool: finish: PATH="/home/ishaan/eboat_src/ros_ws/install/lely_core_libraries/bin:/home/ishaan/.local/bin:/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Zulu/zulu-21/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Ishaan/AppData/Local/JetBrains/Toolbox/scripts:/mnt/c/FlutterSDK/flutter/bin:/mnt/c/Program Files/Git:/mnt/c/Users/Ishaan/AppData/Local/Programs/Ollama:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WinGet/Links:/mnt/c/Users/Ishaan/AppData/Local/wplib-cli/bin:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WinGet/Packages/Genymobile.scrcpy_Microsoft.Winget.Source_8wekyb3d8bbwe/scrcpy-win64-v3.3.1:/mnt/c/Users/Ishaan/AppData/Local/Android/Sdk/platform-tools:/mnt/c/Users/Ishaan/AppData/Local/spicetify:/mnt/c/Users/Ishaan/go/bin:/snap/bin:/sbin" ldconfig -n /home/ishaan/eboat_src/install/lely_core_libraries/lib
+[30.595s] ----------------------------------------------------------------------
+[30.595s] Libraries have been installed in:
+[30.596s]    /home/ishaan/eboat_src/install/lely_core_libraries/lib
+[30.596s] 
+[30.596s] If you ever happen to want to link against installed libraries
+[30.596s] in a given directory, LIBDIR, you must either use libtool, and
+[30.596s] specify the full pathname of the library, or use the '-LLIBDIR'
+[30.596s] flag during linking and do at least one of the following:
+[30.596s]    - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+[30.596s]      during execution
+[30.596s]    - add LIBDIR to the 'LD_RUN_PATH' environment variable
+[30.596s]      during linking
+[30.596s]    - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+[30.596s]    - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+[30.596s] 
+[30.596s] See any operating system documentation about shared libraries for
+[30.596s] more information, such as the ld(1) and ld.so(8) manual pages.
+[30.596s] ----------------------------------------------------------------------
+[30.599s] gmake[3]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/tap'
+[30.599s] gmake[2]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/tap'
+[30.599s] Making install in util
+[30.615s] gmake[2]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/util'
+[30.630s] gmake[3]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/util'
+[30.631s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/lib'
+[30.633s]  /bin/bash ../../libtool   --mode=install /usr/bin/install -c   liblely-util.la '/home/ishaan/eboat_src/install/lely_core_libraries/lib'
+[30.656s] libtool: warning: relinking 'liblely-util.la'
+[30.658s] libtool: install: (cd /home/ishaan/eboat_src/build/lely_core_libraries/build/src/util; /bin/bash "/home/ishaan/eboat_src/build/lely_core_libraries/build/libtool"  --silent --tag CXX --mode=relink g++ -std=gnu++11 -Wall -Wextra -pedantic -Werror -g -O2 -no-undefined -version-number 2:4:0 -Wl,--as-needed -o liblely-util.la -rpath /home/ishaan/eboat_src/install/lely_core_libraries/lib liblely_util_la-bimap.lo liblely_util_la-mkjmp.lo liblely_util_la-sllist.lo liblely_util_la-spscring.lo liblely_util_la-bits.lo liblely_util_la-bitset.lo liblely_util_la-cmp.lo liblely_util_la-config.lo liblely_util_la-config_ini.lo liblely_util_la-daemon.lo liblely_util_la-diag.lo liblely_util_la-dllist.lo liblely_util_la-endian.lo liblely_util_la-errnum.lo liblely_util_la-exception.lo liblely_util_la-fiber.lo liblely_util_la-frbuf.lo liblely_util_la-fwbuf.lo liblely_util_la-lex.lo liblely_util_la-membuf.lo liblely_util_la-pheap.lo liblely_util_la-print.lo liblely_util_la-rbtree.lo liblely_util_la-stop.lo liblely_util_la-time.lo liblely_util_la-ustring.lo ../../src/libc/liblely-libc.la -lm -lpthread )
+[30.960s] libtool: install: /usr/bin/install -c .libs/liblely-util.so.2.4.0T /home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-util.so.2.4.0
+[30.964s] libtool: install: (cd /home/ishaan/eboat_src/install/lely_core_libraries/lib && { ln -s -f liblely-util.so.2.4.0 liblely-util.so.2 || { rm -f liblely-util.so.2 && ln -s liblely-util.so.2.4.0 liblely-util.so.2; }; })
+[30.967s] libtool: install: (cd /home/ishaan/eboat_src/install/lely_core_libraries/lib && { ln -s -f liblely-util.so.2.4.0 liblely-util.so || { rm -f liblely-util.so && ln -s liblely-util.so.2.4.0 liblely-util.so; }; })
+[30.972s] libtool: install: /usr/bin/install -c .libs/liblely-util.lai /home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-util.la
+[30.994s] libtool: finish: PATH="/home/ishaan/eboat_src/ros_ws/install/lely_core_libraries/bin:/home/ishaan/.local/bin:/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Zulu/zulu-21/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Ishaan/AppData/Local/JetBrains/Toolbox/scripts:/mnt/c/FlutterSDK/flutter/bin:/mnt/c/Program Files/Git:/mnt/c/Users/Ishaan/AppData/Local/Programs/Ollama:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WinGet/Links:/mnt/c/Users/Ishaan/AppData/Local/wplib-cli/bin:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WinGet/Packages/Genymobile.scrcpy_Microsoft.Winget.Source_8wekyb3d8bbwe/scrcpy-win64-v3.3.1:/mnt/c/Users/Ishaan/AppData/Local/Android/Sdk/platform-tools:/mnt/c/Users/Ishaan/AppData/Local/spicetify:/mnt/c/Users/Ishaan/go/bin:/snap/bin:/sbin" ldconfig -n /home/ishaan/eboat_src/install/lely_core_libraries/lib
+[30.996s] ----------------------------------------------------------------------
+[30.996s] Libraries have been installed in:
+[30.996s]    /home/ishaan/eboat_src/install/lely_core_libraries/lib
+[30.996s] 
+[30.996s] If you ever happen to want to link against installed libraries
+[30.997s] in a given directory, LIBDIR, you must either use libtool, and
+[30.997s] specify the full pathname of the library, or use the '-LLIBDIR'
+[30.997s] flag during linking and do at least one of the following:
+[30.997s]    - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+[30.997s]      during execution
+[30.997s]    - add LIBDIR to the 'LD_RUN_PATH' environment variable
+[30.997s]      during linking
+[30.997s]    - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+[30.997s]    - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+[30.997s] 
+[30.997s] See any operating system documentation about shared libraries for
+[30.997s] more information, such as the ld(1) and ld.so(8) manual pages.
+[30.997s] ----------------------------------------------------------------------
+[30.999s] gmake[3]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/util'
+[30.999s] gmake[2]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/util'
+[31.000s] Making install in can
+[31.007s] gmake[2]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/can'
+[31.014s] gmake[3]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/can'
+[31.015s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/lib'
+[31.016s]  /bin/bash ../../libtool   --mode=install /usr/bin/install -c   liblely-can.la '/home/ishaan/eboat_src/install/lely_core_libraries/lib'
+[31.040s] libtool: warning: relinking 'liblely-can.la'
+[31.042s] libtool: install: (cd /home/ishaan/eboat_src/build/lely_core_libraries/build/src/can; /bin/bash "/home/ishaan/eboat_src/build/lely_core_libraries/build/libtool"  --silent --tag CC --mode=relink gcc -Wall -Wextra -pedantic -Werror -Wno-static-in-inline -pthread -g -O2 -no-undefined -version-number 1:9:2 -Wl,--as-needed -o liblely-can.la -rpath /home/ishaan/eboat_src/install/lely_core_libraries/lib liblely_can_la-buf.lo liblely_can_la-msg.lo liblely_can_la-net.lo liblely_can_la-socket.lo ../../src/libc/liblely-libc.la ../../src/util/liblely-util.la -lpthread )
+[31.291s] libtool: install: /usr/bin/install -c .libs/liblely-can.so.1.9.2T /home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-can.so.1.9.2
+[31.294s] libtool: install: (cd /home/ishaan/eboat_src/install/lely_core_libraries/lib && { ln -s -f liblely-can.so.1.9.2 liblely-can.so.1 || { rm -f liblely-can.so.1 && ln -s liblely-can.so.1.9.2 liblely-can.so.1; }; })
+[31.297s] libtool: install: (cd /home/ishaan/eboat_src/install/lely_core_libraries/lib && { ln -s -f liblely-can.so.1.9.2 liblely-can.so || { rm -f liblely-can.so && ln -s liblely-can.so.1.9.2 liblely-can.so; }; })
+[31.301s] libtool: install: /usr/bin/install -c .libs/liblely-can.lai /home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-can.la
+[31.325s] libtool: finish: PATH="/home/ishaan/eboat_src/ros_ws/install/lely_core_libraries/bin:/home/ishaan/.local/bin:/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Zulu/zulu-21/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Ishaan/AppData/Local/JetBrains/Toolbox/scripts:/mnt/c/FlutterSDK/flutter/bin:/mnt/c/Program Files/Git:/mnt/c/Users/Ishaan/AppData/Local/Programs/Ollama:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WinGet/Links:/mnt/c/Users/Ishaan/AppData/Local/wplib-cli/bin:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WinGet/Packages/Genymobile.scrcpy_Microsoft.Winget.Source_8wekyb3d8bbwe/scrcpy-win64-v3.3.1:/mnt/c/Users/Ishaan/AppData/Local/Android/Sdk/platform-tools:/mnt/c/Users/Ishaan/AppData/Local/spicetify:/mnt/c/Users/Ishaan/go/bin:/snap/bin:/sbin" ldconfig -n /home/ishaan/eboat_src/install/lely_core_libraries/lib
+[31.327s] ----------------------------------------------------------------------
+[31.327s] Libraries have been installed in:
+[31.327s]    /home/ishaan/eboat_src/install/lely_core_libraries/lib
+[31.327s] 
+[31.327s] If you ever happen to want to link against installed libraries
+[31.327s] in a given directory, LIBDIR, you must either use libtool, and
+[31.327s] specify the full pathname of the library, or use the '-LLIBDIR'
+[31.327s] flag during linking and do at least one of the following:
+[31.327s]    - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+[31.327s]      during execution
+[31.327s]    - add LIBDIR to the 'LD_RUN_PATH' environment variable
+[31.327s]      during linking
+[31.327s]    - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+[31.327s]    - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+[31.327s] 
+[31.327s] See any operating system documentation about shared libraries for
+[31.327s] more information, such as the ld(1) and ld.so(8) manual pages.
+[31.327s] ----------------------------------------------------------------------
+[31.330s] gmake[3]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/can'
+[31.331s] gmake[2]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/can'
+[31.331s] Making install in co
+[31.342s] gmake[2]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/co'
+[31.353s] gmake[3]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/co'
+[31.355s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/lib'
+[31.356s]  /bin/bash ../../libtool   --mode=install /usr/bin/install -c   liblely-co.la '/home/ishaan/eboat_src/install/lely_core_libraries/lib'
+[31.380s] libtool: warning: relinking 'liblely-co.la'
+[31.381s] libtool: install: (cd /home/ishaan/eboat_src/build/lely_core_libraries/build/src/co; /bin/bash "/home/ishaan/eboat_src/build/lely_core_libraries/build/libtool"  --silent --tag CC --mode=relink gcc -Wall -Wextra -pedantic -Werror -Wno-static-in-inline -pthread -g -O2 -no-undefined -version-number 2:4:0 -Wl,--as-needed -o liblely-co.la -rpath /home/ishaan/eboat_src/install/lely_core_libraries/lib liblely_co_la-crc.lo liblely_co_la-csdo.lo liblely_co_la-dcf.lo liblely_co_la-dev.lo liblely_co_la-emcy.lo liblely_co_la-gw.lo liblely_co_la-gw_txt.lo liblely_co_la-lss.lo liblely_co_la-nmt.lo liblely_co_la-nmt_boot.lo liblely_co_la-nmt_cfg.lo liblely_co_la-nmt_hb.lo liblely_co_la-nmt_srv.lo liblely_co_la-obj.lo liblely_co_la-pdo.lo liblely_co_la-rpdo.lo liblely_co_la-sdev.lo liblely_co_la-sdo.lo liblely_co_la-ssdo.lo liblely_co_la-sync.lo liblely_co_la-time.lo liblely_co_la-tpdo.lo liblely_co_la-type.lo liblely_co_la-val.lo liblely_co_la-wtm.lo ../../src/libc/liblely-libc.la ../../src/util/liblely-util.la ../../src/can/liblely-can.la -lpthread )
+[31.683s] libtool: install: /usr/bin/install -c .libs/liblely-co.so.2.4.0T /home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-co.so.2.4.0
+[31.686s] libtool: install: (cd /home/ishaan/eboat_src/install/lely_core_libraries/lib && { ln -s -f liblely-co.so.2.4.0 liblely-co.so.2 || { rm -f liblely-co.so.2 && ln -s liblely-co.so.2.4.0 liblely-co.so.2; }; })
+[31.689s] libtool: install: (cd /home/ishaan/eboat_src/install/lely_core_libraries/lib && { ln -s -f liblely-co.so.2.4.0 liblely-co.so || { rm -f liblely-co.so && ln -s liblely-co.so.2.4.0 liblely-co.so; }; })
+[31.694s] libtool: install: /usr/bin/install -c .libs/liblely-co.lai /home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-co.la
+[31.717s] libtool: finish: PATH="/home/ishaan/eboat_src/ros_ws/install/lely_core_libraries/bin:/home/ishaan/.local/bin:/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Zulu/zulu-21/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Ishaan/AppData/Local/JetBrains/Toolbox/scripts:/mnt/c/FlutterSDK/flutter/bin:/mnt/c/Program Files/Git:/mnt/c/Users/Ishaan/AppData/Local/Programs/Ollama:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WinGet/Links:/mnt/c/Users/Ishaan/AppData/Local/wplib-cli/bin:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WinGet/Packages/Genymobile.scrcpy_Microsoft.Winget.Source_8wekyb3d8bbwe/scrcpy-win64-v3.3.1:/mnt/c/Users/Ishaan/AppData/Local/Android/Sdk/platform-tools:/mnt/c/Users/Ishaan/AppData/Local/spicetify:/mnt/c/Users/Ishaan/go/bin:/snap/bin:/sbin" ldconfig -n /home/ishaan/eboat_src/install/lely_core_libraries/lib
+[31.719s] ----------------------------------------------------------------------
+[31.719s] Libraries have been installed in:
+[31.719s]    /home/ishaan/eboat_src/install/lely_core_libraries/lib
+[31.719s] 
+[31.719s] If you ever happen to want to link against installed libraries
+[31.719s] in a given directory, LIBDIR, you must either use libtool, and
+[31.719s] specify the full pathname of the library, or use the '-LLIBDIR'
+[31.719s] flag during linking and do at least one of the following:
+[31.719s]    - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+[31.719s]      during execution
+[31.720s]    - add LIBDIR to the 'LD_RUN_PATH' environment variable
+[31.720s]      during linking
+[31.720s]    - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+[31.720s]    - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+[31.720s] 
+[31.720s] See any operating system documentation about shared libraries for
+[31.720s] more information, such as the ld(1) and ld.so(8) manual pages.
+[31.720s] ----------------------------------------------------------------------
+[31.723s] gmake[3]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/co'
+[31.723s] gmake[2]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/co'
+[31.723s] Making install in io
+[31.734s] gmake[2]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/io'
+[31.745s] gmake[3]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/io'
+[31.746s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/lib'
+[31.747s]  /bin/bash ../../libtool   --mode=install /usr/bin/install -c   liblely-io.la '/home/ishaan/eboat_src/install/lely_core_libraries/lib'
+[31.774s] libtool: warning: relinking 'liblely-io.la'
+[31.775s] libtool: install: (cd /home/ishaan/eboat_src/build/lely_core_libraries/build/src/io; /bin/bash "/home/ishaan/eboat_src/build/lely_core_libraries/build/libtool"  --silent --tag CC --mode=relink gcc -Wall -Wextra -pedantic -Werror -Wno-static-in-inline -pthread -g -O2 -no-undefined -version-number 1:9:2 -Wl,--as-needed -o liblely-io.la -rpath /home/ishaan/eboat_src/install/lely_core_libraries/lib liblely_io_la-addr.lo liblely_io_la-attr.lo liblely_io_la-can.lo liblely_io_la-file.lo liblely_io_la-handle.lo liblely_io_la-if.lo liblely_io_la-io.lo liblely_io_la-pipe.lo liblely_io_la-poll.lo liblely_io_la-rtnl.lo liblely_io_la-serial.lo liblely_io_la-sock.lo ../../src/libc/liblely-libc.la ../../src/util/liblely-util.la ../../src/can/liblely-can.la -lpthread )
+[32.053s] libtool: install: /usr/bin/install -c .libs/liblely-io.so.1.9.2T /home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-io.so.1.9.2
+[32.056s] libtool: install: (cd /home/ishaan/eboat_src/install/lely_core_libraries/lib && { ln -s -f liblely-io.so.1.9.2 liblely-io.so.1 || { rm -f liblely-io.so.1 && ln -s liblely-io.so.1.9.2 liblely-io.so.1; }; })
+[32.060s] libtool: install: (cd /home/ishaan/eboat_src/install/lely_core_libraries/lib && { ln -s -f liblely-io.so.1.9.2 liblely-io.so || { rm -f liblely-io.so && ln -s liblely-io.so.1.9.2 liblely-io.so; }; })
+[32.064s] libtool: install: /usr/bin/install -c .libs/liblely-io.lai /home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-io.la
+[32.088s] libtool: finish: PATH="/home/ishaan/eboat_src/ros_ws/install/lely_core_libraries/bin:/home/ishaan/.local/bin:/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Zulu/zulu-21/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Ishaan/AppData/Local/JetBrains/Toolbox/scripts:/mnt/c/FlutterSDK/flutter/bin:/mnt/c/Program Files/Git:/mnt/c/Users/Ishaan/AppData/Local/Programs/Ollama:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WinGet/Links:/mnt/c/Users/Ishaan/AppData/Local/wplib-cli/bin:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WinGet/Packages/Genymobile.scrcpy_Microsoft.Winget.Source_8wekyb3d8bbwe/scrcpy-win64-v3.3.1:/mnt/c/Users/Ishaan/AppData/Local/Android/Sdk/platform-tools:/mnt/c/Users/Ishaan/AppData/Local/spicetify:/mnt/c/Users/Ishaan/go/bin:/snap/bin:/sbin" ldconfig -n /home/ishaan/eboat_src/install/lely_core_libraries/lib
+[32.090s] ----------------------------------------------------------------------
+[32.090s] Libraries have been installed in:
+[32.090s]    /home/ishaan/eboat_src/install/lely_core_libraries/lib
+[32.090s] 
+[32.090s] If you ever happen to want to link against installed libraries
+[32.091s] in a given directory, LIBDIR, you must either use libtool, and
+[32.091s] specify the full pathname of the library, or use the '-LLIBDIR'
+[32.091s] flag during linking and do at least one of the following:
+[32.091s]    - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+[32.091s]      during execution
+[32.091s]    - add LIBDIR to the 'LD_RUN_PATH' environment variable
+[32.091s]      during linking
+[32.091s]    - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+[32.091s]    - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+[32.091s] 
+[32.091s] See any operating system documentation about shared libraries for
+[32.091s] more information, such as the ld(1) and ld.so(8) manual pages.
+[32.091s] ----------------------------------------------------------------------
+[32.095s] gmake[3]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/io'
+[32.095s] gmake[2]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/io'
+[32.095s] Making install in ev
+[32.103s] gmake[2]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/ev'
+[32.110s] gmake[3]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/ev'
+[32.112s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/lib'
+[32.115s]  /bin/bash ../../libtool   --mode=install /usr/bin/install -c   liblely-ev.la '/home/ishaan/eboat_src/install/lely_core_libraries/lib'
+[32.145s] libtool: warning: relinking 'liblely-ev.la'
+[32.147s] libtool: install: (cd /home/ishaan/eboat_src/build/lely_core_libraries/build/src/ev; /bin/bash "/home/ishaan/eboat_src/build/lely_core_libraries/build/libtool"  --silent --tag CC --mode=relink gcc -Wall -Wextra -pedantic -Werror -Wno-static-in-inline -pthread -g -O2 -no-undefined -version-number 2:4:0 -Wl,--as-needed -o liblely-ev.la -rpath /home/ishaan/eboat_src/install/lely_core_libraries/lib liblely_ev_la-exec.lo liblely_ev_la-fiber_exec.lo liblely_ev_la-future.lo liblely_ev_la-loop.lo liblely_ev_la-poll.lo liblely_ev_la-std_exec.lo liblely_ev_la-strand.lo liblely_ev_la-task.lo liblely_ev_la-thrd_loop.lo ../../src/libc/liblely-libc.la ../../src/util/liblely-util.la -lpthread )
+[32.457s] libtool: install: /usr/bin/install -c .libs/liblely-ev.so.2.4.0T /home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-ev.so.2.4.0
+[32.461s] libtool: install: (cd /home/ishaan/eboat_src/install/lely_core_libraries/lib && { ln -s -f liblely-ev.so.2.4.0 liblely-ev.so.2 || { rm -f liblely-ev.so.2 && ln -s liblely-ev.so.2.4.0 liblely-ev.so.2; }; })
+[32.465s] libtool: install: (cd /home/ishaan/eboat_src/install/lely_core_libraries/lib && { ln -s -f liblely-ev.so.2.4.0 liblely-ev.so || { rm -f liblely-ev.so && ln -s liblely-ev.so.2.4.0 liblely-ev.so; }; })
+[32.471s] libtool: install: /usr/bin/install -c .libs/liblely-ev.lai /home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-ev.la
+[32.497s] libtool: finish: PATH="/home/ishaan/eboat_src/ros_ws/install/lely_core_libraries/bin:/home/ishaan/.local/bin:/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Zulu/zulu-21/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Ishaan/AppData/Local/JetBrains/Toolbox/scripts:/mnt/c/FlutterSDK/flutter/bin:/mnt/c/Program Files/Git:/mnt/c/Users/Ishaan/AppData/Local/Programs/Ollama:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WinGet/Links:/mnt/c/Users/Ishaan/AppData/Local/wplib-cli/bin:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WinGet/Packages/Genymobile.scrcpy_Microsoft.Winget.Source_8wekyb3d8bbwe/scrcpy-win64-v3.3.1:/mnt/c/Users/Ishaan/AppData/Local/Android/Sdk/platform-tools:/mnt/c/Users/Ishaan/AppData/Local/spicetify:/mnt/c/Users/Ishaan/go/bin:/snap/bin:/sbin" ldconfig -n /home/ishaan/eboat_src/install/lely_core_libraries/lib
+[32.498s] ----------------------------------------------------------------------
+[32.498s] Libraries have been installed in:
+[32.498s]    /home/ishaan/eboat_src/install/lely_core_libraries/lib
+[32.498s] 
+[32.498s] If you ever happen to want to link against installed libraries
+[32.499s] in a given directory, LIBDIR, you must either use libtool, and
+[32.499s] specify the full pathname of the library, or use the '-LLIBDIR'
+[32.499s] flag during linking and do at least one of the following:
+[32.499s]    - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+[32.499s]      during execution
+[32.499s]    - add LIBDIR to the 'LD_RUN_PATH' environment variable
+[32.499s]      during linking
+[32.499s]    - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+[32.499s]    - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+[32.499s] 
+[32.499s] See any operating system documentation about shared libraries for
+[32.499s] more information, such as the ld(1) and ld.so(8) manual pages.
+[32.499s] ----------------------------------------------------------------------
+[32.502s] gmake[3]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/ev'
+[32.502s] gmake[2]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/ev'
+[32.502s] Making install in io2
+[32.517s] gmake[2]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/io2'
+[32.531s] gmake[3]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/io2'
+[32.532s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/lib'
+[32.534s]  /bin/bash ../../libtool   --mode=install /usr/bin/install -c   liblely-io2.la '/home/ishaan/eboat_src/install/lely_core_libraries/lib'
+[32.568s] libtool: warning: relinking 'liblely-io2.la'
+[32.571s] libtool: install: (cd /home/ishaan/eboat_src/build/lely_core_libraries/build/src/io2; /bin/bash "/home/ishaan/eboat_src/build/lely_core_libraries/build/libtool"  --silent --tag CC --mode=relink gcc -Wall -Wextra -pedantic -Werror -Wno-static-in-inline -pthread -g -O2 -no-undefined -version-number 2:4:0 -Wl,--as-needed -o liblely-io2.la -rpath /home/ishaan/eboat_src/install/lely_core_libraries/lib can/liblely_io2_la-msg.lo linux/liblely_io2_la-can_chan.lo linux/liblely_io2_la-can_ctrl.lo linux/liblely_io2_la-poll.lo linux/liblely_io2_la-timer.lo posix/liblely_io2_la-fd.lo posix/liblely_io2_la-io.lo posix/liblely_io2_la-sigset.lo sys/liblely_io2_la-clock.lo sys/liblely_io2_la-io.lo user/liblely_io2_la-can.lo user/liblely_io2_la-timer.lo liblely_io2_la-can.lo liblely_io2_la-can_net.lo liblely_io2_la-can_rt.lo liblely_io2_la-clock.lo liblely_io2_la-ctx.lo liblely_io2_la-dev.lo liblely_io2_la-sigset.lo liblely_io2_la-timer.lo liblely_io2_la-tqueue.lo liblely_io2_la-vcan.lo ../../src/libc/liblely-libc.la ../../src/util/liblely-util.la ../../src/can/liblely-can.la ../../src/ev/liblely-ev.la -lrt -lpthread )
+[32.944s] libtool: install: /usr/bin/install -c .libs/liblely-io2.so.2.4.0T /home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-io2.so.2.4.0
+[32.948s] libtool: install: (cd /home/ishaan/eboat_src/install/lely_core_libraries/lib && { ln -s -f liblely-io2.so.2.4.0 liblely-io2.so.2 || { rm -f liblely-io2.so.2 && ln -s liblely-io2.so.2.4.0 liblely-io2.so.2; }; })
+[32.953s] libtool: install: (cd /home/ishaan/eboat_src/install/lely_core_libraries/lib && { ln -s -f liblely-io2.so.2.4.0 liblely-io2.so || { rm -f liblely-io2.so && ln -s liblely-io2.so.2.4.0 liblely-io2.so; }; })
+[32.959s] libtool: install: /usr/bin/install -c .libs/liblely-io2.lai /home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-io2.la
+[32.985s] libtool: finish: PATH="/home/ishaan/eboat_src/ros_ws/install/lely_core_libraries/bin:/home/ishaan/.local/bin:/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Zulu/zulu-21/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Ishaan/AppData/Local/JetBrains/Toolbox/scripts:/mnt/c/FlutterSDK/flutter/bin:/mnt/c/Program Files/Git:/mnt/c/Users/Ishaan/AppData/Local/Programs/Ollama:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WinGet/Links:/mnt/c/Users/Ishaan/AppData/Local/wplib-cli/bin:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WinGet/Packages/Genymobile.scrcpy_Microsoft.Winget.Source_8wekyb3d8bbwe/scrcpy-win64-v3.3.1:/mnt/c/Users/Ishaan/AppData/Local/Android/Sdk/platform-tools:/mnt/c/Users/Ishaan/AppData/Local/spicetify:/mnt/c/Users/Ishaan/go/bin:/snap/bin:/sbin" ldconfig -n /home/ishaan/eboat_src/install/lely_core_libraries/lib
+[32.987s] ----------------------------------------------------------------------
+[32.987s] Libraries have been installed in:
+[32.987s]    /home/ishaan/eboat_src/install/lely_core_libraries/lib
+[32.987s] 
+[32.987s] If you ever happen to want to link against installed libraries
+[32.988s] in a given directory, LIBDIR, you must either use libtool, and
+[32.988s] specify the full pathname of the library, or use the '-LLIBDIR'
+[32.988s] flag during linking and do at least one of the following:
+[32.988s]    - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+[32.988s]      during execution
+[32.988s]    - add LIBDIR to the 'LD_RUN_PATH' environment variable
+[32.988s]      during linking
+[32.988s]    - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+[32.988s]    - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+[32.988s] 
+[32.988s] See any operating system documentation about shared libraries for
+[32.988s] more information, such as the ld(1) and ld.so(8) manual pages.
+[32.988s] ----------------------------------------------------------------------
+[32.992s] gmake[3]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/io2'
+[32.992s] gmake[2]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/io2'
+[32.992s] Making install in coapp
+[33.008s] gmake[2]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/coapp'
+[33.025s] gmake[3]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/coapp'
+[33.026s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/lib'
+[33.027s]  /bin/bash ../../libtool   --mode=install /usr/bin/install -c   liblely-coapp.la '/home/ishaan/eboat_src/install/lely_core_libraries/lib'
+[33.054s] libtool: warning: relinking 'liblely-coapp.la'
+[33.056s] libtool: install: (cd /home/ishaan/eboat_src/build/lely_core_libraries/build/src/coapp; /bin/bash "/home/ishaan/eboat_src/build/lely_core_libraries/build/libtool"  --silent --tag CXX --mode=relink g++ -std=gnu++11 -Wall -Wextra -pedantic -Werror -g -O2 -no-undefined -version-number 2:4:0 -Wl,--as-needed -o liblely-coapp.la -rpath /home/ishaan/eboat_src/install/lely_core_libraries/lib liblely_coapp_la-device.lo liblely_coapp_la-driver.lo liblely_coapp_la-fiber_driver.lo liblely_coapp_la-logical_driver.lo liblely_coapp_la-loop_driver.lo liblely_coapp_la-lss_master.lo liblely_coapp_la-master.lo liblely_coapp_la-node.lo liblely_coapp_la-sdo.lo liblely_coapp_la-sdo_error.lo liblely_coapp_la-slave.lo liblely_coapp_la-type_traits.lo ../../src/libc/liblely-libc.la ../../src/util/liblely-util.la ../../src/can/liblely-can.la ../../src/ev/liblely-ev.la ../../src/io2/liblely-io2.la ../../src/co/liblely-co.la -lpthread )
+[33.520s] libtool: install: /usr/bin/install -c .libs/liblely-coapp.so.2.4.0T /home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-coapp.so.2.4.0
+[33.527s] libtool: install: (cd /home/ishaan/eboat_src/install/lely_core_libraries/lib && { ln -s -f liblely-coapp.so.2.4.0 liblely-coapp.so.2 || { rm -f liblely-coapp.so.2 && ln -s liblely-coapp.so.2.4.0 liblely-coapp.so.2; }; })
+[33.531s] libtool: install: (cd /home/ishaan/eboat_src/install/lely_core_libraries/lib && { ln -s -f liblely-coapp.so.2.4.0 liblely-coapp.so || { rm -f liblely-coapp.so && ln -s liblely-coapp.so.2.4.0 liblely-coapp.so; }; })
+[33.537s] libtool: install: /usr/bin/install -c .libs/liblely-coapp.lai /home/ishaan/eboat_src/install/lely_core_libraries/lib/liblely-coapp.la
+[33.566s] libtool: finish: PATH="/home/ishaan/eboat_src/ros_ws/install/lely_core_libraries/bin:/home/ishaan/.local/bin:/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Zulu/zulu-21/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/Ishaan/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Ishaan/AppData/Local/JetBrains/Toolbox/scripts:/mnt/c/FlutterSDK/flutter/bin:/mnt/c/Program Files/Git:/mnt/c/Users/Ishaan/AppData/Local/Programs/Ollama:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WinGet/Links:/mnt/c/Users/Ishaan/AppData/Local/wplib-cli/bin:/mnt/c/Users/Ishaan/AppData/Local/Microsoft/WinGet/Packages/Genymobile.scrcpy_Microsoft.Winget.Source_8wekyb3d8bbwe/scrcpy-win64-v3.3.1:/mnt/c/Users/Ishaan/AppData/Local/Android/Sdk/platform-tools:/mnt/c/Users/Ishaan/AppData/Local/spicetify:/mnt/c/Users/Ishaan/go/bin:/snap/bin:/sbin" ldconfig -n /home/ishaan/eboat_src/install/lely_core_libraries/lib
+[33.567s] ----------------------------------------------------------------------
+[33.567s] Libraries have been installed in:
+[33.567s]    /home/ishaan/eboat_src/install/lely_core_libraries/lib
+[33.568s] 
+[33.568s] If you ever happen to want to link against installed libraries
+[33.568s] in a given directory, LIBDIR, you must either use libtool, and
+[33.568s] specify the full pathname of the library, or use the '-LLIBDIR'
+[33.568s] flag during linking and do at least one of the following:
+[33.568s]    - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+[33.568s]      during execution
+[33.568s]    - add LIBDIR to the 'LD_RUN_PATH' environment variable
+[33.568s]      during linking
+[33.568s]    - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+[33.568s]    - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+[33.568s] 
+[33.568s] See any operating system documentation about shared libraries for
+[33.568s] more information, such as the ld(1) and ld.so(8) manual pages.
+[33.568s] ----------------------------------------------------------------------
+[33.570s] gmake[3]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/coapp'
+[33.571s] gmake[2]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src/coapp'
+[33.572s] gmake[2]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src'
+[33.575s] gmake[3]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src'
+[33.575s] gmake[3]: Nothing to be done for 'install-exec-am'.
+[33.575s] gmake[3]: Nothing to be done for 'install-data-am'.
+[33.575s] gmake[3]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src'
+[33.575s] gmake[2]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src'
+[33.575s] gmake[1]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/src'
+[33.576s] Making install in python
+[33.577s] gmake[1]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/python'
+[33.580s] Making install in dcf-tools
+[33.581s] gmake[2]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/python/dcf-tools'
+[33.584s] gmake[3]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/python/dcf-tools'
+[33.743s] running egg_info
+[33.743s] creating dcf_tools.egg-info
+[33.754s] writing dcf_tools.egg-info/PKG-INFO
+[33.754s] writing dependency_links to dcf_tools.egg-info/dependency_links.txt
+[33.754s] writing entry points to dcf_tools.egg-info/entry_points.txt
+[33.754s] writing requirements to dcf_tools.egg-info/requires.txt
+[33.754s] writing top-level names to dcf_tools.egg-info/top_level.txt
+[33.754s] writing manifest file 'dcf_tools.egg-info/SOURCES.txt'
+[33.776s] reading manifest file 'dcf_tools.egg-info/SOURCES.txt'
+[33.777s] writing manifest file 'dcf_tools.egg-info/SOURCES.txt'
+[33.777s] running build
+[33.778s] running build_py
+[33.778s] creating build
+[33.778s] creating build/lib
+[33.778s] creating build/lib/dcfgen
+[33.778s] copying dcfgen/cli.py -> build/lib/dcfgen
+[33.779s] copying dcfgen/__init__.py -> build/lib/dcfgen
+[33.779s] creating build/lib/dcf
+[33.779s] copying dcf/device.py -> build/lib/dcf
+[33.779s] copying dcf/lint.py -> build/lib/dcf
+[33.779s] copying dcf/print.py -> build/lib/dcf
+[33.779s] copying dcf/parse.py -> build/lib/dcf
+[33.780s] copying dcf/cli.py -> build/lib/dcf
+[33.780s] copying dcf/__init__.py -> build/lib/dcf
+[33.780s] creating build/lib/dcf2dev
+[33.780s] copying dcf2dev/cdevice.py -> build/lib/dcf2dev
+[33.780s] copying dcf2dev/cli.py -> build/lib/dcf2dev
+[33.781s] copying dcf2dev/__init__.py -> build/lib/dcf2dev
+[33.781s] /usr/lib/python3/dist-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[33.781s] !!
+[33.781s] 
+[33.782s]         ********************************************************************************
+[33.782s]         Please avoid running ``setup.py`` directly.
+[33.782s]         Instead, use pypa/build, pypa/installer or other
+[33.782s]         standards-based tools.
+[33.782s] 
+[33.783s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[33.783s]         ********************************************************************************
+[33.783s] 
+[33.783s] !!
+[33.783s]   self.initialize_options()
+[33.783s] creating build/lib/dcfgen/data
+[33.784s] copying dcfgen/data/master.dcf.em -> build/lib/dcfgen/data
+[33.784s] creating build/lib/dcf2dev/data
+[33.784s] copying dcf2dev/data/dev.c.em -> build/lib/dcf2dev/data
+[33.784s] copying dcf2dev/data/dev.h.em -> build/lib/dcf2dev/data
+[33.784s] running install
+[33.784s] running install_lib
+[33.796s] creating /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12
+[33.796s] creating /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages
+[33.796s] creating /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcfgen
+[33.796s] creating /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcfgen/data
+[33.796s] copying build/lib/dcfgen/data/master.dcf.em -> /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcfgen/data
+[33.797s] copying build/lib/dcfgen/cli.py -> /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcfgen
+[33.797s] copying build/lib/dcfgen/__init__.py -> /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcfgen
+[33.798s] creating /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcf
+[33.798s] copying build/lib/dcf/device.py -> /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcf
+[33.798s] copying build/lib/dcf/lint.py -> /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcf
+[33.798s] copying build/lib/dcf/print.py -> /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcf
+[33.798s] copying build/lib/dcf/parse.py -> /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcf
+[33.798s] copying build/lib/dcf/cli.py -> /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcf
+[33.798s] copying build/lib/dcf/__init__.py -> /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcf
+[33.799s] creating /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcf2dev
+[33.799s] creating /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcf2dev/data
+[33.799s] copying build/lib/dcf2dev/data/dev.c.em -> /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcf2dev/data
+[33.799s] copying build/lib/dcf2dev/data/dev.h.em -> /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcf2dev/data
+[33.799s] copying build/lib/dcf2dev/cdevice.py -> /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcf2dev
+[33.799s] copying build/lib/dcf2dev/cli.py -> /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcf2dev
+[33.799s] copying build/lib/dcf2dev/__init__.py -> /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcf2dev
+[33.799s] byte-compiling /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcfgen/cli.py to cli.cpython-312.pyc
+[33.802s] byte-compiling /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcfgen/__init__.py to __init__.cpython-312.pyc
+[33.803s] byte-compiling /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcf/device.py to device.cpython-312.pyc
+[33.805s] byte-compiling /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcf/lint.py to lint.cpython-312.pyc
+[33.808s] byte-compiling /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcf/print.py to print.cpython-312.pyc
+[33.808s] byte-compiling /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcf/parse.py to parse.cpython-312.pyc
+[33.810s] byte-compiling /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcf/cli.py to cli.cpython-312.pyc
+[33.810s] byte-compiling /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcf/__init__.py to __init__.cpython-312.pyc
+[33.810s] byte-compiling /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcf2dev/cdevice.py to cdevice.cpython-312.pyc
+[33.812s] byte-compiling /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcf2dev/cli.py to cli.cpython-312.pyc
+[33.812s] byte-compiling /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcf2dev/__init__.py to __init__.cpython-312.pyc
+[33.812s] running install_egg_info
+[33.825s] Copying dcf_tools.egg-info to /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/dcf_tools-2.4.0.egg-info
+[33.825s] running install_scripts
+[33.900s] Installing dcf2dev script to /home/ishaan/eboat_src/install/lely_core_libraries/bin/
+[33.900s] Installing dcfchk script to /home/ishaan/eboat_src/install/lely_core_libraries/bin/
+[33.900s] Installing dcfgen script to /home/ishaan/eboat_src/install/lely_core_libraries/bin/
+[33.901s] writing list of installed files to 'install.log'
+[33.926s] gmake[3]: Nothing to be done for 'install-data-am'.
+[33.927s] gmake[3]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/python/dcf-tools'
+[33.927s] gmake[2]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/python/dcf-tools'
+[33.928s] gmake[2]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/python'
+[33.931s] gmake[3]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/python'
+[33.931s] gmake[3]: Nothing to be done for 'install-exec-am'.
+[33.931s] gmake[3]: Nothing to be done for 'install-data-am'.
+[33.931s] gmake[3]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/python'
+[33.931s] gmake[2]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/python'
+[33.932s] gmake[1]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/python'
+[33.932s] Making install in pkgconfig
+[33.933s] gmake[1]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/pkgconfig'
+[33.935s] gmake[2]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/pkgconfig'
+[33.935s] gmake[2]: Nothing to be done for 'install-exec-am'.
+[33.936s]  /usr/bin/mkdir -p '/home/ishaan/eboat_src/install/lely_core_libraries/lib/pkgconfig'
+[33.939s]  /usr/bin/install -c -m 644 liblely-can.pc liblely-co.pc liblely-coapp.pc liblely-ev.pc liblely-io.pc liblely-io2.pc liblely-libc.pc liblely-libc_rt.pc liblely-tap.pc liblely-util.pc '/home/ishaan/eboat_src/install/lely_core_libraries/lib/pkgconfig'
+[33.940s] gmake[2]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/pkgconfig'
+[33.941s] gmake[1]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build/pkgconfig'
+[33.942s] gmake[1]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build'
+[33.946s] gmake[2]: Entering directory '/home/ishaan/eboat_src/build/lely_core_libraries/build'
+[33.946s] gmake[2]: Nothing to be done for 'install-exec-am'.
+[33.946s] gmake[2]: Nothing to be done for 'install-data-am'.
+[33.947s] gmake[2]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build'
+[33.947s] gmake[1]: Leaving directory '/home/ishaan/eboat_src/build/lely_core_libraries/build'
+[33.947s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/share/lely_core_libraries/cmake
+[33.947s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/share/lely_core_libraries/cmake/lely_core_libraries-extras.cmake
+[33.947s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/share/lely_core_libraries/environment/pythonpath.sh
+[33.947s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/share/lely_core_libraries/environment/pythonpath.dsv
+[33.947s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/cogen-0.3.1-py3.12.egg-info
+[33.948s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/cogen-0.3.1-py3.12.egg-info/top_level.txt
+[33.948s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/cogen-0.3.1-py3.12.egg-info/SOURCES.txt
+[33.948s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/cogen-0.3.1-py3.12.egg-info/entry_points.txt
+[33.948s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/cogen-0.3.1-py3.12.egg-info/PKG-INFO
+[33.948s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/cogen-0.3.1-py3.12.egg-info/dependency_links.txt
+[33.948s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/lib/cogen/
+[33.948s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/lib/cogen//cogen
+[33.948s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/cogen
+[33.949s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/cogen/cogen.py
+[33.949s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/cogen/__init__.py
+[33.976s] Listing '/home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/cogen'...
+[33.976s] Compiling '/home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/cogen/__init__.py'...
+[33.976s] Compiling '/home/ishaan/eboat_src/install/lely_core_libraries/lib/python3.12/site-packages/cogen/cogen.py'...
+[33.980s] -- Up-to-date: /home/ishaan/eboat_src/install/lely_core_libraries/bin/
+[33.980s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/bin//cogen
+[33.980s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/share/lely_core_libraries/environment/library_path.sh
+[33.980s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/share/lely_core_libraries/environment/library_path.dsv
+[33.981s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/share/ament_index/resource_index/package_run_dependencies/lely_core_libraries
+[33.981s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/share/ament_index/resource_index/parent_prefix_path/lely_core_libraries
+[33.981s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/share/lely_core_libraries/environment/ament_prefix_path.sh
+[33.981s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/share/lely_core_libraries/environment/ament_prefix_path.dsv
+[33.981s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/share/lely_core_libraries/environment/path.sh
+[33.981s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/share/lely_core_libraries/environment/path.dsv
+[33.982s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/share/lely_core_libraries/local_setup.bash
+[33.982s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/share/lely_core_libraries/local_setup.sh
+[33.982s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/share/lely_core_libraries/local_setup.zsh
+[33.982s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/share/lely_core_libraries/local_setup.dsv
+[33.982s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/share/lely_core_libraries/package.dsv
+[33.983s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/share/ament_index/resource_index/packages/lely_core_libraries
+[33.983s] -- Up-to-date: /home/ishaan/eboat_src/install/lely_core_libraries/share/lely_core_libraries/cmake/lely_core_libraries-extras.cmake
+[33.983s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/share/lely_core_libraries/cmake/ament_cmake_export_include_directories-extras.cmake
+[33.983s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/share/lely_core_libraries/cmake/ament_cmake_export_libraries-extras.cmake
+[33.983s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/share/lely_core_libraries/cmake/lely_core_librariesConfig.cmake
+[33.983s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/share/lely_core_libraries/cmake/lely_core_librariesConfig-version.cmake
+[33.983s] -- Installing: /home/ishaan/eboat_src/install/lely_core_libraries/share/lely_core_libraries/package.xml
+[33.986s] Invoked command in '/home/ishaan/eboat_src/build/lely_core_libraries' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ishaan/eboat_src/ros_ws/install/shore_comms:/home/ishaan/eboat_src/ros_ws/install/motor_node_test:/home/ishaan/eboat_src/ros_ws/install/motor_node:/home/ishaan/eboat_src/ros_ws/install/motion_node_test:/home/ishaan/eboat_src/ros_ws/install/motion_node:/home/ishaan/eboat_src/ros_ws/install/electrical_node_test:/home/ishaan/eboat_src/ros_ws/install/electrical_node:/home/ishaan/eboat_src/ros_ws/install/canopen_utils:/home/ishaan/eboat_src/ros_ws/install/alarms_watchdog_node:/home/ishaan/eboat_src/ros_ws/install/GPIO_Test:/opt/ros/kilted /usr/bin/cmake --install /home/ishaan/eboat_src/build/lely_core_libraries

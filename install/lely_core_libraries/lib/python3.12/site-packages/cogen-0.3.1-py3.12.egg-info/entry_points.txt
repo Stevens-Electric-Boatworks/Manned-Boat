@@ -1,0 +1,2 @@
+[console_scripts]
+cogen = cogen.cogen:main

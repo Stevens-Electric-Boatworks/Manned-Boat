@@ -6,7 +6,12 @@
     "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces:msg/ElectricalData.idl",
     "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces:msg/GPIOData.idl",
     "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces:msg/MotionData.idl",
-    "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces:msg/MotorData.idl"
+    "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces:msg/MotorData.idl",
+    "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces:msg/BoatAlarm.idl"
+  ],
+  "ros_interface_dependencies": [
+    "builtin_interfaces:/opt/ros/kilted/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/kilted/share/builtin_interfaces/msg/Time.idl"
   ],
   "target_dependencies": [
     "/opt/ros/kilted/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp",
@@ -31,12 +36,16 @@
     "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces/msg/ElectricalData.idl",
     "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces/msg/GPIOData.idl",
     "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces/msg/MotionData.idl",
-    "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces/msg/MotorData.idl"
+    "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces/msg/MotorData.idl",
+    "/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_adapter/boat_data_interfaces/msg/BoatAlarm.idl",
+    "/opt/ros/kilted/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/kilted/share/builtin_interfaces/msg/Time.idl"
   ],
   "type_description_tuples": [
     "msg/ElectricalData.idl:/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_type_description/boat_data_interfaces/msg/ElectricalData.json",
     "msg/GPIOData.idl:/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_type_description/boat_data_interfaces/msg/GPIOData.json",
     "msg/MotionData.idl:/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_type_description/boat_data_interfaces/msg/MotionData.json",
-    "msg/MotorData.idl:/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_type_description/boat_data_interfaces/msg/MotorData.json"
+    "msg/MotorData.idl:/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_type_description/boat_data_interfaces/msg/MotorData.json",
+    "msg/BoatAlarm.idl:/home/ishaan/eboat_src/build/boat_data_interfaces/rosidl_generator_type_description/boat_data_interfaces/msg/BoatAlarm.json"
   ]
 }

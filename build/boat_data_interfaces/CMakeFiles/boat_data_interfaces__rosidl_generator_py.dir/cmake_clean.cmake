@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/boat_data_interfaces__rosidl_generator_py.dir/rosidl_generator_py/boat_data_interfaces/msg/_boat_alarm_s.c.o"
+  "CMakeFiles/boat_data_interfaces__rosidl_generator_py.dir/rosidl_generator_py/boat_data_interfaces/msg/_boat_alarm_s.c.o.d"
   "CMakeFiles/boat_data_interfaces__rosidl_generator_py.dir/rosidl_generator_py/boat_data_interfaces/msg/_electrical_data_s.c.o"
   "CMakeFiles/boat_data_interfaces__rosidl_generator_py.dir/rosidl_generator_py/boat_data_interfaces/msg/_electrical_data_s.c.o.d"
   "CMakeFiles/boat_data_interfaces__rosidl_generator_py.dir/rosidl_generator_py/boat_data_interfaces/msg/_gpio_data_s.c.o"

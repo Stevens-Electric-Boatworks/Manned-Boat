@@ -1,0 +1,145 @@
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(lely_motion_controller_bridge PUBLIC
+      ${canopen_interfaces_TARGETS}
+      ${sensor_msgs_TARGETS}
+      ${std_srvs_TARGETS}
+      canopen_base_driver::base_driver
+      canopen_base_driver::lely_driver_bridge
+      canopen_base_driver::lifecycle_base_driver
+      canopen_base_driver::node_canopen_base_driver
+      canopen_core::device_container
+      canopen_core::node_canopen_driver
+      canopen_core::node_canopen_master
+      canopen_proxy_driver::lifecycle_proxy_driver
+      canopen_proxy_driver::node_canopen_proxy_driver
+      canopen_proxy_driver::proxy_driver
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+      sensor_msgs::sensor_msgs_library
+    )
+
+Call Stack (most recent call first):
+  CMakeLists.txt:45 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(node_canopen_cia402_driver PUBLIC
+      ${canopen_interfaces_TARGETS}
+      ${sensor_msgs_TARGETS}
+      ${std_srvs_TARGETS}
+      canopen_base_driver::base_driver
+      canopen_base_driver::lely_driver_bridge
+      canopen_base_driver::lifecycle_base_driver
+      canopen_base_driver::node_canopen_base_driver
+      canopen_core::device_container
+      canopen_core::node_canopen_driver
+      canopen_core::node_canopen_master
+      canopen_proxy_driver::lifecycle_proxy_driver
+      canopen_proxy_driver::node_canopen_proxy_driver
+      canopen_proxy_driver::proxy_driver
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+      sensor_msgs::sensor_msgs_library
+    )
+
+Call Stack (most recent call first):
+  CMakeLists.txt:62 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(lifecycle_cia402_driver PUBLIC
+      ${canopen_interfaces_TARGETS}
+      ${sensor_msgs_TARGETS}
+      ${std_srvs_TARGETS}
+      canopen_base_driver::base_driver
+      canopen_base_driver::lely_driver_bridge
+      canopen_base_driver::lifecycle_base_driver
+      canopen_base_driver::node_canopen_base_driver
+      canopen_core::device_container
+      canopen_core::node_canopen_driver
+      canopen_core::node_canopen_master
+      canopen_proxy_driver::lifecycle_proxy_driver
+      canopen_proxy_driver::node_canopen_proxy_driver
+      canopen_proxy_driver::proxy_driver
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+      sensor_msgs::sensor_msgs_library
+    )
+
+Call Stack (most recent call first):
+  CMakeLists.txt:81 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(cia402_driver PUBLIC
+      ${canopen_interfaces_TARGETS}
+      ${sensor_msgs_TARGETS}
+      ${std_srvs_TARGETS}
+      canopen_base_driver::base_driver
+      canopen_base_driver::lely_driver_bridge
+      canopen_base_driver::lifecycle_base_driver
+      canopen_base_driver::node_canopen_base_driver
+      canopen_core::device_container
+      canopen_core::node_canopen_driver
+      canopen_core::node_canopen_master
+      canopen_proxy_driver::lifecycle_proxy_driver
+      canopen_proxy_driver::node_canopen_proxy_driver
+      canopen_proxy_driver::proxy_driver
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+      sensor_msgs::sensor_msgs_library
+    )
+
+Call Stack (most recent call first):
+  CMakeLists.txt:108 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(test_driver_component PUBLIC
+      ${canopen_interfaces_TARGETS}
+      ${sensor_msgs_TARGETS}
+      ${std_srvs_TARGETS}
+      canopen_base_driver::base_driver
+      canopen_base_driver::lely_driver_bridge
+      canopen_base_driver::lifecycle_base_driver
+      canopen_base_driver::node_canopen_base_driver
+      canopen_core::device_container
+      canopen_core::node_canopen_driver
+      canopen_core::node_canopen_master
+      canopen_proxy_driver::lifecycle_proxy_driver
+      canopen_proxy_driver::node_canopen_proxy_driver
+      canopen_proxy_driver::proxy_driver
+      rclcpp::rclcpp
+      rclcpp_components::component
+      rclcpp_components::component_manager
+      rclcpp_lifecycle::rclcpp_lifecycle
+      sensor_msgs::sensor_msgs_library
+    )
+
+Call Stack (most recent call first):
+  test/CMakeLists.txt:4 (ament_target_dependencies)
+
+[0m

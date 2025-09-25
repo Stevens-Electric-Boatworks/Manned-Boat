@@ -1,0 +1,36 @@
+running egg_info
+creating ../../../build/electrical_node/electrical_node.egg-info
+writing ../../../build/electrical_node/electrical_node.egg-info/PKG-INFO
+writing dependency_links to ../../../build/electrical_node/electrical_node.egg-info/dependency_links.txt
+writing entry points to ../../../build/electrical_node/electrical_node.egg-info/entry_points.txt
+writing requirements to ../../../build/electrical_node/electrical_node.egg-info/requires.txt
+writing top-level names to ../../../build/electrical_node/electrical_node.egg-info/top_level.txt
+writing manifest file '../../../build/electrical_node/electrical_node.egg-info/SOURCES.txt'
+reading manifest file '../../../build/electrical_node/electrical_node.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../../build/electrical_node/electrical_node.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ishaan/eboat_src/build/electrical_node/build
+creating /home/ishaan/eboat_src/build/electrical_node/build/lib
+creating /home/ishaan/eboat_src/build/electrical_node/build/lib/electrical_node
+copying electrical_node/electrical_node_test.py -> /home/ishaan/eboat_src/build/electrical_node/build/lib/electrical_node
+copying electrical_node/__init__.py -> /home/ishaan/eboat_src/build/electrical_node/build/lib/electrical_node
+running install
+running install_lib
+creating /home/ishaan/eboat_src/install/electrical_node/lib/python3.12/site-packages/electrical_node
+copying /home/ishaan/eboat_src/build/electrical_node/build/lib/electrical_node/electrical_node_test.py -> /home/ishaan/eboat_src/install/electrical_node/lib/python3.12/site-packages/electrical_node
+copying /home/ishaan/eboat_src/build/electrical_node/build/lib/electrical_node/__init__.py -> /home/ishaan/eboat_src/install/electrical_node/lib/python3.12/site-packages/electrical_node
+byte-compiling /home/ishaan/eboat_src/install/electrical_node/lib/python3.12/site-packages/electrical_node/electrical_node_test.py to electrical_node_test.cpython-312.pyc
+byte-compiling /home/ishaan/eboat_src/install/electrical_node/lib/python3.12/site-packages/electrical_node/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/ishaan/eboat_src/install/electrical_node/share/ament_index
+creating /home/ishaan/eboat_src/install/electrical_node/share/ament_index/resource_index
+creating /home/ishaan/eboat_src/install/electrical_node/share/ament_index/resource_index/packages
+copying resource/electrical_node -> /home/ishaan/eboat_src/install/electrical_node/share/ament_index/resource_index/packages
+copying package.xml -> /home/ishaan/eboat_src/install/electrical_node/share/electrical_node
+running install_egg_info
+Copying ../../../build/electrical_node/electrical_node.egg-info to /home/ishaan/eboat_src/install/electrical_node/lib/python3.12/site-packages/electrical_node-0.0.0-py3.12.egg-info
+running install_scripts
+Installing test script to /home/ishaan/eboat_src/install/electrical_node/lib/electrical_node
+writing list of installed files to '/home/ishaan/eboat_src/build/electrical_node/install.log'

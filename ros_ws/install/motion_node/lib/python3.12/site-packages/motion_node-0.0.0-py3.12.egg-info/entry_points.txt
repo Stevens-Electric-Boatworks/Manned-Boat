@@ -1,2 +1,0 @@
-[console_scripts]
-test = motion_node.motion_node_test:main

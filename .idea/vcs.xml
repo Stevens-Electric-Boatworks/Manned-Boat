@@ -4,5 +4,7 @@
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ros_ws/build/lely_core_libraries/upstream" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ros_ws/src/ros2_canopen" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ros_ws/src/rosboard" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ros_ws/src/rosshow" vcs="Git" />
   </component>
 </project>

@@ -199,7 +199,8 @@ class ShoreDataCollector(Node):
             "file": msg.file,
             "function": msg.function,
             "line": msg.line,
-            "level": msg.level
+            "level": msg.level,
+            "name": msg.name
         }
         self.logs.append(logged_data)
 

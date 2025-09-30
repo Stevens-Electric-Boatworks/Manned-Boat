@@ -16,13 +16,16 @@ class MotorNode(Node):
         self._logger.info("Sending test data at a period of " + str(timer_period))
         self.sensor_timer = self.create_timer(timer_period, self.timer_callback)
         self.alarm_timer = self.create_timer(15, self.alarm_callback)
+        self.propulsion_angle = 0;
 
     def timer_callback(self):
         msg = MotorData()
         msg.rpm_a = random.randint(800, 1800)
         msg.rpm_b = random.randint(800, 1800)
         # Make sure it is a float, or else you will get an eror without a stacktrace
-        msg.propulsion_angle = float(random.randint(-90, 90))
+        self.propulsion_angle += float(random.randint(-1, 1))
+        msg.propulsion_angle = self.propulsion_angle
+
 
         self.sensor_publisher_.publish(msg)
     

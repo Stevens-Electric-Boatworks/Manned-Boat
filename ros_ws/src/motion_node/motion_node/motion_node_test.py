@@ -15,19 +15,36 @@ class MotionNode(Node):
         self._logger.info("Sending test data at a period of " + str(timer_period))
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.alarm_timer = self.create_timer(8, self.alarm_callback)
+        self.heading = 0
+        self.speed = 15
+        self.gps_lat = 0
+        self.gps_long = 0
+        self.gps_alt = 0
+        self.imu_x = 0
+        self.imu_y = 0
+        self.imu_z = 0
 
 
     def timer_callback(self):
         msg = MotionData()
-        msg.heading = random.randint(0, 360)
-        msg.speed = 0 + random.randint(0, 30)
-        msg.gps_lat = -8 + random.random() * 16
-        msg.gps_long = -8 + random.random() * 16
-        msg.gps_alt = -8 + random.random() * 16
+        self.heading += random.randint(-3, 3)
+        self.speed += random.randint(-1, 1)
+        self.gps_lat += abs(random.randint(-1, 1))
+        self.gps_long += abs(random.randint(-1, 1))
+        self.gps_alt += abs(random.randint(-1, 1))
 
-        msg.imu_x = -90 + random.random() * 180
-        msg.imu_y = -90 + random.random() * 180
-        msg.imu_z = -90 + random.random() * 180
+        self.imu_x = random.randint(-1, 1) % 360
+        self.imu_y = random.randint(-1, 1) % 360
+        self.imu_z = random.randint(-1, 1) % 360
+
+        msg.heading = self.heading
+        msg.speed = abs(self.speed)
+        msg.gps_lat = float(self.gps_lat)
+        msg.gps_long = float(self.gps_long)
+        msg.gps_alt = float(self.gps_alt)
+        msg.imu_x = float(self.imu_x)
+        msg.imu_y = float(self.imu_y)
+        msg.imu_z = float(self.imu_z)
 
         self.publisher_.publish(msg)
 

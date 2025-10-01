@@ -2,14 +2,23 @@ from threading import Thread
 
 import canopen
 
-import serial
 import math
 import time
+
+from rclpy.impl.rcutils_logger import RcutilsLogger
 
 from boat_data_interfaces.msg import CANMotorData
 
 
 # GatherData.py
+
+
+# NEED to install pip package "canlib"
+# sudo pip install canlib --break-system-packages
+# https://pycanlib.readthedocs.io/en/v1.31.107/canlib.html#installation
+# https://kvaser.com/canlib-webhelp/section_install_linux.htm
+
+# Instructions coming soon AFTER we run them on the Pi to verify what we have done
 
 # This program is for reading serial data from the arduino
 # Any new sensor or data being read, must be added to the dictionaries below.
@@ -18,7 +27,6 @@ from boat_data_interfaces.msg import CANMotorData
 
 
 # They are using serial?
-
 # == Ishaan
 
 # ser = serial.Serial('/dev/ttyACM0', 115200, timeout=1)
@@ -76,14 +84,20 @@ from boat_data_interfaces.msg import CANMotorData
 
 
 class OldCanProgram:
-    def __init__(self):
+    def __init__(self, logger:RcutilsLogger, dummy_efp, publisher):
+        self.sdo = None
         self.start_time = None
         self.can_thread = None
         self.node = None
         self.publisher = None
-
-    def setup_can(self, logger, dummy_efp, publisher):
+        self.logger = logger
+        self.dummy_efp = dummy_efp
         self.publisher = publisher
+
+
+    def setup_can(self):
+        self.logger.info("Setting up the old can...")
+
         # Start with creating a new network representing one CAN bus
         network = canopen.Network()
 
@@ -91,33 +105,42 @@ class OldCanProgram:
         network.connect(channel='0', bustype='kvaser')
 
         # Subscribe to messages
-        network.subscribe(0, logger)
+        network.subscribe(0, self.on_msg_receive)
 
         # You can create a node with a known node-ID
         node_id = 6  # Replace with your node ID
-        self.node = canopen.BaseNode402(node_id, canopen.import_od(dummy_efp)
+        self.logger.info("Using a dummy EDS file at \"" + self.dummy_efp + "\".")
+        self.node = canopen.BaseNode402(node_id, canopen.import_od(self.dummy_efp)
                                         )  # Use a dummy EDS here
         network.add_node(self.node)
 
         self.can_thread = Thread(
-            target=self.read_can_messages, args=publisher, daemon=True)
+            target=self.read_can_messages, args=self.publisher, daemon=True)
         self.can_thread.start()
 
     def read_can_messages(self, publisher):
         # Start with creating a new network representing one CAN bus
         self.start_time = round(time.time() * 1000)
-        print("finished waiting: ", self.trial_num)
-        while self.running_event.is_set():
+        # print("finished waiting: ", self.trial_num)
+        while True:
             try:
-                self.get_sdo_obj(self, publisher)
+                self.get_sdo_obj(publisher)
                 time.sleep(0.1)
             except Exception as e:
                 time.sleep(0.1)
-                print(f"Error reading CAN message: {e}")
+                self.logger.error(f"Error reading CAN message: {e}")
+
+
+    def on_msg_receive(self, node_id:int, data:bytearray, subindex:float):
+        self.logger.info(f"""The following message was received from the CAN Bus.
+                    Node_ID: %s
+                    Data: %s
+                    SubIndex: %s
+                    """.format(str(node_id), str(data), str(subindex)))
+        pass
 
     # The SDO index (or address) is found in the parameters.csv file.
     def read_and_log_sdo(self, index, subindex):
-
         try:
             value = self.sdo[index][subindex].raw
             return value
@@ -129,11 +152,11 @@ class OldCanProgram:
     # There is a wide list of sensor data that can be read, but these are the useful ones.
     # Feel free to browse the parameter list which is in testing/parameters.csv
     def get_sdo_obj(self, publisher) -> dict:
-        voltage = self.read_and_log_sdo(self.node, 0x2030, 2)  # Volts
-        throttle_mv = self.read_and_log_sdo(self.node, 0x2013, 1)  # mV
-        rpm = self.read_and_log_sdo(self.node, 0x2001, 2)  # rpm
-        current = self.read_and_log_sdo(self.node, 0x2073, 1)  # Arms
-        temperature = self.read_and_log_sdo(self.node, 0x2040, 2)  # deg C
+        voltage = self.read_and_log_sdo( 0x2030, 2)  # Volts
+        throttle_mv = self.read_and_log_sdo( 0x2013, 1)  # mV
+        rpm = self.read_and_log_sdo( 0x2001, 2)  # rpm
+        current = self.read_and_log_sdo( 0x2073, 1)  # Arms
+        temperature = self.read_and_log_sdo( 0x2040, 2)  # deg C
 
         throttle_percent = throttle_mv / 2800  # %
 
@@ -152,6 +175,7 @@ class OldCanProgram:
         msg.current = current
         msg.power = power
 
+        self.logger.info("The published message is: " + str(msg))
         publisher.publish(msg)
 
         sdo_data = {

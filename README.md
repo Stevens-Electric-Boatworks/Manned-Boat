@@ -5,7 +5,8 @@ This folder holds the information for the 2025 Control System for Stevens Electr
 
 This is still very much a WIP, and everything is subject to change.
 
-The current codebase is stored at ~
+The current codebase is stored at `ros_ws/`
+ * For more information about the ROS2 specfic components of this project, check out the documentation in there (WIP)
 
 
 ## FAQ

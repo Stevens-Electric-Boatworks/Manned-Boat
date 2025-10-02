@@ -1,9 +1,0 @@
-[submodule "ros_ws/src/ros2_canopen"]
-	path = ros_ws/src/ros2_canopen
-	url = https://github.com/ros-industrial/ros2_canopen.git
-[submodule "ros_ws/src/rosshow"]
-	path = ros_ws/src/rosshow
-	url = https://github.com/dheera/rosshow/
-[submodule "ros_ws/src/rosboard"]
-	path = ros_ws/src/rosboard
-	url = https://github.com/dheera/rosboard

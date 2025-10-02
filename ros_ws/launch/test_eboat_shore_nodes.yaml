@@ -6,10 +6,7 @@ launch:
       exec: "shore"
       name: "shore_comms"
       
-  - node:
-      pkg: "alarms_watchdog_node"
-      exec: "main"
-      name: "alarms_watchdog"
-      param:
-          - name: "faults_file"
-            value: "~/eboat_src/data/FAULTS.csv"
+        #  - node:
+        #pkg: "alarms_watchdog_node"
+        # exec: "main"
+        #name: "alarms_watchdog"

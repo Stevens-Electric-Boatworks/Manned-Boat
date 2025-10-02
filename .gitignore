@@ -9,6 +9,8 @@ ros_ws/devel/
 ros_ws/log/
 ros_ws/install/
 ros_ws/build/
+ros_ws/install/
+ros_ws/log/
 ros_ws/bin/
 ros_ws/lib/
 ros_ws/msg_gen/

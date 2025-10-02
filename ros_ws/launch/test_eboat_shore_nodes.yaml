@@ -6,7 +6,7 @@ launch:
       exec: "shore"
       name: "shore_comms"
       
-  - node:
-      pkg: "alarms_watchdog_node"
-      exec: "main"
-      name: "alarms_watchdog"
+        #  - node:
+        #pkg: "alarms_watchdog_node"
+        # exec: "main"
+        #name: "alarms_watchdog"

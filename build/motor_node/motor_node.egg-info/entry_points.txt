@@ -1,2 +1,0 @@
-[console_scripts]
-test = motor_node.motor_node_test:main

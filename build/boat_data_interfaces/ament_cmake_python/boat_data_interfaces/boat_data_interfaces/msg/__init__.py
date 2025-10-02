@@ -1,4 +1,0 @@
-from boat_data_interfaces.msg._electrical_data import ElectricalData  # noqa: F401
-from boat_data_interfaces.msg._gpio_data import GPIOData  # noqa: F401
-from boat_data_interfaces.msg._motion_data import MotionData  # noqa: F401
-from boat_data_interfaces.msg._motor_data import MotorData  # noqa: F401

@@ -1,2 +1,0 @@
-[console_scripts]
-main = alarms_watchdog_node.watchdog_node:main

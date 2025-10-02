@@ -1,2 +1,0 @@
-[console_scripts]
-test = GPIO_Test.gpio_node:main

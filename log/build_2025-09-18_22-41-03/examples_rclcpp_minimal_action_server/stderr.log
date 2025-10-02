@@ -1,9 +1,0 @@
-gmake[2]: *** wait: No child processes.  Stop.
-gmake[2]: *** Waiting for unfinished jobs....
-gmake[2]: *** wait: No child processes.  Stop.
-gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/action_server_not_composable.dir/all] Error 2
-gmake[2]: *** wait: No child processes.  Stop.
-gmake[2]: *** Waiting for unfinished jobs....
-gmake[2]: *** wait: No child processes.  Stop.
-gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/action_server_member_functions.dir/all] Error 2
-gmake: *** [Makefile:146: all] Interrupt

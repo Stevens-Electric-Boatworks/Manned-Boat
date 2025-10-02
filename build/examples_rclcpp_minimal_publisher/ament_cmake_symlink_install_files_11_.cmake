@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_files("/home/ishaan/eboat_src/ros_ws/src/examples/rclcpp/topics/minimal_publisher" FILES "/home/ishaan/eboat_src/build/examples_rclcpp_minimal_publisher/ament_cmake_index/share/ament_index/resource_index/packages/examples_rclcpp_minimal_publisher" "DESTINATION" "share/ament_index/resource_index/packages")

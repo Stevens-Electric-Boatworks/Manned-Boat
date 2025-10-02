@@ -1,5 +1,0 @@
-gmake[2]: *** [CMakeFiles/action_server_not_composable.dir/build.make:76: CMakeFiles/action_server_not_composable.dir/not_composable.cpp.o] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/action_server_not_composable.dir/all] Interrupt
-gmake[2]: *** [CMakeFiles/action_server_member_functions.dir/build.make:76: CMakeFiles/action_server_member_functions.dir/member_functions.cpp.o] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/action_server_member_functions.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

@@ -1,6 +1,9 @@
 # Avoid internal team documents being pushed to github
 
 README_IF_ON_TEAMS.md
+build/
+install/
+log/
 
 ros_ws/.vscode/browse.vc.db
 

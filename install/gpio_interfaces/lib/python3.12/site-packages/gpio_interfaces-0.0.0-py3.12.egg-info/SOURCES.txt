@@ -1,6 +1,0 @@
-setup.py
-gpio_interfaces/__init__.py
-gpio_interfaces.egg-info/PKG-INFO
-gpio_interfaces.egg-info/SOURCES.txt
-gpio_interfaces.egg-info/dependency_links.txt
-gpio_interfaces.egg-info/top_level.txt

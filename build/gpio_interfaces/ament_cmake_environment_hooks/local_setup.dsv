@@ -1,4 +1,0 @@
-source;share/gpio_interfaces/environment/ament_prefix_path.sh
-source;share/gpio_interfaces/environment/library_path.sh
-source;share/gpio_interfaces/environment/path.sh
-source;share/gpio_interfaces/environment/pythonpath.sh

@@ -1,0 +1,15 @@
+# https://ros-industrial.github.io/ros2_canopen/manual/rolling/user-guide/how-to-create-a-configuration.html
+options:
+  dcf_path: install/{package_name}/share/{package_name}/config/{bus_config_name}
+
+# The master node is the Raspberry PI, since it is controlling everything
+master:
+  node_id: 1
+  package: canopen_core
+  driver: ros2_canopen::MasterDriver
+
+nodes:
+  - motor_left:
+    node_id: 2
+    package: canopen_core
+    driver: ros2_canopen::SlaveDriver

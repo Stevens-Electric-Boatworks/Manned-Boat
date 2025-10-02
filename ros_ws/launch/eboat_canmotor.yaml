@@ -1,0 +1,23 @@
+%YAML 1.2
+---
+launch:
+  - node:
+      pkg: "shore_comms"
+      exec: "shore"
+      name: "shore_comms"
+
+  - node:
+      pkg: "alarms_watchdog_node"
+      exec: "main"
+      name: "alarms_watchdog"
+      param:
+          - name: "faults_file"
+            value: "~/eboat_src/data/FAULTS.csv"
+
+  - node:
+      pkg: "motor_node"
+      exec: "can_test"
+      name: "can_motor_test"
+      param:
+          - name: "dummy_epf"
+            value: "~/eboat_src/data/dummy.epf"

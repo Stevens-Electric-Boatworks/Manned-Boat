@@ -9,6 +9,8 @@ from rclpy.executors import ExternalShutdownException
 import rclpy.logging
 from rclpy.node import Node
 
+from boat_data_interfaces.msg import ElectricalData, MotionData, MotorData, GPIOData, BoatAlarm, \
+    CANMotorData  # type: ignore | caused by ide unable to find msg (??)
 from rcl_interfaces.msg import Log
 from boat_data_interfaces.msg import ElectricalData, MotionData, MotorData, GPIOData, BoatAlarm  # type: ignore | caused by ide unable to find msg (??)
 
@@ -42,7 +44,7 @@ class ShoreDataCollector(Node):
         self.create_sub(Log, "/rosout", self.logs_collector)
         self.create_sub(ElectricalData, "/electrical/all_sensors", self.electrical_collector)
         self.create_sub(MotionData, "/motion/all_sensors", self.motion_collector)
-        self.create_sub(MotorData, "/motors/all_sensors", self.motor_collector)
+        self.create_sub(CANMotorData, "/motors/can_motor_data", self.motor_collector)
         self.wss_watchdog = self.create_timer(5, self.watchdog_callback)
 
         threading.Thread(target=self.run_asyncio_loop, daemon=True).start()
@@ -184,11 +186,17 @@ class ShoreDataCollector(Node):
         self.add_data("imu_z", msg.imu_z)
         self.add_data("speed", msg.speed)
 
-    def motor_collector(self, msg:MotorData):
-        self.add_data("rpm_a", msg.rpm_a)
-        self.add_data("rpm_b", msg.rpm_b)
-        self.add_data("propulsion_angle", msg.propulsion_angle)
-    
+    def motor_collector(self, msg:CANMotorData):
+        self.add_data("voltage", msg.voltage)
+        self.add_data("throttle_mv", msg.throttle_mv)
+        self.add_data("throttle_percentage", msg.throttle_mv)
+        self.add_data("rpm", msg.rpm)
+        self.add_data("torque", msg.torque)
+        self.add_data("motor_temp", msg.motor_temp)
+        self.add_data("current", msg.current)
+        self.add_data("power", msg.power)
+
+
     def alarms_collector(self, msg:BoatAlarm):
         self.add_alarm(msg.error_code, get_time_in_ms(msg.timestamp))
 

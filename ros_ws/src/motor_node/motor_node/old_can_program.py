@@ -9,6 +9,8 @@ from rclpy.impl.rcutils_logger import RcutilsLogger
 
 from boat_data_interfaces.msg import CANMotorData
 
+import traceback
+
 
 # GatherData.py
 
@@ -102,33 +104,32 @@ class OldCanProgram:
         network = canopen.Network()
 
         # Connect to the CAN bus
-        network.connect(channel='0', bustype='kvaser')
-
+        network.connect(channel='can0', bustype='socketcan')
+        self.logger.info("Connected to SocketCAN")
         # Subscribe to messages
         network.subscribe(0, self.on_msg_receive)
 
         # You can create a node with a known node-ID
         node_id = 6  # Replace with your node ID
         self.logger.info("Using a dummy EDS file at \"" + self.dummy_efp + "\".")
-        self.node = canopen.BaseNode402(node_id, canopen.import_od(self.dummy_efp)
-                                        )  # Use a dummy EDS here
+        self.node = canopen.BaseNode402(node_id, canopen.import_od(self.dummy_efp))  # Use a dummy EDS here
         network.add_node(self.node)
 
         self.can_thread = Thread(
-            target=self.read_can_messages, args=self.publisher, daemon=True)
+            target=self.read_can_messages, args=[self.publisher], daemon=False)
         self.can_thread.start()
 
     def read_can_messages(self, publisher):
         # Start with creating a new network representing one CAN bus
-        self.start_time = round(time.time() * 1000)
         # print("finished waiting: ", self.trial_num)
         while True:
             try:
                 self.get_sdo_obj(publisher)
-                time.sleep(0.1)
+                time.sleep(0.05)
             except Exception as e:
-                time.sleep(0.1)
+                time.sleep(0.05)
                 self.logger.error(f"Error reading CAN message: {e}")
+                self.logger.error(str(traceback.format_exc()))
 
 
     def on_msg_receive(self, node_id:int, data:bytearray, subindex:float):
@@ -142,7 +143,7 @@ class OldCanProgram:
     # The SDO index (or address) is found in the parameters.csv file.
     def read_and_log_sdo(self, index, subindex):
         try:
-            value = self.sdo[index][subindex].raw
+            value = self.node.sdo[index][subindex].raw
             return value
         except Exception as e:
             print(f"Error reading SDO [{hex(index)}:{subindex}]: {e}")
@@ -166,16 +167,15 @@ class OldCanProgram:
         power = (torque * rpm) * math.pi / 30000  # kW
 
         msg = CANMotorData()
-        msg.voltage = voltage
-        msg.throttle_mv = throttle_mv
-        msg.throttle_percentage = throttle_percent
-        msg.rpm = rpm
-        msg.torque = torque
-        msg.motor_temp = temperature
-        msg.current = current
-        msg.power = power
+        msg.voltage = int(voltage)
+        msg.throttle_mv = int(throttle_mv)
+        msg.throttle_percentage = int(throttle_percent)
+        msg.rpm = int(rpm)
+        msg.torque = 0
+        msg.motor_temp = int(temperature)
+        msg.current = int(current)
+        msg.power = int(power)
 
-        self.logger.info("The published message is: " + str(msg))
         publisher.publish(msg)
 
         sdo_data = {

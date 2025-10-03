@@ -17,7 +17,7 @@ class MotorNode(Node):
         self.can_motor_publisher_ = self.create_publisher(CANMotorData, '/motors/can_motor_data', 10)
         self.alarm_publisher_ = self.create_publisher(BoatAlarm, '/all_alarms', 10)
         description = ParameterDescriptor(description='Defines where to find the exact file the dummy epf data is')
-        self.declare_parameter('dummy_epf', '/data/dummy.epf', description)
+        self.declare_parameter('dummy_epf', '~/eboat_src/data/dummy.epf', description)
 
         file_path = self.get_parameter('dummy_epf').get_parameter_value().string_value
         old_can = old_can_program.OldCanProgram(self._logger, os.path.expanduser(file_path), self.can_motor_publisher_)

@@ -20,7 +20,7 @@ class MotorNode(Node):
         self.declare_parameter('dummy_epf', '~/eboat_src/data/dummy.epf', description)
 
         file_path = self.get_parameter('dummy_epf').get_parameter_value().string_value
-        old_can = old_can_program.OldCanProgram(self._logger, os.path.expanduser(file_path), self.can_motor_publisher_)
+        old_can = old_can_program.OldCanProgram(self._logger, os.path.expanduser(file_path), self.can_motor_publisher_, self.context.ok)
         old_can.setup_can()
 
 

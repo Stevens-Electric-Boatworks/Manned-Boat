@@ -86,7 +86,7 @@ import traceback
 
 
 class OldCanProgram:
-    def __init__(self, logger:RcutilsLogger, dummy_efp, publisher):
+    def __init__(self, logger:RcutilsLogger, dummy_efp, publisher, is_node_ok):
         self.sdo = None
         self.start_time = None
         self.can_thread = None
@@ -95,11 +95,12 @@ class OldCanProgram:
         self.logger = logger
         self.dummy_efp = dummy_efp
         self.publisher = publisher
+        self.is_node_ok = is_node_ok
 
 
     def setup_can(self):
         self.logger.info("Setting up the old can...")
-
+        self.logger.warning("The torque and throttle values are not real.")
         # Start with creating a new network representing one CAN bus
         network = canopen.Network()
 
@@ -120,14 +121,15 @@ class OldCanProgram:
         self.can_thread.start()
 
     def read_can_messages(self, publisher):
-        # Start with creating a new network representing one CAN bus
-        # print("finished waiting: ", self.trial_num)
         while True:
             try:
-                self.get_sdo_obj(publisher)
+                if not self.is_node_ok:
+                    self.logger.info("Shutting down the CAN Motor reader thread")
+                    return
+                self.publish_sdo_data(publisher)
                 time.sleep(0.3)
             except Exception as e:
-                time.sleep(0.3)
+                time.sleep(0.8)
                 self.logger.error(f"Error reading CAN message: {e}")
                 self.logger.error(str(traceback.format_exc()))
 
@@ -152,7 +154,7 @@ class OldCanProgram:
     # These are SDOs retrieved from the controller via CANbus using above function
     # There is a wide list of sensor data that can be read, but these are the useful ones.
     # Feel free to browse the parameter list which is in testing/parameters.csv
-    def get_sdo_obj(self, publisher) -> dict:
+    def publish_sdo_data(self, publisher) -> dict:
         voltage = self.read_and_log_sdo( 0x2030, 2)  # Volts
         throttle_mv = 0 #self.read_and_log_sdo( 0x2013, 1)  # mV
         rpm = self.read_and_log_sdo( 0x2001, 2)  # rpm
@@ -171,21 +173,9 @@ class OldCanProgram:
         msg.throttle_mv = int(throttle_mv)
         msg.throttle_percentage = int(throttle_percent)
         msg.rpm = int(rpm)
-        msg.torque = 0
+        msg.torque = -1
         msg.motor_temp = int(temperature)
         msg.current = int(current)
         msg.power = int(power)
 
         publisher.publish(msg)
-
-        sdo_data = {
-            'voltage': voltage,
-            'throttle_mv': throttle_mv,
-            'throttle_percentage': throttle_percent,
-            'RPM': rpm,
-            'torque': torque,
-            'motor_temp': temperature,
-            'current': current,
-            'power': power
-        }
-        return sdo_data

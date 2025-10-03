@@ -116,7 +116,7 @@ class OldCanProgram:
         network.add_node(self.node)
 
         self.can_thread = Thread(
-            target=self.read_can_messages, args=[self.publisher], daemon=False)
+            target=self.read_can_messages, args=[self.publisher], daemon=True)
         self.can_thread.start()
 
     def read_can_messages(self, publisher):
@@ -125,9 +125,9 @@ class OldCanProgram:
         while True:
             try:
                 self.get_sdo_obj(publisher)
-                time.sleep(0.05)
+                time.sleep(0.3)
             except Exception as e:
-                time.sleep(0.05)
+                time.sleep(0.3)
                 self.logger.error(f"Error reading CAN message: {e}")
                 self.logger.error(str(traceback.format_exc()))
 
@@ -146,7 +146,7 @@ class OldCanProgram:
             value = self.node.sdo[index][subindex].raw
             return value
         except Exception as e:
-            print(f"Error reading SDO [{hex(index)}:{subindex}]: {e}")
+            self.logger.error(f"Error reading SDO [{hex(index)}:{subindex}]: {e}")
             return 0
 
     # These are SDOs retrieved from the controller via CANbus using above function
@@ -154,7 +154,7 @@ class OldCanProgram:
     # Feel free to browse the parameter list which is in testing/parameters.csv
     def get_sdo_obj(self, publisher) -> dict:
         voltage = self.read_and_log_sdo( 0x2030, 2)  # Volts
-        throttle_mv = self.read_and_log_sdo( 0x2013, 1)  # mV
+        throttle_mv = 0 #self.read_and_log_sdo( 0x2013, 1)  # mV
         rpm = self.read_and_log_sdo( 0x2001, 2)  # rpm
         current = self.read_and_log_sdo( 0x2073, 1)  # Arms
         temperature = self.read_and_log_sdo( 0x2040, 2)  # deg C

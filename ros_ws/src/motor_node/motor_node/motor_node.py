@@ -13,7 +13,7 @@ class MotorNode(Node):
     def __init__(self):
         super().__init__('motor_node')
         self._logger.warn("This node is using the code that was developed for the 2023 Boat. We should migrate to using ros2_canopen...")
-        self.sensor_publisher_ = self.create_publisher(MotorData, '/motors/all_sensors', 10)
+        # self.sensor_publisher_ = self.create_publisher(MotorData, '/motors/all_sensors', 10)
         self.can_motor_publisher_ = self.create_publisher(CANMotorData, '/motors/can_motor_data', 10)
         self.alarm_publisher_ = self.create_publisher(BoatAlarm, '/all_alarms', 10)
         description = ParameterDescriptor(description='Defines where to find the exact file the dummy epf data is')

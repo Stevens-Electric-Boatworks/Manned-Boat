@@ -2,6 +2,10 @@
 
 README_IF_ON_TEAMS.md
 
+log/
+install/
+build/
+
 ros_ws/.vscode/browse.vc.db
 
 ros_ws/devel/

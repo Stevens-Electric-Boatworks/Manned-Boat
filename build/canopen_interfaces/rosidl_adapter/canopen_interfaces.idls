@@ -1,9 +1,0 @@
-/home/ishaan/eboat_src/build/canopen_interfaces/rosidl_adapter/canopen_interfaces:srv/COHeartbeatID.idl
-/home/ishaan/eboat_src/build/canopen_interfaces/rosidl_adapter/canopen_interfaces:srv/CONmtID.idl
-/home/ishaan/eboat_src/build/canopen_interfaces/rosidl_adapter/canopen_interfaces:srv/CORead.idl
-/home/ishaan/eboat_src/build/canopen_interfaces/rosidl_adapter/canopen_interfaces:srv/COReadID.idl
-/home/ishaan/eboat_src/build/canopen_interfaces/rosidl_adapter/canopen_interfaces:srv/COWrite.idl
-/home/ishaan/eboat_src/build/canopen_interfaces/rosidl_adapter/canopen_interfaces:srv/COWriteID.idl
-/home/ishaan/eboat_src/build/canopen_interfaces/rosidl_adapter/canopen_interfaces:srv/COTargetDouble.idl
-/home/ishaan/eboat_src/build/canopen_interfaces/rosidl_adapter/canopen_interfaces:srv/CONode.idl
-/home/ishaan/eboat_src/build/canopen_interfaces/rosidl_adapter/canopen_interfaces:msg/COData.idl

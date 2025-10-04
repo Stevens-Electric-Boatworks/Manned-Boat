@@ -4,7 +4,7 @@ import rclpy
 from rclpy.node import Node
 from rclpy.executors import ExternalShutdownException
 
-from boat_data_interfaces.smooth_random import SmoothRandom
+from boat_common_libs.smooth_random import SmoothRandom
 from boat_data_interfaces.msg import CANMotorData
 
 

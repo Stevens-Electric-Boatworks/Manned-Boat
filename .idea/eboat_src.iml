@@ -17,6 +17,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ros_ws/install/canopen_interfaces/lib/python3.12/site-packages" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ros_ws/install/canopen_utils/lib/python3.12/site-packages" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ros_ws/install/lely_core_libraries/lib/python3.12/site-packages" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ros_ws/install/boat_common_libs/lib/python3.12/site-packages" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
       <excludeFolder url="file://$MODULE_DIR$/install" />

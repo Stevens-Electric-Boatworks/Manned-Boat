@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>motor_node</name>
+  <name>boat_common_libs</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
   <maintainer email="68785503+EmeraldWither@users.noreply.github.com">EmeraldWither</maintainer>
@@ -12,10 +12,7 @@
   <test_depend>ament_pep257</test_depend>
   <test_depend>ament_xmllint</test_depend>
   <test_depend>python3-pytest</test_depend>
-  <exec_depend>ros2launch</exec_depend>
 
-
-  <exec_depend>boat_common_libs</exec_depend>
   <export>
     <build_type>ament_python</build_type>
   </export>

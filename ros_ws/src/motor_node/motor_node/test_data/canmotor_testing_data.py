@@ -11,15 +11,16 @@ from boat_data_interfaces.msg import CANMotorData
 class CANMotorTestingDataNode(Node):
     def __init__(self):
         super().__init__("motor_node_testing_data")
+        self._logger.info("Sending test data for motors/can_motor_data")
         self.randoms = {
             "voltage": SmoothRandom(180, 1.0, 100, 200),  # int8, ~200 V system
-            "throttle_mv": SmoothRandom(0, 20, 0, 5000),  # int16, 0–5V sensor (mV)
-            "throttle_percentage": SmoothRandom(0, 1.0, 0, 100),  # int8, %
-            "rpm": SmoothRandom(0, 100, 0, 12000),  # int16, up to ~12k RPM
+            "throttle_mv": SmoothRandom(0, 20, 0, 5000),  # int16, mV
+            "throttle_percentage": SmoothRandom(0, 3.0, 0, 100),  # int8, %
+            "rpm": SmoothRandom(0, 400, -1200, 1800),  # int16, up to ~12k RPM
             "torque": SmoothRandom(0, 2.0, 0, 500),  # int16, Nm (scaled higher)
             "motor_temp": SmoothRandom(40, 0.5, 20, 150),  # int8, °C (idle warm to overheated)
-            "current": SmoothRandom(0, 2.0, 0, 300),  # int8, A
-            "power": SmoothRandom(0, 200, 0, 60000),  # int16, up to ~60 kW
+            "current": SmoothRandom(0, 5.0, 0, 300),  # int8, A
+            "power": SmoothRandom(0, 60, 0, 6000),  # int16, up to ~6 kW
         }
         self.can_motor_publisher_ = self.create_publisher(CANMotorData, '/motors/can_motor_data', 10)
         self.create_timer(0.3, self.publish_test_data)

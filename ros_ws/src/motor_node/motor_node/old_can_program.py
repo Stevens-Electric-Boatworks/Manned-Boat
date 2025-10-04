@@ -5,11 +5,14 @@ import canopen
 import math
 import time
 
+from can import CanError
 from rclpy.impl.rcutils_logger import RcutilsLogger
 
+from boat_common_libs.alarms import Alarm
 from boat_data_interfaces.msg import CANMotorData
 
 import traceback
+import subprocess
 
 
 # GatherData.py
@@ -84,9 +87,21 @@ import traceback
 #                 'heading': 0
 #                 }
 
+def is_can_interface_up(interface: str = "can0") -> bool:
+    try:
+        result = subprocess.run(
+            ["ip", "link", "show", interface],
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        # Example output line: "3: can0: <NOARP,UP,LOWER_UP> mtu 16 ..."
+        return "state UP" in result.stdout
+    except subprocess.CalledProcessError:
+        return False
 
 class OldCanProgram:
-    def __init__(self, logger:RcutilsLogger, dummy_efp, publisher, is_node_ok):
+    def __init__(self, logger:RcutilsLogger, dummy_efp, publisher, is_node_ok, declare_alarm):
         self.sdo = None
         self.start_time = None
         self.can_thread = None
@@ -96,16 +111,31 @@ class OldCanProgram:
         self.dummy_efp = dummy_efp
         self.publisher = publisher
         self.is_node_ok = is_node_ok
+        self.declare_alarm = declare_alarm
 
 
     def setup_can(self):
+        # This is to ensure that we can publish alarms
+        time.sleep(0.5)
         self.logger.info("Setting up the old can...")
         self.logger.warning("The torque and throttle values are not real.")
+
+        #test for can0 open
+        if not is_can_interface_up():
+            self.logger.error("can0 is not up. Aborting startup!!")
+            self.declare_alarm(Alarm.CAN0_INTERFACE_NOT_UP)
+            return
+
         # Start with creating a new network representing one CAN bus
         network = canopen.Network()
 
         # Connect to the CAN bus
-        network.connect(channel='can0', bustype='socketcan')
+        try:
+            network.connect(channel='can0', bustype='socketcan')
+        except CanError:
+            self.logger.error(f"""Unable to connect to the CAN bus because of the following error: {traceback.format_exc()}""")
+            self.declare_alarm(Alarm.INVALID_CAN_PACKET_READ)
+
         self.logger.info("Connected to SocketCAN")
         # Subscribe to messages
         network.subscribe(0, self.on_msg_receive)
@@ -124,14 +154,16 @@ class OldCanProgram:
         while True:
             try:
                 if not self.is_node_ok:
-                    self.logger.info("Shutting down the CAN Motor reader thread")
+                    self.logger.info("Safely shutting down the CAN Motor reader thread")
                     return
+
                 self.publish_sdo_data(publisher)
                 time.sleep(0.3)
             except Exception as e:
                 time.sleep(0.8)
                 self.logger.error(f"Error reading CAN message: {e}")
                 self.logger.error(str(traceback.format_exc()))
+                self.declare_alarm(Alarm.INVALID_CAN_PACKET_READ)
 
 
     def on_msg_receive(self, node_id:int, data:bytearray, subindex:float):
@@ -140,7 +172,7 @@ class OldCanProgram:
                     Data: %s
                     SubIndex: %s
                     """.format(str(node_id), str(data), str(subindex)))
-        pass
+
 
     # The SDO index (or address) is found in the parameters.csv file.
     def read_and_log_sdo(self, index, subindex):
@@ -149,6 +181,7 @@ class OldCanProgram:
             return value
         except Exception as e:
             self.logger.error(f"Error reading SDO [{hex(index)}:{subindex}]: {e}")
+            self.declare_alarm(Alarm.ERROR_READING_CAN_SDO)
             return 0
 
     # These are SDOs retrieved from the controller via CANbus using above function

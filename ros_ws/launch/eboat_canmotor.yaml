@@ -16,8 +16,8 @@ launch:
 
   - node:
       pkg: "motor_node"
-      exec: "can_test"
-      name: "can_motor_test"
+      exec: "motor"
+      name: "can_motor"
       param:
           - name: "dummy_epf"
             value: "~/eboat_src/data/dummy.epf"

@@ -20,6 +20,7 @@ from websockets.client import connect
 from websockets.client import WebSocketClientProtocol
 import json
 import threading
+from boat_common_libs.alarms import Alarm
 
 
 SHORE_URI = "wss://eboat.thiagoja.com/api"
@@ -39,8 +40,8 @@ class ShoreDataCollector(Node):
         self.logs = []
         self.alarms = []
 
-        self.create_sub(Log, "/rosout", self.logs_collector)
         self.alarm_publisher = self.create_publisher(BoatAlarm, "/all_alarms", 10)
+        self.create_sub(Log, "/rosout", self.logs_collector)
         self.create_sub(BoatAlarm, "/all_alarms", self.alarms_collector)
         self.create_sub(ElectricalData, "/electrical/all_sensors", self.electrical_collector)
         self.create_sub(MotionData, "/motion/all_sensors", self.motion_collector)
@@ -75,7 +76,7 @@ class ShoreDataCollector(Node):
 
     def declare_alarm(self, error_code):
         msg = BoatAlarm()
-        msg.error_code = error_code
+        msg.error_code = error_code.value
         msg.timestamp = self.get_clock().now().to_msg()
         self.alarm_publisher.publish(msg)
 
@@ -90,7 +91,7 @@ class ShoreDataCollector(Node):
                 if not self.websocket.open:
                     self._logger.error("Unable to open a connect to the shore server.")
                     self._logger.error(f"Attempted URI: {SHORE_URI}. SHUTTING DOWN...")
-                    self.declare_alarm(3) # ALARM: Shore Comms Node Shutdown
+                    self.declare_alarm(Alarm.WEBSOCKET_INITIAL_CONNECTION_FAILURE) # ALARM: Shore Comms Node Shutdown
                     self.destroy_node()
                     return
                 await self.send_data_to_shore(False)
@@ -104,29 +105,19 @@ class ShoreDataCollector(Node):
             except ConnectionClosed as e:
                 # Will retry on some kind of failure
                 self._logger.error(f"Websocket error: {e.reason}")
-                self.declare_alarm(6)
+                self.declare_alarm(Alarm.WEBSOCKET_CONNECTION_CLOSED)
                 continue
     
     def watchdog_callback(self):
         self._logger.debug("[Websocket Watchdog] running callback")
         if not hasattr(self, "websocket") or self.websocket is None:
             self._logger.warn("[Websocket Watchdog] Websocket is not opened yet...")
-            self.declare_alarm(2) # ALARM: Shore Comms Websocket failure
+            self.declare_alarm(Alarm.WEBSOCKET_IS_NOT_INITIALLY_OPENED_YET) # ALARM: Shore Comms Websocket failure
 
         elif not self.websocket.open:
             self._logger.error("[Websocket Watchdog] The shore server is not connected to the websocket.")
-            self.declare_alarm(2) # ALARM: Shore Comms Websocket failure
+            self.declare_alarm(Alarm.WEBSOCKET_NOT_OPENED) # ALARM: Shore Comms Websocket failure
 
-    
-
-    async def on_exit(self):
-        self._logger.info("Shutting down the websocket.")
-        if hasattr(self, "websocket"):
-            await self.send_data_to_shore(False)
-            await self.websocket.close()
-
-
-    
     async def send_data_to_shore(self, ignore_empty):
         if len(self.data) == 0 and ignore_empty:
             return
@@ -168,7 +159,7 @@ class ShoreDataCollector(Node):
             await self.websocket.send(json.dumps(output_data))
             await self.websocket.ensure_open()
         except ConnectionClosed or InvalidStatus:
-            self.declare_alarm(6)
+            self.declare_alarm(Alarm.WEBSOCKET_CONNECTION_CLOSED)
             # Keep logs because data wasn’t sent
             return
 
@@ -226,7 +217,6 @@ def main(args=None):
     try:
         with rclpy.init(args=args):
             minimal_subscriber = ShoreDataCollector()
-            atexit.register(minimal_subscriber.on_exit)
             rclpy.spin(minimal_subscriber)
     except (KeyboardInterrupt, ExternalShutdownException):
         pass

@@ -1,2 +1,2 @@
-uint8 error_code
+int16 error_code
 builtin_interfaces/Time timestamp

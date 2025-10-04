@@ -5,5 +5,8 @@ ID,Type,Message,Condition
 2,FAULT,Websocket Connection Closed,The websocket connection unexpectadely closed
 3,WARN,Websocket Is Not Initally Opened Yet,Websocket is still waiting to be opened
 4,FAULT,Websocket Not Opened,Websocket is reported as no longer open
-10,FAULT, ,
-11,WARN,,
+10,FAULT,CAN Motor Node Shutdown,If the motor node has to shutdown due to a fatal error.
+11,FAULT,"""can0"" Interface Not Up",If `ip link status can0` does not have `status UP`
+12,WARN,Invalid CAN Packet Read,A `canerror` was thrown by the underlying `canopen` library
+13,WARN,Error reading CAN SDO,Caused by an invalid CAN SDO
+14,FAULT,Failed CAN Network Init,Failed to initialize `canopen.Network()`

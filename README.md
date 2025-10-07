@@ -9,6 +9,11 @@ The current codebase is stored at `ros_ws/`
  * For more information about the ROS2 specfic components of this project, check out the documentation in there (WIP)
 
 
+** Current Development is happening in `pre-navy-testing`. This is currently the codebase that is being used to prepare for the Navy Event. Once the event is over, changes will be merged from that branch back onto main.
+
+** Documentation is still being written, but CAN motors are working.
+
+
 ## FAQ
 
 #### How is this different from the 2017-2024 Control System?

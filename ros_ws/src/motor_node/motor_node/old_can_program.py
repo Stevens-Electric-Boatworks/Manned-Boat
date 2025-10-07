@@ -188,7 +188,7 @@ class OldCanProgram:
     # There is a wide list of sensor data that can be read, but these are the useful ones.
     # Feel free to browse the parameter list which is in testing/parameters.csv
     def publish_sdo_data(self, publisher) -> dict:
-        voltage = self.read_and_log_sdo( 0x2030, 2)  # Volts
+        voltage = self.read_and_log_sdo( 0x2030, 2)  * 0.01 # Volts
         throttle_mv = 0 #self.read_and_log_sdo( 0x2013, 1)  # mV
         rpm = self.read_and_log_sdo( 0x2001, 2)  # rpm
         current = self.read_and_log_sdo( 0x2073, 1)  # Arms
@@ -206,7 +206,7 @@ class OldCanProgram:
         msg.throttle_mv = int(throttle_mv)
         msg.throttle_percentage = int(throttle_percent)
         msg.rpm = int(rpm)
-        msg.torque = -1
+        msg.torque = int(torque)
         msg.motor_temp = int(temperature)
         msg.current = int(current)
         msg.power = int(power)

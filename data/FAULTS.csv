@@ -4,7 +4,7 @@ ID,Type,Message,Condition
 1,FAULT,Websocket Initial Connection Failure,Unable to open a connection to the shore server
 2,FAULT,Websocket Connection Closed,The websocket connection unexpectadely closed
 3,WARN,Websocket Is Not Initally Opened Yet,Websocket is still waiting to be opened
-4,FAULT,Websocket Not Opened,Websocket is reported as no longer open
+4,FAULT,Websocket Closed,Websocket is reported as no longer open
 10,FAULT,CAN Motor Node Shutdown,If the motor node has to shutdown due to a fatal error.
 11,FAULT,"""can0"" Interface Not Up",If `ip link status can0` does not have `status UP`
 12,WARN,Invalid CAN Packet Read,A `canerror` was thrown by the underlying `canopen` library

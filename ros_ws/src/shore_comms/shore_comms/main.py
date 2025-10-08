@@ -145,7 +145,14 @@ class ShoreDataCollector(Node):
                 "type": "error"
                 }   
             }
-            await self.websocket.send(json.dumps(output_data))
+            try:
+                await self.websocket.send(json.dumps(output_data))
+                await self.websocket.ensure_open()
+            except ConnectionClosed or InvalidStatus:
+                self.declare_alarm(Alarm.WEBSOCKET_CONNECTION_CLOSED)
+                # Keep alarms because data wasn’t sent
+                return
+
         self.alarms.clear()
 
     async def send_logs_to_shore(self):

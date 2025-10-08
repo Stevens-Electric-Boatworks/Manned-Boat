@@ -24,7 +24,8 @@ from boat_common_libs.alarms import Alarm
 
 
 SHORE_URI = "wss://eboat.thiagoja.com/api"
-DATA_SEND = 0.15
+# SHORE_URI = "ws://localhost:5001/api"
+DATA_SEND = 0.05
 
 
 def get_time_in_ms(time:Time):

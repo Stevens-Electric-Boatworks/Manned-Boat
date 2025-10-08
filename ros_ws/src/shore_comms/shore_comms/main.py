@@ -10,7 +10,7 @@ import rclpy.logging
 from rclpy.node import Node
 
 from boat_data_interfaces.msg import ElectricalData, MotionData, MotorData, GPIOData, BoatAlarm, \
-    CANMotorData  # type: ignore | caused by ide unable to find msg (??)
+    CANMotorData, CANBusStatus  # type: ignore | caused by ide unable to find msg (??)
 from rcl_interfaces.msg import Log
 from boat_data_interfaces.msg import ElectricalData, MotionData, MotorData, GPIOData, BoatAlarm  # type: ignore | caused by ide unable to find msg (??)
 
@@ -25,7 +25,7 @@ from boat_common_libs.alarms import Alarm
 
 SHORE_URI = "wss://shore.stevenseboat.org/api"
 # SHORE_URI = "ws://localhost:5001/api"
-DATA_SEND = 0.05
+DATA_SEND = 0.1
 
 
 def get_time_in_ms(time:Time):
@@ -40,6 +40,7 @@ class ShoreDataCollector(Node):
         self.data = {}
         self.logs = []
         self.alarms = []
+        self.can_bus_state = CANBusStatus.OFFLINE
 
         self.alarm_publisher = self.create_publisher(BoatAlarm, "/all_alarms", 10)
         self.create_sub(Log, "/rosout", self.logs_collector)
@@ -47,6 +48,7 @@ class ShoreDataCollector(Node):
         self.create_sub(ElectricalData, "/electrical/all_sensors", self.electrical_collector)
         self.create_sub(MotionData, "/motion/all_sensors", self.motion_collector)
         self.create_sub(CANMotorData, "/motors/can_motor_data", self.motor_collector)
+        self.create_sub(CANBusStatus, "/motors/can_bus_state", self.bus_state_collector)
         self.wss_watchdog = self.create_timer(5, self.watchdog_callback)
 
         threading.Thread(target=self._run_asyncio_loop, daemon=True).start()
@@ -102,6 +104,7 @@ class ShoreDataCollector(Node):
                     await self.send_data_to_shore(True)
                     await self.send_alarms_to_shore(True)
                     await self.send_logs_to_shore()
+                    await self.send_bus_state_to_shore()
                     await asyncio.sleep(DATA_SEND)
             except ConnectionClosed as e:
                 # Will retry on some kind of failure
@@ -173,6 +176,13 @@ class ShoreDataCollector(Node):
 
         self.logs.clear()
 
+    async def send_bus_state_to_shore(self):
+        output_data = {
+            "type": "can_bus",
+            "state": self.can_bus_state
+        }
+        await self.websocket.send(json.dumps(output_data))
+
 
                     # IMPORTANT: Parameter name MUST be "msg"
     def electrical_collector(self, msg:ElectricalData):
@@ -203,6 +213,9 @@ class ShoreDataCollector(Node):
         self.add_data("motor_temp", msg.motor_temp)
         self.add_data("current", msg.current)
         self.add_data("power", msg.power)
+
+    def bus_state_collector(self, msg:CANBusStatus):
+        self.can_bus_state = msg.bus_state
 
 
     def alarms_collector(self, msg:BoatAlarm):

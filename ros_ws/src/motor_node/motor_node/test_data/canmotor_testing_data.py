@@ -5,7 +5,7 @@ from rclpy.node import Node
 from rclpy.executors import ExternalShutdownException
 
 from boat_common_libs.smooth_random import SmoothRandom
-from boat_data_interfaces.msg import CANMotorData
+from boat_data_interfaces.msg import CANMotorData, CANBusStatus
 
 
 class CANMotorTestingDataNode(Node):
@@ -23,7 +23,9 @@ class CANMotorTestingDataNode(Node):
             "power": SmoothRandom(0, 60, 0, 6000),  # int16, up to ~6 kW
         }
         self.can_motor_publisher_ = self.create_publisher(CANMotorData, '/motors/can_motor_data', 10)
+        self.can_bus_status_publisher = self.create_publisher(CANBusStatus, '/motors/can_bus_state', 10)
         self.create_timer(0.3, self.publish_test_data)
+        self.create_timer(1, self.publish_bus_state)
 
     def publish_test_data(self):
         msg = CANMotorData()
@@ -37,6 +39,11 @@ class CANMotorTestingDataNode(Node):
         msg.power = int(self.randoms["power"].next())
 
         self.can_motor_publisher_.publish(msg)
+
+    def publish_bus_state(self):
+        msg = CANBusStatus()
+        msg.bus_state = CANBusStatus.TESTING
+        self.can_bus_status_publisher.publish(msg)
 
 def main(args=None):
     try:

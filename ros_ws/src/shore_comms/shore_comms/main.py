@@ -23,7 +23,7 @@ import threading
 from boat_common_libs.alarms import Alarm
 
 
-SHORE_URI = "wss://eboat.thiagoja.com/api"
+SHORE_URI = "wss://shore.stevenseboat.org/api"
 # SHORE_URI = "ws://localhost:5001/api"
 DATA_SEND = 0.05
 

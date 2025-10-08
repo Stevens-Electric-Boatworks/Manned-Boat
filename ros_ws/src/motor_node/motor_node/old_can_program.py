@@ -30,7 +30,6 @@ import subprocess
 # All you must do is make sure the order in which it is getting printed corresponsd to the loop below
 
 
-
 # They are using serial?
 # == Ishaan
 
@@ -100,8 +99,9 @@ def is_can_interface_up(interface: str = "can0") -> bool:
     except subprocess.CalledProcessError:
         return False
 
+
 class OldCanProgram:
-    def __init__(self, logger:RcutilsLogger, dummy_efp, publisher, is_node_ok, declare_alarm):
+    def __init__(self, logger: RcutilsLogger, dummy_efp, publisher, is_node_ok, declare_alarm, shutdown_node):
         self.sdo = None
         self.start_time = None
         self.can_thread = None
@@ -112,39 +112,41 @@ class OldCanProgram:
         self.publisher = publisher
         self.is_node_ok = is_node_ok
         self.declare_alarm = declare_alarm
-
+        self.shutdown_node = shutdown_node
 
     def setup_can(self):
         # This is to ensure that we can publish alarms
         time.sleep(0.5)
         self.logger.info("Setting up the old can...")
-        self.logger.warning("The torque and throttle values are not real.")
+        self.logger.warning("The throttle values and motor temperature are not real.")
 
-        #test for can0 open
+        # test for can0 open
         if not is_can_interface_up():
             self.logger.error("can0 is not up. Aborting startup!!")
             self.declare_alarm(Alarm.CAN0_INTERFACE_NOT_UP)
+            self.shutdown_node()
             return
 
         # Start with creating a new network representing one CAN bus
-        network = canopen.Network()
+        self.network = canopen.Network()
 
         # Connect to the CAN bus
         try:
-            network.connect(channel='can0', bustype='socketcan')
+            self.network.connect(channel='can0', bustype='socketcan')
         except CanError:
-            self.logger.error(f"""Unable to connect to the CAN bus because of the following error: {traceback.format_exc()}""")
+            self.logger.error(
+                f"""Unable to connect to the CAN bus because of the following error: {traceback.format_exc()}""")
             self.declare_alarm(Alarm.INVALID_CAN_PACKET_READ)
 
         self.logger.info("Connected to SocketCAN")
         # Subscribe to messages
-        network.subscribe(0, self.on_msg_receive)
+        self.network.subscribe(0, self.on_msg_receive)
 
         # You can create a node with a known node-ID
         node_id = 6  # Replace with your node ID
         self.logger.info("Using a dummy EDS file at \"" + self.dummy_efp + "\".")
         self.node = canopen.BaseNode402(node_id, canopen.import_od(self.dummy_efp))  # Use a dummy EDS here
-        network.add_node(self.node)
+        self.network.add_node(self.node)
 
         self.can_thread = Thread(
             target=self.read_can_messages, args=[self.publisher], daemon=True)
@@ -162,17 +164,16 @@ class OldCanProgram:
             except Exception as e:
                 time.sleep(0.8)
                 self.logger.error(f"Error reading CAN message: {e}")
+                self.network.clear()
                 self.logger.error(str(traceback.format_exc()))
                 self.declare_alarm(Alarm.INVALID_CAN_PACKET_READ)
 
-
-    def on_msg_receive(self, node_id:int, data:bytearray, subindex:float):
+    def on_msg_receive(self, node_id: int, data: bytearray, subindex: float):
         self.logger.info(f"""The following message was received from the CAN Bus.
                     Node_ID: %s
                     Data: %s
                     SubIndex: %s
                     """.format(str(node_id), str(data), str(subindex)))
-
 
     # The SDO index (or address) is found in the parameters.csv file.
     def read_and_log_sdo(self, index, subindex):
@@ -187,12 +188,12 @@ class OldCanProgram:
     # These are SDOs retrieved from the controller via CANbus using above function
     # There is a wide list of sensor data that can be read, but these are the useful ones.
     # Feel free to browse the parameter list which is in testing/parameters.csv
-    def publish_sdo_data(self, publisher) -> dict:
-        voltage = self.read_and_log_sdo( 0x2030, 2)  * 0.01 # Volts
-        throttle_mv = 0 #self.read_and_log_sdo( 0x2013, 1)  # mV
-        rpm = self.read_and_log_sdo( 0x2001, 2)  # rpm
-        current = self.read_and_log_sdo( 0x2073, 1)  # Arms
-        temperature = self.read_and_log_sdo( 0x2040, 2)  # deg C
+    def publish_sdo_data(self, publisher):
+        voltage = self.read_and_log_sdo(0x2030, 2) * 0.01  # Volts
+        throttle_mv = 0  # self.read_and_log_sdo( 0x2013, 1)  # mV
+        rpm = self.read_and_log_sdo(0x2001, 2)  # rpm
+        current = self.read_and_log_sdo(0x2073, 1)  # Arms
+        # temperature = self.read_and_log_sdo( 0x2040, 2)  # deg C
 
         throttle_percent = throttle_mv / 2800  # %
 
@@ -207,7 +208,7 @@ class OldCanProgram:
         msg.throttle_percentage = int(throttle_percent)
         msg.rpm = int(rpm)
         msg.torque = int(torque)
-        msg.motor_temp = int(temperature)
+        msg.motor_temp = -555  # HARDWARE FAILURE
         msg.current = int(current)
         msg.power = int(power)
 

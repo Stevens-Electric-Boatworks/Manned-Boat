@@ -11,7 +11,7 @@ from rclpy.node import Node
 
 from boat_data_interfaces.msg import ElectricalData, MotionData, MotorData, GPIOData, BoatAlarm, \
     CANMotorData, CANBusStatus  # type: ignore | caused by ide unable to find msg (??)
-from rcl_interfaces.msg import Log
+from rcl_interfaces.msg import Log, ParameterDescriptor, SetParametersResult
 from boat_data_interfaces.msg import ElectricalData, MotionData, MotorData, GPIOData, BoatAlarm  # type: ignore | caused by ide unable to find msg (??)
 
 #Websockets
@@ -25,8 +25,6 @@ from boat_common_libs.alarms import Alarm
 
 SHORE_URI = "wss://shore.stevenseboat.org/api"
 # SHORE_URI = "ws://localhost:5001/api"
-DATA_SEND = 0.1
-
 
 def get_time_in_ms(time:Time):
     return time.sec * 1000 + (time.nanosec / 1e+6)
@@ -36,6 +34,7 @@ class ShoreDataCollector(Node):
     
     def __init__(self):
         super().__init__('shore_comms')
+
         self.websocket:WebSocketClientProtocol = None
         self.data = {}
         self.logs = []
@@ -51,7 +50,14 @@ class ShoreDataCollector(Node):
         self.create_sub(CANBusStatus, "/motors/can_bus_state", self.bus_state_collector)
         self.wss_watchdog = self.create_timer(5, self.watchdog_callback)
 
+        self.declare_parameter("data_send", 0.1, ParameterDescriptor(description='How often shore_comms should send data to the shore server.'))
+        self.add_on_set_parameters_callback(self.on_param_change_callback)
+
         threading.Thread(target=self._run_asyncio_loop, daemon=True).start()
+
+    def on_param_change_callback(self, param_list):
+        self._logger.info("Data send rate was changed to " + str(param_list[0].value) + "s via a parameter callback")
+        return SetParametersResult(successful=True)
 
     
     def create_sub(self, data_type, topic, callback):
@@ -99,13 +105,13 @@ class ShoreDataCollector(Node):
                     return
                 await self.send_data_to_shore(False)
                 self._logger.info(f"Connected to the websocket at {SHORE_URI} ✅")
-                self._logger.info(f"Data will be sent every {DATA_SEND}s")
+                self._logger.info(f"Data will be sent every {self.get_parameter("data_send").value}s")
                 while True:
                     await self.send_data_to_shore(True)
                     await self.send_alarms_to_shore(True)
                     await self.send_logs_to_shore()
                     await self.send_bus_state_to_shore()
-                    await asyncio.sleep(DATA_SEND)
+                    await asyncio.sleep(self.get_parameter("data_send").value)
             except ConnectionClosed as e:
                 # Will retry on some kind of failure
                 self._logger.error(f"Websocket error: {e.reason}")

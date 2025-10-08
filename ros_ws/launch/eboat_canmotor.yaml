@@ -5,6 +5,9 @@ launch:
       pkg: "shore_comms"
       exec: "shore"
       name: "shore_comms"
+      param:
+          - name: "data_send"
+            value: 0.1
 
   - node:
       pkg: "alarms_watchdog_node"

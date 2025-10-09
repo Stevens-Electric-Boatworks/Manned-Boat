@@ -5,6 +5,8 @@ build/
 install/
 log/
 
+.idea
+
 ros_ws/.vscode/browse.vc.db
 
 

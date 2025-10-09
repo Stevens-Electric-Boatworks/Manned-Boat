@@ -9,7 +9,7 @@ from can import CanError
 from rclpy.impl.rcutils_logger import RcutilsLogger
 
 from boat_common_libs.alarms import Alarm
-from boat_data_interfaces.msg import CANMotorData
+from boat_data_interfaces.msg import CANMotorData, CANBusStatus
 
 import traceback
 import subprocess
@@ -113,6 +113,7 @@ class OldCanProgram:
         self.is_node_ok = is_node_ok
         self.declare_alarm = declare_alarm
         self.shutdown_node = shutdown_node
+        self.can_bus_state = CANBusStatus.OFFLINE
 
     def setup_can(self):
         # This is to ensure that we can publish alarms
@@ -124,6 +125,7 @@ class OldCanProgram:
         if not is_can_interface_up():
             self.logger.error("can0 is not up. Aborting startup!!")
             self.declare_alarm(Alarm.CAN0_INTERFACE_NOT_UP)
+            self.can_bus_state = CANBusStatus.OFFLINE
             self.shutdown_node()
             return
 
@@ -137,11 +139,12 @@ class OldCanProgram:
             self.logger.error(
                 f"""Unable to connect to the CAN bus because of the following error: {traceback.format_exc()}""")
             self.declare_alarm(Alarm.INVALID_CAN_PACKET_READ)
+            self.can_bus_state = CANBusStatus.OFFLINE
+            return
 
         self.logger.info("Connected to SocketCAN")
         # Subscribe to messages
         self.network.subscribe(0, self.on_msg_receive)
-
         # You can create a node with a known node-ID
         node_id = 6  # Replace with your node ID
         self.logger.info("Using a dummy EDS file at \"" + self.dummy_efp + "\".")
@@ -160,6 +163,7 @@ class OldCanProgram:
                     return
 
                 self.publish_sdo_data(publisher)
+                self.can_bus_state = CANBusStatus.ONLINE
                 time.sleep(0.3)
             except Exception as e:
                 time.sleep(0.8)
@@ -167,6 +171,7 @@ class OldCanProgram:
                 self.network.clear()
                 self.logger.error(str(traceback.format_exc()))
                 self.declare_alarm(Alarm.INVALID_CAN_PACKET_READ)
+                self.can_bus_state = CANBusStatus.OFFLINE
 
     def on_msg_receive(self, node_id: int, data: bytearray, subindex: float):
         self.logger.info(f"""The following message was received from the CAN Bus.
@@ -183,6 +188,7 @@ class OldCanProgram:
         except Exception as e:
             self.logger.error(f"Error reading SDO [{hex(index)}:{subindex}]: {e}")
             self.declare_alarm(Alarm.ERROR_READING_CAN_SDO)
+            self.can_bus_state = CANBusStatus.OFFLINE
             return 0
 
     # These are SDOs retrieved from the controller via CANbus using above function
@@ -213,3 +219,10 @@ class OldCanProgram:
         msg.power = int(power)
 
         publisher.publish(msg)
+
+
+    def get_bus_state(self):
+        return self.can_bus_state
+
+    def testabc(self):
+        pass

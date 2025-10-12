@@ -28,7 +28,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ros_ws/build/motion_node" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ros_ws/build/motor_node" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ros_ws/build/shore_comms" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ros_ws/src/alarms_manager_node/alarms_watchdog_node" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ros_ws/src/alarms_manager_node/alarms_manager_node" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
       <excludeFolder url="file://$MODULE_DIR$/install" />

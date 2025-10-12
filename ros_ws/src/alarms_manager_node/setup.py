@@ -22,7 +22,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'main = alarms_manager_node.watchdog_node:main'
+            'main = alarms_manager_node.alarm_manager_node:main'
         ],
     },
 )

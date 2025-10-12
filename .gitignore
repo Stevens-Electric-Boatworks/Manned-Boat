@@ -4,7 +4,6 @@ README_IF_ON_TEAMS.md
 build/
 install/
 log/
-
 .idea/
 
 ros_ws/.vscode/browse.vc.db

@@ -2,7 +2,7 @@ import glob
 import os
 from setuptools import find_packages, setup
 
-package_name = 'alarms_watchdog_node'
+package_name = 'alarms_manager_node'
 
 setup(
     name=package_name,
@@ -22,7 +22,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'main = alarms_watchdog_node.watchdog_node:main'
+            'main = alarms_manager_node.watchdog_node:main'
         ],
     },
 )

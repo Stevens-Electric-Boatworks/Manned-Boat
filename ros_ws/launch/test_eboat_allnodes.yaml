@@ -2,7 +2,7 @@
 ---
 launch:
   - node:
-      pkg: "alarms_watchdog_node"
+      pkg: "alarms_manager_node"
       exec: "main"
       name: "alarms_watchdog"
       param:

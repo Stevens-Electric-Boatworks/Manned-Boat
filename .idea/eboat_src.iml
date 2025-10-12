@@ -10,7 +10,6 @@
       <sourceFolder url="file://$MODULE_DIR$/ros_ws/install/motor_node_test/lib/python3.12/site-packages" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ros_ws/install/shore_comms/lib/python3.12/site-packages" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ros_ws/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ros_ws/src/alarms_watchdog_node/alarms_watchdog_node" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ros_ws/install/electrical_node/lib/python3.12/site-packages" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ros_ws/install/motion_node/lib/python3.12/site-packages" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ros_ws/install/motor_node/lib/python3.12/site-packages" isTestSource="false" />
@@ -23,6 +22,13 @@
       <sourceFolder url="file://$MODULE_DIR$/ros_ws/src/motion_node/motion_node" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ros_ws/src/motor_node/motor_node" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ros_ws/src/shore_comms/shore_comms" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ros_ws/build/alarms_watchdog_node" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ros_ws/build/boat_common_libs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ros_ws/build/electrical_node" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ros_ws/build/motion_node" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ros_ws/build/motor_node" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ros_ws/build/shore_comms" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ros_ws/src/alarms_manager_node/alarms_watchdog_node" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
       <excludeFolder url="file://$MODULE_DIR$/install" />

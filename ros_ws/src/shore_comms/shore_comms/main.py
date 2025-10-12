@@ -19,7 +19,7 @@ import json
 import threading
 
 
-SHORE_URI = "wss://shore.stevensefboat.org/api"
+SHORE_URI = "wss://shore.stevenseboat.org/api"
 # SHORE_URI = "ws://localhost:5001/api"
 
 def get_time_in_ms(time:Time):

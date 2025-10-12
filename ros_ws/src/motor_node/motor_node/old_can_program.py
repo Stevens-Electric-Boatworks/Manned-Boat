@@ -8,7 +8,7 @@ import time
 from can import CanError
 from rclpy.impl.rcutils_logger import RcutilsLogger
 
-from boat_common_libs.alarms import Alarm
+from boat_common_libs.alarm_lib.alarms import Alarm
 from boat_data_interfaces.msg import CANMotorData, CANBusStatus
 
 import traceback
@@ -126,7 +126,6 @@ class OldCanProgram:
             self.logger.error("can0 is not up. Aborting startup!!")
             self.declare_alarm(Alarm.CAN0_INTERFACE_NOT_UP)
             self.can_bus_state = CANBusStatus.OFFLINE
-            self.shutdown_node()
             return
 
         # Start with creating a new network representing one CAN bus

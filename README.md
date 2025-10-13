@@ -1,43 +1,20 @@
 
-# Control Systems for Stevens Electric Boatworks 
+# Stevens Electric Boatworks
 
-This folder holds the information for the 2025 Control System for Stevens Electric Boatworks.
-
-This is still very much a WIP, and everything is subject to change.
-
-The current codebase is stored at `ros_ws/`
- * For more information about the ROS2 specfic components of this project, check out the documentation in there (WIP)
+Welcome to the Stevens Electric Boatworks GitHub repository. This wiki will try to catalog all of the information required to setup, program, and operate the boat safely. This wiki is a constant work in progress, and may be out of date at times.
 
 
-## FAQ
+Visit the pages of this wiki to learn more about the boat, design decisions, and tips for navigating and building the codebase.
 
-#### How is this different from the 2017-2024 Control System?
+## Getting Started
 
-This year differs because we decided to redo the control system for a variety of reasons:
+To get started, visit the [wiki home](https://github.com/EmeraldWither/Stevens-Electric-Boatworks/wiki), which will contain instructions on how to get started. In the future, the wiki will also contain guides for setting up your development environment, as well as design documents and explanations for the systems. 
 
-* The old seniors who knew the code graduated, and left behind a system that is hard to understand
-* The new control system will be more modular, and will allow us to be able to add components to the boat more easily
+## Shore Side
 
+![](https://raw.githubusercontent.com/EmeraldWither/Stevens-Electric-Boatworks/refs/heads/main/_readme_imgs/shore_ss.png)
 
+The software for the shore side can be found at the following links, including build instructions, and deployments.
 
-## Folder Structure
-
-```
-.
-└── Control Systems/
-    ├── README.md
-    ├── INSTALL.md (install instructions)
-    ├── COMPILE.md (compiling/building code instructions)
-    └── diagrams/
-        └── (Contains diagrams for control system, electrical, and ROS2 node structures and communications)
-```
-
-(Generated using this [ascii-tree generator](https://tree.nathanfriend.com/))
-## Authors
-
-- Ishaan Sayal (ROS2, CAN, Wiring)
-- Thaigo Andrade (On-Shore Software, Remote Monitoring)
-- Alex Garcia (ROS2, CAN)
-- Lucas Moeller (Data Logging, Data Analysis, etc)
-- Saajan Shah (Logging, Data Analysis)
-
+* Website: [`Dakdot/eboat-client`](https://github.com/Dakdot/eboat-client)
+* Backend Server: [`Dakdot/eboat-client`](https://github.com/Dakdot/eboat-server)

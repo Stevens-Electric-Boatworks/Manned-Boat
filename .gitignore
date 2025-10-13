@@ -6,6 +6,9 @@ install/
 log/
 .idea/
 
+*/__pycache__/
+*.pyc
+
 ros_ws/.vscode/browse.vc.db
 
 

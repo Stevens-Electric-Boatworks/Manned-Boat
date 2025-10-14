@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            "motion = motion_node.motion_node:main",
             "test = motion_node.motion_node_test:main"
         ],
     },

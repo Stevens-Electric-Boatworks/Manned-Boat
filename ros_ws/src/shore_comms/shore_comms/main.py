@@ -1,16 +1,15 @@
-import atexit
-import datetime
-import smtplib
-
 from builtin_interfaces.msg import Time
-from websockets.exceptions import ConnectionClosed
+from websockets.exceptions import ConnectionClosed, InvalidStatus
 import rclpy
 from rclpy.executors import ExternalShutdownException
 import rclpy.logging
 from rclpy.node import Node
 
-from rcl_interfaces.msg import Log
-from boat_data_interfaces.msg import ElectricalData, MotionData, MotorData, GPIOData, BoatAlarm  # type: ignore | caused by ide unable to find msg (??)
+from boat_common_libs.alarm_lib.alarms import Alarm
+from boat_data_interfaces.msg import ElectricalData, MotionData, BoatAlarm, \
+    CANMotorData, CANBusStatus
+from rcl_interfaces.msg import Log, ParameterDescriptor, SetParametersResult
+from boat_common_libs.alarm_lib import alarm_helper
 
 #Websockets
 import asyncio
@@ -20,10 +19,8 @@ import json
 import threading
 
 
-
-SHORE_URI = "wss://eboat.thiagoja.com/api"
-DATA_SEND = 0.15
-
+SHORE_URI = "wss://shore.stevenseboat.org/api"
+# SHORE_URI = "ws://localhost:5001/api"
 
 def get_time_in_ms(time:Time):
     return time.sec * 1000 + (time.nanosec / 1e+6)
@@ -32,97 +29,104 @@ def get_time_in_ms(time:Time):
 class ShoreDataCollector(Node):
     
     def __init__(self):
-        super().__init__('shore_subscriber')
-        self.websocket:WebSocketClientProtocol
+        super().__init__('shore_comms')
+
+        self.websocket:WebSocketClientProtocol = None
         self.data = {}
         self.logs = []
         self.alarms = []
-        self.alarm_publisher = self.create_publisher(BoatAlarm, "/all_alarms", 10)
-        self.create_sub(BoatAlarm, "/all_alarms", self.alarms_collector)
+        self.can_bus_state = CANBusStatus.OFFLINE
+
+        self.alarm_publisher = alarm_helper.create_alarm_publisher(self)
         self.create_sub(Log, "/rosout", self.logs_collector)
+        self.create_sub(BoatAlarm, "/alarm/shore/publish", self.alarms_collector)
         self.create_sub(ElectricalData, "/electrical/all_sensors", self.electrical_collector)
         self.create_sub(MotionData, "/motion/all_sensors", self.motion_collector)
-        self.create_sub(MotorData, "/motors/all_sensors", self.motor_collector)
+        self.create_sub(CANMotorData, "/motors/can_motor_data", self.motor_collector)
+        self.create_sub(CANBusStatus, "/motors/can_bus_state", self.bus_state_collector)
         self.wss_watchdog = self.create_timer(5, self.watchdog_callback)
 
-        threading.Thread(target=self.run_asyncio_loop, daemon=True).start()
+        self.declare_parameter("data_send", 0.1, ParameterDescriptor(description='How often shore_comms should send data to the shore server.'))
+        self.add_on_set_parameters_callback(self.on_param_change_callback)
+
+        threading.Thread(target=self._run_asyncio_loop, daemon=True).start()
+
+    def on_param_change_callback(self, param_list):
+        self._logger.info("Data send rate was changed to " + str(param_list[0].value) + "s via a parameter callback")
+        return SetParametersResult(successful=True)
 
     
     def create_sub(self, data_type, topic, callback):
-        self.get_logger().info("Logging " + topic + " with custom msg of " + str(type(data_type)))
+        self._logger.info("Logging <" + topic + "> with custom msg of <" + data_type.__name__ + ">")
         self.create_subscription(data_type, topic, callback, 10)
 
-    def run_asyncio_loop(self):
+    def _run_asyncio_loop(self):
         asyncio.run(self.start_background_shore_sender())
-
     
     def add_data(self, data_name, data):
         """
         Adds data to be sent to the shore server.
-        :param data_name - The name of the data as required by the ShoreAPI
-        :param data - The actual data to send
+         param data_name - The name of the data as required by the ShoreAPI
+         param data - The actual data to send
         """
         self.data[data_name] = data
 
     def add_alarm(self, error_code: int, timestamp):
         """
         Queues an alarm to be sent to the shore server.
-        :param error_code - The error code based on the spreadsheet
-        :param timestamp - The timestamp of when the alarm was issued
+         param error_code - The error code based on the spreadsheet
+         param timestamp - The timestamp of when the alarm was issued
         """
         self.alarms.append((error_code, timestamp))
 
-    def declare_alarm(self, error_code):
-        msg = BoatAlarm()
-        msg.error_code = error_code
-        msg.timestamp = self.get_clock().now().to_msg()
-        self.alarm_publisher.publish(msg)
-
+    def clear_all_websocket_alarms(self):
+        self.alarm_publisher.delatch_alarm(Alarm.WEBSOCKET_CONNECTION_CLOSED)
+        self.alarm_publisher.delatch_alarm(Alarm.WEBSOCKET_INITIAL_CONNECTION_FAILURE)
+        self.alarm_publisher.delatch_alarm(Alarm.WEBSOCKET_IS_NOT_INITIALLY_OPENED_YET)
+        self.alarm_publisher.delatch_alarm(Alarm.WEBSOCKET_NOT_OPENED)
 
     async def start_background_shore_sender(self):
         """
         Starts the background task to send the data to the shore server. Is automatically called every DATA_SEND ms
         """
-        self.get_logger().info(f"Attempting to connect to the Shore Server via a Websocket at {SHORE_URI}")
+        self._logger.info(f"Attempting to connect to the Shore Server via a Websocket at {SHORE_URI}")
         async for self.websocket in connect(SHORE_URI):
             try:
                 if not self.websocket.open:
-                    self.get_logger().error("Unable to open a connect to the shore server.")
-                    self.get_logger().error(f"Attempted URI: {SHORE_URI}. SHUTTING DOWN...")
-                    self.declare_alarm(3) # ALARM: Shore Comms Node Shutdown
+                    self._logger.error("Unable to open a connect to the shore server.")
+                    self._logger.error(f"Attempted URI: {SHORE_URI}. SHUTTING DOWN...")
+                    self.alarm_publisher.publish_alarm(Alarm.WEBSOCKET_INITIAL_CONNECTION_FAILURE) # ALARM:
+                    # Shore Comms Node Shutdown
                     self.destroy_node()
                     return
                 await self.send_data_to_shore(False)
-                self.get_logger().info(f"Connected to the websocket at {SHORE_URI} ✅")
+                self._logger.info(f"Connected to the websocket at {SHORE_URI} ✅")
+                self._logger.info(f"Data will be sent every {self.get_parameter("data_send").value}s")
+                self.clear_all_websocket_alarms()
                 while True:
                     await self.send_data_to_shore(True)
                     await self.send_alarms_to_shore(True)
                     await self.send_logs_to_shore()
-                    await asyncio.sleep(DATA_SEND)
+                    await self.send_bus_state_to_shore()
+                    await asyncio.sleep(self.get_parameter("data_send").value)
+
             except ConnectionClosed as e:
-                self.get_logger().error(f"Unable to start the connection: {e.reason}")
+                # Will retry on some kind of failure
+                self._logger.error(f"Websocket error: {e.reason}")
+                self.alarm_publisher.publish_alarm(Alarm.WEBSOCKET_CONNECTION_CLOSED)
                 continue
     
     def watchdog_callback(self):
         self._logger.debug("[Websocket Watchdog] running callback")
         if not hasattr(self, "websocket") or self.websocket is None:
             self._logger.warn("[Websocket Watchdog] Websocket is not opened yet...")
-            self.declare_alarm(2) # ALARM: Shore Comms Websocket failure
+            self.alarm_publisher.publish_alarm(Alarm.WEBSOCKET_IS_NOT_INITIALLY_OPENED_YET) # ALARM:
+            # Shore Comms Websocket failure
 
         elif not self.websocket.open:
-            self._logger.error("[Websocket Watchdog] The shore server is not connected to the websocket.")
-            self.declare_alarm(2) # ALARM: Shore Comms Websocket failure
+            self._logger.error("[Websocket Watchdog] The node is not connected to the shore server via the websocket.")
+            self.alarm_publisher.publish_alarm(Alarm.WEBSOCKET_NOT_OPENED) # ALARM: Shore Comms Websocket failure
 
-    
-
-    async def on_exit(self):
-        self._logger.info("Shutting down the websocket.")
-        if hasattr(self, "websocket"):
-            await self.send_data_to_shore(False)
-            await self.websocket.close()
-
-
-    
     async def send_data_to_shore(self, ignore_empty):
         if len(self.data) == 0 and ignore_empty:
             return
@@ -145,14 +149,22 @@ class ShoreDataCollector(Node):
             "payload" : {
                 "id": alarm[0],
                 "timestamp": alarm[1],
-                "message": "This is a test alarm",
+                "message": "<Check faults.csv for more information>",
                 "type": "error"
                 }   
             }
-            await self.websocket.send(json.dumps(output_data))
+            try:
+                await self.websocket.send(json.dumps(output_data))
+                await self.websocket.ensure_open()
+                self.clear_all_websocket_alarms()
+            except ConnectionClosed or InvalidStatus:
+                self.alarm_publisher.publish_alarm(Alarm.WEBSOCKET_CONNECTION_CLOSED)
+                # Keep alarms because data wasn’t sent
+                return
+
         self.alarms.clear()
 
-    async def send_logs_to_shore(self):
+    async def  send_logs_to_shore(self):
         if len(self.logs) == 0:
             return
 
@@ -160,8 +172,23 @@ class ShoreDataCollector(Node):
             "type": "log",
             "payload": self.logs
         }
-        await self.websocket.send(json.dumps(output_data))
+        try:
+            await self.websocket.send(json.dumps(output_data))
+            await self.websocket.ensure_open()
+            self.clear_all_websocket_alarms()
+        except ConnectionClosed or InvalidStatus:
+            self.alarm_publisher.publish_alarm(Alarm.WEBSOCKET_CONNECTION_CLOSED)
+            # Keep logs because data wasn’t sent
+            return
+
         self.logs.clear()
+
+    async def send_bus_state_to_shore(self):
+        output_data = {
+            "type": "can_bus",
+            "state": self.can_bus_state
+        }
+        await self.websocket.send(json.dumps(output_data))
 
 
                     # IMPORTANT: Parameter name MUST be "msg"
@@ -184,11 +211,20 @@ class ShoreDataCollector(Node):
         self.add_data("imu_z", msg.imu_z)
         self.add_data("speed", msg.speed)
 
-    def motor_collector(self, msg:MotorData):
-        self.add_data("rpm_a", msg.rpm_a)
-        self.add_data("rpm_b", msg.rpm_b)
-        self.add_data("propulsion_angle", msg.propulsion_angle)
-    
+    def motor_collector(self, msg:CANMotorData):
+        self.add_data("voltage", msg.voltage)
+        self.add_data("throttle_mv", msg.throttle_mv)
+        self.add_data("throttle_percentage", msg.throttle_mv)
+        self.add_data("rpm", msg.rpm)
+        self.add_data("torque", msg.torque)
+        self.add_data("motor_temp", msg.motor_temp)
+        self.add_data("current", msg.current)
+        self.add_data("power", msg.power)
+
+    def bus_state_collector(self, msg:CANBusStatus):
+        self.can_bus_state = msg.bus_state
+
+
     def alarms_collector(self, msg:BoatAlarm):
         self.add_alarm(msg.error_code, get_time_in_ms(msg.timestamp))
 
@@ -209,7 +245,6 @@ def main(args=None):
     try:
         with rclpy.init(args=args):
             minimal_subscriber = ShoreDataCollector()
-            atexit.register(minimal_subscriber.on_exit)
             rclpy.spin(minimal_subscriber)
     except (KeyboardInterrupt, ExternalShutdownException):
         pass

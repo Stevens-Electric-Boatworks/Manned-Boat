@@ -32,6 +32,10 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/MotionData.msg"
   "msg/MotorData.msg"
   "msg/BoatAlarm.msg"
+  "msg/CANMotorData.msg"
+  "msg/CANBusStatus.msg"
+  "srv/AlarmRaise.srv"
+  "srv/AlarmDelatch.srv"
   DEPENDENCIES builtin_interfaces
 )
 

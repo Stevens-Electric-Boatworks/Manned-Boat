@@ -2,15 +2,12 @@
 
 README_IF_ON_TEAMS.md
 
-log/
-install/
-build/
-*/__pycache__/
-*.pyc
-
 ros_ws/.vscode/browse.vc.db
 
 .obsidian
+
+*/__pycache__/
+*.pyc
 
 ros_ws/devel/
 ros_ws/log/

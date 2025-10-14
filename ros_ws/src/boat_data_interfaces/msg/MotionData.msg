@@ -1,6 +1,6 @@
-int8 heading
+int16 heading
 # speed is always postive
-uint8 speed
+int16 speed
 
 float32 gps_lat
 float32 gps_long

@@ -1,10 +1,10 @@
 from setuptools import find_packages, setup
 
-package_name = 'motor_node'
+package_name = 'boat_common_libs'
 
 setup(
     name=package_name,
-    version='0.0.0',
+    version='0.0.1',
     packages=find_packages(exclude=['test']),
     data_files=[
         ('share/ament_index/resource_index/packages',
@@ -19,9 +19,5 @@ setup(
     license='Apache-2.0',
     tests_require=['pytest'],
     entry_points={
-        'console_scripts': [
-            "test = motor_node.test_data.canmotor_testing_data:main",
-            "motor = motor_node.motor_node:main"
-        ],
     },
 )

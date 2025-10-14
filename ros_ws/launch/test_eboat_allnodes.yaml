@@ -2,7 +2,7 @@
 ---
 launch:
   - node:
-      pkg: "alarms_watchdog_node"
+      pkg: "alarms_manager_node"
       exec: "main"
       name: "alarms_watchdog"
       param:
@@ -12,17 +12,19 @@ launch:
       pkg: "shore_comms"
       exec: "shore"
       name: "shore_comms"
-
-  - node:
-      pkg: "electrical_node"
-      exec: "test"
-      name: "test_electrical_node"
+      param:
+        - name: "data_send"
+          value: 0.1
 
   - node:
       pkg: "motor_node"
       exec: "test"
       name: "motor_node"
 
+  - node:
+      pkg: "electrical_node"
+      exec: "test"
+      name: "test_electrical_node"
   - node:
       pkg: "motion_node"
       exec: "test"

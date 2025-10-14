@@ -54,6 +54,7 @@ class AlarmsWatchdog(Node):
             response.result = AlarmRaise.Response.RAISED
 
         self.shore_pub.publish(alarm)
+        self._logger.info("Alarm published!")
         return response
 
     def on_alarm_delatch(self, request:AlarmDelatch.Request, response: AlarmDelatch.Response) -> AlarmDelatch.Response:

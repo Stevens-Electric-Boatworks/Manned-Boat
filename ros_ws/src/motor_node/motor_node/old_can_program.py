@@ -118,7 +118,7 @@ class OldCanProgram:
 
     def setup_can(self):
         # This is to ensure that we can publish alarms
-        time.sleep(0.5)
+        time.sleep(1.5)
         self.logger.info("Setting up the old can...")
         self.logger.warning("The throttle values and motor temperature are not real.")
 

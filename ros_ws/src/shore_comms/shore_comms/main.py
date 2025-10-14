@@ -30,16 +30,16 @@ class ShoreDataCollector(Node):
     
     def __init__(self):
         super().__init__('shore_comms')
+        self.alarms = []
+        self.create_sub(BoatAlarm, "/alarm/shore/publish", self.alarms_collector)
 
         self.websocket:WebSocketClientProtocol = None
         self.data = {}
         self.logs = []
-        self.alarms = []
         self.can_bus_state = CANBusStatus.OFFLINE
 
         self.alarm_publisher = alarm_helper.create_alarm_publisher(self)
         self.create_sub(Log, "/rosout", self.logs_collector)
-        self.create_sub(BoatAlarm, "/alarm/shore/publish", self.alarms_collector)
         self.create_sub(CoolantData, "/electrical/temp_sensors", self.electrical_coolant_temp_collector)
         self.create_sub(MotionData, "/motion/all_sensors", self.motion_collector)
         self.create_sub(CANMotorData, "/motors/can_motor_data", self.motor_collector)

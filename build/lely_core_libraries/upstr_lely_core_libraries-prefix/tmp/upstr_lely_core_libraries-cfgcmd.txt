@@ -1,1 +1,0 @@
-cmd='autoreconf;-i;<SOURCE_DIR>;COMMAND;<SOURCE_DIR>/configure;--prefix=<INSTALL_DIR>;--disable-cython;--disable-doc;--disable-tests;--disable-static;--disable-diag'

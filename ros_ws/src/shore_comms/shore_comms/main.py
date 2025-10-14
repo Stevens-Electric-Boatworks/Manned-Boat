@@ -8,6 +8,7 @@ import rclpy
 from rclpy.executors import ExternalShutdownException
 import rclpy.logging
 from rclpy.node import Node
+from websockets.legacy.client import WebSocketClientProtocol, connect
 
 from boat_data_interfaces.msg import ElectricalData, MotionData, MotorData, GPIOData, BoatAlarm, \
     CANMotorData, CANBusStatus  # type: ignore | caused by ide unable to find msg (??)
@@ -16,8 +17,8 @@ from boat_data_interfaces.msg import ElectricalData, MotionData, MotorData, GPIO
 
 #Websockets
 import asyncio
-from websockets.client import connect
-from websockets.client import WebSocketClientProtocol
+# from websockets.client import connect, WebSocketClientProtocol
+
 import json
 import threading
 from boat_common_libs.alarms import Alarm
@@ -31,7 +32,7 @@ def get_time_in_ms(time:Time):
 
 
 class ShoreDataCollector(Node):
-    
+
     def __init__(self):
         super().__init__('shore_comms')
 
@@ -59,14 +60,14 @@ class ShoreDataCollector(Node):
         self._logger.info("Data send rate was changed to " + str(param_list[0].value) + "s via a parameter callback")
         return SetParametersResult(successful=True)
 
-    
+
     def create_sub(self, data_type, topic, callback):
         self._logger.info("Logging <" + topic + "> with custom msg of <" + data_type.__name__ + ">")
         self.create_subscription(data_type, topic, callback, 10)
 
     def _run_asyncio_loop(self):
         asyncio.run(self.start_background_shore_sender())
-    
+
     def add_data(self, data_name, data):
         """
         Adds data to be sent to the shore server.
@@ -117,7 +118,7 @@ class ShoreDataCollector(Node):
                 self._logger.error(f"Websocket error: {e.reason}")
                 self.declare_alarm(Alarm.WEBSOCKET_CONNECTION_CLOSED)
                 continue
-    
+
     def watchdog_callback(self):
         self._logger.debug("[Websocket Watchdog] running callback")
         if not hasattr(self, "websocket") or self.websocket is None:
@@ -152,7 +153,7 @@ class ShoreDataCollector(Node):
                 "timestamp": alarm[1],
                 "message": "<Check faults.csv for more information>",
                 "type": "error"
-                }   
+                }
             }
             try:
                 await self.websocket.send(json.dumps(output_data))

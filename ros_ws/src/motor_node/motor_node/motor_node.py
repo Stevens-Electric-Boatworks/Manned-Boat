@@ -23,7 +23,7 @@ class MotorNode(Node):
         self.declare_parameter('dummy_epf', '~/eboat_src/data/dummy.epf', description)
 
         file_path = self.get_parameter('dummy_epf').get_parameter_value().string_value
-        self.old_can = OldCanProgram(self._logger, os.path.expanduser(file_path), self.can_motor_publisher_, self.context.ok, self.declare_alarm, rclpy.shutdown)
+        self.old_can = OldCanProgram(self._logger, os.path.expanduser(file_path), self.can_motor_publisher_, self.context.ok, self.declare_alarm, rclpy.shutdown, self.unlatch_all_alarms)
         self.create_timer(0.5, self.publish_bus_state)
         self.old_can.setup_can()
 
@@ -35,6 +35,12 @@ class MotorNode(Node):
 
     def declare_alarm(self, alarm:Alarm):
         self._alarm_publisher.publish_alarm(alarm)
+
+    def unlatch_all_alarms(self):
+        self._alarm_publisher.delatch_alarm(Alarm.CAN0_INTERFACE_NOT_UP)
+        self._alarm_publisher.delatch_alarm(Alarm.ERROR_READING_CAN_SDO)
+        self._alarm_publisher.delatch_alarm(Alarm.FAILED_CAN_NETWORK_INIT)
+        self._alarm_publisher.delatch_alarm(Alarm.INVALID_CAN_PACKET_READ)
 
 
 def main(args=None):

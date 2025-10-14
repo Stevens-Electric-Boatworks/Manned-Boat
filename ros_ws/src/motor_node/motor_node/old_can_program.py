@@ -101,7 +101,7 @@ def is_can_interface_up(interface: str = "can0") -> bool:
 
 
 class OldCanProgram:
-    def __init__(self, logger: RcutilsLogger, dummy_efp, publisher, is_node_ok, declare_alarm, shutdown_node):
+    def __init__(self, logger: RcutilsLogger, dummy_efp, publisher, is_node_ok, declare_alarm, shutdown_node, unlatch_all_alarms):
         self.sdo = None
         self.start_time = None
         self.can_thread = None
@@ -114,6 +114,7 @@ class OldCanProgram:
         self.declare_alarm = declare_alarm
         self.shutdown_node = shutdown_node
         self.can_bus_state = CANBusStatus.OFFLINE
+        self.unlatch_all_alarms = unlatch_all_alarms
 
     def setup_can(self):
         # This is to ensure that we can publish alarms
@@ -183,6 +184,7 @@ class OldCanProgram:
     def read_and_log_sdo(self, index, subindex):
         try:
             value = self.node.sdo[index][subindex].raw
+            self.unlatch_all_alarms()
             return value
         except Exception as e:
             self.logger.error(f"Error reading SDO [{hex(index)}:{subindex}]: {e}")

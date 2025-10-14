@@ -79,6 +79,11 @@ class ShoreDataCollector(Node):
         """
         self.alarms.append((error_code, timestamp))
 
+    def clear_all_websocket_alarms(self):
+        self.alarm_publisher.delatch_alarm(Alarm.WEBSOCKET_CONNECTION_CLOSED)
+        self.alarm_publisher.delatch_alarm(Alarm.WEBSOCKET_INITIAL_CONNECTION_FAILURE)
+        self.alarm_publisher.delatch_alarm(Alarm.WEBSOCKET_IS_NOT_INITIALLY_OPENED_YET)
+        self.alarm_publisher.delatch_alarm(Alarm.WEBSOCKET_NOT_OPENED)
 
     async def start_background_shore_sender(self):
         """
@@ -97,12 +102,14 @@ class ShoreDataCollector(Node):
                 await self.send_data_to_shore(False)
                 self._logger.info(f"Connected to the websocket at {SHORE_URI} ✅")
                 self._logger.info(f"Data will be sent every {self.get_parameter("data_send").value}s")
+                self.clear_all_websocket_alarms()
                 while True:
                     await self.send_data_to_shore(True)
                     await self.send_alarms_to_shore(True)
                     await self.send_logs_to_shore()
                     await self.send_bus_state_to_shore()
                     await asyncio.sleep(self.get_parameter("data_send").value)
+
             except ConnectionClosed as e:
                 # Will retry on some kind of failure
                 self._logger.error(f"Websocket error: {e.reason}")
@@ -117,7 +124,7 @@ class ShoreDataCollector(Node):
             # Shore Comms Websocket failure
 
         elif not self.websocket.open:
-            self._logger.error("[Websocket Watchdog] The shore server is not connected to the websocket.")
+            self._logger.error("[Websocket Watchdog] The node is not connected to the shore server via the websocket.")
             self.alarm_publisher.publish_alarm(Alarm.WEBSOCKET_NOT_OPENED) # ALARM: Shore Comms Websocket failure
 
     async def send_data_to_shore(self, ignore_empty):
@@ -149,6 +156,7 @@ class ShoreDataCollector(Node):
             try:
                 await self.websocket.send(json.dumps(output_data))
                 await self.websocket.ensure_open()
+                self.clear_all_websocket_alarms()
             except ConnectionClosed or InvalidStatus:
                 self.alarm_publisher.publish_alarm(Alarm.WEBSOCKET_CONNECTION_CLOSED)
                 # Keep alarms because data wasn’t sent
@@ -156,7 +164,7 @@ class ShoreDataCollector(Node):
 
         self.alarms.clear()
 
-    async def send_logs_to_shore(self):
+    async def  send_logs_to_shore(self):
         if len(self.logs) == 0:
             return
 
@@ -167,6 +175,7 @@ class ShoreDataCollector(Node):
         try:
             await self.websocket.send(json.dumps(output_data))
             await self.websocket.ensure_open()
+            self.clear_all_websocket_alarms()
         except ConnectionClosed or InvalidStatus:
             self.alarm_publisher.publish_alarm(Alarm.WEBSOCKET_CONNECTION_CLOSED)
             # Keep logs because data wasn’t sent

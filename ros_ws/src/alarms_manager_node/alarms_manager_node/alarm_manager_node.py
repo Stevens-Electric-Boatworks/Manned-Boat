@@ -8,7 +8,8 @@ from boat_data_interfaces.msg import BoatAlarm
 
 import csv
 
-from boat_data_interfaces.srv import AlarmRaise
+from boat_data_interfaces.srv import AlarmRaise, AlarmDelatch
+
 
 class AlarmsWatchdog(Node):
     def __init__(self):
@@ -20,7 +21,8 @@ class AlarmsWatchdog(Node):
         self.load_csv_file()
         self.raised_sticky_alarms = set({})
 
-        self.create_service(AlarmRaise, "/alarm/publish", self.on_alarm_raise)
+        self.create_service(AlarmRaise, "/alarm/raise", self.on_alarm_raise)
+        self.create_service(AlarmDelatch, "/alarm/delatch", self.on_alarm_delatch)
         self.shore_pub = self.create_publisher(BoatAlarm, "/alarm/shore/publish", 10)
 
 
@@ -54,6 +56,19 @@ class AlarmsWatchdog(Node):
         self.shore_pub.publish(alarm)
         return response
 
+    def on_alarm_delatch(self, request:AlarmDelatch.Request, response: AlarmDelatch.Response) -> AlarmDelatch.Response:
+        code = request.error_code
+        error_message = self.codes[code][1]
+        error_type = self.codes[code][0]
+
+        if self.raised_sticky_alarms.__contains__(code):
+            self._logger.info(f"Alarm with id {code} was UNLATCHED. \n\tDescription: {error_message} \n\tSeverity: {error_type}")
+            self.raised_sticky_alarms.remove(code)
+            response.success = True
+        else:
+            response.success = False
+
+        return response
 
 
 

@@ -5,10 +5,10 @@ from rclpy.node import Node
 
 from boat_common_libs.alarm_lib.alarms import Alarm
 from boat_data_interfaces.msg import BoatAlarm
-from boat_data_interfaces.srv import AlarmRaise
+from boat_data_interfaces.srv import AlarmRaise, AlarmDelatch
 
 
-class AlarmResult(Enum):
+class AlarmRaiseResult(Enum):
     STICKY_NOT_RAISED_BEFORE=0
     """
     Means that this alarm is a sticky alarm, but has not been raised yet. 
@@ -32,21 +32,39 @@ class AlarmResult(Enum):
     As such, it will NOT be published to the shore computer
     """
 
+class AlarmDelatchResult(Enum):
+    SUCCESS = True
+    """
+    Means that the alarm was successfully delatched (it was already there)
+    """
+
+    NOT_RAISED = False
+    """
+    Means that the alarm was not delatched because it was not in the list
+    """
+
+
+def _create_srv_client(node, type, name):
+    client = node.create_client(type, name)
+    connect_attempts = 3
+    while not client.wait_for_service(timeout_sec=1.0) and connect_attempts > 0:
+        node.get_logger().info(f'[ALARM LIB] Alarm Service at "{name}" is not available, waiting again ({connect_attempts} attempts remaining)...')
+        connect_attempts -= 1
+
+    return client
+
+
 class AlarmPublisher:
     def __init__(self, node: Node):
         self._node = node
-        self._publisher = node.create_client(AlarmRaise, "/alarm/publish")
-        connect_attempts = 3
-        while not self._publisher.wait_for_service(timeout_sec=1.0) and connect_attempts > 0:
-            node.get_logger().info(f'[ALARM LIB] Alarm Service not available, waiting again ({connect_attempts} attempts remaining)...')
-            connect_attempts -= 1
+        self._alarm_raise_pub = _create_srv_client(node, AlarmRaise, "/alarm/raise")
+        self._alarm_delatch_pub = _create_srv_client(node, AlarmDelatch, "/alarm/delatch")
 
-
-    def publish_alarm(self, alarm: Alarm, ignore_result:bool = True) -> AlarmResult | None:
+    def publish_alarm(self, alarm: Alarm, ignore_result:bool = True) -> AlarmRaiseResult | None:
         """
         Publishes an alarm with the specified Alarm. It will then return the result of the alarm if ignore_result = false
         If ignore_result == true, then the method will return None
-        If ignore_result == false, then the method will return AlarmResult
+        If ignore_result == false, then the method will return AlarmRaiseResult
         """
 
         # https://docs.ros.org/en/kilted/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Service-And-Client.html
@@ -56,14 +74,38 @@ class AlarmPublisher:
         alarm_msg.error_code = alarm.value
         req.alarm = alarm_msg
 
-        if ignore_result:
-            self._publisher.call_async(req)
+        try:
+            if ignore_result:
+                self._alarm_raise_pub.call_async(req)
+                return None
+            else:
+                future = self._alarm_raise_pub.call_async(req)
+                rclpy.spin_until_future_complete(self._node, future)
+                response:AlarmRaise.Response = future.result()
+                return AlarmRaiseResult(response.result)
+        except TypeError:
+            self._node.get_logger().error("[ALARM LIB] The alarm publisher is using the wrong type for the service! Investigate this issue at once!", once=True)
             return None
-        else:
-            future = self._publisher.call_async(req)
-            rclpy.spin_until_future_complete(self._node, future)
-            response:AlarmRaise.Response = future.result()
-            return AlarmResult(response.result)
+
+    def delatch_alarm(self, alarm: Alarm, ignore_result:bool = True) -> AlarmDelatchResult | None:
+        """
+        Delatches an alarm that may be active. Will not throw an error if an alarm is not raised
+        """
+        req = AlarmDelatch.Request()
+        req.error_code = alarm.value
+
+        try:
+            if ignore_result:
+                self._alarm_delatch_pub.call_async(req)
+                return None
+            else:
+                future = self._alarm_delatch_pub.call_async(req)
+                rclpy.spin_until_future_complete(self._node, future)
+                response: AlarmDelatch.Response = future.result()
+                return AlarmDelatchResult(response.success)
+        except TypeError:
+            self._node.get_logger().error("[ALARM LIB] The alarm unlatcher is using the wrong type for the service! Investigate this issue at once!", once=True)
+            return None
 
 
 def create_alarm_publisher(node: Node) -> AlarmPublisher:

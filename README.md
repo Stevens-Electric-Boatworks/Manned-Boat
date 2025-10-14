@@ -1,11 +1,6 @@
 
 ![](https://raw.githubusercontent.com/EmeraldWither/Stevens-Electric-Boatworks/refs/heads/main/_readme_imgs/logo.png)
 
-Welcome to the Stevens Electric Boatworks GitHub repository. This wiki will try to catalog all of the information required to setup, program, and operate the boat safely. This wiki is a constant work in progress, and may be out of date at times.
-
-
-Visit the pages of this wiki to learn more about the boat, design decisions, and tips for navigating and building the codebase.
-
 ## Getting Started
 
 To get started, visit the [wiki home](https://github.com/EmeraldWither/Stevens-Electric-Boatworks/wiki), which will contain instructions on how to get started. In the future, the wiki will also contain guides for setting up your development environment, as well as design documents and explanations for the systems. 

@@ -8,7 +8,7 @@ import time
 from can import CanError
 from rclpy.impl.rcutils_logger import RcutilsLogger
 
-from boat_common_libs.alarms import Alarm
+from boat_common_libs.alarm_lib.alarms import Alarm
 from boat_data_interfaces.msg import CANMotorData, CANBusStatus
 
 import traceback
@@ -101,7 +101,7 @@ def is_can_interface_up(interface: str = "can0") -> bool:
 
 
 class OldCanProgram:
-    def __init__(self, logger: RcutilsLogger, dummy_efp, publisher, is_node_ok, declare_alarm, shutdown_node):
+    def __init__(self, logger: RcutilsLogger, dummy_efp, publisher, is_node_ok, declare_alarm, shutdown_node, unlatch_all_alarms):
         self.sdo = None
         self.start_time = None
         self.can_thread = None
@@ -114,6 +114,7 @@ class OldCanProgram:
         self.declare_alarm = declare_alarm
         self.shutdown_node = shutdown_node
         self.can_bus_state = CANBusStatus.OFFLINE
+        self.unlatch_all_alarms = unlatch_all_alarms
 
     def setup_can(self):
         # This is to ensure that we can publish alarms
@@ -126,7 +127,6 @@ class OldCanProgram:
             self.logger.error("can0 is not up. Aborting startup!!")
             self.declare_alarm(Alarm.CAN0_INTERFACE_NOT_UP)
             self.can_bus_state = CANBusStatus.OFFLINE
-            self.shutdown_node()
             return
 
         # Start with creating a new network representing one CAN bus
@@ -184,6 +184,7 @@ class OldCanProgram:
     def read_and_log_sdo(self, index, subindex):
         try:
             value = self.node.sdo[index][subindex].raw
+            self.unlatch_all_alarms()
             return value
         except Exception as e:
             self.logger.error(f"Error reading SDO [{hex(index)}:{subindex}]: {e}")

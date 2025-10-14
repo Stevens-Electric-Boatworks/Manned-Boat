@@ -4,8 +4,10 @@ README_IF_ON_TEAMS.md
 build/
 install/
 log/
+.idea/
 
-.idea
+*/__pycache__/
+*.pyc
 
 ros_ws/.vscode/browse.vc.db
 

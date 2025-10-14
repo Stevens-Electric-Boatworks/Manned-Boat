@@ -1,12 +1,12 @@
-ID,Type,Message,Condition
--1,FAULT,Unknown Fault,Only if there is an unknown fault code that is published.
-0,WARN,Unknown Warning,Only if there Is an unknown warning code that is published.
-1,FAULT,Websocket Initial Connection Failure,Unable to open a connection to the shore server
-2,FAULT,Websocket Connection Closed,The websocket connection unexpectadely closed
-3,WARN,Websocket Is Not Initally Opened Yet,Websocket is still waiting to be opened
-4,FAULT,Websocket Closed,Websocket is reported as no longer open
-10,FAULT,CAN Motor Node Shutdown,If the motor node has to shutdown due to a fatal error.
-11,FAULT,"""can0"" Interface Not Up",If `ip link status can0` does not have `status UP`
-12,WARN,Invalid CAN Packet Read,A `canerror` was thrown by the underlying `canopen` library
-13,WARN,Error reading CAN SDO,Caused by an invalid CAN SDO
-14,FAULT,Failed CAN Network Init,Failed to initialize `canopen.Network()`
+ID,Type,Message,Condition,Sticky
+-1,FAULT,Unknown Fault,Only if there is an unknown fault code that is published.,false
+0,WARN,Unknown Warning,Only if there Is an unknown warning code that is published.,false
+1,FAULT,Websocket Initial Connection Failure,Unable to open a connection to the shore server,false
+2,FAULT,Websocket Connection Closed,The websocket connection unexpectadely closed,false
+3,WARN,Websocket Is Not Initally Opened Yet,Websocket is still waiting to be opened,true
+4,FAULT,Websocket Closed,Websocket is reported as no longer open,true
+10,FAULT,CAN Motor Node Shutdown,If the motor node has to shutdown due to a fatal error.,true
+11,FAULT,"""can0"" Interface Not Up",If `ip link status can0` does not have `status UP`,true
+12,WARN,Invalid CAN Packet Read,A `canerror` was thrown by the underlying `canopen` library,false
+13,WARN,Error reading CAN SDO,Caused by an invalid CAN SDO,false
+14,FAULT,Failed CAN Network Init,Failed to initialize `canopen.Network()`,true

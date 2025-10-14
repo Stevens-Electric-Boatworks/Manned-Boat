@@ -9,6 +9,10 @@ log/
 */__pycache__/
 *.pyc
 
+log/
+install/
+build/
+
 ros_ws/.vscode/browse.vc.db
 
 

@@ -5,7 +5,7 @@ README_IF_ON_TEAMS.md
 ros_ws/.vscode/browse.vc.db
 
 .obsidian
-
+.idea/
 */__pycache__/
 *.pyc
 

@@ -7,7 +7,7 @@ from rclpy.node import Node
 
 from boat_common_libs.alarm_lib.alarms import Alarm
 from boat_data_interfaces.msg import ElectricalData, MotionData, BoatAlarm, \
-    CANMotorData, CANBusStatus
+    CANMotorData, CANBusStatus, CoolantData
 from rcl_interfaces.msg import Log, ParameterDescriptor, SetParametersResult
 from boat_common_libs.alarm_lib import alarm_helper
 
@@ -19,8 +19,8 @@ import json
 import threading
 
 
-SHORE_URI = "wss://shore.stevenseboat.org/api"
-# SHORE_URI = "ws://localhost:5001/api"
+# SHORE_URI = "wss://shore.stevenseboat.org/api"
+SHORE_URI = "ws://localhost:5001/api"
 
 def get_time_in_ms(time:Time):
     return time.sec * 1000 + (time.nanosec / 1e+6)
@@ -40,7 +40,7 @@ class ShoreDataCollector(Node):
         self.alarm_publisher = alarm_helper.create_alarm_publisher(self)
         self.create_sub(Log, "/rosout", self.logs_collector)
         self.create_sub(BoatAlarm, "/alarm/shore/publish", self.alarms_collector)
-        self.create_sub(ElectricalData, "/electrical/all_sensors", self.electrical_collector)
+        self.create_sub(CoolantData, "/electrical/temp_sensors", self.electrical_coolant_temp_collector)
         self.create_sub(MotionData, "/motion/all_sensors", self.motion_collector)
         self.create_sub(CANMotorData, "/motors/can_motor_data", self.motor_collector)
         self.create_sub(CANBusStatus, "/motors/can_bus_state", self.bus_state_collector)
@@ -192,14 +192,9 @@ class ShoreDataCollector(Node):
 
 
                     # IMPORTANT: Parameter name MUST be "msg"
-    def electrical_collector(self, msg:ElectricalData):
-        self.add_data("vbat", msg.vbat)
-        self.add_data("vebat", msg.vebat)
-        self.add_data("temp_bat", msg.temp_bat)
-        self.add_data("battery_percent", msg.battery_percent)
-        self.add_data("current_bat", msg.current_bat)
-        self.add_data("bms_temp", msg.bms_temp)
-        self.add_data("can_bus_util_percent", msg.can_bus_util_percent)
+    def electrical_coolant_temp_collector(self, msg:CoolantData):
+        self.add_data("inlet_temp", msg.inlet_temp)
+        self.add_data("outlet_temp", msg.outlet_temp)
 
     def motion_collector(self, msg:MotionData):
         self.add_data("heading", msg.heading)

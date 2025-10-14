@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "test = electrical_node.electrical_node_test:main"
+            "electrical = electrical_node.electrical_node:main",
+            "test = electrical_node.test.electrical_testing_data:main"
         ],
     },
 )

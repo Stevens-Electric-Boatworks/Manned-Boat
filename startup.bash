@@ -1,4 +1,12 @@
 #! /bin/bash
+source /home/rpi/.bashrc
+
+echo "Starting up the Webserver for the Boat Display"
+eval "$(fnm env --use-on-cd --shell bash)"
+cd /home/rpi/display_src
+fnm use 22
+npm run dev &
+
 
 echo "Starting up ROS2"
 
@@ -19,9 +27,9 @@ ROS_WS="/home/$USER_NAME/eboat_src/ros_ws"
 cd $ROS_WS
 
 
-echo "Starting up the CAN bus"
-sudo ip link set can0 type can bitrate 500000 
-sudo ip link set up can0
+#echo "Starting up the CAN bus"
+#sudo ip link set can0 type can bitrate 500000
+#sudo ip link set up can0
 
 # Source the install.bash
 echo "Sourcing install.bash"
@@ -44,7 +52,4 @@ echo "Launching launch/$LAUNCH_FILE"
 
 ros2 launch $ROS_WS/launch/$LAUNCH_FILE &
 
-
-
 echo "Finshed running startup script"
-

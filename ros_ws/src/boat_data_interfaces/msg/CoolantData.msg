@@ -1,0 +1,2 @@
+int16 inlet_temp
+int16 outlet_temp

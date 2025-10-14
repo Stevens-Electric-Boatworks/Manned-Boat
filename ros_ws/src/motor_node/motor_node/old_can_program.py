@@ -197,10 +197,10 @@ class OldCanProgram:
     # Feel free to browse the parameter list which is in testing/parameters.csv
     def publish_sdo_data(self, publisher):
         voltage = self.read_and_log_sdo(0x2030, 2) * 0.01  # Volts
-        throttle_mv = 0  # self.read_and_log_sdo( 0x2013, 1)  # mV
+        throttle_mv = -1  # self.read_and_log_sdo( 0x2013, 1)  # mV
         rpm = self.read_and_log_sdo(0x2001, 2)  # rpm
         current = self.read_and_log_sdo(0x2073, 1)  # Arms
-        # temperature = self.read_and_log_sdo( 0x2040, 2)  # deg C
+        temperature = self.read_and_log_sdo( 0x2040, 2)  # deg C
 
         throttle_percent = throttle_mv / 2800  # %
 
@@ -215,7 +215,7 @@ class OldCanProgram:
         msg.throttle_percentage = int(throttle_percent)
         msg.rpm = int(rpm)
         msg.torque = int(torque)
-        msg.motor_temp = -555  # HARDWARE FAILURE
+        msg.motor_temp = int(temperature)
         msg.current = int(current)
         msg.power = int(power)
 

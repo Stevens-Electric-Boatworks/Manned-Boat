@@ -33,15 +33,15 @@ class MotionNode(Node):
                 msg = pynmea2.parse(received_data)
                 if msg.lat != '':
                     lat = self._truncate(float(msg.lat) / 100, 5)
-                    lon = self._truncate(float(msg.lat) / 100, 5)
+                    lon = self._truncate(float(msg.lon) / 100, 5)
                     msg = GPSData()
                     msg.lat = lat
                     msg.lon = lon
                     self.publisher_.publish(msg)
                 else:
                     msg = GPSData()
-                    msg.lat = 0
-                    msg.lon = 0
+                    msg.lat = float(0)
+                    msg.lon = float(0)
                     self.publisher_.publish(msg)
 
     def _truncate(self, float, shift):

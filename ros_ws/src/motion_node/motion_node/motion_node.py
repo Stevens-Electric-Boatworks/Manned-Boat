@@ -52,7 +52,7 @@ class MotionNode(Node):
 
         # Divide by 100 to shift the decimal places back
         truncated_float = truncated_integer / (10 ** shift)
-        return truncated_float
+        return float(truncated_float)
 
 
 def main(args=None):

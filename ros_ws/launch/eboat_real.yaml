@@ -25,6 +25,6 @@ launch:
           - name: "dummy_epf"
             value: "~/eboat_src/data/dummy.epf"
   - node:
-      pkg: "electrical_node"
-      exec: "electrical"
-      name: "electrical"
+      pkg: "motion_node"
+      exec: "motion"
+      name: "gps"

@@ -13,9 +13,6 @@
   <test_depend>ament_xmllint</test_depend>
   <test_depend>python3-pytest</test_depend>
   <exec_depend>ros2launch</exec_depend>
-
-
-  <exec_depend>boat_common_libs</exec_depend>
   <export>
     <build_type>ament_python</build_type>
   </export>

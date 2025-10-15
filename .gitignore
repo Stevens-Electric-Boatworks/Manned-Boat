@@ -1,18 +1,16 @@
 # Avoid internal team documents being pushed to github
 
 README_IF_ON_TEAMS.md
-build/
-install/
-log/
-
-.idea
 
 ros_ws/.vscode/browse.vc.db
 
+.obsidian
+
+*/__pycache__/
+*.pyc
 
 ros_ws/devel/
 ros_ws/log/
-ros_ws/install/
 ros_ws/build/
 ros_ws/install/
 ros_ws/log/

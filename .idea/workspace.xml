@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="419d5663-ba3c-4d86-8ff3-9bf77baeb8bc" name="Changes" comment="remove .idea from git">
+      <change afterPath="$PROJECT_DIR$/ros_ws/src/boat_data_interfaces/srv/AlarmDelatch.srv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ros_ws/src/alarms_manager_node/alarms_manager_node/alarm_manager_node.py" beforeDir="false" afterPath="$PROJECT_DIR$/ros_ws/src/alarms_manager_node/alarms_manager_node/alarm_manager_node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ros_ws/src/boat_common_libs/boat_common_libs/alarm_lib/alarm_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/ros_ws/src/boat_common_libs/boat_common_libs/alarm_lib/alarm_helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ros_ws/src/boat_data_interfaces/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ros_ws/src/boat_data_interfaces/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ros_ws/src/motor_node/motor_node/motor_node.py" beforeDir="false" afterPath="$PROJECT_DIR$/ros_ws/src/motor_node/motor_node/motor_node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ros_ws/src/motor_node/motor_node/old_can_program.py" beforeDir="false" afterPath="$PROJECT_DIR$/ros_ws/src/motor_node/motor_node/old_can_program.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ros_ws/src/shore_comms/shore_comms/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ros_ws/src/shore_comms/shore_comms/main.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="new-alarms" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
+    {
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDOPv7ZiM6r05hd&quot;,
+        &quot;number&quot;: 2
+      },
+      &quot;lastSeen&quot;: 1759433099203
+    }
+  ]
+}</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/EmeraldWither/Stevens-Electric-Boatworks.git",
+    "accountId": "8cb7f8c5-d76f-4b44-8e7e-8582e94a5bb7"
+  },
+  "editorReviewEnabled": false
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="AISelfReview" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="339HmT0xuBHlGbxBFhgVnG9aNVM" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.motion_node_test.executor": "Run",
+    "Python.motor_node.executor": "Debug",
+    "Python.scratch.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHELLCHECK.PATH": "/home/ishaan/.local/share/JetBrains/PyCharm2025.3/Shell Script/shellcheck",
+    "last_opened_file_path": "/home/ishaan/eboat_src/ros_ws/src/boat_data_interfaces/srv",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.fileTypes",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Python"
+    ]
+  }
+}]]></component>
+  <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
+    <layout>
+      <window_info id="Space Code Reviews" />
+      <window_info id="Bookmarks" side_tool="true" />
+      <window_info id="Merge Requests" />
+      <window_info id="AI Playground" side_tool="true" />
+      <window_info id="Backup and Sync History" />
+      <window_info id="Commit_Guest" show_stripe_button="false" />
+      <window_info id="Learn" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23143649" />
+      <window_info id="Commit" order="1" weight="0.23143649" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.3188758" />
+      <window_info id="Pull Requests" order="3" weight="0.23143649" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="TypeScript" />
+      <window_info anchor="bottom" id="Statistic" />
+      <window_info anchor="bottom" id="File Transfer" />
+      <window_info anchor="bottom" id="HfCacheToolWindow" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.33023" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.33023" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="Python Packages" order="5" weight="0.1" />
+      <window_info anchor="bottom" id="Python Console" order="6" weight="0.3313253" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.33023" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.33023" />
+      <window_info anchor="bottom" id="TODO" order="9" weight="0.3313253" />
+      <window_info active="true" anchor="bottom" id="Debug" order="10" visible="true" weight="0.33023" />
+      <window_info anchor="right" id="PR AI Assistant" />
+      <window_info anchor="right" id="String Manipulation" show_stripe_button="false" />
+      <window_info anchor="right" id="documentation.v2" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Jupyter Variables" side_tool="true" />
+      <window_info anchor="right" id="Notifications" order="0" weight="0.32997918" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.32997918" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Plots" order="5" weight="0.1" />
+      <window_info anchor="right" id="Key Promoter X" order="6" />
+      <window_info anchor="right" id="Endpoints" order="7" weight="0.32997918" />
+      <window_info anchor="right" id="Json Helper" order="8" weight="0.33553088" />
+      <window_info anchor="right" id="Hierarchy" order="9" weight="0.32997918" />
+    </layout>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ros_ws/src/boat_data_interfaces/srv" />
+      <recent name="$PROJECT_DIR$/ros_ws/src/boat_data_interfaces" />
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/ros_ws/src/motor_node/motor_node" />
+      <recent name="$PROJECT_DIR$/ros_ws/src/electrical_node/electrical_node" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ros_ws/src/boat_common_libs/boat_common_libs/alarm_lib" />
+      <recent name="$PROJECT_DIR$/ros_ws/src/boat_common_libs/boat_common_libs" />
+      <recent name="$PROJECT_DIR$/ros_ws/src/boat_data_interfaces/lib" />
+      <recent name="$PROJECT_DIR$/ros_ws/src/motor_node/motor_node" />
+      <recent name="$PROJECT_DIR$/ros_ws/src/motor_node/motor_node/old_can" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.motor_node">
+    <configuration name="motor_node" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="eboat_src" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ros_ws/src/motor_node/motor_node" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ros_ws/src/motor_node/motor_node/motor_node.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="eboat_src" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.scratch" />
+        <item itemvalue="Python.motor_node" />
+        <item itemvalue="Python.motor_node" />
+        <item itemvalue="Python.scratch" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-PY-252.26830.99" />
+        <option value="bundled-python-sdk-164cda30dcd9-0af03a5fa574-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.26830.99" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="419d5663-ba3c-4d86-8ff3-9bf77baeb8bc" name="Changes" comment="" />
+      <created>1758722530739</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1758722530739</updated>
+      <workItem from="1758722533146" duration="326000" />
+      <workItem from="1760051735635" duration="1160000" />
+      <workItem from="1760238513314" duration="30000" />
+      <workItem from="1760291439188" duration="8887000" />
+      <workItem from="1760316230616" duration="4019000" />
+      <workItem from="1760461710524" duration="2162000" />
+    </task>
+    <task id="LOCAL-00001" summary="add name to logging packet">
+      <option name="closed" value="true" />
+      <created>1759255305382</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1759255305382</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fixed the old can script for testing">
+      <option name="closed" value="true" />
+      <created>1759339131083</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1759339131084</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Resolve merge conflicts">
+      <option name="closed" value="true" />
+      <created>1759433148340</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1759433148340</updated>
+    </task>
+    <task id="LOCAL-00004" summary="change websocket address">
+      <option name="closed" value="true" />
+      <created>1759950015202</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1759950015202</updated>
+    </task>
+    <task id="LOCAL-00005" summary="rename to alarms_manager_node">
+      <option name="closed" value="true" />
+      <created>1760293271502</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1760293271502</updated>
+    </task>
+    <task id="LOCAL-00006" summary="rename to alarms_manager_node">
+      <option name="closed" value="true" />
+      <created>1760298346857</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1760298346857</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix alarms for the motor_node.py">
+      <option name="closed" value="true" />
+      <created>1760299280501</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1760299280501</updated>
+    </task>
+    <task id="LOCAL-00008" summary="remove .idea from git">
+      <option name="closed" value="true" />
+      <created>1760299436074</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1760299436074</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add name to logging packet" />
+    <MESSAGE value="fixed the old can script for testing" />
+    <MESSAGE value="Resolve merge conflicts" />
+    <MESSAGE value="change websocket address" />
+    <MESSAGE value="rename to alarms_manager_node" />
+    <MESSAGE value="fix alarms for the motor_node.py" />
+    <MESSAGE value="remove .idea from git" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove .idea from git" />
+  </component>
+</project>

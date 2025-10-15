@@ -32,8 +32,15 @@ class MotionNode(Node):
             if received_data.startswith("$GPGGA"):
                 msg = pynmea2.parse(received_data)
                 if msg.lat != '':
-                    lat = self._truncate(float(msg.lat) / 100, 5)
-                    lon = self._truncate(float(msg.lon) / 100, 5)
+                    if msg.lat_dir == 'N':
+                        lat = self._truncate(float(msg.lat) / 100, 1)
+                    else:
+                        lat = -self._truncate(float(msg.lat) / 100, 1)
+                    
+                    if msg.lon_dir == 'W':
+                        lon = -self._truncate(float(msg.lon) / 100, 1)
+                    else:
+                        lon = self._truncate(float(msg.lon) / 100, 1)
                     msg = GPSData()
                     msg.lat = lat
                     msg.lon = lon
@@ -44,8 +51,8 @@ class MotionNode(Node):
                     msg.lon = float(0)
                     self.publisher_.publish(msg)
 
-    def _truncate(self, float, shift):
-        shifted_number = float * (10 ** shift)
+    def _truncate(self, floatA, shift):
+        shifted_number = floatA * (10 ** shift)
 
         # Truncate using int() to remove the fractional part
         truncated_integer = int(shifted_number)

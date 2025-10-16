@@ -28,3 +28,7 @@ launch:
       pkg: "motion_node"
       exec: "motion"
       name: "gps"
+  - node:
+      pkg: "electrical_node"
+      exec: "electrical"
+      name: "electrical_node"

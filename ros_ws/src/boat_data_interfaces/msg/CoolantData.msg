@@ -1,2 +1,2 @@
-int16 inlet_temp
-int16 outlet_temp
+float32 inlet_temp
+float32 outlet_temp

@@ -15,7 +15,7 @@ echo "Starting up ROS2"
 #ROS_WS="eboat_src/ros_ws"
 
 # Relative to ros_ws/launch
-LAUNCH_FILE="eboat_canmotor.yaml"
+LAUNCH_FILE="eboat_real.yaml"
 
 # Relative to home
 ROS_BAG_LOG_DIR="ros_bag_logs"

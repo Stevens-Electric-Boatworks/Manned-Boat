@@ -4,18 +4,29 @@ from rclpy.node import Node
 
 from boat_data_interfaces.msg import CoolantData
 
+# pip install pyserial (should be installed by default)
+import serial
+
 
 class ElectricalNode(Node):
     def __init__(self):
         super().__init__('electrical_node')
         self._publisher = self.create_publisher(CoolantData, '/electrical/temp_sensors', 10)
-        self.create_timer(0.5, self.read_temp_data)
+        # Verify serial directory with pi
+        self.ser = serial.Serial('/dev/ttyUSB0', 115200, timeout=1)
+        self.ser.flush()
+
+        self.create_timer(0.05, self.read_temp_data)
 
     def read_temp_data(self):
-        msg = CoolantData()
-        msg.inlet_temp = 5
-        msg.outlet_temp = 10
-        self._publisher.publish(msg)
+        if self.ser.in_waiting > 0:
+            data = self.ser.readline().decode('utf-8').strip()
+            result = data.split(',')
+            msg = CoolantData()
+            msg.inlet_temp = int(result[0])
+            msg.outlet_temp = int(result[1])
+            self._publisher.publish(msg)
+
 
 def main(args=None):
     try:

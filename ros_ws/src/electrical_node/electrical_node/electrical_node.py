@@ -37,10 +37,10 @@ class ElectricalNode(Node):
 
     def pub_data(self, data):
         if data[0] == 'I':
-            self.in_temp = float(data[1])
+            self.in_temp = float(data[1:])
             self._in_pub.publish(InletCoolantData(inlet_temp=self.in_temp))
         elif data[0] == 'O':
-            self.out_temp = float(data[1])
+            self.out_temp = float(data[1:])
             self._out_pub.publish(OutletCoolantData(outlet_temp=self.out_temp))
 
 def main(args=None):

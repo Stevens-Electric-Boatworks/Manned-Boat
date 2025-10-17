@@ -2,7 +2,7 @@
 name: Feature Addition/Change
 about: Suggest a feature addition/change
 title: ''
-labels: enhancement
+labels: ''
 assignees: EmeraldWither
 
 ---

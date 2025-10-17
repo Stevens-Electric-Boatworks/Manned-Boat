@@ -14,4 +14,4 @@ To get started, visit the [wiki home](https://github.com/Stevens-Electric-Boatwo
 The software for the shore side can be found at the following links, including build instructions, and deployments.
 
 * Website: [`Dakdot/eboat-client`](https://github.com/Dakdot/eboat-client)
-* Backend Server: [`Dakdot/eboat-client`](https://github.com/Dakdot/eboat-server)
+* Backend Server: [`Dakdot/eboat-server`](https://github.com/Dakdot/eboat-server)

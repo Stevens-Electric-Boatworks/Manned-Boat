@@ -1,2 +1,1 @@
 float32 inlet_temp
-float32 outlet_temp

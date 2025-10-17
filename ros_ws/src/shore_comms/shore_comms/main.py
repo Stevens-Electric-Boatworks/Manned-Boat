@@ -7,7 +7,7 @@ from rclpy.node import Node
 
 from boat_common_libs.alarm_lib.alarms import Alarm
 from boat_data_interfaces.msg import ElectricalData, MotionData, BoatAlarm, \
-    CANMotorData, CANBusStatus, CoolantData, GPSData
+    CANMotorData, CANBusStatus, GPSData, OutletCoolantData, InletCoolantData
 from rcl_interfaces.msg import Log, ParameterDescriptor, SetParametersResult
 from boat_common_libs.alarm_lib import alarm_helper
 
@@ -40,7 +40,8 @@ class ShoreDataCollector(Node):
 
         self.alarm_publisher = alarm_helper.create_alarm_publisher(self)
         self.create_sub(Log, "/rosout", self.logs_collector)
-        self.create_sub(CoolantData, "/electrical/temp_sensors", self.electrical_coolant_temp_collector)
+        self.create_sub(InletCoolantData, "/electrical/temp_sensors/in", self.electrical_coolant_temp_collector_inlet)
+        self.create_sub(OutletCoolantData, "/electrical/temp_sensors/out", self.electrical_coolant_temp_collector_outlet)
         self.create_sub(GPSData, "/motion/gps", self.motion_collector)
         self.create_sub(CANMotorData, "/motors/can_motor_data", self.motor_collector)
         self.create_sub(CANBusStatus, "/motors/can_bus_state", self.bus_state_collector)
@@ -192,8 +193,10 @@ class ShoreDataCollector(Node):
 
 
                     # IMPORTANT: Parameter name MUST be "msg"
-    def electrical_coolant_temp_collector(self, msg:CoolantData):
+    def electrical_coolant_temp_collector_inlet(self, msg:InletCoolantData):
         self.add_data("inlet_temp", msg.inlet_temp)
+
+    def electrical_coolant_temp_collector_outlet(self, msg:OutletCoolantData):
         self.add_data("outlet_temp", msg.outlet_temp)
 
     def motion_collector(self, msg:GPSData):
